@@ -1,0 +1,11 @@
+alhilal/androidapp/pages/CommonPage.class
+alhilal/androidapp/step_definitions/SplashScreenSteps.class
+alhilal/androidapp/pages/NonReg_HomeScreenpage.class
+alhilal/androidapp/step_definitions/NonReg_HomeScreen_Steps.class
+alhilal/androidapp/utils/AppiumHelpers.class
+alhilal/androidapp/pages/SplashPage.class
+alhilal/androidapp/utils/Hooks.class
+alhilal/androidapp/utils/Locators.class
+alhilal/androidapp/utils/AppStrings.class
+alhilal/androidapp/utils/ConfigDriver.class
+alhilal/androidapp/RunTest.class

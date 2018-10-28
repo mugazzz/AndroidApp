@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.458335">
+<testcase classname="Registration process using Credit Card" name="Register usign Credit Card and Credit Card pin - Active Card" time="16.458335">
+<failure message="java.lang.AssertionError: The Registration using card details button is displayedis not as expected&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at alhilal.androidapp.utils.AppiumHelpers.assertTrue(AppiumHelpers.java:60)&#10;&#9;at alhilal.androidapp.pages.NonReg_HomeScreenpage.VerifyRegbtn(NonReg_HomeScreenpage.java:9)&#10;&#9;at alhilal.androidapp.step_definitions.NonReg_HomeScreen_Steps.verify_the_homescreen_button_Register_using_card_number(NonReg_HomeScreen_Steps.java:11)&#10;&#9;at ✽.Given Verify the homescreen button Register using card number(Registration_Cred_Card.feature:7)&#10;"><![CDATA[Given Verify the homescreen button Register using card number...............failed
+When Tap on Register using card number button and navigate to registration screen.undefined
+Then Enter the Active Credit Card number....................................undefined
+And Enter the Active Credict Card PIN number................................undefined
+Then Verify the card details are validated on fly...........................undefined
+
+StackTrace:
+java.lang.AssertionError: The Registration using card details button is displayedis not as expected
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at alhilal.androidapp.utils.AppiumHelpers.assertTrue(AppiumHelpers.java:60)
+	at alhilal.androidapp.pages.NonReg_HomeScreenpage.VerifyRegbtn(NonReg_HomeScreenpage.java:9)
+	at alhilal.androidapp.step_definitions.NonReg_HomeScreen_Steps.verify_the_homescreen_button_Register_using_card_number(NonReg_HomeScreen_Steps.java:11)
+	at ✽.Given Verify the homescreen button Register using card number(Registration_Cred_Card.feature:7)
+]]></failure>
+</testcase>
+</testsuite>

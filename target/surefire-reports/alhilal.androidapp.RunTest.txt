@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: alhilal.androidapp.RunTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 17.153 sec <<< FAILURE! - in alhilal.androidapp.RunTest
+Given Verify the homescreen button Register using card number(Scenario: Register usign Credit Card and Credit Card pin - Active Card)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.AssertionError: The Registration using card details button is displayedis not as expected
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at alhilal.androidapp.utils.AppiumHelpers.assertTrue(AppiumHelpers.java:60)
+	at alhilal.androidapp.pages.NonReg_HomeScreenpage.VerifyRegbtn(NonReg_HomeScreenpage.java:9)
+	at alhilal.androidapp.step_definitions.NonReg_HomeScreen_Steps.verify_the_homescreen_button_Register_using_card_number(NonReg_HomeScreen_Steps.java:11)
+	at ✽.Given Verify the homescreen button Register using card number(Registration_Cred_Card.feature:7)
+
+Scenario: Register usign Credit Card and Credit Card pin - Active Card  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: The Registration using card details button is displayedis not as expected
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at alhilal.androidapp.utils.AppiumHelpers.assertTrue(AppiumHelpers.java:60)
+	at alhilal.androidapp.pages.NonReg_HomeScreenpage.VerifyRegbtn(NonReg_HomeScreenpage.java:9)
+	at alhilal.androidapp.step_definitions.NonReg_HomeScreen_Steps.verify_the_homescreen_button_Register_using_card_number(NonReg_HomeScreen_Steps.java:11)
+	at ✽.Given Verify the homescreen button Register using card number(Registration_Cred_Card.feature:7)
+
