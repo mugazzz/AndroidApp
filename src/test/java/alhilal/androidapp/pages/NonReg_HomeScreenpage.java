@@ -6,19 +6,19 @@ import static alhilal.androidapp.utils.AppStrings.*;
 public class NonReg_HomeScreenpage extends CommonPage{
 	
 	public void VerifyRegbtn() {
-		appiumHelpers.assertTrue(elementExists(REG_CARD_BTN), "Registration using card details button is displayed");
+		appiumHelpers.assertTrue(elementExists(REG_CARD_BTN), "Registration using card details button displayed ");
 	}
 	
 	public void VerifyContactUs() {
-		appiumHelpers.assertTrue(elementExists(CONACT_US), "Contact us link is displayed");
+		appiumHelpers.assertTrue(elementExists(CONACT_US), "Contact us link displayed ");
 	}
 	
 	public void VerifyBranchLocator() {
-		appiumHelpers.assertTrue(elementExists(BRANCH_LOCATOR), "Branch locator link is displayed");
+		appiumHelpers.assertTrue(elementExists(BRANCH_LOCATOR), "Branch locator link displayed ");
 	}
 	
 	public void VerifyEnroll() {
-		appiumHelpers.assertTrue(elementExists(REG_CUS_LINK), "Enroll link is displayed");
+		appiumHelpers.assertTrue(elementExists(REG_CUS_LINK), "Enroll link displayed ");
 	}
 	
 	public void Change_toggle_button() {

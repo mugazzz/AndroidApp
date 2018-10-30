@@ -16,7 +16,8 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class ConfigDriver {
 	
-	    public static AppiumDriver<MobileElement> driver;
+	    public static AndroidDriver<MobileElement> driver;
+	    public static AppiumDriver<MobileElement> driver2;
 	    public static WebDriverWait wait;
 	    private File appPath;
 
@@ -50,7 +51,7 @@ public class ConfigDriver {
 	            capabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
 	        }*/
 
-	        driver = new AppiumDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+	        driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 	        wait = new WebDriverWait(driver, 20);
 	        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    }

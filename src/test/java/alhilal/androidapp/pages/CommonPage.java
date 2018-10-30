@@ -3,12 +3,19 @@ package alhilal.androidapp.pages;
 import static alhilal.androidapp.utils.AppStrings.*;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 
 import static alhilal.androidapp.utils.Locators.*;
 
+import java.time.Duration;
 import alhilal.androidapp.utils.AppiumHelpers;
 import alhilal.androidapp.utils.ConfigDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.TapOptions;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 
 
 public class CommonPage extends ConfigDriver {
@@ -20,6 +27,14 @@ public class CommonPage extends ConfigDriver {
         driver.findElement(element).click();
     }
 
+    public void scrollDown(By locator) {
+        MobileElement slider = driver.findElement(locator);
+        Dimension size = slider.getSize();
+        TouchAction scroll = new TouchAction(driver).press(ElementOption.element(slider, size.width / 2, size.height / 2 + size.height / 6))
+                .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(5)))
+                .moveTo(ElementOption.element(slider, size.width / 2, size.height / 2)).release();
+        scroll.perform();
+    }
 
     public void navigateBack() {
         driver.navigate().back();
