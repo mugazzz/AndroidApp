@@ -54,7 +54,8 @@ public class AppStrings {
 	    
 	//Set PIN Screen
 	    public static final String Enter_Pin = "1234";
-	    
+	    public static final String Inc_Enter_Pin = "123";
+	    public static final String Renter_Pin = "4321";
 	    
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "";
