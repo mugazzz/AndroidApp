@@ -50,7 +50,11 @@ public class AppStrings {
 	    public static final String Inact_SMS_PN = "123456";
 	    public static final String Invalid_SMS_PN = "123595";
 	    public static final String Act_TPIN_PN = "123456";
-	    public static final String Incorr_TPN = "12345";;
+	    public static final String Incorr_TPN = "12345";
+	    
+	//Set PIN Screen
+	    public static final String Enter_Pin = "1234";
+	    
 	    
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "";

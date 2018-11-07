@@ -18,6 +18,7 @@ Scenario: Register using CIF number & TPIN - Inactive CIF
 	And Verify the homescreen button Register using card number
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the inactive CIF Card number
+	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
 	Then Verify the validation message appears for inactive CIF
@@ -27,6 +28,7 @@ Scenario: Register using CIF number & TPIN -incorrect number of CIF numbers
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the incorrect CIF number
+	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
 	Then Verify the validation message appears for incorrect CIF
@@ -36,6 +38,7 @@ Scenario: Register using CIF number & TPIN -incorrect number of TPIN numbers
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the valid customer number
+	And Tap on T-PIN tab to enter T-PIN
 	And Enter the incorrect TPIN number
 	Then Verify the user is not allowed to proceed further
 
@@ -45,6 +48,7 @@ Scenario: Register using CIF number & TPIN - TPin is not set
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the customer number with no pin set
 	Then Enter the valid T-PIN
+	And Tap on T-PIN tab to enter T-PIN
 	And Tap on Next button
 	Then Verify the validation for SMS pin fails
 
@@ -53,6 +57,7 @@ Scenario: Register using CIF number & TPIN - TPin is not active
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the customer number with inactive Tpin
+	And Tap on T-PIN tab to enter T-PIN
 	And Enter the inactive SMS PIN number
 	Then Verify the validation for SMS pin fails
 
@@ -64,19 +69,21 @@ Scenario: Register using CIF number & TPIN - Invalid CIF Number or TPIN
 	And Enter the invalid TPIN number
 	Then Verify the validation for SMS pin fails
 
-@reg_cif_tpin7
-Scenario: Register using CIF number & TPIN - wrong TPIN for 5 times
-	Given Verify the screen redirected to landing page
-	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
-	And Enter the invalid TPIN number for 5 times
-	Then Verify the card is blocked error message appears
+#@reg_cif_tpin7
+#Scenario: Register using CIF number & TPIN - wrong TPIN for 5 times
+#	Given Verify the screen redirected to landing page
+#	Then Tap on register using your customer number link and navigate to customer registration screen
+#	Then Enter the valid customer number
+#	And Tap on T-PIN tab to enter T-PIN
+#	And Enter the invalid TPIN number for 5 times
+#	Then Verify the card is blocked error message appears
 	
 @reg_cif_tpin8
 Scenario: Registration process should allow user to activate biometric login - biometrics features are enabled and set for the device
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the valid customer number
+	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button 
 	Then Verify the card details are validated on fly and navigate to OTP screen

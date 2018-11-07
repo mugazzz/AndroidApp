@@ -114,6 +114,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		String OTPMSG = driver2.findElement(By.xpath("//tr[2]/td[3]")).getText();
 		System.out.println(OTPMSG);
+		driver2.close();
 		String OTP = OTPMSG.substring(0, 6);
 		System.out.println(OTP);
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
@@ -170,6 +171,11 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	}
 	
 	public void VerifyAllsetScreen() {
+		if (elementExists(CRE_LOGIN_PIN_LB)) {
+			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+			 clickOnElement(CRE_LOGIN_PIN_CF);
+		}
 		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
 		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
 		

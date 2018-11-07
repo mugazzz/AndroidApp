@@ -68,7 +68,7 @@ Scenario: Register using CIF number & SMS PIN - Invalid CIF Number or SMS PIN
 #	And Enter the invalid SMS PIN number for 5 times
 #	Then Verify the card is blocked error message appears
 
-@reg_cif_spin8
+@reset @reg_cif_spin8
 Scenario: Registration process should allow user to activate biometric login - biometrics features are enabled and set for the device
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen

@@ -58,6 +58,10 @@ public class Locators {
 	
 	
 	//All set screen
+	public static final By CRE_LOGIN_PIN_LB = By.id("lblCreatePin");
+	public static final By CRE_LOGIN_PIN_FD = By.id("flxTextPin");
+	public static final By CRE_LOGIN_REPIN_FD = By.id("flxRePinText");
+	public static final By CRE_LOGIN_PIN_CF = By.id("btnConfirm");
 	public static final By ALL_SET = By.xpath("//android.widget.TextView[@text='You are all set!']");
 	public static final By ENABLE_FINGERPRINTS =By.id("btnEnable");
 	public static final By SKIP_FINGERPRINT = By.id("lblSkip");
