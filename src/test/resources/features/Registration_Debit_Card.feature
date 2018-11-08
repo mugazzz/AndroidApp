@@ -18,7 +18,7 @@ Scenario: Register using Debit Card and Debit card pin - Inactive Card
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the inactive Debit Card number
 	And Enter the inactive Debit Card PIN number
-	#Then Verify the validation message appears for inactive card
+	Then Verify the validation message appears for inactive card
 
 @reg_debit_card2
 Scenario: Register using Debit Card and Debit card pin -incorrect number of card numbers
@@ -45,7 +45,7 @@ Scenario: Register using Debit Card and Debit card pin - Pin is not set
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Debit Card number with no Pin
 	And Enter the Active Debit Card PIN number
-	#Then Verify the validation for Card pin fails
+	Then Verify the validation for Card pin fails
 
 @reg_debit_card5
 Scenario: Register using Debit Card and Debit card pin - Pin is not active
@@ -54,7 +54,7 @@ Scenario: Register using Debit Card and Debit card pin - Pin is not active
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Debit Card number whose Pin is not active
 	And Enter the Inactive Debit Pin number
-	#Then Verify the validation for Card pin fails
+	Then Verify the validation for Card pin fails
 
 @reg_debit_card6
 Scenario: Register using Debit Card and Debit card pin - Expiry date is lesser than today
@@ -63,7 +63,7 @@ Scenario: Register using Debit Card and Debit card pin - Expiry date is lesser t
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Expired Debit Card number
 	And Enter the Active Debit Card PIN number
-	#Then Verify the card expire validation message appears
+	Then Verify the card expire validation message appears
 
 @reg_debit_card7
 Scenario: Register using Debit Card and Debit card pin - Invalid Debit Card Number or Debit Card PIN
@@ -72,7 +72,7 @@ Scenario: Register using Debit Card and Debit card pin - Invalid Debit Card Numb
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Debit Card number
 	And Enter the invalid Debit Card PIN number
-	#Then Verify the invalid card or PIN number Validation appears
+	Then Verify the invalid card or PIN number Validation appears
 
 #@reg_debit_card8
 #Scenario: Register using Debit Card and Debit card pin - wrong PIN for the respective card 5 times
