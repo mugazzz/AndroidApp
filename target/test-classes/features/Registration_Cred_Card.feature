@@ -18,7 +18,7 @@ Scenario: Register using Credit Card and Credit card pin - Inactive Card
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the inactive Credit Card number
 	And Enter the inactive Credit Card PIN number
-#	Then Verify the validation message appears for inactive card
+	Then Verify the validation message appears for inactive card
 
 @reg_cred_card2
 Scenario: Register using Credit Card and Credit card pin -incorrect number of card numbers
@@ -45,7 +45,7 @@ Scenario: Register using Credit Card and Credit card pin - Pin is not set
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Credit Card number with no Pin
 	And Enter the Active Credit Card PIN number
-#	Then Verify the validation for Card pin fails
+	Then Verify the validation for Card pin fails
 	
 @reg_cred_card5
 Scenario: Register using Credit Card and Credit card pin - Pin is not active
@@ -54,7 +54,7 @@ Scenario: Register using Credit Card and Credit card pin - Pin is not active
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Credit Card number whose Pin is not active
 	And Enter the Inactive Pin number
-#	Then Verify the validation for Card pin fails
+	Then Verify the validation for Card pin fails
 
 @reg_cred_card6
 Scenario: Register using Credit Card and Credit card pin - Expiry date is lesser than today
@@ -63,7 +63,7 @@ Scenario: Register using Credit Card and Credit card pin - Expiry date is lesser
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Expired Credit Card number
 	And Enter the Active Credit Card PIN number
-#	Then Verify the card expire validation message appears
+	Then Verify the card expire validation message appears
 	
 @reg_card_card7
 Scenario: Register using Credit Card and Credit card pin - Invalid Credit Card Number or Credit Card PIN
@@ -72,7 +72,7 @@ Scenario: Register using Credit Card and Credit card pin - Invalid Credit Card N
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Credit Card number
 	And Enter the invalid Credit Card PIN number
-#	Then Verify the invalid card or PIN number Validation appears
+	Then Verify the invalid card or PIN number Validation appears
 
 #@reg_card_card8
 #Scenario: Register using Credit Card and Credit card pin - wrong PIN for the respective card 5 times
