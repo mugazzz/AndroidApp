@@ -2,11 +2,13 @@ package alhilal.androidapp.pages;
 
 import static alhilal.androidapp.utils.AppStrings.*;
 
+import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 
 import static alhilal.androidapp.utils.Locators.*;
+import static org.junit.Assert.assertThat;
 
 import java.time.Duration;
 import alhilal.androidapp.utils.AppiumHelpers;
@@ -75,5 +77,11 @@ public class CommonPage extends ConfigDriver {
         }
 
     }
+    
+    public void Verify_Validation_Message(String Message){
+    		waitForProgressBarToDismiss();
+    		String xmlFormat = driver.getPageSource();
+    		assertThat(xmlFormat, CoreMatchers.containsString(Message));
+    	}
 
 }

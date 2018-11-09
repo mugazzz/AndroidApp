@@ -24,8 +24,8 @@ public class Hooks extends ConfigDriver {
             final byte[] screenshot = ((TakesScreenshot) driver)
                     .getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png"); //stick it in the report
-        /*}
-        tearDown();*/
+        //}
+        tearDown();
     }
 
 

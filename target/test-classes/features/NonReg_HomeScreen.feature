@@ -1,7 +1,7 @@
-@non_reg
+@non_reg 
 Feature: Home Screen - Non Registered users
 
-@non_reg0
+@non_reg0 @reset
 Scenario: Non registered user - Verify the links and options of home screen
 	Given Verify the screen redirected to landing page
 	Then Verify the homescreen button Register using card number
@@ -17,4 +17,4 @@ Scenario: Change the language to Arabic - Non Registered user and also Change th
 	Then Verify the home screen language changed to Arabic
 	And Navigate to card number registration screens from home screen to confirm the language change
 	And Navigate to customer number registration screens from home screen to confirm the language change 	
-#	Then change the languate to english and verify the screen
+	Then change the languate to english and verify the screen

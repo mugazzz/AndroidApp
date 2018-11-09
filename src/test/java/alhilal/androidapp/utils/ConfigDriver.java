@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,8 +17,8 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class ConfigDriver {
 	
-	    public static AndroidDriver<MobileElement> driver;
-	    public static AppiumDriver<MobileElement> driver2;
+	    public static AppiumDriver<MobileElement> driver;
+	    public static WebDriver driver2;
 	    public static WebDriverWait wait;
 	    private File appPath;
 
@@ -31,25 +32,19 @@ public class ConfigDriver {
 	         wip to fetch the OS details in device name and platform version dynamically.
 	         */
 	    	
-	    	DesiredCapabilities capabilities = new DesiredCapabilities();
-	    	capabilities.setCapability("VERSION", "8.0.0"); 
-	    	capabilities.setCapability("deviceName","ce12171ca29fc41504");
-	    	capabilities.setCapability("platformName","Android");
-	    	capabilities.setCapability("appPackage", "com.ahb.mb.dev");
-	    	capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
-	    	
-	        /*DesiredCapabilities capabilities = new DesiredCapabilities();
+	  
+	        DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ce12171ca29fc41504");
 	        capabilities.setCapability("appPackage", "com.ahb.mb.dev");
-	        capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBankv");
+	        capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
 	        capabilities.setCapability(MobileCapabilityType.APP, appPath);
 	        if (scenario.getSourceTagNames().contains("@reset")) {
-	            capabilities.setCapability(MobileCapabilityType.FULL_RESET, "true");
+	            //capabilities.setCapability(MobileCapabilityType.FULL_RESET, "true");
 	            capabilities.setCapability(MobileCapabilityType.NO_RESET, "false");
 	        } else {
 	            capabilities.setCapability(MobileCapabilityType.FULL_RESET, "false");
 	            capabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
-	        }*/
+	        }
 
 	        driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 	        wait = new WebDriverWait(driver, 20);
