@@ -106,6 +106,8 @@ public class Locators {
 	//Dashboard Screen
 	public static final By DASHBOARD_HEADING = By.id("lblNetWorthSummary");
 	
+	//Login Screen
+	public static final By LOGIN_PIN_FD = By.id("flxTbxPin");
 	
 	
 	

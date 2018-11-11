@@ -66,7 +66,8 @@ public class AppStrings {
 	    public static final String Invalid_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Card_block_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    //public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc;";
-    
+	    public static final String Invalid_Pin_Validation = "Incorrect login PIN! Please try again.";
+	    public static final String Pin_Blocked_Message = "Your Login PIN has been blocked due to wrong repeated rerties. Please click forget login PIN to reset it.";
 	    public static final String WEBVIEW_CONTEXT = "WEBVIEW";
 	    
 	//Web Application for OTP  
