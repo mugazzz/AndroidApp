@@ -24,7 +24,6 @@ public class Login_Using_Pin_Page extends CommonPage{
 	}
 	
 //	public void FingerPrint() {
-//		driver.per
 //		 //Runtime.getRuntime().exec("adb -e emu finger touch Alhilal1");
 //	}
 }
