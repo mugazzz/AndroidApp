@@ -25,7 +25,7 @@ Scenario: Register using CIF number & SMS PIN -incorrect number of CIF numbers
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the incorrect CIF number
 	And Enter the valid SMS PIN
-	Then Verify the validation message appears for incorrect CIF
+	Then Verify the user is not allowed to proceed further
 
 @reg_cif_spin3
 Scenario: Register using CIF number & SMS PIN -incorrect number of SMS PIN numbers

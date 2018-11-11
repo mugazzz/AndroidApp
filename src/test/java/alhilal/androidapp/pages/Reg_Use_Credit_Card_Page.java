@@ -182,6 +182,12 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	}
 	
 	public void EnableFingerPrint() {
+		try {
+			driver.hideKeyboard();
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
 		clickOnElement(ENABLE_FINGERPRINTS);
 		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
 		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");

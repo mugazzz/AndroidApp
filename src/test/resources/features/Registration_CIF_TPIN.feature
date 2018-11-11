@@ -31,7 +31,7 @@ Scenario: Register using CIF number & TPIN -incorrect number of CIF numbers
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	Then Verify the validation message appears for incorrect CIF
+	Then Verify the user is not allowed to proceed further
 
 @reg_cif_tpin3
 Scenario: Register using CIF number & TPIN -incorrect number of TPIN numbers
@@ -40,6 +40,7 @@ Scenario: Register using CIF number & TPIN -incorrect number of TPIN numbers
 	Then Enter the valid customer number
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the incorrect TPIN number
+	And Tap on Next button
 	Then Verify the user is not allowed to proceed further
 
 @reg_cif_tpin4
@@ -47,8 +48,8 @@ Scenario: Register using CIF number & TPIN - TPin is not set
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the customer number with no pin set
-	Then Enter the valid T-PIN
 	And Tap on T-PIN tab to enter T-PIN
+	Then Enter the valid T-PIN
 	And Tap on Next button
 	Then Verify the validation for SMS pin fails
 
@@ -59,6 +60,7 @@ Scenario: Register using CIF number & TPIN - TPin is not active
 	Then Enter the customer number with inactive Tpin
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the inactive SMS PIN number
+	And Tap on Next button
 	Then Verify the validation for SMS pin fails
 
 @reg_cif_tpin6
@@ -66,7 +68,9 @@ Scenario: Register using CIF number & TPIN - Invalid CIF Number or TPIN
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the valid customer number
+	And Tap on T-PIN tab to enter T-PIN
 	And Enter the invalid TPIN number
+	And Tap on Next button
 	Then Verify the validation for SMS pin fails
 
 #@reg_cif_tpin7

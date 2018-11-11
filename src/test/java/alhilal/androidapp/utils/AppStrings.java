@@ -60,6 +60,7 @@ public class AppStrings {
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Inactive_CIF_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Inactive_CIF_Validation_Message_R = "The Account number is incorrect";
 	    public static final String Pin_notSet_notActive_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Expired_Card_Validation_Message = "You have entered an invalid Al Hilal Bank card number";
 	    public static final String Invalid_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";

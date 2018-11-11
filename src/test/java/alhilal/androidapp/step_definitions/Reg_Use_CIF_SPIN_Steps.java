@@ -1,6 +1,6 @@
 package alhilal.androidapp.step_definitions;
 
-import static alhilal.androidapp.utils.AppStrings.Inactive_CIF_Validation_Message;
+import static alhilal.androidapp.utils.AppStrings.*;
 
 import alhilal.androidapp.pages.Reg_Use_CIF_SPIN_Page;
 import cucumber.api.java.en.Then;
@@ -31,6 +31,11 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 	@Then("^Verify the validation message appears for inactive CIF$")
 	public void verify_the_validation_message_appears_for_inactive_CIF() {
 		Verify_Validation_Message(Inactive_CIF_Validation_Message);
+	}
+	
+	@Then("^Verify the validation message appears for inactive CIF for reset PIN$")
+	public void verify_the_validation_message_appears_for_inactive_CIF_for_reset_PIN() {
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_R);
 	}
 	
 	@Then("^Verify the validation message appears for incorrect CIF$")
@@ -71,6 +76,11 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 	@Then("^Verify the validation for SMS pin fails$")
 	public void verify_the_validation_for_SMS_pin_fails(){
 		Verify_Validation_Message(Inactive_CIF_Validation_Message);
+	}
+	
+	@Then("^Verify the validation for SMS pin fails for reset PIN$")
+	public void verify_the_validation_for_SMS_pin_fails_Reset_PIN(){
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_R);
 	}
 	
 	@Then("^Enter the invalid SMS PIN number for 5 times$")
