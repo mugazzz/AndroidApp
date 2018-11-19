@@ -52,6 +52,7 @@ public class AppStrings {
 	    public static final String Act_TPIN_PN = "123456";
 	    public static final String Incorr_TPN = "12345";
 	    
+	    
 	//Set PIN Screen
 	    public static final String Enter_Pin = "1234";
 	    public static final String Inc_Enter_Pin = "123";
@@ -69,6 +70,7 @@ public class AppStrings {
 	    public static final String Invalid_Pin_Validation = "Incorrect login PIN! Please try again.";
 	    public static final String Pin_Blocked_Message = "Your Login PIN has been blocked due to wrong repeated rerties. Please click forget login PIN to reset it.";
 	    public static final String WEBVIEW_CONTEXT = "WEBVIEW";
+	    public static final String OTP_Validation = "The One Time Password you entered is incorrect. Please try again or click re-send OTP to receive a new one";
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";

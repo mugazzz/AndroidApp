@@ -55,6 +55,7 @@ public class Locators {
 	//OTP Screen
 	public static final By OTP_HD = By.id("lblOTPMessage");
 	public static final By OPT_FIELD = By.className("android.widget.EditText");
+	public static final By RESEND_OTP = By.id("btnResendCode");
 	
 	
 	//All set screen
@@ -104,7 +105,7 @@ public class Locators {
 	public static final By HOST_SAVE = By.id("btn_save");*/
 	
 	//Dashboard Screen
-	public static final By DASHBOARD_HEADING = By.id("lblNetWorthSummary");
+	public static final By DASHBOARD_HEADING = By.id("lblWelcomeBack");
 	
 	//Login Screen
 	public static final By LOGIN_PIN_FD = By.id("flxTbxPin");
