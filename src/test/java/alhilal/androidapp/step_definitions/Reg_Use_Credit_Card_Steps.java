@@ -130,6 +130,11 @@ public class Reg_Use_Credit_Card_Steps extends Reg_Use_Credit_Card_Page {
 	public void enter_the_OTP_and_confirm_the_screen_navigates_to_you_are_all_set_screen() {
 		VerifyAllsetScreen();
 	}
+	
+	@Then("^Confirm the screen navigates to you are all sets! screen$")
+	public void enter_the_OTP_and_confirm_the_screen_navigates_to_you_are_all_sets_screen() {
+		VerifyAllsetScreen_Key();
+	}
 
 	@Then("^Tap on Enable Fingerprints button and verify the screen redirects to Dashboard screen$")
 	public void tap_on_Enable_Fingerprints_button_and_verify_the_screen_redirects_to_Dashboard_screen() {

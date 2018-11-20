@@ -181,6 +181,18 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 		
 	}
 	
+	public void VerifyAllsetScreen_Key() {
+		if (elementExists(CRE_LOGIN_PIN_LB)) {
+			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+			 driver.hideKeyboard();
+			 clickOnElement(CRE_LOGIN_PIN_CF);
+		}
+		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+		
+	}
+	
 	public void EnableFingerPrint() {
 		try {
 			driver.hideKeyboard();

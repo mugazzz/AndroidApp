@@ -33,8 +33,8 @@ Scenario: Use  mobile banking PIN to login - After 3 times of failure should ref
 	Then Check the validation error message appears regarding pin blocked
 	And Verify the user automatically redirected to Reset password screen
 
-@login_fing
-Scenario: Finger print login
-	Given Verify the screen redirected to landing page
-	Then apply finger print
-	And Verify the user redirected to Dashboard screen successfully
+#@login_fing
+#Scenario: Finger print login
+#	Given Verify the screen redirected to landing page
+#	Then apply finger print
+#	And Verify the user redirected to Dashboard screen successfully

@@ -1,5 +1,7 @@
 package alhilal.androidapp.step_definitions;
 
+import static alhilal.androidapp.utils.AppStrings.*;
+
 import alhilal.androidapp.pages.Reg_Use_CIF_TPIN_Page;
 import cucumber.api.java.en.Then;
 
@@ -38,6 +40,16 @@ public class Reg_Use_CIF_TPIN extends Reg_Use_CIF_TPIN_Page{
 	@Then("^Enter the invalid TPIN number$")
 	public void enter_the_invalid_TPIN_number(){
 		Ent_invalid_TPin();
+	}
+	
+	@Then("^Enter the inactive TPIN number$")
+	public void enter_the_inactive_TPIN_number(){
+		Ent_inactive_TPin();
+	}
+	
+	@Then("^Verify the validation message appears for inactive CIFT$")
+	public void verify_the_validation_message_appears_for_inactive_CIF() {
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_T);
 	}
 	
 	@Then("^Enter the invalid TPIN number for 5 times$")

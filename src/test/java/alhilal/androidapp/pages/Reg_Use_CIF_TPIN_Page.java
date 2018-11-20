@@ -13,6 +13,10 @@ public class Reg_Use_CIF_TPIN_Page extends CommonPage {
 		enterText(REG_CUS_TPIN_FD, Act_TPIN_PN);
 	}
 	
+	public void Ent_inactive_TPin() {
+		enterText(REG_CUS_TPIN_FD, Inact_SMS_PN);
+	}
+	
 	public void Tap_On_Next() {
 		driver.hideKeyboard();
 		clickOnElement(REG_CUS_TPIN_NT);

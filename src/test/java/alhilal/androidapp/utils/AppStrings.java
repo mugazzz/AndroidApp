@@ -41,7 +41,7 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Inact_Cust_No = "4234123";
-	    public static final String Cust_No_with_No_Pin = "1261990";
+	    public static final String Cust_No_with_No_Pin = "6556425";
 	    public static final String Cust_No_with_No_SPin = "2016819";
 	    public static final String Incorr_Cust_No = "404198";
 	    public static final String Incorr_SMS_PN = "12345";
@@ -61,8 +61,9 @@ public class AppStrings {
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Inactive_CIF_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
-	    public static final String Inactive_CIF_Validation_Message_R = "The Account number is incorrect";
-	    public static final String Pin_notSet_notActive_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
+	    public static final String Inactive_CIF_Validation_Message_T = "The Account number is incorrect";
+	    public static final String Inactive_CIF_Validation_Message_R = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Pin_notSet_notActive_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Expired_Card_Validation_Message = "You have entered an invalid Al Hilal Bank card number";
 	    public static final String Invalid_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Card_block_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
