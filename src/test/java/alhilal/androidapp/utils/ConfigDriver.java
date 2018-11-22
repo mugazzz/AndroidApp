@@ -34,10 +34,12 @@ public class ConfigDriver {
 	    	
 	  
 	        DesiredCapabilities capabilities = new DesiredCapabilities();
-	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ce0718272497880b03");
+	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "0117115562950701");
+	        capabilities.setCapability("automationName", "UiAutomator");
 	        capabilities.setCapability("appPackage", "com.ahb.mb.dev");
 	        capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
 	        capabilities.setCapability(MobileCapabilityType.APP, appPath);
+	        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
 	        if (scenario.getSourceTagNames().contains("@reset")) {
 	            //capabilities.setCapability(MobileCapabilityType.FULL_RESET, "true");
 	            capabilities.setCapability(MobileCapabilityType.NO_RESET, "false");

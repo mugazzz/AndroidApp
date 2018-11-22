@@ -78,5 +78,10 @@ public class AppStrings {
 	    public static final String web_username = "administrator";
 	    public static final String web_password = "password1";
     
+	//Advanced Search Screen
+	    public static final String Cheque_from = "10";
+	    public static final String Cheque_to = "20";
+	    public static final String Amount_from = "36000";
+	    public static final String Amount_to = "40000";
 
 }

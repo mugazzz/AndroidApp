@@ -78,6 +78,19 @@ public class CommonPage extends ConfigDriver {
 
     }
     
+    public boolean elemenDoesnotExists(By locator) {
+        appiumHelpers.implicitWait(2);
+        try {
+            driver.findElement(locator);
+            return false;
+        } catch (NoSuchElementException e) {
+            return true;
+        } finally {
+            appiumHelpers.implicitWait(IMPLICIT_WAIT_TIME);
+        }
+
+    }
+    
     public void Verify_Validation_Message(String Message){
     		waitForProgressBarToDismiss();
     		String xmlFormat = driver.getPageSource();

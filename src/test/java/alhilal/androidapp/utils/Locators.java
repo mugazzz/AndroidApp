@@ -106,6 +106,44 @@ public class Locators {
 	
 	//Dashboard Screen
 	public static final By DASHBOARD_HEADING = By.id("lblWelcomeBack");
+	public static final By MINIMIZE_CHART = By.id("imgChartSizeToggle");
+	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My Accounts']");
+	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My accounts']");
+	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
+	
+	//Current Account Screen
+	public static final By HEAD_CHECK = By.id("lblHeading");
+	public static final By CHEQUE_VIEW = By.xpath("//android.widget.Button[@text='Cheques View']");
+	public static final By HEAD_CHEQUE = By.xpath("//android.widget.TextView[@text='Cheque List']");
+	public static final By IMAGE_INFO =By.id("flxAccounts");
+	
+	//Cheque List
+	public static final By APPLY_FILTER = By.id("imgFilter");
+	public static final By CHEQUE_NO  = By.id("lblAccountName");
+	public static final By CHEQUE_AMT = By.id("lblAccountBalValue");
+	public static final By CHEQUE_STATUS = By.id("lblTransactionDate");
+	public static final By CHEQUE_DATE = By.id("lblAccountBal");
+	
+	
+	//Advanced Search
+	public static final By ADV_SER_HD = By.xpath("//android.widget.TextView[@text='Advanced Search']");
+	public static final By TIME_RANGE = By.id("flxTimeRangeWrapper");
+	public static final By CUSTOM_PERIOD = By.xpath("//android.widget.TextView[@text='Custom Period']");
+	public static final By START_LAB = By.id("lblStartDate");
+	//public static final By START_DATE = By.xpath("//android.widget.ScrollView[1]/android.view.ViewGroup[0]/android.view.ViewGroup[1]/android.view.ViewGroup[0]/android.view.ViewGroup[1]/android.view.ViewGroup[0]/android.widget.LinearLayout[2]/android.widget.LinearLayout[0]");
+	public static final By START_DATE = By.xpath("//android.widget.TextView[@text='mm/dd/yyyy']");
+	public static final By STA_YEAR = By.id("date_picker_header_year");
+	public static final By STA_YEAR_PIC = By.xpath("//android.widget.TextView[@text='2015']");
+	public static final By START_OK = By.id("button1");
+	public static final By SEARCH_BTN = By.id("btnSearch");
+	public static final By STA_YEARs = By.id("Filter is not working fine");
+	public static final By ADD_RANGE = By.id("lblAddRangeTitleTwo");
+	public static final By REMOVE_RANGE = By.id("lblAddRangeTitleOne");
+	public static final By CHEQ_FROM = By.id("txtCheckNumbersFrom");
+	public static final By CHEQ_TO = By.id("txtCheckNumbersTo");
+	public static final By AMOUNT_FROM = By.id("txtAmountFrom");
+	public static final By AMOUNT_TO = By.id("txtAmountTo");
+	
 	
 	//Login Screen
 	public static final By LOGIN_PIN_FD = By.id("flxTbxPin");

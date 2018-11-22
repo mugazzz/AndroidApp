@@ -185,6 +185,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 		if (elementExists(CRE_LOGIN_PIN_LB)) {
 			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
 			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+			 driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 			 driver.hideKeyboard();
 			 clickOnElement(CRE_LOGIN_PIN_CF);
 		}

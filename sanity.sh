@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mvn clean test -Dcucumber.options="--tags @resend_otp"
+mvn clean test -Dcucumber.options="--tags ~@ignore"
 
     if [ $? -eq 1 ]; then
        echo "rerunning failed scenario"
