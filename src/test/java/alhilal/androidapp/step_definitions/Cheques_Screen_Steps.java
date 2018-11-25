@@ -1,5 +1,11 @@
 package alhilal.androidapp.step_definitions;
 
+import static alhilal.androidapp.utils.AppStrings.Inactive_CIF_Validation_Message;
+import static alhilal.androidapp.utils.AppStrings.OTP_Validation;
+import static org.junit.Assert.assertThat;
+
+import org.hamcrest.CoreMatchers;
+
 import alhilal.androidapp.pages.Cheques_Screen_Pages;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -67,10 +73,45 @@ public class Cheques_Screen_Steps extends Cheques_Screen_Pages{
 	public void enter_the_From_and_To_Cheque_numbers() {
 		Add_Cheque_numbers();
 	}
+	
+	@Then("^Enter only the To Cheque numbers$")
+	public void enter_the_To_Cheque_numbers() {
+		Add_To_Cheque_numbers();
+	}
+	
+	@Then("^Enter only the from Cheque numbers$")
+	public void enter_the_From_Cheque_numbers() {
+		Add_From_Cheque_numbers();
+	}
+	
+	@Then("^Enter Maximum From number and minimum To number$")
+	public void enter_max_From_and_mini_To_Cheque_numbers() {
+		Add_max_min_inv_Cheque_numbers();
+	}
+	
+	@Then("^Enter the incorrect Cheque number and tap search$")
+	public void enter_the_incorrect_cheque_number() {
+		Ente_incorrect_Cheque_number();
+	}
+	
+	@Then("^Enter Maximum From number and minimum To number for account$")
+	public void enter_max_From_and_mini_To_Cheque_numbers_for_account() {
+		Add_max_min_inv_Cheque_numbers();
+	}
 
 	@Then("^Verify the search result for the applied From and To Cheque numbers$")
 	public void verify_the_search_result_for_the_applied_From_and_To_Cheque_numbers() {
 		Verify_Search_Result_Check_Number();
+	}
+	
+	@Then("^Verify the search result for the applied To Cheque numbers$")
+	public void verify_the_search_result_for_the_applied_To_Cheque_numbers() {
+		Verify_Search_for_to_Check_Number();
+	}
+	
+	@Then("^Verify the search result for the applied From Cheque numbers$")
+	public void verify_the_search_result_for_the_applied_From_Cheque_numbers() {
+		Verify_Search_for_From_Check_Number();
 	}
 	
 	@Given("^Verify the Add Range and Remove Range button functionality$")
@@ -87,11 +128,32 @@ public class Cheques_Screen_Steps extends Cheques_Screen_Pages{
 	public void enter_the_From_and_To_Amount_values() {
 	   Add_Amount_Values();
 	}
+	
+	@Then("^Enter Only To Amount values$")
+	public void enter_Only_To_Amount_values() {
+		Add_Only_To_Amount_Values();
+	}
+	
+	@Then("^Enter Only From Amount value$")
+	public void enter_Only_From_Amount_values() {
+		Add_Only_From_Amount_Values();
+	}
 
 	@Then("^Verify the search result for the applied from and to amount values$")
 	public void verify_the_search_result_for_the_applied_from_and_to_amount_values() {
 		Verify_Search_Result_Amount_Values();
 	}
+	
+	@Then("^Verify the search result for the applied To amount values$")
+	public void verify_the_search_result_for_the_applied_to_amount_values() {
+		Verify_Search_Result_for_to_Amount_Values();
+	}
+	
+	@Then("^Verify the search result for the applied From amount values$")
+	public void verify_the_search_result_for_the_applied_from_amount_values() {
+		Verify_Search_Result_for_from_Amount_Values();
+	}
+	
 	
 	@Then("^Verify the search result for the applied all filter values$")
 	public void verify_the_search_result_for_the_applied_all_filter_values() {
@@ -111,6 +173,63 @@ public class Cheques_Screen_Steps extends Cheques_Screen_Pages{
 	@Then("^Verify the search result for the applied cheque number and amount filter values$")
 	public void verify_the_search_result_for_the_applied_cheque_amounts_filter_values() {
 		Verify_Search_Result_cheque_amounts_Values();
+	}
+	
+	@Then("^Verify the user able to select From date as future date$")
+	public void verify_the_user_able_to_select_From_date_as_future_date() {
+		Verify_Select_From_Date_Future();
+	}
+	
+	@Then("^Select the start date$")
+	public void select_the_start_date() {
+		Select_End_Date();
+	}
+
+	@Then("^Tap the To Date and verify the dates below start are disabled$")
+	public void tap_the_To_Date_and_verify_the_dates_below_start_are_disabled() {
+	   Verify_To_Date_Disabled();
+	}
+	
+	@Then("^Verify the validation message appears for invalid cheque range$")
+	public void verify_the_validation_message_appears_for_invalid_cheque_ranges() throws InterruptedException {
+		Thread.sleep(3000);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message));
+	}
+	
+	@Then("^Enter Maximum From number and minimum To number for ammount$")
+	public void enter_max_From_and_mini_To_amount_numbers() {
+		Add_Amount_Values_Max_min();
+	}
+	
+	@Then("^Select only the End Date$")
+	public void select_only_the_End_Date() {
+		Select_Only_End_Date();
+	}
+	
+	@Then("^Select only the Start Date$")
+	public void select_only_the_start_Date() {
+		Select_Only_Start_Date();
+	}
+
+	@Then("^Verify the search result for the applied end date$")
+	public void verify_the_search_result_for_the_applied_end_date() {
+	    Verify_Search_Result_For_End();
+	}
+	
+	@Then("^Verify the search result for the applied start date$")
+	public void verify_the_search_result_for_the_applied_start_date() {
+	    Verify_Search_Result_For_start();
+	}
+	
+	@Then("^Tap on a specific cheque and navigate to cheque details page$")
+	public void tap_on_a_specific_cheque_and_navigate_to_cheque_details_page() {
+	   Tap_On_Specific_Cheque();
+	}
+
+	@Then("^Tap on Cheque image and verify the cheque image$")
+	public void tap_on_Cheque_image_and_verify_the_cheque_image() {
+		Verify_cheque_image();
 	}
 
 }

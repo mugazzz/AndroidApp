@@ -3,8 +3,10 @@ package alhilal.androidapp.pages;
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import io.appium.java_client.MobileElement;
 
@@ -65,23 +67,15 @@ public class Cheques_Screen_Pages extends CommonPage{
 	}
 	
 	public void Verify_Search_Result() {
-		List<MobileElement> elements = driver.findElements(By.id("lblAccountBal"));
-		for(MobileElement link : elements)
+		List<MobileElement> elements1 = driver.findElements(By.id("lblAccountBal"));
+		for(MobileElement link : elements1)
 		{
 		  String Date = link.getText();
 		  System.out.println("List dates: "+Date);
 		  String Year = Date.substring(6, 8);
 		  int ActualYear = Integer.parseInt(Year);
 		  System.out.println("Actual Year: " + ActualYear);
-		  if(ActualYear<=18 && ActualYear>=15) {
-			  System.out.println("Filtered successfully");
-		  }
-		  else {
-			  
-			  System.out.println("Filter is not working");
-			  clickOnElement(STA_YEARs);
-		  }
-		  
+		  assert ActualYear<=18 && ActualYear>=15 : "Fitler using date is not working fine";
 		}
 		elementExists(CHEQUE_NO);
 		elementExists(CHEQUE_AMT);
@@ -99,6 +93,18 @@ public class Cheques_Screen_Pages extends CommonPage{
 		driver.hideKeyboard();
 	}
 	
+	public void Add_To_Cheque_numbers() {
+		appiumHelpers.waitForVisibilityOfElement(CHEQ_TO);
+		enterText(CHEQ_TO, Cheque_to_1);
+		driver.hideKeyboard();
+	}
+	
+	public void Add_From_Cheque_numbers() {
+		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
+		enterText(CHEQ_FROM, Cheque_from_1);
+		driver.hideKeyboard();
+	}
+	
 	public void Verify_Search_Result_Check_Number() {
 		List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
 		for(MobileElement link : elements)
@@ -108,15 +114,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 		  int Actual_cheq_no = Integer.parseInt(cheq_no);
 		  int Cheque_fromn = Integer.parseInt(Cheque_from);
 		  int Cheque_ton = Integer.parseInt(Cheque_to);
-		  if(Actual_cheq_no >= Cheque_fromn && Actual_cheq_no <= Cheque_ton) {
-			  System.out.println("Filtered successfully");
-		  }
-		  else {
-			  
-			  System.out.println("Fitler using Cheque number is not working fine");
-			  clickOnElement(STA_YEARs);
-		  }
-		  
+		  assert Actual_cheq_no >= Cheque_fromn || Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
 		}
 		elementExists(CHEQUE_DATE);
 		elementExists(CHEQUE_AMT);
@@ -148,9 +146,17 @@ public class Cheques_Screen_Pages extends CommonPage{
 		driver.hideKeyboard();
 	}
 	
+	public void Add_Amount_Values_Max_min() {
+		appiumHelpers.waitForVisibilityOfElement(AMOUNT_FROM);
+		enterText(AMOUNT_FROM, Amount_to);
+		enterText(AMOUNT_TO, Amount_from);
+		driver.hideKeyboard();
+		clickOnElement(SEARCH_BTN);
+	}
+	
 	public void Verify_Search_Result_Amount_Values() {
-		List<MobileElement> elements = driver.findElements(By.id("lblAccountBalValue"));
-		for(MobileElement link : elements)
+		List<MobileElement> elements2 = driver.findElements(By.id("lblAccountBalValue"));
+		for(MobileElement link : elements2)
 		{
 		  String Amt_no = link.getText();
 		  System.out.println("List cheque no: "+Amt_no);
@@ -158,19 +164,10 @@ public class Cheques_Screen_Pages extends CommonPage{
 		  int Amount_ton = Integer.parseInt(Amount_to);
 		  try {
 			  int Actual_amt_no = Integer.parseInt(Amt_no);
-			  if(Actual_amt_no >= Amount_fromn && Actual_amt_no <= Amount_ton) {
-				  System.out.println("Filtered successfully");
-			  }
-			  else {
-				  
-				  System.out.println("Fitler using amount values is not working fine");
-				  clickOnElement(STA_YEARs);
-			  }
+			  assert Actual_amt_no >= Amount_fromn || Actual_amt_no <= Amount_ton : "Fitler using amount values is not working fine";
 		  	}catch (NumberFormatException e) {
 		  		System.out.println("not a number");
 		  	}
-		 
-		  
 		}
 		elementExists(CHEQUE_DATE);
 		elementExists(CHEQUE_NO);
@@ -184,71 +181,48 @@ public class Cheques_Screen_Pages extends CommonPage{
 	public void Verify_Search_Result_all_Values() {
 		
 		//For Date Filter
-		List<MobileElement> elements1 = driver.findElements(By.id("lblAccountBal"));
-		for(MobileElement link : elements1)
-		{
-		  String Date = link.getText();
-		  System.out.println("List dates: "+Date);
-		  String Year = Date.substring(6, 8);
-		  int ActualYear = Integer.parseInt(Year);
-		  System.out.println("Actual Year: " + ActualYear);
-		  if(ActualYear<=18 && ActualYear>=15) {
-			  System.out.println("Filtered successfully");
-		  }
-		  else {
-			  
-			  System.out.println("Filter is not working");
-			  clickOnElement(STA_YEARs);
-		  }
-		  
-		}
+				List<MobileElement> elements1 = driver.findElements(By.id("lblAccountBal"));
+				for(MobileElement link : elements1)
+				{
+				  String Date = link.getText();
+				  System.out.println("List dates: "+Date);
+				  String Year = Date.substring(6, 8);
+				  int ActualYear = Integer.parseInt(Year);
+				  System.out.println("Actual Year: " + ActualYear);
+				  assert ActualYear<=18 && ActualYear>=15 : "Fitler using date is not working fine";
+				}
 		
 		//For Amount value filter
-		List<MobileElement> elements2 = driver.findElements(By.id("lblAccountBalValue"));
-		for(MobileElement link : elements2)
-		{
-		  String Amt_no = link.getText();
-		  System.out.println("List cheque no: "+Amt_no);
-		  int Amount_fromn = Integer.parseInt(Amount_from);
-		  int Amount_ton = Integer.parseInt(Amount_to);
-		  try {
-			  int Actual_amt_no = Integer.parseInt(Amt_no);
-			  if(Actual_amt_no >= Amount_fromn && Actual_amt_no <= Amount_ton) {
-				  System.out.println("Filtered successfully");
-			  }
-			  else {
-				  
-				  System.out.println("Fitler using amount values is not working fine");
-				  clickOnElement(STA_YEARs);
-			  }
-		  	}catch (NumberFormatException e) {
-		  		System.out.println("not a number");
-		  	}
-		}
+				List<MobileElement> elements2 = driver.findElements(By.id("lblAccountBalValue"));
+				for(MobileElement link : elements2)
+				{
+				  String Amt_no = link.getText();
+				  System.out.println("List cheque no: "+Amt_no);
+				  int Amount_fromn = Integer.parseInt(Amount_from);
+				  int Amount_ton = Integer.parseInt(Amount_to);
+				  try {
+					  int Actual_amt_no = Integer.parseInt(Amt_no);
+					  assert Actual_amt_no >= Amount_fromn || Actual_amt_no <= Amount_ton : "Fitler using amount values is not working fine";
+				  	}catch (NumberFormatException e) {
+				  		System.out.println("not a number");
+				  	}
+				}
 		
 		//For Cheque number
-		List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
-		for(MobileElement link : elements)
-		{
-		  String cheq_no = link.getText();
-		  System.out.println("List cheque no: "+cheq_no);
-		  int Actual_cheq_no = Integer.parseInt(cheq_no);
-		  int Cheque_fromn = Integer.parseInt(Cheque_from);
-		  int Cheque_ton = Integer.parseInt(Cheque_to);
-		  if(Actual_cheq_no >= Cheque_fromn && Actual_cheq_no <= Cheque_ton) {
-			  System.out.println("Filtered successfully");
-		  }
-		  else {
-			  
-			  System.out.println("Fitler using Cheque number is not working fine");
-			  clickOnElement(STA_YEARs);
-		  }
-		  
-		}
-		elementExists(CHEQUE_DATE);
-		elementExists(CHEQUE_AMT);
-		elementExists(CHEQUE_STATUS);
-	}
+				List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
+				for(MobileElement link : elements)
+				{
+				  String cheq_no = link.getText();
+				  System.out.println("List cheque no: "+cheq_no);
+				  int Actual_cheq_no = Integer.parseInt(cheq_no);
+				  int Cheque_fromn = Integer.parseInt(Cheque_from);
+				  int Cheque_ton = Integer.parseInt(Cheque_to);
+				  assert Actual_cheq_no >= Cheque_fromn || Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
+				}
+				elementExists(CHEQUE_DATE);
+				elementExists(CHEQUE_AMT);
+				elementExists(CHEQUE_STATUS);
+			}
 	
 	public void Verify_Search_Result_date_and_cheque_Values() {
 		
@@ -261,15 +235,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 				  String Year = Date.substring(6, 8);
 				  int ActualYear = Integer.parseInt(Year);
 				  System.out.println("Actual Year: " + ActualYear);
-				  if(ActualYear<=18 && ActualYear>=15) {
-					  System.out.println("Filtered successfully");
-				  }
-				  else {
-					  
-					  System.out.println("Filter is not working");
-					  clickOnElement(STA_YEARs);
-				  }
-				  
+				  assert ActualYear<=18 && ActualYear>=15 : "Fitler using date is not working fine";
 				}
 				
 		//For Cheque number
@@ -281,15 +247,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 				  int Actual_cheq_no = Integer.parseInt(cheq_no);
 				  int Cheque_fromn = Integer.parseInt(Cheque_from);
 				  int Cheque_ton = Integer.parseInt(Cheque_to);
-				  if(Actual_cheq_no >= Cheque_fromn && Actual_cheq_no <= Cheque_ton) {
-					  System.out.println("Filtered successfully");
-				  }
-				  else {
-					  
-					  System.out.println("Fitler using Cheque number is not working fine");
-					  clickOnElement(STA_YEARs);
-				  }
-				  
+				  assert Actual_cheq_no >= Cheque_fromn || Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
 				}
 				elementExists(CHEQUE_DATE);
 				elementExists(CHEQUE_AMT);
@@ -307,15 +265,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 				  String Year = Date.substring(6, 8);
 				  int ActualYear = Integer.parseInt(Year);
 				  System.out.println("Actual Year: " + ActualYear);
-				  if(ActualYear<=18 && ActualYear>=15) {
-					  System.out.println("Filtered successfully");
-				  }
-				  else {
-					  
-					  System.out.println("Filter is not working");
-					  clickOnElement(STA_YEARs);
-				  }
-				  
+				  assert ActualYear<=18 && ActualYear>=15 : "Fitler using date is not working fine";
 				}
 				
 		//For Amount value filter
@@ -328,14 +278,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 				  int Amount_ton = Integer.parseInt(Amount_to);
 				  try {
 					  int Actual_amt_no = Integer.parseInt(Amt_no);
-					  if(Actual_amt_no >= Amount_fromn && Actual_amt_no <= Amount_ton) {
-						  System.out.println("Filtered successfully");
-					  }
-					  else {
-						  
-						  System.out.println("Fitler using amount values is not working fine");
-						  clickOnElement(STA_YEARs);
-					  }
+					  assert Actual_amt_no >= Amount_fromn || Actual_amt_no <= Amount_ton : "Fitler using amount values is not working fine";
 				  	}catch (NumberFormatException e) {
 				  		System.out.println("not a number");
 				  	}
@@ -356,14 +299,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 			  int Actual_cheq_no = Integer.parseInt(cheq_no);
 			  int Cheque_fromn = Integer.parseInt(Cheque_from);
 			  int Cheque_ton = Integer.parseInt(Cheque_to);
-			  if(Actual_cheq_no >= Cheque_fromn && Actual_cheq_no <= Cheque_ton) {
-				  System.out.println("Filtered successfully");
-			  }
-			  else {
-				  
-				  System.out.println("Fitler using Cheque number is not working fine");
-				  clickOnElement(STA_YEARs);
-			  } 
+			  assert Actual_cheq_no >= Cheque_fromn || Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
 			}
 			
 		//For Amount value filter
@@ -376,14 +312,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 			  int Amount_ton = Integer.parseInt(Amount_to);
 			  try {
 				  int Actual_amt_no = Integer.parseInt(Amt_no);
-				  if(Actual_amt_no >= Amount_fromn && Actual_amt_no <= Amount_ton) {
-					  System.out.println("Filtered successfully");
-				  }
-				  else {
-					  
-					  System.out.println("Fitler using amount values is not working fine");
-					  clickOnElement(STA_YEARs);
-				  }
+				  assert Actual_amt_no >= Amount_fromn || Actual_amt_no <= Amount_ton : "Fitler using amount values is not working fine";
 			  	}catch (NumberFormatException e) {
 			  		System.out.println("not a number");
 			  	}
@@ -394,4 +323,185 @@ public class Cheques_Screen_Pages extends CommonPage{
 		
 	}
 	
+	public void Verify_Select_From_Date_Future() {
+	        LocalDate date = LocalDate.now();
+	        date = date.plusDays(1);
+	        String nextDate = date.toString();
+	        System.out.println(nextDate);
+	        String tommorrow = nextDate.substring(8, 10);
+	        System.out.println(tommorrow);
+	        clickOnElement(START_DATE);
+	        String xpath = "//android.view.View[@text='"+tommorrow+"']"; 
+	        MobileElement tommrw = driver.findElement(By.xpath(xpath));
+	        boolean i = tommrw.isEnabled();
+	        System.out.println("Status of date :"+i);
+	        assert i=true : " Future date is enabled";
+	   
+	}
+	
+	public void Verify_To_Date_Disabled() {
+		clickOnElement(START_DATE);
+		LocalDate date = LocalDate.now();
+        date = date.minusDays(1);
+        String nextDate = date.toString();
+        System.out.println(nextDate);
+        String tommorrow = nextDate.substring(8, 10);
+        System.out.println(tommorrow);
+        String xpath = "//android.view.View[@text='"+tommorrow+"']"; 
+        MobileElement tommrw = driver.findElement(By.xpath(xpath));
+        boolean i = tommrw.isEnabled();
+        System.out.println("Status of date :"+i);
+        assert i=true : "User able to select To date lesser than From date";
+	}
+	
+	public void Add_max_min_inv_Cheque_numbers() {
+		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
+		enterText(CHEQ_FROM, Cheque_to);
+		enterText(CHEQ_TO, Cheque_from);
+		driver.hideKeyboard();
+		clickOnElement(SEARCH_BTN);
+	}
+	
+	public void Ente_incorrect_Cheque_number() {
+		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
+		enterText(CHEQ_FROM, Cheque_from_incorrect);
+		driver.hideKeyboard();
+		clickOnElement(SEARCH_BTN);
+	}
+	
+	public void Select_Only_End_Date() {
+		clickOnElement(END_DATE);
+		clickOnElement(STA_YEAR);
+		clickOnElement(STA_YEAR_PIC);
+		clickOnElement(START_OK);
+	}
+	
+	public void Select_Only_Start_Date() {
+		clickOnElement(START_DATE_ONLY);
+		clickOnElement(STA_YEAR);
+		clickOnElement(STA_YEAR_PIC);
+		clickOnElement(START_OK);
+	}
+	
+	public void Verify_Search_Result_For_End() {
+	List<MobileElement> elements1 = driver.findElements(By.id("lblAccountBal"));
+	for(MobileElement link : elements1)
+	{
+	  String Date = link.getText();
+	  System.out.println("List dates: "+Date);
+	  String Year = Date.substring(6, 8);
+	  int ActualYear = Integer.parseInt(Year);
+	  System.out.println("Actual Year: " + ActualYear);
+	  assert ActualYear<=15 : "Fitler using date is not working fine";
+	}
+	elementExists(CHEQUE_NO);
+	elementExists(CHEQUE_AMT);
+	elementExists(CHEQUE_STATUS);
+	}
+	
+	public void Add_Only_To_Amount_Values() {
+		appiumHelpers.waitForVisibilityOfElement(AMOUNT_TO);
+		enterText(AMOUNT_TO, Amount_to_1);
+		driver.hideKeyboard();
+	}
+	
+	public void Add_Only_From_Amount_Values() {
+		appiumHelpers.waitForVisibilityOfElement(AMOUNT_FROM);
+		enterText(AMOUNT_FROM, Amount_from_1);
+		driver.hideKeyboard();
+	}
+	
+	public void Verify_Search_Result_For_start() {
+		List<MobileElement> elements1 = driver.findElements(By.id("lblAccountBal"));
+		for(MobileElement link : elements1)
+		{
+		  String Date = link.getText();
+		  System.out.println("List dates: "+Date);
+		  String Year = Date.substring(6, 8);
+		  int ActualYear = Integer.parseInt(Year);
+		  System.out.println("Actual Year: " + ActualYear);
+		  assert ActualYear>=17 : "Fitler using date is not working fine";
+		}
+		elementExists(CHEQUE_NO);
+		elementExists(CHEQUE_AMT);
+		elementExists(CHEQUE_STATUS);	
+	}
+	
+	public void Verify_Search_Result_for_to_Amount_Values() {
+		List<MobileElement> elements2 = driver.findElements(By.id("lblAccountBalValue"));
+		for(MobileElement link : elements2)
+		{
+		  String Amt_no = link.getText();
+		  System.out.println("List cheque no: "+Amt_no);
+		  int Amount_ton = Integer.parseInt(Amount_to_1);
+		  try {
+			  int Actual_amt_no = Integer.parseInt(Amt_no);
+			  assert Actual_amt_no <= Amount_ton : "Fitler using amount values is not working fine";
+		  	}catch (NumberFormatException e) {
+		  		System.out.println("not a number");
+		  	}
+		}
+		elementExists(CHEQUE_DATE);
+		elementExists(CHEQUE_NO);
+		elementExists(CHEQUE_STATUS);
+	}
+	
+	public void Verify_Search_Result_for_from_Amount_Values() {
+		List<MobileElement> elements2 = driver.findElements(By.id("lblAccountBalValue"));
+		for(MobileElement link : elements2)
+		{
+		  String Amt_no = link.getText();
+		  System.out.println("List cheque no: "+Amt_no);
+		  int Amount_ton = Integer.parseInt(Amount_from_1);
+		  try {
+			  int Actual_amt_no = Integer.parseInt(Amt_no);
+			  assert Actual_amt_no >= Amount_ton : "Fitler using amount values is not working fine";
+		  	}catch (NumberFormatException e) {
+		  		System.out.println("not a number");
+		  	}
+		}
+		elementExists(CHEQUE_DATE);
+		elementExists(CHEQUE_NO);
+		elementExists(CHEQUE_STATUS);
+	}
+	
+	public void Verify_Search_for_to_Check_Number() {
+		List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
+		for(MobileElement link : elements)
+		{
+		  String cheq_no = link.getText();
+		  System.out.println("List cheque no: "+cheq_no);
+		  int Actual_cheq_no = Integer.parseInt(cheq_no);
+		  int Cheque_ton = Integer.parseInt(Cheque_to_1);
+		  assert Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
+		}
+		elementExists(CHEQUE_DATE);
+		elementExists(CHEQUE_AMT);
+		elementExists(CHEQUE_STATUS);
+	}
+	
+	public void Verify_Search_for_From_Check_Number() {
+		List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
+		for(MobileElement link : elements)
+		{
+		  String cheq_no = link.getText();
+		  System.out.println("List cheque no: "+cheq_no);
+		  int Actual_cheq_no = Integer.parseInt(cheq_no);
+		  int Cheque_ton = Integer.parseInt(Cheque_from_1);
+		  assert Actual_cheq_no >= Cheque_ton : "Fitler using Cheque number is not working fine";
+		}
+		elementExists(CHEQUE_DATE);
+		elementExists(CHEQUE_AMT);
+		elementExists(CHEQUE_STATUS);
+	}
+	
+	public void Tap_On_Specific_Cheque() {
+		appiumHelpers.waitForVisibilityOfElement(CHEQUE_INDIVIDUAL);
+		clickOnElement(CHEQUE_INDIVIDUAL);
+		appiumHelpers.waitForVisibilityOfElement(CHEQ_HD);
+	}
+	
+	public void Verify_cheque_image() {
+		clickOnElement(CHEQ_IMG);
+	}
 }

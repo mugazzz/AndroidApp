@@ -123,7 +123,11 @@ public class Locators {
 	public static final By CHEQUE_AMT = By.id("lblAccountBalValue");
 	public static final By CHEQUE_STATUS = By.id("lblTransactionDate");
 	public static final By CHEQUE_DATE = By.id("lblAccountBal");
+	public static final By CHEQUE_INDIVIDUAL = By.id("flxTransactionsManage");
 	
+	//Cheque Details
+	public static final By CHEQ_HD = By.xpath("//android.widget.TextView[@text='Cheque Details']");
+	public static final By CHEQ_IMG = By.id("imgCheckFront");
 	
 	//Advanced Search
 	public static final By ADV_SER_HD = By.xpath("//android.widget.TextView[@text='Advanced Search']");
@@ -134,6 +138,7 @@ public class Locators {
 	public static final By START_DATE = By.xpath("//android.widget.TextView[@text='mm/dd/yyyy']");
 	public static final By STA_YEAR = By.id("date_picker_header_year");
 	public static final By STA_YEAR_PIC = By.xpath("//android.widget.TextView[@text='2015']");
+	public static final By STA_YEAR_PIC1 = By.xpath("//android.widget.TextView[@text='2017']");
 	public static final By START_OK = By.id("button1");
 	public static final By SEARCH_BTN = By.id("btnSearch");
 	public static final By STA_YEARs = By.id("Filter is not working fine");
@@ -143,6 +148,8 @@ public class Locators {
 	public static final By CHEQ_TO = By.id("txtCheckNumbersTo");
 	public static final By AMOUNT_FROM = By.id("txtAmountFrom");
 	public static final By AMOUNT_TO = By.id("txtAmountTo");
+	public static final By END_DATE = By.id("calEndDate");
+	public static final By START_DATE_ONLY = By.id("calStartDate");
 	
 	
 	//Login Screen

@@ -80,8 +80,13 @@ public class AppStrings {
     
 	//Advanced Search Screen
 	    public static final String Cheque_from = "10";
+	    public static final String Cheque_from_incorrect = "100000";
 	    public static final String Cheque_to = "20";
+	    public static final String Cheque_to_1 = "9";
+	    public static final String Cheque_from_1 = "18";
 	    public static final String Amount_from = "36000";
+	    public static final String Amount_from_1 = "37000";
 	    public static final String Amount_to = "40000";
+	    public static final String Amount_to_1 = "35000";
 
 }
