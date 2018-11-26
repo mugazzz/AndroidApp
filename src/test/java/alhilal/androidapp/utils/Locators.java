@@ -87,8 +87,6 @@ public class Locators {
 	public static final By AREG_HOME_BRANCH_LOCATOR = By.xpath("//android.widget.TextView[@text='أجهزة الصراف الآلي | الفروع']");
 	public static final By AREG_HOME_CONTACT_US = By.xpath("//android.widget.TextView[@text='اتصل بنا']");
 	
-	
-	
 	//SQL Client
 	/*public static final By CONFIGBTN = By.id("fab_new");
 	public static final By SMSIP = By.id("tv_url");
@@ -110,6 +108,9 @@ public class Locators {
 	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My Accounts']");
 	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My accounts']");
 	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
+	public static final By CARD_LABEL = By.xpath("//android.widget.TextView[@text='My Cards']");
+	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='VISA GOLD UJRAH']");
+	
 	
 	//Current Account Screen
 	public static final By HEAD_CHECK = By.id("lblHeading");
@@ -151,6 +152,38 @@ public class Locators {
 	public static final By END_DATE = By.id("calEndDate");
 	public static final By START_DATE_ONLY = By.id("calStartDate");
 	
+	//Cards Detail
+	public static final By CARD_SLIDE = By.id("flxAHBCards");
+	public static final By AVL_CRD_LMT_LB = By.xpath("//android.support.v7.widget.RecyclerView/android.view.ViewGroup[@index='0']/android.widget.TextView[@text='Available Card Limit']");
+	public static final By AVL_CRD_LMT_VL = By.xpath("//android.support.v7.widget.RecyclerView/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By OUT_STANDING_LB = By.xpath("//android.support.v7.widget.RecyclerView/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Total outstanding balance']");
+	public static final By OUT_STANDING_VL = By.xpath("//android.support.v7.widget.RecyclerView/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By CARD_NUMBER = By.id("lblCardNumber");
+	public static final By CARD_HOLD_NAME = By.xpath("//android.support.v4.view.ViewPager[@index='0']/android.widget.ScrollView[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
+	public static final By INFO_BTN = By.id("imgInfo");
+	public static final By BILL_PAYMENT = By.id("btnBillPayment");
+	
+	
+	//Additional Card Details:
+	public static final By ADD_CARD_HD = By.xpath("//android.widget.TextView[@text='Card details']");
+	public static final By CARD_NUM = By.id("lblCurrentAccountValue");
+	public static final By ACC_AMOUNT = By.id("lblAmount");
+	public static final By AVL_CRD_LMT_LB_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@text='Available Card Limit']");
+	public static final By AVL_CRD_LMT_VL_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By OUT_STANDING_LB_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Total outstanding balance']");
+	public static final By OUT_STANDING_VL_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By STAT_BAL_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Statement balance']");
+	public static final By STAT_BAL_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
+	public static final By STAT_DATE_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='2']/android.widget.TextView[@text='Statement date']");
+	public static final By STAT_DATE_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='2']/android.widget.TextView[@index='1']");
+	public static final By MIN_AMT_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='3']/android.widget.TextView[@text='Minimum amount due']");
+	public static final By MIN_AMT_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='3']/android.widget.TextView[@index='1']");
+	public static final By CARD_OWNER_A_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='5']/android.widget.TextView[@text='Card Owner']");
+	public static final By CARD_OWNER_A_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='5']/android.widget.TextView[@index='1']");
+	public static final By CARD_STATUS_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='6']/android.widget.TextView[@text='Card status']");
+	public static final By CARD_STATUS_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='6']/android.widget.TextView[@index='1']");
+	public static final By TOT_CARD_LMT_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='7']/android.widget.TextView[@text='Total card limit']");
+	public static final By TOT_CARD_LMT_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='7']/android.widget.TextView[@index='1']");
 	
 	//Login Screen
 	public static final By LOGIN_PIN_FD = By.id("flxTbxPin");
