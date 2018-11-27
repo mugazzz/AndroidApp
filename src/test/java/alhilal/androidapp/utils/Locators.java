@@ -105,18 +105,24 @@ public class Locators {
 	//Dashboard Screen
 	public static final By DASHBOARD_HEADING = By.id("lblWelcomeBack");
 	public static final By MINIMIZE_CHART = By.id("imgChartSizeToggle");
-	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My Accounts']");
+	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My Finances']");
+	public static final By FINANCES_LABEL = By.xpath("//android.widget.TextView[@text='My Accounts']");
 	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My accounts']");
 	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
+	public static final By ACT_SAVING_ACC = By.xpath("//android.widget.TextView[@text='AE73 0530 0000 2404 1984 011']");
 	public static final By CARD_LABEL = By.xpath("//android.widget.TextView[@text='My Cards']");
 	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='VISA GOLD UJRAH']");
-	
+	public static final By CURRENT_ACC_LST = By.xpath("//android.widget.TextView[@text='Current Account']");
+	public static final By ACT_BALANCE_VAL = By.id("lblAccountBalValue");
+	public static final By GO_BACK = By.id("btnBack");
 	
 	//Current Account Screen
 	public static final By HEAD_CHECK = By.id("lblHeading");
 	public static final By CHEQUE_VIEW = By.xpath("//android.widget.Button[@text='Cheques View']");
 	public static final By HEAD_CHEQUE = By.xpath("//android.widget.TextView[@text='Cheque List']");
 	public static final By IMAGE_INFO =By.id("flxAccounts");
+	public static final By ACCO_NUMBER =By.id("lblAccountNumber");
+	public static final By CARD_BAL =By.id("lblBalanceAmount");
 	
 	//Cheque List
 	public static final By APPLY_FILTER = By.id("imgFilter");
@@ -187,6 +193,25 @@ public class Locators {
 	
 	//Login Screen
 	public static final By LOGIN_PIN_FD = By.id("flxTbxPin");
+	
+	//Account details Screen
+	public static final By ACC_DETAIL = By.xpath("//android.widget.TextView[@text='Account details']");
+	public static final By ACC_AMT = By.id("lblAmount");
+	public static final By IBAN = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@text='IBAN']");
+	public static final By IBANV = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By Account_Number_D = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Account Number']");
+	public static final By Account_Number_D_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
+	public static final By SCodeD = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='2']/android.widget.TextView[@text='SWIFT Code']");
+	public static final By SCodeD_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='2']/android.widget.TextView[@index='1']");
+	public static final By Account_holderD = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='3']/android.widget.TextView[@text='Account holder']");
+	public static final By Account_holderD_v = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='3']/android.widget.TextView[@index='1']");
+	public static final By Account_holder_CIF = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='4']/android.widget.TextView[@text='Account holder CIF']");
+	public static final By Account_holder_CIF_v = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='4']/android.widget.TextView[@index='1']");
+	public static final By Branch = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='5']/android.widget.TextView[@text='Branch']");
+	public static final By BranchV = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='5']/android.widget.TextView[@index='1']");
+	public static final By LINKEDDEBIT = By.id("lblLinkedDebitCards");
+	public static final By LINKD1 = By.xpath("//android.widget.ScrollView[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='3']/android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
+	public static final By LINKD1V = By.xpath("//android.widget.ScrollView[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='3']/android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
 	
 	
 	

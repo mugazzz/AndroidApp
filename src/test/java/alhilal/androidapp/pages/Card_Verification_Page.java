@@ -63,7 +63,7 @@ public class Card_Verification_Page extends CommonPage{
 		  	}
 		appiumHelpers.assertTrue(elementExists(STAT_DATE_LB), "Statement Date is visible");
 		String Statement_Date = driver.findElement(STAT_DATE_FD).getText();
-		assert Statement_Date.length() >=0 : "Statement Date is not working";
+		assert Statement_Date.length() !=0 : "Statement Date is not working";
 		System.out.println("Statement Date: "+Statement_Date);
 		appiumHelpers.assertTrue(elementExists(MIN_AMT_LB), "Minimum Amount is visible");
 		String Minimum_amount_due = driver.findElement(MIN_AMT_FD).getText();
@@ -83,7 +83,7 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.assertTrue(elementExists(CARD_STATUS_LB), "Card Status is visible");
 		String Card_Status = driver.findElement(CARD_STATUS_FD).getText();
 		System.out.println("Card Status: "+Card_Status);
-		assert Card_Status.length() >=0 : "Card Status is not working";
+		assert Card_Status.length() !=0 : "Card Status is not working";
 		appiumHelpers.assertTrue(elementExists(TOT_CARD_LMT_LB), "Total Card Limit is visible");
 		String Total_Card_Limit = driver.findElement(TOT_CARD_LMT_FD).getText();
 		try {
@@ -125,8 +125,8 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		clickOnElement(REG_CUS_NO_LINK);
 		appiumHelpers.waitForVisibilityOfElement(REG_CUS_NO_LB);
-		enterText(REG_CUS_NO_FD, Act_Cust_No_Spec);
-		enterText(REG_SMS_PN_FD, Act_SMS_PN_Spec);
+		enterText(REG_CUS_NO_FD, Act_Cust_No_Spec_Card);
+		enterText(REG_SMS_PN_FD, Act_SMS_PN_Spec_Card);
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
 		String path = System.getProperty("user.dir");

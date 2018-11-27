@@ -42,8 +42,10 @@ public class AppStrings {
 	//Customer Number Registration
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
-	    public static final String Act_Cust_No_Spec = "";
-	    public static final String Act_SMS_PN_Spec = "";
+	    public static final String Act_Cust_No_Spec_Card = "";
+	    public static final String Act_SMS_PN_Spec_Card = "";
+	    public static final String Act_Cust_No_Spec_Acc = "4041984";
+	    public static final String Act_SMS_PN_Spec_Acc = "123456";
 	    public static final String Inact_Cust_No = "4234123";
 	    public static final String Cust_No_with_No_Pin = "6556425";
 	    public static final String Cust_No_with_No_SPin = "2016819";
