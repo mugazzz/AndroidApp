@@ -30,6 +30,11 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 	public void register_using_credit_card_to_create_existing_user_scenario() {
 	  Register_using_Credit_Card();
 	}
+	
+	@Given("^Verify the login check$")
+	public void verify_login_check() {
+		Verify_Login_check();
+	}
 
 	@Then("^Close and relaunch the app$")
 	public void close_and_relaunch_the_app() {
@@ -37,14 +42,24 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 	  driver.launchApp();
 	}
 
-	@Then("^Verify the card section is not displayed in case of no cards$")
+	@Then("^Verify the card section is displayed in case of no cards$")
 	public void verify_the_card_section_is_not_displayed_in_case_of_no_cards() {
 	 Verify_Absence_Card_Section();
 	}
 	
-	@Then("^Verify the Bill payment button is not displayed for specific card statuses$")
+	@Then("^Verify the Bill payment button is displayed for specific card statuses$")
 	public void verify_the_Bill_payment_button_is_not_displayed_for_specific_card_statuses() {
-	 Verify_Absence_Bill_Payment();
+	 Verify_Presence_Bill_Payment();
+	}
+	
+	@Given("^Register the user whose card should not show specific card status$")
+	public void register_the_user_whose_card_should_not_show_specific_card_status() {
+		Register_Specific_user();
+	}
+
+	@Given("^Verify the Bill payment option is not available for the user$")
+	public void verify_the_Bill_payment_option_is_not_available_for_the_user() {
+		Verify_Absence_Bill_Payment();
 	}
 
 }

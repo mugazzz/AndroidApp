@@ -9,7 +9,6 @@ public class SplashScreenSteps extends SplashPage{
 	@Given("^I am launching the fresh app$")
 	public void i_am_launching_the_fresh_app() {
 		VerifySplashscreen();
-		
 	}
 	
 	@Then("^Verify the screen redirected to landing page$")

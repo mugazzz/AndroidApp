@@ -11,6 +11,8 @@ public class AppStrings {
     
     //Credit Card Registration
 	    public static final String Act_Credit_Card_No = "4584610105853560";
+//	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
+//	    public static final String Act_Credit_Card_Pin_Specific = "1234";
 	    public static final String Exp_Credit_Card_No = "4584610162603620";
 	    public static final String Inactive_Credit_Card_No = "4192347816130004";
 	    public static final String Inactive_Credit_Card_Pin = "2345";
@@ -40,6 +42,8 @@ public class AppStrings {
 	//Customer Number Registration
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
+	    public static final String Act_Cust_No_Spec = "";
+	    public static final String Act_SMS_PN_Spec = "";
 	    public static final String Inact_Cust_No = "4234123";
 	    public static final String Cust_No_with_No_Pin = "6556425";
 	    public static final String Cust_No_with_No_SPin = "2016819";
