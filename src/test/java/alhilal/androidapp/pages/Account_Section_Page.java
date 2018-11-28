@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.touch.TouchActions;
 
 import io.appium.java_client.MobileElement;
 
@@ -148,65 +149,172 @@ public class Account_Section_Page extends CommonPage{
 	}
 	
 	public void Register_Specific_user() {
-			driver.resetApp();
-			appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
-			appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
-			clickOnElement(REG_CUS_NO_LINK);
-			appiumHelpers.waitForVisibilityOfElement(REG_CUS_NO_LB);
-			enterText(REG_CUS_NO_FD, Act_Cust_No_Spec_Acc);
-			enterText(REG_SMS_PN_FD, Act_SMS_PN_Spec_Acc);
-			appiumHelpers.waitForVisibilityOfElement(OTP_HD);
-			appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
-			String path = System.getProperty("user.dir");
-			String chromepath = path+"/src/test/build/chromedriver";
-			System.setProperty("webdriver.chrome.driver", chromepath);
-			driver2 = new ChromeDriver();
-			driver2.get(OTPweb);
-			driver2.findElement(By.name("userId")).sendKeys(web_username);
-			driver2.findElement(By.name("password")).sendKeys(web_password);
-			driver2.findElement(By.name("go")).click();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.switchTo().frame(1);
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.switchTo().frame(0);
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.findElement(By.xpath("/html/body/table/tbody/tr[16]/td/div/strong")).click();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.findElement(By.linkText("Reports")).click();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.switchTo().defaultContent();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.switchTo().frame(1);
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.switchTo().frame(1);
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.findElement(By.linkText("Message Statistics")).click();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.findElement(By.name("button")).click();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			driver2.findElement(By.xpath("//td[5]/a")).click();
-			driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			String OTPMSG = driver2.findElement(By.xpath("//tr[2]/td[3]")).getText();
-			System.out.println(OTPMSG);
-			driver2.close();
-			String OTP = OTPMSG.substring(0, 6);
-			System.out.println(OTP);
-			driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			enterText(OPT_FIELD, OTP);
-			if (elementExists(CRE_LOGIN_PIN_LB)) {
-				 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
-				 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
-				 clickOnElement(CRE_LOGIN_PIN_CF);
-			}
-			appiumHelpers.waitForVisibilityOfElement(ALL_SET);
-			appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
-			clickOnElement(SKIP_FINGERPRINT);
-			appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
-			appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
+			Register_Specific_user(Act_Cust_No_Spec_Acc, Act_SMS_PN_Spec_Acc);
 		}
 	
 		public void Verify_Absence_Account_Section() {
-			appiumHelpers.assertFalse(elementExists(ACCOUNT_LABEL), "My Account Section is available");
+			appiumHelpers.assertFalse(elementExists(ACCOUNT_LABEL), "My Account Section is not available");
+		}
+		
+		public void Verify_Absence_Finance_Section() {
+			appiumHelpers.assertFalse(elementExists(FINANCES_LABEL), "My Finance Section is not available");
+		}
+		
+		public void Verify_Absence_Deposit_Section() {
+			appiumHelpers.assertFalse(elementExists(DEPOSIT_LABEL), "My Deposit Section is not available");
+		}
+		
+		public void  Verify_My_Finance() {
+			appiumHelpers.assertTrue(elementExists(FINANCES_LABEL), "My Finances Section is available");
+		}
+		
+		public void  Verify_My_Deposit() {
+			appiumHelpers.assertTrue(elementExists(DEPOSIT_LABEL), "My Deposit Section is available");
+		}
+		
+		
+		public void Navigate_To_Finance_Details() {
+			clickOnElement(MY_FINANCE_CARD);
+		}
+		
+		public void Verify_Finance_Details() {
+			String Fin_Type = driver.findElement(FIN_TYPE).getText();
+			assert Fin_Type.length() >=0: "Finance Type label is visible";
+			String Fin_Acc_Num = driver.findElement(FIN_ACC_NUM).getText();
+			//String Fin_Acc_Numc = Fin_Acc_Num.substring(0, Fin_Acc_Num.length()-4);
+			try {
+				int Fin_Acc_Numi = Integer.parseInt(Fin_Acc_Num);
+				System.out.println("Account Balance: "+ Fin_Acc_Num);
+				assert Fin_Acc_Numi >=0: "Account Balance is not working";
+			  	}
+			catch (NumberFormatException e) {
+			  		System.out.println("not a number");
+			}
+			String Fin_Out_LB = driver.findElement(FIN_OUT_BAL_LB).getText();
+			assert Fin_Out_LB.length() >= 0: "Finance Outstanding Balance Label is visible";
+			String Fin_Bal_Amt = driver.findElement(FIN_OUT_BAL_VL).getText();
+			String FFin_Bal_Amtc = Fin_Bal_Amt.substring(0, Fin_Bal_Amt.length()-4);
+			try {
+				float FFin_Bal_Amti = Float.parseFloat(FFin_Bal_Amtc);
+				System.out.println("Finance OutStand Balance amount: "+ FFin_Bal_Amti);
+				assert FFin_Bal_Amti >=0: "Finance OutStand Balance amount is not working";
+			  	}
+			catch (NumberFormatException e) {
+			  		System.out.println("not a number");
+			}
+			appiumHelpers.assertTrue(elementExists(NXT_PY_AM_LB), "Next payment amount is visible");
+			String Next_payment_amount = driver.findElement(NXT_PY_AM_VL).getText();
+			System.out.println("Next payment amount: "+Next_payment_amount);
+			String Next_payment_amountc = Next_payment_amount.substring(0, Next_payment_amount.length()-4);
+			try {
+				float Next_payment_amounti = Float.parseFloat(Next_payment_amountc);
+				System.out.println("Next payment amount: "+ Next_payment_amounti);
+				assert Next_payment_amounti >=0: "Next payment amount is not working";
+			  	}
+			catch (NumberFormatException e) {
+		  		System.out.println("not a number");
+				}
+			appiumHelpers.assertTrue(elementExists(NXT_PY_DATE_LB), "Next payment date is visible");
+			String Next_payment_date = driver.findElement(NXT_PY_DATE_VL).getText();
+			System.out.println("Next payment date is: "+Next_payment_date);
+			assert Next_payment_date.length() >=0: "Next payment date is visible";
+			
+		}
+		
+		public void Verify_Additional_Details() {
+			String Fin_Type = driver.findElement(FIN_TYPE).getText();
+			String Fin_Bal_Amt = driver.findElement(FIN_OUT_BAL_VL).getText();
+			String Next_payment_amount = driver.findElement(NXT_PY_AM_VL).getText();
+			String Next_payment_date = driver.findElement(NXT_PY_DATE_VL).getText();
+			String Fin_Acc_Num = driver.findElement(FIN_ACC_NUM).getText();
+			clickOnElement(INFO_BTN);
+			appiumHelpers.waitForVisibilityOfElement(FIN_DETAIL);
+			String Fin_TypeA = driver.findElement(FIN_TYPE_A).getText();
+			assert Fin_TypeA.equals(Fin_Type);
+			String Fin_Bal_AmtA = driver.findElement(FIN_OUT_BAL_VL_A).getText();
+			assert Fin_Bal_AmtA.equals(Fin_Bal_Amt);
+			appiumHelpers.assertTrue(elementExists(FIN_NXT_PY_AMT_LB), "Next Payment amount is visible");
+			String Next_Payment_Amt = driver.findElement(FIN_NXT_PY_AMT_FD).getText();
+			System.out.println("Next Payment Amt value: "+Next_Payment_Amt);
+			assert Next_payment_amount.equals(Next_Payment_Amt) : "Next Payment amount is not equal";
+			appiumHelpers.assertTrue(elementExists(FIN_NXT_PY_DT_LB), "Next Payment Date is visible");
+			String Next_Payment_Date = driver.findElement(FIN_NXT_PY_DT_FD).getText();
+			System.out.println("Next Payment Date value: "+Next_Payment_Date);
+			assert Next_Payment_Date.equals(Next_payment_date) : "Next Payment date is not equal";
+			appiumHelpers.assertTrue(elementExists(FIN_RM_PY_LB), "Remaining payments is visible");
+			String Remaining_payments = driver.findElement(FIN_RM_PY_FD).getText();
+			System.out.println("Remaining payments value: "+Remaining_payments);
+			try {
+				float Remaining_paymentsi = Float.parseFloat(Remaining_payments);
+				System.out.println("Remaining payments: "+ Remaining_paymentsi);
+				assert Remaining_paymentsi >=0: "Remaining payments is not working";
+			  	}
+			catch (NumberFormatException e) {
+		  		System.out.println("not a number");
+				}
+			appiumHelpers.assertTrue(elementExists(FIN_RE_PY_AC_LB), "Repayment account is visible");
+			String Repayment_account = driver.findElement(FIN_RE_PY_AC_FD).getText();
+			System.out.println("Next Payment Date value: "+Repayment_account);
+			try {
+				int Repayment_accounti = Integer.parseInt(Repayment_account);
+				System.out.println("Remaining payments: "+ Repayment_accounti);
+				assert Repayment_accounti >=0: "Remaining payments is not working";
+			  	}
+			catch (NumberFormatException e) {
+		  		System.out.println("not a number");
+				}
+			appiumHelpers.assertTrue(elementExists(FIN_CON_NM_LB), "Contract number is visible");
+			String Contract_number = driver.findElement(FIN_CON_NM_FD).getText();
+			System.out.println("Contract number value: "+Contract_number);
+			assert Contract_number.equals(Fin_Acc_Num): "Contract number is not equal";
+			appiumHelpers.assertTrue(elementExists(FIN_CON_DT_LB), "Contract number is visible");
+			String Contract_date = driver.findElement(FIN_CON_DT_FD).getText();
+			System.out.println("Contract date value: "+Contract_date);
+			assert Contract_date.length() >=0 : "Contract number is not equal";
+			appiumHelpers.assertTrue(elementExists(FIN_OV_DU_LB), "Overdue amount is visible");
+			String Overdue_amount = driver.findElement(FIN_OV_DU_FD).getText();
+			System.out.println("Overdue amount: "+Overdue_amount);
+			assert Overdue_amount.length() >=0 || Overdue_amount.equals("-") : "Overdue amount is not equal";
+		}
+		
+		public void Register_Specific_user_No_Finance() {
+			Register_Specific_user(Act_Cust_No_Spec_Fin, Act_Cust_No_Spec_Fin);
+		}
+		
+		
+		public void Register_User_Deposit_Account() {
+			Register_Specific_user(Act_Cust_No_Spec_Dep, Act_SMS_PN_Spec_Dep);
+		}
+		
+		public void Navigate_To_Deposit_Details() {
+			clickOnElement(DEPOSIT_ACC);
+			appiumHelpers.waitForVisibilityOfElement(AACCOUNT_LABEL);
+			
+		}
+		
+		public void Verify_Deposit_Details() {
+			String Deposit_Type = driver.findElement(DEPOSIT_TYPE).getText();
+			assert Deposit_Type.length() >=0: "Deposit Type label is visible";
+			String Deposit_Ac_No = driver.findElement(DEPOSIT_AC_NO).getText();
+			assert Deposit_Ac_No.length() >=0: "Deposit Account Number is working fine";
+			String Deposit_Ac_Bl_Lb = driver.findElement(DEPOSIT_AV_BAL_LB).getText();
+			assert Deposit_Ac_Bl_Lb.length() >=0: "Deposit Available Balance Label is visible";
+			String Deposit_Ac_Bl_Amt = driver.findElement(DEPOSIT_AV_BAL_AMT).getText();
+			assert Deposit_Ac_Bl_Amt.length() >=0: "Deposit Available Balance amount is working";
+			String Deposit_Exp_Pro = driver.findElement(DEP_EPR_LB).getText();
+			assert Deposit_Exp_Pro.length() >=0: "Expected Profite Rate is visible";
+			String Deposit_Tenure = driver.findElement(DEP_TN_LB).getText();
+			assert Deposit_Tenure.length() >=0: "Tenure label is visible";
+			String Deposit_Tenure_Fd = driver.findElement(DEP_TN_FD).getText();
+			assert Deposit_Tenure_Fd.length() >=0: "Tenure value is not Empty";
+			String Maturity_date = driver.findElement(DEP_MT_DT_LB).getText();
+			assert Maturity_date.length() >=0: "Maturity date label is visible";
+			String Maturity_date_fd = driver.findElement(DEP_MT_DT_FD).getText();
+			assert Maturity_date_fd.length() >=0: "Maturity date value is not empty";
+			String Profit_account_number = driver.findElement(DEP_PF_AC_LB).getText();
+			assert Profit_account_number.length() >=0: "Profit account number label is visible";
+			String Profit_account_number_fd = driver.findElement(DEP_PF_AC_FD).getText();
+			assert Profit_account_number_fd.length() >=0: "Profit account number is not empty";
 		}
 
 }

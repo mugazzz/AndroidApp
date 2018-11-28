@@ -17,7 +17,9 @@ Scenario: Able to view all my operative accounts and their details
 
 @account_section1 @TC_Accounts_25_1
 Scenario: Able to view all my finance accounts and their details
-	Given Verify the login check
+	Given Register using credit card to create existing user scenario
+	Then Close and relaunch the app
+	Given Verify the screen redirected to landing page
 	Then Enter the Login PIN
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on Chart Size toggle button to mimize the chart
@@ -34,4 +36,36 @@ Scenario: Able to view all my finance accounts and their details
 #	Then Enter the Login PIN
 #	And Verify the user redirected to Dashboard screen successfully
 #	Then Tap on Chart Size toggle button to mimize the chart
-#	Then Verify the account section is displayed in case of no accounts
+	Then Verify the account section is displayed in case of no accounts
+
+@account_section3 @TC_Accounts_25_2
+Scenario: Finance account section is not displayed in case of no accounts
+	Given Register the user who doesn't have' Finance account section
+	Then Close and relaunch the app
+	Given Verify the screen redirected to landing page
+	Then Enter the Login PIN
+	And Verify the user redirected to Dashboard screen successfully
+	Then Tap on Chart Size toggle button to mimize the chart
+	Then Verify the finance section is displayed in case of no accounts
+	
+@account_section4 @TC_Accounts_26_1
+Scenario: Able to view all my Deposit accounts and their details
+	Given Register the user who have Deposit account section
+	Then Close and relaunch the app
+	Given Verify the screen redirected to landing page
+	Then Enter the Login PIN
+	And Verify the user redirected to Dashboard screen successfully
+	Then Tap on Chart Size toggle button to mimize the chart
+	Then Verify my deposits is availble for the user
+	And Tap on any deposit account and navigate to deposit detail screen
+	Then Verify the deposit details for user
+	
+@account_section5 @TC_Accounts_26_2
+Scenario: Deposit accounts section is not displayed in case of no accounts
+	Given Register the user who doesn't have' Finance account section
+	Then Close and relaunch the app
+	Given Verify the screen redirected to landing page
+	Then Enter the Login PIN
+	And Verify the user redirected to Dashboard screen successfully
+	Then Tap on Chart Size toggle button to mimize the chart
+	Then Verify the deposit section is not displayed in case of no accounts
