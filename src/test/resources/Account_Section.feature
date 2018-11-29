@@ -1,4 +1,4 @@
-@account_section
+@account_section @sprint3
 Feature: Account section verificatio
 
 @account_section0 @TC_Accounts_24_1 
@@ -36,7 +36,7 @@ Scenario: Able to view all my finance accounts and their details
 #	Then Enter the Login PIN
 #	And Verify the user redirected to Dashboard screen successfully
 #	Then Tap on Chart Size toggle button to mimize the chart
-	Then Verify the account section is displayed in case of no accounts
+#	Then Verify the account section is displayed in case of no accounts
 
 @account_section3 @TC_Accounts_25_2
 Scenario: Finance account section is not displayed in case of no accounts

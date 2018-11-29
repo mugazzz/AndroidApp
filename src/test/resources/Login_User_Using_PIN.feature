@@ -1,4 +1,4 @@
-@login_user
+@login_user @sprint1_2
 Feature: Existing user mobile banking PIN to login
 I should be able to use my mobile banking PIN to login
 

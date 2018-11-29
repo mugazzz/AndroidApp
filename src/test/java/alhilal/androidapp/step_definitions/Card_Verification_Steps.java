@@ -54,12 +54,17 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 	
 	@Given("^Register the user whose card should not show specific card status$")
 	public void register_the_user_whose_card_should_not_show_specific_card_status() {
-		Register_Specific_user();
+		Register_Specific_user_no_bill_pay();
 	}
 
 	@Given("^Verify the Bill payment option is not available for the user$")
 	public void verify_the_Bill_payment_option_is_not_available_for_the_user() {
 		Verify_Absence_Bill_Payment();
+	}
+	
+	@Given("^Register the user who doesnot have card account$")
+	public void register_the_user_who_doesnot_have_card_account() {
+		Register_Specific_user();
 	}
 
 }

@@ -1,4 +1,4 @@
-@non_reg 
+@non_reg @sprint1_2
 Feature: Home Screen - Non Registered users
 
 @non_reg0 @reset

@@ -1,4 +1,4 @@
-@res_pin_CIF_TPIN
+@res_pin_CIF_TPIN @sprint1_2
 Feature: Existing registered user - Reset Pin validation using my CIF and TPIN
 I should be able to reset my PIN by verifying myself using my CIF number and TPIN
 

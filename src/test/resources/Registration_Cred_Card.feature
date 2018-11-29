@@ -1,4 +1,4 @@
-@reg_cred_card 
+@reg_cred_card @sprint1_2
 Feature: Registration process using Credit Card
 I should be able to register using my Credit card and Credit card pin
 

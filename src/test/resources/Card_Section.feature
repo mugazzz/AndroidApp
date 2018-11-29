@@ -1,4 +1,4 @@
-@card_section
+@card_section @sprint3
 Feature: Card Section Verification
 
 @card_section1 @TC_Cards_27_1 @reset
@@ -26,7 +26,7 @@ Scenario: Bill payment from cards should show for specific card statuses
 
 @card_section3 @TC_Cards_27_2 
 Scenario: Cards section is not displayed  in case of no cards
-	Given Register using credit card to create existing user scenario
+	Given Register the user who doesnot have card account
 	Then Close and relaunch the app
 	Given Verify the screen redirected to landing page
 	Then Enter the Login PIN
@@ -34,10 +34,10 @@ Scenario: Cards section is not displayed  in case of no cards
 	Then Tap on Chart Size toggle button to mimize the chart
 	Then Verify the card section is displayed in case of no cards
 
-#@card_section4 @TC_Cards_27_3 @reset
-#Scenario: Bill payment from cards should not show for specific card statuses
-#	Given Register the user whose card should not show specific card status
-#	Then Tap on Chart Size toggle button to mimize the chart
-#	And Check the My Cards section is available for user
-#	Then Tap on specific card and navigate to card details screen
-#	And Verify the Bill payment option is not available for the user
+@card_section4 @TC_Cards_27_3
+Scenario: Bill payment from cards should not show for specific card statuses
+	Given Register the user whose card should not show specific card status
+	Then Tap on Chart Size toggle button to mimize the chart
+	And Check the My Cards section is available for user
+	Then Tap on specific card and navigate to card details screen
+	And Verify the Bill payment option is not available for the user

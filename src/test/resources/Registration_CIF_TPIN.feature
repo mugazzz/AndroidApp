@@ -1,4 +1,4 @@
-@reg_cif_tpin @reset
+@reg_cif_tpin @reset @sprint1_2
 Feature: Registration using CIF and TPIN
 I should be able to register using my CIF number & TPIN
 

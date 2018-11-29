@@ -1,4 +1,4 @@
-@ex_user_res_pin_use_CC
+@ex_user_res_pin_use_CC @sprint1_2
 Feature: Existing registered user - Reset Pin validation using Credit Card.
 I should be able to reset my PIN by verifying myself using my Credit Card and Credit Card pin
 

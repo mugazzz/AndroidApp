@@ -1,4 +1,4 @@
-@reg_debit_card 
+@reg_debit_card @sprint1_2
 Feature: Registration process using Debit Card
 I should be able to register using my Debit Card and Debit Card pin
 
