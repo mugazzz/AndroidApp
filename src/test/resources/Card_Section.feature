@@ -1,7 +1,7 @@
 @card_section @sprint3
 Feature: Card Section Verification
 
-@card_section1 @TC_Cards_27_1 @reset
+@card_section1 @TC_Cards_27_1
 Scenario: Able to view all my cards and their details
 	Given Verify the login check
 	Then Close and relaunch the app

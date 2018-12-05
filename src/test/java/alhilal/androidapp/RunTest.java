@@ -13,16 +13,16 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 		features="src/test/resources", tags="@sprint3")
 
 public class RunTest{
-private static AppiumDriverLocalService service;
-
-@BeforeClass
-public static void startAppiumServer() {
-    service = AppiumDriverLocalService.buildDefaultService();
-    service.start();
-}
-
-@AfterClass
-public static void stopAppiumServer() {
-    service.stop();
-}
+//private static AppiumDriverLocalService service;
+//
+//@BeforeClass
+//public static void startAppiumServer() {
+//    service = AppiumDriverLocalService.buildDefaultService();
+//    service.start();
+//}
+//
+//@AfterClass
+//public static void stopAppiumServer() {
+//    service.stop();
+//}
 }
