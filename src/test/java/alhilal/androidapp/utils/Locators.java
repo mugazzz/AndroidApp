@@ -118,6 +118,7 @@ public class Locators {
 	public static final By MY_FINANCE_CARD = By.xpath("//android.widget.TextView[@text='Goods Murabaha']");
 	public static final By DEPOSIT_LABEL = By.xpath("//android.widget.TextView[@text='My Deposits']");
 	public static final By DEPOSIT_ACC = By.xpath("//android.widget.TextView[@text='One Year Term Deposit']");
+	public static final By ACT_CH = By.id("segAccounts_1_6_flxAccountsNoImage_flxMain_lblBankName");
 	
 	//Current Account Screen
 	public static final By HEAD_CHECK = By.id("lblHeading");

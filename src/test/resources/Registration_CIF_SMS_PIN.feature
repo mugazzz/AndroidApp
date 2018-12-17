@@ -1,8 +1,8 @@
-@reg_cif_spin @sprint1_2
+@reg_cif_spin @sprint1_2 @reset
 Feature: Registration using CIF number and SPIN number
 I should be able to register using my CIF Number & SMS Pin
 
-@reg_cif_spin0 @reset
+@reg_cif_spin0
 Scenario: Register using CIF number & SMS PIN - Successful Registration
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen

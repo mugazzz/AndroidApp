@@ -1,23 +1,9 @@
-@cheques_screen @sprint3
+@cheques_screen @sprint3 @reset
 Feature: Able to view all my cheques
-
-@reset @cheques_screen0 @ignore
-Scenario: Register the user using CIF number and SMS to create existing user environment
-	Given Verify the screen redirected to landing page
-	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
-	And Tap on T-PIN tab to enter T-PIN
-	Then Enter the valid T-PIN
-	And Tap on Next button
-	Then Verify the card details are validated on fly and navigate to OTP screen
-	Then Get the OTP from the third party app and enter the OTP
-	And Confirm the screen navigates to you are all set! screen
-	Then Tap on Skip without Enable the Fingerprints button and verify the screen redirects to Dashboard screen
 
 @TC_Cheques_32_1 @cheques_screen1
 Scenario: Able to view all my cheques - Using Dates filter
 	Given Verify the login check
-	Then Close and relaunch the app
 	Given Verify the screen redirected to landing page
 	Then Enter the Login PIN
 	And Verify the user redirected to Dashboard screen successfully

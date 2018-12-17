@@ -22,6 +22,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 	}
 	
 	public void Tap_Current_Account() throws InterruptedException {
+		scrollDown(ACT_SAVING_ACC);
 		appiumHelpers.waitForVisibilityOfElement(ACT_CURRENT_ACC);
 		clickOnElement(ACT_CURRENT_ACC);
 	}

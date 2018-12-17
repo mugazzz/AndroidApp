@@ -33,12 +33,12 @@ public class CommonPage extends ConfigDriver {
     }
 
     public void scrollDown(By locator) {
-        MobileElement slider = driver.findElement(locator);
-        Dimension size = slider.getSize();
-        TouchAction scroll = new TouchAction(driver).press(ElementOption.element(slider, size.width / 2, size.height / 2 + size.height / 6))
-                .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(5)))
-                .moveTo(ElementOption.element(slider, size.width / 2, size.height / 2)).release();
-        scroll.perform();
+    	 MobileElement slider = driver.findElement(locator);
+         Dimension size = slider.getSize();
+         TouchAction scroll = new TouchAction(driver).press(ElementOption.element(slider, size.width / 2, -(size.height / 2 + size.height / 6)))
+                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(5)))
+                 .moveTo(ElementOption.element(slider, 20, -190)).release();
+         scroll.perform();
     }
 
     public void navigateBack() {

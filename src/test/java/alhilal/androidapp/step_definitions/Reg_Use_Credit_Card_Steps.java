@@ -80,7 +80,7 @@ public class Reg_Use_Credit_Card_Steps extends Reg_Use_Credit_Card_Page {
 		
 		@Then("^Verify the validation for Card pin fails$")
 		public void verify_the_validation_for_Card_pin_fails() {
-			Verify_Validation_Message(Pin_notSet_notActive_Validation_Message);
+			Verify_Validation_Message(Pin_notSet_notActive_Validation_Message1);
 		}
 
 		
