@@ -6,6 +6,8 @@ import static alhilal.androidapp.utils.Locators.*;
 public class Card_Verification_Page extends CommonPage{
 
 	public void Check_For_MyCards() {
+		scrollDown(ACT_SAVING_ACC1);
+		scrollDown(CARD_LABEL);
 		appiumHelpers.waitForVisibilityOfElement(CARD_LABEL);
 		appiumHelpers.assertTrue(elementExists(CARD_LABEL), "Is available");
 	}
@@ -97,6 +99,8 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
 			 Register_Specific_user(Act_Cust_No, Act_SMS_PN);
+			 driver.closeApp();
+			 driver.launchApp();
 		 }
 		 else {
 			 System.out.println("User already logged in");

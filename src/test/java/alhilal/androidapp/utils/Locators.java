@@ -110,6 +110,7 @@ public class Locators {
 	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My accounts']");
 	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
 	public static final By ACT_SAVING_ACC = By.xpath("//android.widget.TextView[@text='AE73 0530 0000 2404 1984 011']");
+	public static final By ACT_SAVING_ACC1 = By.xpath("//android.widget.TextView[@text='AE68 0530 0000 2404 1984 004']");
 	public static final By CARD_LABEL = By.xpath("//android.widget.TextView[@text='My Cards']");
 	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='VISA GOLD UJRAH']");
 	public static final By CURRENT_ACC_LST = By.xpath("//android.widget.TextView[@text='Current Account']");

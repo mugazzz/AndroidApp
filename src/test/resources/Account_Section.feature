@@ -4,7 +4,6 @@ Feature: Account section verificatio
 @account_section0 @TC_Accounts_24_1 
 Scenario: Able to view all my operative accounts and their details
 	Given Verify the login check
-	Then Close and relaunch the app
 	Given Verify the screen redirected to landing page
 	Then Enter the Login PIN
 	And Verify the user redirected to Dashboard screen successfully
