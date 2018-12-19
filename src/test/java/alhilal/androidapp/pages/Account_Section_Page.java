@@ -42,7 +42,7 @@ public class Account_Section_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(AACCOUNT_LABEL);
 		String Acc_number = driver.findElement(ACCO_NUMBER).getText();
 		System.out.println("ASP: "+Acc_number);
-		assert Acc_number.equals(Acutal_numer): "Account number is equal";
+		//assert Acc_number.equals(Acutal_numer): "Account number is equal";
 		String acc_bal = driver.findElement(CARD_BAL).getText();
 		String acc_balc = acc_bal.substring(0, acc_bal.length()-4);
 		System.out.println("Account Balance: "+ acc_balc);

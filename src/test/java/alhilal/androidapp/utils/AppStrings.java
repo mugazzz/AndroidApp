@@ -50,7 +50,7 @@ public class AppStrings {
 	    public static final String Act_SMS_PN_Spec_Acc = "123456";
 	    public static final String Act_Cust_No_Spec_Dep = "6902744";
 	    public static final String Act_SMS_PN_Spec_Dep = "123456";
-	    public static final String Act_Cust_No_Spec_Fin = "5238333";
+	    public static final String Act_Cust_No_Spec_Fin = "4041984";
 	    public static final String Act_SMS_PN_No_Spec_Fin = "123456";
 	    public static final String Inact_Cust_No = "4234123";
 	    public static final String Cust_No_with_No_Pin = "6556425";

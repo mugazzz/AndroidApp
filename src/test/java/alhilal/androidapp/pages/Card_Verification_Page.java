@@ -120,7 +120,7 @@ public class Card_Verification_Page extends CommonPage{
 	}
 	
 	public void Register_Specific_user() {
-		Register_Specific_user(Act_Cust_No_Spec_Card, Act_SMS_PN_Spec_Card);
+		Register_using_Credit_Card();
 	}
 	
 	public void Register_Specific_user_no_bill_pay() {
