@@ -203,5 +203,36 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
 		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
+    
+    public void Register_Specific_user_Bio(String Act_Cust_No_Spec, String Act_SMS_PN_No_Spec) {
+		driver.resetApp();
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		clickOnElement(REG_CUS_NO_LINK);
+		appiumHelpers.waitForVisibilityOfElement(REG_CUS_NO_LB);
+		enterText(REG_CUS_NO_FD, Act_Cust_No_Spec);
+		enterText(REG_SMS_PN_FD, Act_SMS_PN_No_Spec);
+		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
+		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
+		OTP();
+		if(elemenDoesnotExists(ALL_SET)){
+			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+			clickOnElement(RESEND_OTP);
+			OTP();	
+		}
+		}
+			if(elementExists(CRE_LOGIN_PIN_LB)) {
+			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+			 appiumHelpers.waitForVisibilityOfElement(CRE_LOGIN_REPIN_FD);
+			 clickOnElement(CRE_LOGIN_REPIN_FD);
+			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+			 clickOnElement(CRE_LOGIN_PIN_CF);
+		}
+		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+		clickOnElement(ENABLE_FINGERPRINTS);
+		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
+		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
+	}
 
 }

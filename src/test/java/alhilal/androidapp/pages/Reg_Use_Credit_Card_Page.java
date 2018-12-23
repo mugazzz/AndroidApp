@@ -83,43 +83,13 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	}
 	
 	public void Third_PartyApp() {
-		String path = System.getProperty("user.dir");
-		String chromepath = path+"/src/test/build/chromedriver";
-		System.setProperty("webdriver.chrome.driver", chromepath);
-		driver2 = new ChromeDriver();
-		driver2.get(OTPweb);
-		driver2.findElement(By.name("userId")).sendKeys(web_username);
-		driver2.findElement(By.name("password")).sendKeys(web_password);
-		driver2.findElement(By.name("go")).click();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.switchTo().frame(1);
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.switchTo().frame(0);
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.findElement(By.xpath("/html/body/table/tbody/tr[16]/td/div/strong")).click();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.findElement(By.linkText("Reports")).click();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.switchTo().defaultContent();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.switchTo().frame(1);
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.switchTo().frame(1);
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.findElement(By.linkText("Message Statistics")).click();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.findElement(By.name("button")).click();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.findElement(By.xpath("//td[5]/a")).click();
-		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		String OTPMSG = driver2.findElement(By.xpath("//tr[2]/td[3]")).getText();
-		System.out.println(OTPMSG);
-		driver2.close();
-		String OTP = OTPMSG.substring(0, 6);
-		System.out.println(OTP);
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		enterText(OPT_FIELD, OTP);
-		
+		OTP();
+		if(elemenDoesnotExists(ALL_SET)){
+			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+			clickOnElement(RESEND_OTP);
+			OTP();	
+		}
+		}
 		
 		/*driver.runAppInBackground(Duration.ofSeconds(3));
 		DesiredCapabilities capabilities1 = new DesiredCapabilities();
@@ -167,6 +137,15 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 		String OTP = TotalKey.substring(55, 62);
 		System.out.println(OTP); */
 		
+	
+	}
+	
+	public void Third_PartyApp1() {
+		OTP();
+		if(elemenDoesnotExists(SUCCESS_PAGE)){
+			clickOnElement(RESEND_OTP);
+			OTP();	
+		}
 	
 	}
 	

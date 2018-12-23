@@ -11,6 +11,12 @@ public class Login_Using_PIN_Steps extends Login_Using_Pin_Page{
 	public void enter_the_Login_PIN() {
 	  Enter_Login_Pin();
 	}
+	
+	@Then("^Enter the Login PIN1$")
+	public void enter_the_Login_PIN1() {
+		clickOnElement(FINGERPRINTS_POPUP_CANCEL);
+		Enter_Login_Pin();
+	}
 
 	@Then("^Verify the user redirected to Dashboard screen successfully$")
 	public void verify_the_user_redirected_to_Dashboard_screen_successfully() {

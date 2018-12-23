@@ -98,9 +98,21 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
-			 Register_Specific_user(Act_Cust_No, Act_SMS_PN);
+			 //Register_Specific_user(Act_Cust_No, Act_SMS_PN);
+			 Register_using_Credit_Card();
 			 driver.closeApp();
 			 driver.launchApp();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_Bio() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user_Bio(Act_Cust_No, Act_SMS_PN);
 		 }
 		 else {
 			 System.out.println("User already logged in");

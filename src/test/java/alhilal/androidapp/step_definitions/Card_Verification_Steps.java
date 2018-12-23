@@ -35,6 +35,11 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 	public void verify_login_check() {
 		Verify_Login_check();
 	}
+	
+	@Given("^Verify the login check with Bio$")
+	public void verify_login_check_Bio() {
+		Verify_Login_check_Bio();
+	}
 
 	@Then("^Close and relaunch the app$")
 	public void close_and_relaunch_the_app() {

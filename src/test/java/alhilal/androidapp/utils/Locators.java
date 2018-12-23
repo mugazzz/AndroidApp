@@ -120,6 +120,7 @@ public class Locators {
 	public static final By DEPOSIT_LABEL = By.xpath("//android.widget.TextView[@text='My Deposits']");
 	public static final By DEPOSIT_ACC = By.xpath("//android.widget.TextView[@text='One Year Term Deposit']");
 	public static final By ACT_CH = By.id("segAccounts_1_6_flxAccountsNoImage_flxMain_lblBankName");
+	public static final By TRANF_TAB = By.id("flxTransfer");
 	
 	//Current Account Screen
 	public static final By HEAD_CHECK = By.id("lblHeading");
@@ -261,5 +262,35 @@ public class Locators {
 	public static final By DEP_MT_DT_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
 	public static final By DEP_PF_AC_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='4']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
 	public static final By DEP_PF_AC_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='4']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	
+	
+	//Tranfers
+	public static final By TRANF_TO_OTHERS = By.id("lblPayAPerson");
+	public static final By ADD_BENIF = By.id("lblAddBeneficiary");
+	public static final By OTHER_BANK = By.id("lblOtherBank");
+	public static final By ENT_IBAN = By.id("tbxIban");
+	public static final By NXT_BTN = By.id("btnNext");
+	public static final By FUL_NAME = By.id("tbxFullName");
+	public static final By NICK_NAME = By.id("tbxNickName");
+	public static final By BEN_NAME = By.id("lblBenName");
+	public static final By BEN_NAME_DATA = By.id("lblBenNameData");
+	public static final By CONT_DATA = By.id("lblCountryData");
+	public static final By ACC_NUMBER = By.id("lblAccount");
+	public static final By BANK_DATA = By.id("lblBankNameData");
+	public static final By BRANCH_DATA = By.id("lblBranchData");
+	public static final By NICK_DATA = By.id("lblNickNameData");
+	public static final By EDIT_BEN = By.id("btnEdit");
+	public static final By SUCCESS_PAGE = By.id("SucessPage");
+	public static final By MAKE_TRANSFER = By.id("btnConfirm");
+	public static final By GOTOACC = By.id("lblNavigate");
+	public static final By ACCANDSWIFT = By.id("btnAccountNumberAndSwift");
+	public static final By ACC_NUM = By.id("tbxAccountNumber");
+	public static final By SWIF_COD = By.id("tbxSwiftCode");
+	public static final By CONT_HD = By.id("lblABCDCodeHeading");
+	public static final By CONT_COD = By.id("tbxABCDCode");
+	public static final By CONT_SKIP = By.id("btnNext");
+	
+	
+	
 	
 }

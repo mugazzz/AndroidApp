@@ -10,6 +10,7 @@ public class Login_Using_Pin_Page extends CommonPage{
 		enterText(LOGIN_PIN_FD, Enter_Pin);
 	}
 	
+	
 	public void Verify_Dashboard() {
 	appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
 	appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");

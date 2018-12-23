@@ -3,7 +3,7 @@ package alhilal.androidapp.utils;
 public class AppStrings {
 	
 	 //Waits
-	    public static final int IMPLICIT_WAIT_TIME = 30;
+	    public static final int IMPLICIT_WAIT_TIME = 12000;
 	    
 	    public static final String NATIVE_CONTEXT = "NATIVE_APP";
 	    public static final String customerNo = "1234567";
@@ -101,5 +101,23 @@ public class AppStrings {
 	    public static final String Amount_from_1 = "37000";
 	    public static final String Amount_to = "40000";
 	    public static final String Amount_to_1 = "35000";
+	    
+	    
+	//Transfers section
+	    public static final String iban = "GB85NWBK60214774249150";
+	    public static final String iban1 = "GB85 NWBK 6021 4774 2491 50";
+	    public static final String iban_ahb = "AE95 0530 0000 2404 1984 003";
+	    public static final String Full_Name = "Automation";
+	    public static final String Nick_Name = "Tester";
+	    public static final String Contry = "Great Britain";
+	    public static final String Bank_Name = "NATIONAL WESTMINSTER BANK PLC";
+	    public static final String Bank_Name_ahb = "AL Hilal Bank";
+	    public static final String Acc_Num = "898061194426";
+	    public static final String Swif_Code = "BOFAUS3NXXX";
+	    public static final String Con_Tm = "US";
+	    public static final String AHB_ACC = "4041984003";
+	    public static final String AHB_ACC1 = "4041 9840 03";
+	    public static final String Full_Name_AHB = "AHBAutomation";
+	    		
 
 }
