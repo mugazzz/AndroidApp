@@ -103,5 +103,15 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 	public void verify_the_entered_details_ahb() {
 		Benif_Verify_Detials_ahb();
 	}
+	
+	@Then("^Enter Account number and Enter incorrect swift code$")
+	public void enter_Account_number_and_Enter_incorrect_swift_code() {
+	   
+	}
+
+	@Then("^Verify the user is restricted$")
+	public void verify_the_user_is_restricted(){
+	   
+	}
 
 }
