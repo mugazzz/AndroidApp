@@ -3,7 +3,7 @@ package alhilal.androidapp.utils;
 public class AppStrings {
 	
 	 //Waits
-	    public static final int IMPLICIT_WAIT_TIME = 12000;
+	    public static final int IMPLICIT_WAIT_TIME = 30;
 	    
 	    public static final String NATIVE_CONTEXT = "NATIVE_APP";
 	    public static final String customerNo = "1234567";
@@ -42,11 +42,11 @@ public class AppStrings {
 	//Customer Number Registration
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
-	    public static final String Act_Cust_No_Spec_Card = "5238333";
+	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
-	    public static final String Act_Cust_No_Spec_No_bill = "5238333";
+	    public static final String Act_Cust_No_Spec_No_bill = "4041984";
 	    public static final String Act_SMS_PN_Spec_No_bill = "123456";
-	    public static final String Act_Cust_No_Spec_Acc = "5238333";
+	    public static final String Act_Cust_No_Spec_Acc = "4041984";
 	    public static final String Act_SMS_PN_Spec_Acc = "123456";
 	    public static final String Act_Cust_No_Spec_Dep = "6902744";
 	    public static final String Act_SMS_PN_Spec_Dep = "123456";
@@ -85,6 +85,10 @@ public class AppStrings {
 	    public static final String Pin_Blocked_Message = "Your Login PIN has been blocked due to wrong repeated rerties. Please click forget login PIN to reset it.";
 	    public static final String WEBVIEW_CONTEXT = "WEBVIEW";
 	    public static final String OTP_Validation = "The One Time Password you entered is incorrect. Please try again or click re-send OTP to receive a new one";
+	    public static final String INVALID_SWIFT = "You have entered an invalid SWIFT Code";
+	    public static final String INVALID_IBAN = "You have entered an invalid IBAN";
+	    public static final String DUP_NICK = "The given nick name is already associated with the user";
+	    public static final String DUP_IBAN = "The beneficiary you are trying to add, already exists";
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
@@ -105,15 +109,22 @@ public class AppStrings {
 	    
 	//Transfers section
 	    public static final String iban = "GB85NWBK60214774249150";
+	    public static final String inc_iban = "GB85NWBK60214774249152";
 	    public static final String iban1 = "GB85 NWBK 6021 4774 2491 50";
+	    public static final String iban2 = "NEW YORK,NY";
 	    public static final String iban_ahb = "AE95 0530 0000 2404 1984 003";
 	    public static final String Full_Name = "Automation";
 	    public static final String Nick_Name = "Tester";
+	    public static final String Full_Name1 = "Automation1";
+	    public static final String Nick_Name1 = "Tester1";
 	    public static final String Contry = "Great Britain";
+	    public static final String Contry1 = "United States of America";
 	    public static final String Bank_Name = "NATIONAL WESTMINSTER BANK PLC";
+	    public static final String Bank_Name1 = "BANK OF AMERICA, N.A.";
 	    public static final String Bank_Name_ahb = "AL Hilal Bank";
 	    public static final String Acc_Num = "898061194426";
 	    public static final String Swif_Code = "BOFAUS3NXXX";
+	    public static final String Incor_Swif_Code = "BOFAUS3NXXY";
 	    public static final String Con_Tm = "US";
 	    public static final String AHB_ACC = "4041984003";
 	    public static final String AHB_ACC1 = "4041 9840 03";

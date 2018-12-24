@@ -276,6 +276,7 @@ public class Locators {
 	public static final By BEN_NAME_DATA = By.id("lblBenNameData");
 	public static final By CONT_DATA = By.id("lblCountryData");
 	public static final By ACC_NUMBER = By.id("lblAccount");
+	public static final By ACC_NUMBER_DA = By.id("lblAccountData");
 	public static final By BANK_DATA = By.id("lblBankNameData");
 	public static final By BRANCH_DATA = By.id("lblBranchData");
 	public static final By NICK_DATA = By.id("lblNickNameData");
@@ -289,7 +290,8 @@ public class Locators {
 	public static final By CONT_HD = By.id("lblABCDCodeHeading");
 	public static final By CONT_COD = By.id("tbxABCDCode");
 	public static final By CONT_SKIP = By.id("btnNext");
-	
+	public static final By CONT_SWIFT = By.id("lblSwift");
+	public static final By CONT_SWIFT_DA = By.id("lblSwiftData");
 	
 	
 	

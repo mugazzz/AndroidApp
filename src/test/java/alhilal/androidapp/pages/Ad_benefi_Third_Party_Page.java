@@ -30,6 +30,11 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		driver.hideKeyboard();
 	}
 	
+	public void Enter_Incoi_IBAN_Num() {
+		enterText(ENT_IBAN, inc_iban);
+		driver.hideKeyboard();
+	}
+	
 	public void Tap_Next_Btn() {
 		clickOnElement(NXT_BTN);
 		appiumHelpers.waitForVisibilityOfElement(FUL_NAME);
@@ -41,6 +46,15 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Enter_Nick_Name() {
 		enterText(NICK_NAME, Nick_Name);
+		driver.hideKeyboard();
+	}
+	
+	public void  Enter_Full_Name1() {
+		 enterText(FUL_NAME, Full_Name1);
+	}
+	
+	public void Enter_Nick_Name1() {
+		enterText(NICK_NAME, Nick_Name1);
 		driver.hideKeyboard();
 	}
 	
@@ -68,13 +82,35 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		
 	}
 	
+	public void Benif_Verify_Detials1() {
+		String BENI_NAME = driver.findElement(BEN_NAME_DATA).getText();
+		System.out.println(BENI_NAME);
+		assert BENI_NAME.equals(Full_Name) : "Full name matches";
+		String CONT_NAME = driver.findElement(CONT_DATA).getText();
+		System.out.println(CONT_NAME);
+		assert CONT_NAME.equals(Contry1) : "Contry name matches";
+		String BANK_NAME = driver.findElement(BANK_DATA).getText();
+		System.out.println(BANK_NAME);
+		assert BANK_NAME.equals(Bank_Name1) : "Bank name matches";
+		String iBAN = driver.findElement(BRANCH_DATA).getText();
+		System.out.println(iBAN);
+		assert iBAN.equals(iban2) : "Branch name matches";
+		String NICK_NME = driver.findElement(NICK_DATA).getText();
+		System.out.println(NICK_NME);
+		assert NICK_NME.equals(Nick_Name) : "nick name matches";
+		String SWIF = driver.findElement(CONT_SWIFT_DA).getText();
+		System.out.println(SWIF);
+		assert SWIF.equals(Swif_Code) : "SWIF name matches";
+		
+	}
+	
 	public void Benif_Verify_Detials_ahb() {
 		String BENI_NAME = driver.findElement(BEN_NAME_DATA).getText();
 		System.out.println(BENI_NAME);
 		//assert BENI_NAME.equals(Full_Name_AHB) : "Full name matches";
-		String CONT_NAME = driver.findElement(ACC_NUMBER).getText();
+		String CONT_NAME = driver.findElement(ACC_NUMBER_DA).getText();
 		System.out.println(CONT_NAME);
-		assert CONT_NAME.equals(AHB_ACC1) : "Contry name matches";
+		assert CONT_NAME.equals(AHB_ACC1) : "Account number name matches";
 		String BANK_NAME = driver.findElement(BANK_DATA).getText();
 		System.out.println(BANK_NAME);
 		assert BANK_NAME.equals(Bank_Name_ahb) : "Bank name matches";
@@ -113,8 +149,19 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(CONT_HD);
 	}
 	
+	public void Dup_Validation() {
+		//appiumHelpers.waitForVisibilityOfElement();
+		Verify_Validation_Message(DUP_NICK);
+	}
+	
+	public void Dup_iban_Validation() {
+		//appiumHelpers.waitForVisibilityOfElement();
+		Verify_Validation_Message(DUP_IBAN);
+	}
+	
 	public void Ent_Con_Cod() {
 		enterText(CONT_COD, Con_Tm);
+		driver.hideKeyboard();
 		clickOnElement(CONT_SKIP);
 		appiumHelpers.waitForVisibilityOfElement(FUL_NAME);
 	}
@@ -126,5 +173,25 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Enter_Full_Name_ahb() {
 		 enterText(FUL_NAME, Full_Name_AHB);
+	}
+	
+	public void Verify_sucess() {
+		appiumHelpers.waitForVisibilityOfElement(SUCCESS_PAGE);
+	}
+	
+	public void Enter_Acc_Incor_Swif() {
+		enterText(ACC_NUM, Acc_Num);
+		enterText(SWIF_COD, Incor_Swif_Code);
+		driver.hideKeyboard();
+	}
+	
+	public void Veri_Vali() {
+		clickOnElement(NXT_BTN);
+		Verify_Validation_Message(INVALID_SWIFT);
+	}
+	
+	public void Veri_Vali_iban() {
+		clickOnElement(NXT_BTN);
+		Verify_Validation_Message(INVALID_IBAN);
 	}
 }
