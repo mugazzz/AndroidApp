@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mvn clean test -Dcucumber.options="--tags @Transfer_87"
+mvn clean test -Dcucumber.options="--tags @Ad_Ben_Third_Party"
 
     if [ $? -eq 1 ]; then
        echo "rerunning failed scenario"

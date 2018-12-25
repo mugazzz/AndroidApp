@@ -1,4 +1,4 @@
-@Ad_Ben_Third_Party @sprint @reset
+@Ad_Ben_Third_Party @sprint4 @reset
 Feature: I should be able to add a beneficiary for Third Party Accounts 
 
 @Ad_Ben_Third_Party0 @reset @Transfer_82
@@ -46,7 +46,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts - Account number us
 	Then Enter the account number and swift code
 	And Tap on Next button and navigate to contry code
 	Then Enter the contry code and tap next button
-	And Enter the full name and nick name to add beneficiary
+	And Enter the full name and nick name to add beneficiary3
 	Then Tap next and navigate to cofirm details screen
 	Then Verify the entered details1
 	And Tap confrim details button and verify the screen navigate to OTP screen
@@ -161,4 +161,21 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate 
 	And Tap confrim details button and verify the screen navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the validation for dup iban
-	
+
+@Ad_Ben_Third_Party10 @Transfer_103
+Scenario: Able to add a beneficiary  for Third Party Accounts - Duplicate Account Number
+	Given Verify the login check
+	And Verify the user redirected to Dashboard screen successfully
+	Then Tap on the transfers icon on tab bar
+	And Select the option tranfer to others
+	Then Tap on add beneficiary option and navigate to add beneficiary screen
+	Then Choose other bank options
+	And Tap on account number and SWIFT link and navigate to enter account number screen
+	Then Enter the account number and swift code
+	And Tap on Next button and navigate to contry code
+	Then Enter the contry code and tap next button
+	And Enter the full name and nick name to add beneficiary2
+	Then Tap next and navigate to cofirm details screen
+	And Tap confrim details button and verify the screen navigate to OTP screen
+	Then Get the OTP from the third party app and enter the OTP1
+	And Verify the validation for dup iban

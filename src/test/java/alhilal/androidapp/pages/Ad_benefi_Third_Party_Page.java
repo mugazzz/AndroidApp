@@ -40,23 +40,18 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(FUL_NAME);
 	}
 	
-	public void  Enter_Full_Name() {
-		 enterText(FUL_NAME, Full_Name);
-	}
 	
 	public void Enter_Nick_Name() {
 		enterText(NICK_NAME, Nick_Name);
 		driver.hideKeyboard();
 	}
 	
-	public void  Enter_Full_Name1() {
-		 enterText(FUL_NAME, Full_Name1);
+	public void  Enter_Names(String Full_Nam, String Nick_Nam) {
+		 enterText(FUL_NAME, Full_Nam);
+		 enterText(NICK_NAME, Nick_Nam);
+			driver.hideKeyboard();
 	}
 	
-	public void Enter_Nick_Name1() {
-		enterText(NICK_NAME, Nick_Name1);
-		driver.hideKeyboard();
-	}
 	
 	public void Tap_Next_Btn2() {
 		clickOnElement(NXT_BTN);

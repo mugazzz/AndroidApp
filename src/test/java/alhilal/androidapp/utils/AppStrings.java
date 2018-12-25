@@ -105,8 +105,7 @@ public class AppStrings {
 	    public static final String Amount_from_1 = "37000";
 	    public static final String Amount_to = "40000";
 	    public static final String Amount_to_1 = "35000";
-	    
-	    
+	     
 	//Transfers section
 	    public static final String iban = "GB85NWBK60214774249150";
 	    public static final String inc_iban = "GB85NWBK60214774249152";
@@ -117,6 +116,10 @@ public class AppStrings {
 	    public static final String Nick_Name = "Tester";
 	    public static final String Full_Name1 = "Automation1";
 	    public static final String Nick_Name1 = "Tester1";
+	    public static final String Full_Name2 = "Automation2";
+	    public static final String Nick_Name2 = "Tester2";
+	    public static final String Full_Name3 = "Automation3";
+	    public static final String Nick_Name3 = "Tester3";
 	    public static final String Contry = "Great Britain";
 	    public static final String Contry1 = "United States of America";
 	    public static final String Bank_Name = "NATIONAL WESTMINSTER BANK PLC";
@@ -129,6 +132,11 @@ public class AppStrings {
 	    public static final String AHB_ACC = "4041984003";
 	    public static final String AHB_ACC1 = "4041 9840 03";
 	    public static final String Full_Name_AHB = "AHBAutomation";
-	    		
-
+	   
+	 //Transfer amount
+	    public static final String Tran_amt = "1.00";
+	    public static final String Remark = "Remark Testing";
+	    public static final String Reason_c = "Charitable Contributions";
+	    public static final String Charge_c = "Me";
+	    
 }

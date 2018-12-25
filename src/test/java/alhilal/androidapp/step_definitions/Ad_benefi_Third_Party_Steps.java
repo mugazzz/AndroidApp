@@ -1,6 +1,7 @@
 package alhilal.androidapp.step_definitions;
 
 import static alhilal.androidapp.utils.Locators.*;
+import static alhilal.androidapp.utils.AppStrings.*;
 
 import alhilal.androidapp.pages.Ad_benefi_Third_Party_Page;
 import cucumber.api.java.en.Given;
@@ -41,14 +42,22 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 
 	@Then("^Enter the full name and nick name to add beneficiary$")
 	public void enter_the_full_name_and_nick_name_to_add_beneficiary() {
-	   Enter_Full_Name();
-	   Enter_Nick_Name();
+		Enter_Names(Full_Name, Nick_Name);
 	}
 	
 	@Then("^Enter the full name and nick name to add beneficiary1$")
 	public void enter_the_full_name_and_nick_name_to_add_beneficiary1() {
-	   Enter_Full_Name1();
-	   Enter_Nick_Name1();
+		Enter_Names(Full_Name1, Nick_Name1);
+	}
+	
+	@Then("^Enter the full name and nick name to add beneficiary2$")
+	public void enter_the_full_name_and_nick_name_to_add_beneficiary2() {
+		Enter_Names(Full_Name2, Nick_Name2);
+	}
+	
+	@Then("^Enter the full name and nick name to add beneficiary3$")
+	public void enter_the_full_name_and_nick_name_to_add_beneficiary3() {
+		Enter_Names(Full_Name3, Nick_Name3);
 	}
 
 	@Then("^Tap next and navigate to cofirm details screen$")
