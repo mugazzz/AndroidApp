@@ -47,7 +47,7 @@ Scenario: Register using Credit Card and Credit card pin - Pin is not set
 	And Enter the Active Credit Card PIN number
 	Then Verify the validation for Card pin fails
 	
-@reg_cred_card5
+@reset @reg_cred_card5
 Scenario: Register using Credit Card and Credit card pin - Pin is not active
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number

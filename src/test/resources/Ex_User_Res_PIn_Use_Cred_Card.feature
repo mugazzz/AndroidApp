@@ -63,7 +63,7 @@ Scenario: Reset PIN using Credit Card and Credit card pin - Pin is not active
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Active Credit Card number whose Pin is not active
 	And Enter the Inactive Pin number
-	Then Verify the validation for Card pin fails
+	Then Verify the validation for Card pin fails1
 
 @ex_user_res_pin_use_CC7
 Scenario: Reset PIN using Credit Card and Credit card pin - Expiry date is lesser than today

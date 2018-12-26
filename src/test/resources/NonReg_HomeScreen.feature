@@ -9,7 +9,7 @@ Scenario: Non registered user - Verify the links and options of home screen
 	And Verify the homescreen link Contact Us
 	And Verify the homescreen link Branch Locator
 
-@non_reg1
+@non_reg1 @reset
 Scenario: Change the language to Arabic - Non Registered user and also Change the language to English - Non Registered user
 	Given Verify the screen redirected to landing page
 	When Verify the toggle is English by default
@@ -17,4 +17,4 @@ Scenario: Change the language to Arabic - Non Registered user and also Change th
 	Then Verify the home screen language changed to Arabic
 	And Navigate to card number registration screens from home screen to confirm the language change
 	And Navigate to customer number registration screens from home screen to confirm the language change 	
-	Then change the languate to english and verify the screen
+	Then change the language to english and verify the screen

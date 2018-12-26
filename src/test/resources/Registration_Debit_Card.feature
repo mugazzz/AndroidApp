@@ -47,7 +47,7 @@ Scenario: Register using Debit Card and Debit card pin - Pin is not set
 	And Enter the Active Debit Card PIN number
 	Then Verify the validation for Card pin fails
 
-@reg_debit_card5
+@reg_debit_card5 @reset
 Scenario: Register using Debit Card and Debit card pin - Pin is not active
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number

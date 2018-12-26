@@ -100,6 +100,8 @@ public class Card_Verification_Page extends CommonPage{
 		 if(elementExists(REG_CARD_BTN)) {
 			 //Register_Specific_user(Act_Cust_No, Act_SMS_PN);
 			 Register_using_Credit_Card();
+			 driver.close();
+			 driver.launchApp();
 		 }
 		 else {
 			 System.out.println("User already logged in");

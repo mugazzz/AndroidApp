@@ -38,7 +38,7 @@ Scenario: Reset Pin using CIF number & TPIN - Inactive CIF
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	Then Verify the validation message appears for inactive CIFT
+	Then Verify the validation message appears for inactive CIFT1
 
 @res_pin_CIF_TPIN3
 Scenario: Reset Pin using CIF number & TPIN -incorrect number of CIF numbers

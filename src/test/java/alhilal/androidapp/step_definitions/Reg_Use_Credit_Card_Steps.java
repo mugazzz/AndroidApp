@@ -82,6 +82,11 @@ public class Reg_Use_Credit_Card_Steps extends Reg_Use_Credit_Card_Page {
 		public void verify_the_validation_for_Card_pin_fails() {
 			Verify_Validation_Message(Pin_notSet_notActive_Validation_Message1);
 		}
+		
+		@Then("^Verify the validation for Card pin fails1$")
+		public void verify_the_validation_for_Card_pin_fails1() {
+			Verify_Validation_Message(Pin_notSet_notActive_Validation_Message);
+		}
 
 		
 		@Then("^Enter the Active Credit Card number whose Pin is not active$")
@@ -136,7 +141,7 @@ public class Reg_Use_Credit_Card_Steps extends Reg_Use_Credit_Card_Page {
 		VerifyAllsetScreen();
 	}
 	
-	@Then("^Confirm the screen navigates to you are all sets! screen$")
+	@Then("^Confirm the screen navigates to you are all sets! screen1$")
 	public void enter_the_OTP_and_confirm_the_screen_navigates_to_you_are_all_sets_screen() {
 		VerifyAllsetScreen_Key();
 	}

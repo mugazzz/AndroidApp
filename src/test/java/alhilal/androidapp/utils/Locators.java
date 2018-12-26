@@ -33,7 +33,7 @@ public class Locators {
 	public static final By AREG_CARD_NO = By.xpath("//android.widget.TextView[@text='رقم البطاقة']");
 	public static final By AREG_CARD_HD = By.xpath("//android.widget.TextView[@text='التسجيل']");
 	public static final By AREG_CARD_PN = By.xpath("//android.widget.TextView[@text='رمز البطاقة']");
-	public static final By AREG_CARD_RG = By.xpath("//android.widget.Button[@text='أو عن طريق رقم المتعامل']");
+	public static final By AREG_CARD_RG = By.xpath("//android.widget.Button[@text='التسجيل عن طريق رقم بطاقتك']");
 	public static final By HEAD_BACK = By.id("btnBack");
 	
 	//Customer Registration screen
@@ -50,7 +50,7 @@ public class Locators {
 	public static final By AREG_CUS_PIN = By.xpath("//android.widget.Button[@text='رمز خدمة الهاتف ']");
 	public static final By AREG_CUS_ACC = By.id("tbxAccountNo");
 	public static final By AREG_CUS_SMSN = By.id("flxSmsNumber");
-	public static final By AREG_CUS_RG = By.xpath("//android.widget.Button[@text='التسجيل عن طريق رقم البطاقة']");
+	public static final By AREG_CUS_RG = By.xpath("//android.widget.Button[@text='التسجيل عن طريق رقم البطاقة ']");
 	
 	//OTP Screen
 	public static final By OTP_HD = By.id("lblOTPMessage");
@@ -63,7 +63,7 @@ public class Locators {
 	public static final By CRE_LOGIN_PIN_FD = By.id("flxTextPin");
 	public static final By CRE_LOGIN_REPIN_FD = By.id("flxRePinText");
 	public static final By CRE_LOGIN_PIN_CF = By.id("btnConfirm");
-	public static final By ALL_SET = By.xpath("//android.widget.TextView[@text='You are all set!']");
+	public static final By ALL_SET = By.id("lblAllSet");
 	public static final By ENABLE_FINGERPRINTS =By.id("btnEnable");
 	public static final By SKIP_FINGERPRINT = By.id("lblSkip");
 	

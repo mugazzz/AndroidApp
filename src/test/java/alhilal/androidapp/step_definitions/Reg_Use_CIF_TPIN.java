@@ -52,6 +52,11 @@ public class Reg_Use_CIF_TPIN extends Reg_Use_CIF_TPIN_Page{
 		Verify_Validation_Message(Inactive_CIF_Validation_Message_T);
 	}
 	
+	@Then("^Verify the validation message appears for inactive CIFT1$")
+	public void verify_the_validation_message_appears_for_inactive_CIF1() {
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_T1);
+	}
+	
 	@Then("^Enter the invalid TPIN number for 5 times$")
 	public void enter_the_invalid_TPIN_number_for_5_times() {
 		for (int i=0; i<=5; i++) {

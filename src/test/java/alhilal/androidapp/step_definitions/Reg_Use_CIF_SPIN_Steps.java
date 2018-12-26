@@ -38,6 +38,11 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 		Verify_Validation_Message(Inactive_CIF_Validation_Message_R);
 	}
 	
+	@Then("^Verify the validation message appears for inactive CIF for reset PIN1$")
+	public void verify_the_validation_message_appears_for_inactive_CIF_for_reset_PIN1() {
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_R1);
+	}
+	
 	@Then("^Verify the validation message appears for incorrect CIF$")
 	public void verify_the_validation_message_appears_for_incorrect_CIF() {
 		Verify_Validation_Message(Inactive_CIF_Validation_Message);
@@ -73,14 +78,20 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 		Ent_invalid_SMS_Pin();
 	}
 
-	@Then("^Verify the validation for SMS pin fails$")
+	/*@Then("^Verify the validation for SMS pin fails$")
 	public void verify_the_validation_for_SMS_pin_fails(){
 		Verify_Validation_Message(Inactive_CIF_Validation_Message);
+	}*/
+
+	
+	@Then("^Verify the validation for SMS pin fails1$")
+	public void verify_the_validation_for_SMS_pin_fails(){
+		Verify_Validation_Message(Inactive_CIF_Validation_Message1);
 	}
 	
 	@Then("^Verify the validation for SMS pin fails for reset PIN$")
-	public void verify_the_validation_for_SMS_pin_fails_Reset_PIN(){
-		Verify_Validation_Message(Inactive_CIF_Validation_Message_R);
+	public void verify_the_validation_for_SMS_pin_fails_Reset_PIN1(){
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_R1);
 	}
 	
 	@Then("^Enter the invalid SMS PIN number for 5 times$")

@@ -13,7 +13,7 @@ Scenario: Register the user using CIF number and SMS to create existing user env
 	And Confirm the screen navigates to you are all set! screen
 	Then Tap on Skip without Enable the Fingerprints button and verify the screen redirects to Dashboard screen
 	
-@res_pin_CIF_SMS1
+@res_pin_CIF_SMS1 
 Scenario: Reset PIN using CIF number and SMS PIN
 	Given Verify the screen redirected to landing page
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
@@ -22,7 +22,7 @@ Scenario: Reset PIN using CIF number and SMS PIN
 	Then Enter the valid SMS PIN 
 	Then Verify the card details are validated on fly and navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP
-	And Confirm the screen navigates to you are all set! screen
+	And Confirm the screen navigates to you are all sets! screen1
 	Then Tap on Skip without Enable the Fingerprints button and verify the screen redirects to Dashboard screen
 
 @res_pin_CIF_SMS2
@@ -32,7 +32,7 @@ Scenario: Reset Pin using CIF number & SMS PIN - Inactive CIF
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the inactive CIF Card number
 	Then Enter the valid SMS PIN
-	Then Verify the validation message appears for inactive CIF for reset PIN
+	Then Verify the validation message appears for inactive CIF for reset PIN1
 	
 @res_pin_CIF_SMS3
 Scenario: Reset Pin using CIF number & SMS PIN -incorrect number of CIF numbers
@@ -97,5 +97,5 @@ Scenario: Pin Reset - Registration process should allow user to activate biometr
 	Then Enter the valid SMS PIN 
 	Then Verify the card details are validated on fly and navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP
-	And Confirm the screen navigates to you are all set! screen
+	And Confirm the screen navigates to you are all sets! screen1
 	Then Tap on Enable Fingerprints button and verify the screen redirects to Dashboard screen

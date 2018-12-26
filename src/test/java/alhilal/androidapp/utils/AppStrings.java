@@ -1,5 +1,7 @@
 package alhilal.androidapp.utils;
 
+import static alhilal.androidapp.utils.AppStrings.Inactive_CIF_Validation_Message;
+
 public class AppStrings {
 	
 	 //Waits
@@ -35,7 +37,7 @@ public class AppStrings {
 	    public static final String Incor_Debit_Card_Pin = "456";
 	    public static final String Act_Debit_Card_No_Pin = "4714847975785216";
 	    public static final String Act_Debit_Card_Inact_Pin = "4192360973053109";
-	    public static final String Act_Debit_Card_Inact_Pin_Inact = "6789";
+	    public static final String Act_Debit_Card_Inact_Pin_Inact = "4567";
 	    public static final String Exp_Debit_Card_No = "4714844804927700";
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
@@ -73,7 +75,10 @@ public class AppStrings {
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Inactive_CIF_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Inactive_CIF_Validation_Message1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_T = "The Account number is incorrect";
+	    public static final String Inactive_CIF_Validation_Message_T1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
+
 	    public static final String Inactive_CIF_Validation_Message_R = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Pin_notSet_notActive_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Pin_notSet_notActive_Validation_Message1 = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
@@ -89,6 +94,7 @@ public class AppStrings {
 	    public static final String INVALID_IBAN = "You have entered an invalid IBAN";
 	    public static final String DUP_NICK = "The given nick name is already associated with the user";
 	    public static final String DUP_IBAN = "The beneficiary you are trying to add, already exists";
+	    public static final String Inactive_CIF_Validation_Message_R1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";

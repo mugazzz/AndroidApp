@@ -54,7 +54,7 @@ public class NonReg_HomeScreen_Steps extends NonReg_HomeScreenpage{
 		
 	}
 
-	@Then("^change the languate to english and verify the screen$")
+	@Then("^change the language to english and verify the screen$")
 	public void change_the_languate_to_english_and_verify_the_screen() {
 		VerifyEngChange();
 	}
