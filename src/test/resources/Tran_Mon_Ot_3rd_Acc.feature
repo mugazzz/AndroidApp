@@ -127,8 +127,22 @@ Feature: Transfer money to another local or international third party bank accou
 		And Enter the remarks
 		Then Click on next and verify the validation errror appears
 	
-	@tran_mon_3rd_acc9 @reset @Transfer_43
+	@tran_mon_3rd_acc10 @reset @Transfer_43
  Scenario: Able to transfer money to another local or international third party bank account - Local third party- Transferred amount is more than Account balance
-
+		Given Verify the login check tran
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the transfers icon on tab bar
+		And Select the option tranfer to others
+		Then Select any local third party account and navigate to transfers screen
+		And Tap on from account and select the current account
+		Then Verify the available balance amount appears
+		When Enter the amount and change the currency
+		#Then Verify the indicative amount appears
+		And Select the from charges pay by and choose Me
+		Then Choose the reason as charitable contributions
+		And Enter the remarks
+		Then Click on next and verify the screen redirect to transfers details screen
+		Then Verify the transfer details
+		And Tap confirm button and verify the screen redirected to successfully transfered screen
   
   	 
