@@ -294,7 +294,7 @@ public class Locators {
 	public static final By CONT_SWIFT_DA = By.id("lblSwiftData");
 	
 	//Transfer Amount
-	public static final By THIRD_ACC = By.xpath("//android.widget.TextView[@text='GB85 NWBK 6021 4774 2491 50']");
+	public static final By THIRD_ACC = By.id("lblPurpose");
 	public static final By LOC_THIRD_ACC = By.xpath("//android.widget.TextView[@text='AE47 0500 0000 0002 6392 828']");
 	public static final By FROM_ACC = By.id("lblFromAccount1");
 	public static final By FROM_ACC_DATA = By.id("lbxFromAccountData");
@@ -303,6 +303,7 @@ public class Locators {
 	public static final By IND_AMT = By.id("lblIndicativeAmount");
 	public static final By SEL_CUR = By.id("lbxCurrency");
 	public static final By CUR_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115018']");
+	public static final By CUR_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Current Account 9677570022']");
 	public static final By SAV_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Saving Account 1212115003']");
 	public static final By SEL_CHAR = By.id("lbxChargesData");
 	public static final By SEL_REASON = By.id("lbxReasonData");
@@ -321,6 +322,10 @@ public class Locators {
 	public static final By REM_CFN = By.id("lblRemarksValue");
 	public static final By CUR_ACC = By.xpath("//android.widget.TextView[@text='1212 1150 18']");
 	public static final By SAV_ACC = By.xpath("//android.widget.TextView[@text='1212 1150 03']");
+	public static final By ZERO_CUR_ACC = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115002']");
+	public static final By ZERO_SAV_ACC = By.xpath("//android.widget.CheckedTextView[@text='Saving Account 1212115003']");
+	public static final By INAC_SAV_ACC = By.xpath("//android.widget.CheckedTextView[@text='Saving Account 1212115003']");
+	public static final By INAC_CUR_ACC = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115002']");
 	public static final By CONT_BUT = By.id("btnContinue");
 	
 	//Successful Screen

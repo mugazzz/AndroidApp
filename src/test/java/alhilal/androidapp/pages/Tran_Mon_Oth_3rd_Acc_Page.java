@@ -2,8 +2,11 @@ package alhilal.androidapp.pages;
 
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
+import static org.junit.Assert.assertThat;
 
 import java.time.LocalDate;
+
+import org.hamcrest.CoreMatchers;
 
 public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 	
@@ -23,6 +26,12 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
 	}
 	
+	public void Sel_Cur_Acc1() {
+		clickOnElement(FROM_ACC_DATA);
+		clickOnElement(CUR_ACC_AMT1);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
+	}
+	
 	public void Sel_Sav_Acc() {
 		clickOnElement(FROM_ACC_DATA);
 		clickOnElement(SAV_ACC_AMT);
@@ -34,6 +43,27 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		System.out.println(Avail_Amt);
 		String Avail_Amt1 = Avail_Amt.substring(17, Avail_Amt.length()-4);
 		System.out.println(Avail_Amt1);
+	}
+	
+	public void Enter_Avai_Amt() {
+//		try {
+//			String Avail_Amt = driver.findElement(AVAI_AMT).getText();
+//			System.out.println(Avail_Amt);
+//			String Avail_Amt1 = Avail_Amt.substring(17, Avail_Amt.length()-4);
+//			System.out.println(Avail_Amt1);
+//			float number = Float.valueOf(Avail_Amt1);
+//			float inc_amt = number+1;
+//			System.out.println("Add: "+inc_amt);
+//			String incr_amt = String.valueOf(inc_amt);
+//			System.out.println("Tr: "+incr_amt);
+//			enterText(TRAN_AMT, incr_amt);
+//		  	}
+//		catch (NumberFormatException e) {
+//		  		System.out.println("not a number");
+//		  	};
+		enterText(TRAN_AMT, Tran_amt1);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
 	}
 	
 	public void Enter_Amt_Cur() {
@@ -64,6 +94,12 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 	public void  Nav_Tran_Con() {
 		clickOnElement(CONF_BUT);
 		appiumHelpers.waitForVisibilityOfElement(FLX_CONF);
+	}
+	
+	public void  Verify_Great() {
+		clickOnElement(CONF_BUT);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Great_val));
 	}
 	
 	public void Verf_Tran_Detail() {
@@ -107,6 +143,26 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		String date1 = date2.substring(6, date2.length()-8);
 		System.out.println(date1);
 		assert date1.equals(today): "Date is not equal";
+	}
+	
+	public void Verify_Zero_Current() {
+		clickOnElement(FROM_ACC_DATA);
+		appiumHelpers.assertFalse(elementExists(ZERO_CUR_ACC), "Zero Balance Current Account should not Appear");
+	}
+	
+	public void Verify_Zero_Savings() {
+		clickOnElement(FROM_ACC_DATA);
+		appiumHelpers.assertFalse(elementExists(ZERO_SAV_ACC), "Zero Balance Savings Account should not Appear");
+	}
+	
+	public void Verify_Inact_Savings() {
+		clickOnElement(FROM_ACC_DATA);
+		appiumHelpers.assertFalse(elementExists(INAC_SAV_ACC), "Zero Balance Savings Account should not Appear");
+	}
+	
+	public void Verify_Inact_Current() {
+		clickOnElement(FROM_ACC_DATA);
+		appiumHelpers.assertFalse(elementExists(INAC_CUR_ACC), "Zero Balance Savings Account should not Appear");
 	}
 
 }

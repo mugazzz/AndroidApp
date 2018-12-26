@@ -80,7 +80,7 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	public void Benif_Verify_Detials1() {
 		String BENI_NAME = driver.findElement(BEN_NAME_DATA).getText();
 		System.out.println(BENI_NAME);
-		assert BENI_NAME.equals(Full_Name) : "Full name matches";
+		assert BENI_NAME.equals(Full_Name1) : "Full name matches";
 		String CONT_NAME = driver.findElement(CONT_DATA).getText();
 		System.out.println(CONT_NAME);
 		assert CONT_NAME.equals(Contry1) : "Contry name matches";
@@ -93,6 +93,28 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		String NICK_NME = driver.findElement(NICK_DATA).getText();
 		System.out.println(NICK_NME);
 		assert NICK_NME.equals(Nick_Name) : "nick name matches";
+		String SWIF = driver.findElement(CONT_SWIFT_DA).getText();
+		System.out.println(SWIF);
+		assert SWIF.equals(Swif_Code) : "SWIF name matches";
+		
+	}
+	
+	public void Benif_Verify_Detials3() {
+		String BENI_NAME = driver.findElement(BEN_NAME_DATA).getText();
+		System.out.println(BENI_NAME);
+		assert BENI_NAME.equals(Full_Name3) : "Full name matches";
+		String CONT_NAME = driver.findElement(CONT_DATA).getText();
+		System.out.println(CONT_NAME);
+		assert CONT_NAME.equals(Contry1) : "Contry name matches";
+		String BANK_NAME = driver.findElement(BANK_DATA).getText();
+		System.out.println(BANK_NAME);
+		assert BANK_NAME.equals(Bank_Name1) : "Bank name matches";
+		String iBAN = driver.findElement(BRANCH_DATA).getText();
+		System.out.println(iBAN);
+		assert iBAN.equals(iban2) : "Branch name matches";
+		String NICK_NME = driver.findElement(NICK_DATA).getText();
+		System.out.println(NICK_NME);
+		assert NICK_NME.equals(Nick_Name3) : "nick name matches";
 		String SWIF = driver.findElement(CONT_SWIFT_DA).getText();
 		System.out.println(SWIF);
 		assert SWIF.equals(Swif_Code) : "SWIF name matches";

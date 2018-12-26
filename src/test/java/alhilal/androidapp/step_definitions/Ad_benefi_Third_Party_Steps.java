@@ -74,6 +74,11 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 	public void verify_the_entered_details1(){
 		Benif_Verify_Detials1();
 	}
+	
+	@Then("^Verify the entered details3$")
+	public void verify_the_entered_details3(){
+		Benif_Verify_Detials3();
+	}
 
 	@Then("^Tap confrim details button and verify the cofirm finger print popup appears$")
 	public void tap_confrim_details_button_and_verify_the_cofirm_finger_print_popup_appears() {

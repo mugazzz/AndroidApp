@@ -20,7 +20,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number- 
 	
 @Ad_Ben_Third_Party1 @Transfer_83
 Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number international bank - biometric is not enabled	
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -36,7 +36,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number i
 
 @Ad_Ben_Third_Party2 @Transfer_87
 Scenario: Able to add a beneficiary for Third Party Accounts - Account number using SWIFT code - Enter Country Code - biometrics are not enabled
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -48,14 +48,14 @@ Scenario: Able to add a beneficiary for Third Party Accounts - Account number us
 	Then Enter the contry code and tap next button
 	And Enter the full name and nick name to add beneficiary3
 	Then Tap next and navigate to cofirm details screen
-	Then Verify the entered details1
+	Then Verify the entered details3
 	And Tap confrim details button and verify the screen navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the screen redirected to successfully account added screen
 	
 @Ad_Ben_Third_Party3 @Transfer_92
 Scenario: Able to add a beneficiary  for Third Party Accounts - IBAN belongs to an AHB account
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -88,7 +88,7 @@ Given Verify the login check with Bio
 	
 @Ad_Ben_Third_Party5 @Transfer_94
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect Swift Code
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -100,7 +100,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect 
 
 @Ad_Ben_Third_Party6 @Transfer_95
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect IBAN number
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -122,7 +122,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter more/less 
 	
 @Ad_Ben_Third_Party8 @Transfer_97
 Scenario: Able to add a beneficiary  for local Third Party Accounts  - enter more/less number of digits in IBAN number
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -132,7 +132,7 @@ Scenario: Able to add a beneficiary  for local Third Party Accounts  - enter mor
 	
 @Ad_Ben_Third_Party9 @Transfer_100
 Scenario: Able to add a beneficiary  for Third Party Accounts- Duplicate Nick Name
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -149,7 +149,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts- Duplicate Nick Na
 
 @Ad_Ben_Third_Party10 @Transfer_102
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate IBAN number
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -164,7 +164,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate 
 
 @Ad_Ben_Third_Party10 @Transfer_103
 Scenario: Able to add a beneficiary  for Third Party Accounts - Duplicate Account Number
-	Given Verify the login check
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others

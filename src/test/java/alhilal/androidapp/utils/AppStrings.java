@@ -42,6 +42,7 @@ public class AppStrings {
 	//Customer Number Registration
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
+	    public static final String Act_Cust_No1 = "9677570";
 	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
 	    public static final String Act_Cust_No_Spec_No_bill = "4041984";
@@ -89,6 +90,7 @@ public class AppStrings {
 	    public static final String INVALID_IBAN = "You have entered an invalid IBAN";
 	    public static final String DUP_NICK = "The given nick name is already associated with the user";
 	    public static final String DUP_IBAN = "The beneficiary you are trying to add, already exists";
+	    public static final String Great_val = "The transfer amount entered is greater than the selected account's balance";
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
@@ -135,6 +137,7 @@ public class AppStrings {
 	   
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
+	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
 	    public static final String Reason_c = "Charitable Contributions";
 	    public static final String Charge_c = "Me";

@@ -21,6 +21,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Sel_Cur_Acc();
 	}
 	
+	@Then("^Tap on from account and select the current account1$")
+	public void tap_on_from_account_and_select_the_current_account1() throws Throwable {
+	   Sel_Cur_Acc1();
+	}
+	
 	@Then("^Tap on from account and select the savings account$")
 	public void tap_on_from_account_and_select_the_savings_account() throws Throwable {
 	   Sel_Sav_Acc();
@@ -60,6 +65,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	public void click_on_next_and_verify_the_screen_redirect_to_transfers_details_screen(){
 	 Nav_Tran_Con();
 	}
+	
+	@Then("^Click on next and verify the validation errror appears$")
+	public void click_on_next_and_verify_the_validation_error(){
+	 Verify_Great();
+	}
 
 	@Then("^Verify the transfer details$")
 	public void verify_the_transfer_details(){
@@ -72,8 +82,34 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	}
 
 	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen$")
-	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen() throws Throwable {
+	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen(){
 	   Complete_and_Verify();
 	}
+	
+	@Then("^Tap on from account and verify the savings account with zero balance is not shown$")
+	public void tap_on_from_account_and_verify_the_savings_account_with_zero_balance_is_not_shown() {
+	   Verify_Zero_Savings();
+	}
+	
+	@Then("^Tap on from account and verify the inactive savings account is not shown$")
+	public void tap_on_from_account_and_verify_the_inactive_savings_account_with_zero_balance_is_not_shown() {
+		Verify_Inact_Savings();
+	}
+	
+	@Then("^Tap on from account and verify the Current account with zero balance is not shown$")
+	public void tap_on_from_account_and_verify_the_current_account_with_zero_balance_is_not_shown() {
+	   Verify_Zero_Current();
+	}
+	
+	@Then("^Tap on from account and verify the inactive current account is not shown$")
+	public void tap_on_from_account_and_verify_the_inactive_current_account_with_zero_balance_is_not_shown() {
+		Verify_Inact_Current();
+	}
+	
+	@Then("^Enter the Transfer amount and change the currency$")
+	public void Enter_the_Transfer_amount_and_change_currency() {
+		Enter_Avai_Amt();
+	}
+	
 
 }
