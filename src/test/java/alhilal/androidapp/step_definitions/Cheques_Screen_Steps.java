@@ -1,6 +1,6 @@
 package alhilal.androidapp.step_definitions;
 
-import static alhilal.androidapp.utils.AppStrings.Inactive_CIF_Validation_Message;
+import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.AppStrings.OTP_Validation;
 import static org.junit.Assert.assertThat;
 
@@ -195,6 +195,21 @@ public class Cheques_Screen_Steps extends Cheques_Screen_Pages{
 		Thread.sleep(3000);
 		String xmlFormat = driver.getPageSource();
 		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message));
+	}
+	
+	@Then("^Verify the validation message appears for invalid cheque range2$")
+	public void verify_the_validation_message_appears_for_invalid_cheque_ranges2() throws InterruptedException {
+		Thread.sleep(3000);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Incorrect_Cheque_Number));
+	}
+
+	
+	@Then("^Verify the validation message appears for invalid cheque range1$")
+	public void verify_the_validation_message_appears_for_invalid_cheque_ranges1() throws InterruptedException {
+		Thread.sleep(3000);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Check_Filter_Validation));
 	}
 	
 	@Then("^Enter Maximum From number and minimum To number for ammount$")

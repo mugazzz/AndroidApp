@@ -97,5 +97,5 @@ Scenario: Pin Reset - Registration process should allow user to activate biometr
 	Then Enter the valid SMS PIN 
 	Then Verify the card details are validated on fly and navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP
-	And Confirm the screen navigates to you are all sets! screen1
+	And Confirm the screen navigates to you are all sets! screen2 
 	Then Tap on Enable Fingerprints button and verify the screen redirects to Dashboard screen

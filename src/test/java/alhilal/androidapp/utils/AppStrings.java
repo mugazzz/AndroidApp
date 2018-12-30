@@ -12,24 +12,24 @@ public class AppStrings {
 	    public static final String customerSms = "123456";
     
     //Credit Card Registration
-	    public static final String Act_Credit_Card_No = "4584610105853560";
+	    public static final String Act_Credit_Card_No = "4584610105853560"; 
 //	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
 //	    public static final String Act_Credit_Card_Pin_Specific = "1234";
-	    public static final String Exp_Credit_Card_No = "4584610162603620";
-	    public static final String Inactive_Credit_Card_No = "4192347816130004";
+	    public static final String Exp_Credit_Card_No = "4584610169393586";
+	    public static final String Inactive_Credit_Card_No = "4192347816130000";
 	    public static final String Inactive_Credit_Card_Pin = "2345";
-	    public static final String Act_Credit_Card_No_Pin = "5291068800621801";
-	    public static final String Act_Credit_Card_Inact_Pin = "5174000000180009";
+	    public static final String Act_Credit_Card_No_Pin = "5291068800621800"; 
+	    public static final String Act_Credit_Card_Inact_Pin = "5174000000180000";
 	    public static final String Act_Credit_Card_Inact_Pin_Inact = "3456";
 	    public static final String Inval_Credit_Card_No = "4584610167454560";
-	    public static final String Incor_Credit_Card_No = "458461016745456";
+	    public static final String Incor_Credit_Card_No = "4584610105853561";
 	    public static final String Act_Credit_Card_Pin = "1234";
 	    public static final String Act_Credit_Card_Pin_Inact = "3456";
 	    public static final String Inval_Credit_Card_Pin = "1239";
-	    public static final String Incor_Credit_Card_Pin = "123";
+	    public static final String Incor_Credit_Card_Pin = "1236";
     
 	//Debit Card Registration
-	    public static final String Act_Debit_Card_No = "4714846389753638";
+	    public static final String Act_Debit_Card_No = "4714846389753638"; 
 	    public static final String Act_Debit_Card_Pin = "4567";
 	    public static final String Inactive_Debit_Card_No = "4714844186466215";
 	    public static final String Inactive_Debit_Card_Pin = "5678";
@@ -38,7 +38,7 @@ public class AppStrings {
 	    public static final String Act_Debit_Card_No_Pin = "4714847975785216";
 	    public static final String Act_Debit_Card_Inact_Pin = "4192360973053109";
 	    public static final String Act_Debit_Card_Inact_Pin_Inact = "4567";
-	    public static final String Exp_Debit_Card_No = "4714844804927700";
+	    public static final String Exp_Debit_Card_No = "4192360230719320";
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
@@ -50,18 +50,18 @@ public class AppStrings {
 	    public static final String Act_SMS_PN_Spec_No_bill = "123456";
 	    public static final String Act_Cust_No_Spec_Acc = "4041984";
 	    public static final String Act_SMS_PN_Spec_Acc = "123456";
-	    public static final String Act_Cust_No_Spec_Dep = "6902744";
+	    public static final String Act_Cust_No_Spec_Dep = "4446919";
 	    public static final String Act_SMS_PN_Spec_Dep = "123456";
-	    public static final String Act_Cust_No_Spec_Fin = "4041984";
+	    public static final String Act_Cust_No_Spec_Fin = "7266677";
 	    public static final String Act_SMS_PN_No_Spec_Fin = "123456";
-	    public static final String Inact_Cust_No = "4234123";
+	    public static final String Inact_Cust_No = "6700067";
 	    public static final String Cust_No_with_No_Pin = "6556425";
-	    public static final String Cust_No_with_No_SPin = "2016819";
+	    public static final String Cust_No_with_No_SPin = "4041980";
 	    public static final String Incorr_Cust_No = "404198";
 	    public static final String Incorr_SMS_PN = "12345";
-	    public static final String Inact_SMS_PN_Cus = "6236768";
+	    public static final String Inact_SMS_PN_Cus = "1622882";
 	    public static final String Inact_TPN_Cus = "2125533";
-	    public static final String Inact_SMS_PN = "123456";
+	    public static final String Inact_SMS_PN = "123455";
 	    public static final String Invalid_SMS_PN = "123595";
 	    public static final String Act_TPIN_PN = "123456";
 	    public static final String Incorr_TPN = "12345";
@@ -74,11 +74,17 @@ public class AppStrings {
 	    
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
+	    
+	    public static final String Incorrect_Cheque_Number = "No records available";
+
 	    public static final String Inactive_CIF_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Check_Filter_Validation ="To cheque number must be greater than from cheque number ";
+	    public static final String Inactive_CIF_Validation_Message_InvSMS = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Inactive_CIF_Validation_Message1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_T = "The Account number is incorrect";
-	    public static final String Inactive_CIF_Validation_Message_T1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
-
+	    public static final String Inactive_CIF_Validation_Message_T1 = "The combination of CIF/T-PIN entered is incorrect.Please try again or use another option to register";
+	    public static final String Inactive_CIF_Validation_Message_T2 = "something went wrong, please try after some time. If problem continues please contact support.";
+	    
 	    public static final String Inactive_CIF_Validation_Message_R = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Pin_notSet_notActive_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Pin_notSet_notActive_Validation_Message1 = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";

@@ -65,7 +65,7 @@ public class Locators {
 	public static final By CRE_LOGIN_PIN_CF = By.id("btnConfirm");
 	public static final By ALL_SET = By.id("lblAllSet");
 	public static final By ENABLE_FINGERPRINTS =By.id("btnEnable");
-	public static final By SKIP_FINGERPRINT = By.id("lblSkip");
+	public static final By SKIP_FINGERPRINT = By.xpath("//android.widget.TextView[@text='Skip']");
 	
 	//Home Screen - Registered User
 	public static final By FINGERPRINTS_POPUP =By.id("flxContainer");
@@ -105,19 +105,22 @@ public class Locators {
 	//Dashboard Screen
 	public static final By DASHBOARD_HEADING = By.id("lblWelcomeBack");
 	public static final By MINIMIZE_CHART = By.id("imgChartSizeToggle");
-	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My Accounts']");
-	public static final By FINANCES_LABEL = By.xpath("//android.widget.TextView[@text='My Finances']");
-	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='My accounts']");
+	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='Accounts']");
+	public static final By FINANCES_LABEL = By.xpath("//android.widget.TextView[@text='Finances']");
+	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='Accounts']");
 	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
 	public static final By ACT_SAVING_ACC = By.xpath("//android.widget.TextView[@text='AE73 0530 0000 2404 1984 011']");
 	public static final By ACT_SAVING_ACC1 = By.xpath("//android.widget.TextView[@text='AE68 0530 0000 2404 1984 004']");
+	public static final By ACT_DEPOSIT_ACC1 = By.xpath("//android.widget.TextView[@text='AE32 0530 0000 2444 6919 009']");
+	
+	
 	public static final By CARD_LABEL = By.xpath("//android.widget.TextView[@text='My Cards']");
 	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='VISA GOLD UJRAH']");
 	public static final By CURRENT_ACC_LST = By.xpath("//android.widget.TextView[@text='Current Account']");
 	public static final By ACT_BALANCE_VAL = By.id("lblAccountBalValue");
 	public static final By GO_BACK = By.id("btnBack");
 	public static final By MY_FINANCE_CARD = By.xpath("//android.widget.TextView[@text='Goods Murabaha']");
-	public static final By DEPOSIT_LABEL = By.xpath("//android.widget.TextView[@text='My Deposits']");
+	public static final By DEPOSIT_LABEL = By.xpath("//android.widget.TextView[@text='Deposits']");
 	public static final By DEPOSIT_ACC = By.xpath("//android.widget.TextView[@text='One Year Term Deposit']");
 	public static final By ACT_CH = By.id("segAccounts_1_6_flxAccountsNoImage_flxMain_lblBankName");
 	public static final By TRANF_TAB = By.id("flxTransfer");
@@ -206,7 +209,7 @@ public class Locators {
 	public static final By ACC_AMT = By.id("lblAmount");
 	public static final By IBAN = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@text='IBAN']");
 	public static final By IBANV = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
-	public static final By Account_Number_D = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Account Number']");
+	public static final By Account_Number_D = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Account number']");
 	public static final By Account_Number_D_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
 	public static final By SCodeD = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='2']/android.widget.TextView[@text='SWIFT Code']");
 	public static final By SCodeD_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='2']/android.widget.TextView[@index='1']");
@@ -222,10 +225,10 @@ public class Locators {
 	
 	//Finance detail screen
 	public static final By FIN_SLIDE = By.id("flxAccounts");
-	public static final By NXT_PY_AM_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
-	public static final By NXT_PY_AM_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
-	public static final By NXT_PY_DATE_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
-	public static final By NXT_PY_DATE_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By NXT_PY_AM_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
+	public static final By NXT_PY_AM_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By NXT_PY_DATE_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
+	public static final By NXT_PY_DATE_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
 	public static final By FIN_TYPE = By.id("lblAccounts");
 	public static final By FIN_ACC_NUM = By.id("lblAccountNumber");
 	public static final By FIN_OUT_BAL_LB = By.id("lblAvailableBalance");
@@ -251,7 +254,7 @@ public class Locators {
 	
 	//Deposit details screen
 	public static final By DEPOSIT_TYPE = By.id("lblAccounts");
-	public static final By DEPOSIT_AC_NO = By.id("lblAccountNumber");
+	public static final By DEPOSIT_AC_NO = By.xpath("//android.widget.TextView[@text='MM1617900015']");
 	public static final By DEPOSIT_AV_BAL_LB = By.id("lblAvailableBalance");
 	public static final By DEPOSIT_AV_BAL_AMT = By.id("lblBalanceAmount");
 	public static final By DEP_EPR_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");

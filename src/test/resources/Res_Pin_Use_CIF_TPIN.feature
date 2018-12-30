@@ -29,7 +29,7 @@ Scenario: Reset PIN using CIF number and TPIN
 	And Confirm the screen navigates to you are all set! screen
 	Then Tap on Skip without Enable the Fingerprints button and verify the screen redirects to Dashboard screen
 	
-@res_pin_CIF_TPIN2
+@res_pin_CIF_TPIN2 
 Scenario: Reset Pin using CIF number & TPIN - Inactive CIF
 	Given Verify the screen redirected to landing page
 	Then Tap on the Forgot login PIN link and navigate to related registration screen

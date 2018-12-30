@@ -85,8 +85,13 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 
 	
 	@Then("^Verify the validation for SMS pin fails1$")
-	public void verify_the_validation_for_SMS_pin_fails(){
+	public void verify_the_validation_for_SMS_pin_fails1(){
 		Verify_Validation_Message(Inactive_CIF_Validation_Message1);
+	}
+	
+	@Then("^Verify the validation for SMS pin fails$")
+	public void verify_the_validation_for_SMS_pin_fails(){
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_InvSMS);
 	}
 	
 	@Then("^Verify the validation for SMS pin fails for reset PIN$")

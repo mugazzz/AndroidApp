@@ -183,7 +183,7 @@ Scenario: Able to view all my cheques - Incorrect Filter Validations - From Cheq
 	Then Tap on filter button and navigate to advance search screen
 	Then Tap on Add Range button
 	Then Enter Maximum From number and minimum To number 
-	Then Verify the validation message appears for invalid cheque range
+	Then Verify the validation message appears for invalid cheque range1
 
 @TC_Cheques_32_11 @cheques_screen11
 Scenario: Able to view all my cheques - Incorrect Filter Validations - From Amount as maximum and To Amount as minimum
@@ -214,7 +214,7 @@ Scenario: Able to view all my cheques - Incorrect Cheque Number Filter Validatio
 	And Tap on Cheques view button and navigate to Cheque list screen
 	Then Tap on filter button and navigate to advance search screen
 	Then Enter the incorrect Cheque number and tap search
-	Then Verify the validation message appears for invalid cheque range
+	Then Verify the validation message appears for invalid cheque range2
 	
 @TC_Cheques_32_13 @cheques_screen13
 Scenario: Able to view all my cheques - Enter value in only To Date

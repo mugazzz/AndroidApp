@@ -41,7 +41,7 @@ Scenario: Register using CIF number & SMS PIN - SMS Pin is not set
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the customer number with no spin set
 	And Enter the valid SMS PIN
-	Then Verify the validation for SMS pin fails1
+	Then Verify the validation for SMS pin fails
 
 @reg_cif_spin5
 Scenario: Register using CIF number & SMS PIN is not active

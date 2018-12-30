@@ -1,6 +1,9 @@
 package alhilal.androidapp.step_definitions;
 
 import static alhilal.androidapp.utils.AppStrings.*;
+import static org.junit.Assert.assertThat;
+
+import org.hamcrest.CoreMatchers;
 
 import alhilal.androidapp.pages.Reg_Use_CIF_TPIN_Page;
 import cucumber.api.java.en.Then;
@@ -49,12 +52,21 @@ public class Reg_Use_CIF_TPIN extends Reg_Use_CIF_TPIN_Page{
 	
 	@Then("^Verify the validation message appears for inactive CIFT$")
 	public void verify_the_validation_message_appears_for_inactive_CIF() {
-		Verify_Validation_Message(Inactive_CIF_Validation_Message_T);
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_T1);
 	}
 	
 	@Then("^Verify the validation message appears for inactive CIFT1$")
 	public void verify_the_validation_message_appears_for_inactive_CIF1() {
-		Verify_Validation_Message(Inactive_CIF_Validation_Message_T1);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message_T1));
+     //	Verify_Validation_Message(Inactive_CIF_Validation_Message_T1);
+	}
+	
+	@Then("^Verify the validation message appears for inactive CIFT2$")
+	public void verify_the_validation_message_appears_for_inactive_CIF2() {
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message_T2));
+     //	Verify_Validation_Message(Inactive_CIF_Validation_Message_T1);
 	}
 	
 	@Then("^Enter the invalid TPIN number for 5 times$")
