@@ -1,6 +1,13 @@
 package alhilal.androidapp.pages;
 
 import static alhilal.androidapp.utils.Locators.*;
+
+import org.apache.tools.ant.Location;
+import org.openqa.selenium.Point;
+
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
+
 import static alhilal.androidapp.utils.AppStrings.*;
 
 public class Ad_benefi_Third_Party_Page extends CommonPage{
@@ -30,6 +37,11 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		driver.hideKeyboard();
 	}
 	
+	public void Enter_IBAN_Num2() {
+		enterText(ENT_IBAN, iban_2);
+		driver.hideKeyboard();
+	}
+	
 	public void Enter_Incoi_IBAN_Num() {
 		enterText(ENT_IBAN, inc_iban);
 		driver.hideKeyboard();
@@ -46,6 +58,11 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		driver.hideKeyboard();
 	}
 	
+	public void Enter_Nick_Name4() {
+		enterText(NICK_NAME, Nick_Name4);
+		driver.hideKeyboard();
+	}
+	
 	public void  Enter_Names(String Full_Nam, String Nick_Nam) {
 		 enterText(FUL_NAME, Full_Nam);
 		 enterText(NICK_NAME, Nick_Nam);
@@ -55,6 +72,13 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Tap_Next_Btn2() {
 		clickOnElement(NXT_BTN);
+		appiumHelpers.waitForVisibilityOfElement(BEN_NAME);
+	}
+	
+	public void Tap_Next_Btn3() {
+		Point X = driver.findElement(NXT_BTN).getLocation();
+		TouchAction touchAction = new TouchAction(driver);
+		touchAction.tap(PointOption.point(1290,2300)).perform();
 		appiumHelpers.waitForVisibilityOfElement(BEN_NAME);
 	}
 	
@@ -74,6 +98,25 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		String NICK_NME = driver.findElement(NICK_DATA).getText();
 		System.out.println(NICK_NME);
 		assert NICK_NME.equals(Nick_Name) : "nick name matches";
+		
+	}
+	
+	public void Benif_Verify_Detials5() {
+		String BENI_NAME = driver.findElement(BEN_NAME_DATA).getText();
+		System.out.println(BENI_NAME);
+		assert BENI_NAME.equals(Full_Name5) : "Full name matches";
+		String CONT_NAME = driver.findElement(CONT_DATA).getText();
+		System.out.println(CONT_NAME);
+		assert CONT_NAME.equals(Contry5) : "Contry name matches";
+		String BANK_NAME = driver.findElement(BANK_DATA).getText();
+		System.out.println(BANK_NAME);
+		assert BANK_NAME.equals(Bank_Name5) : "Bank name matches";
+		String iBAN = driver.findElement(BRANCH_DATA).getText();
+		System.out.println(iBAN);
+		assert iBAN.equals(iban_21) : "Branch name matches";
+		String NICK_NME = driver.findElement(NICK_DATA).getText();
+		System.out.println(NICK_NME);
+		assert NICK_NME.equals(Nick_Name5) : "nick name matches";
 		
 	}
 	
@@ -136,7 +179,7 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		assert iBAN.equals(iban_ahb) : "Branch name matches";
 		String NICK_NME = driver.findElement(NICK_DATA).getText();
 		System.out.println(NICK_NME);
-		assert NICK_NME.equals(Nick_Name) : "nick name matches";
+		assert NICK_NME.equals(Nick_Name4) : "nick name matches";
 		
 	}
 	

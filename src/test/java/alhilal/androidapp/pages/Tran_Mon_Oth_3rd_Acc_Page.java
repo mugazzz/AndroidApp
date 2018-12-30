@@ -15,8 +15,19 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	}
 	
+	public void Tap_3rd_Acc1() {
+		clickOnElement(THIRD_ACC1);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
+	}
+	
+	
 	public void Tap_Loc_3rd_Acc() {
 		clickOnElement(LOC_THIRD_ACC);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
+	}
+	
+	public void Tap_Loc_3rd_Acc1() {
+		clickOnElement(LOC_THIRD_ACC1);
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	}
 	
@@ -32,9 +43,21 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
 	}
 	
+	public void Sel_Cur_Acc2() {
+		clickOnElement(FROM_ACC_DATA);
+		clickOnElement(CUR_ACC_AMT2);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
+	}
+	
 	public void Sel_Sav_Acc() {
 		clickOnElement(FROM_ACC_DATA);
 		clickOnElement(SAV_ACC_AMT);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
+	}
+	
+	public void Sel_Sav_Acc1() {
+		clickOnElement(FROM_ACC_DATA);
+		clickOnElement(SAV_ACC_AMT1);
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
 	}
 	
@@ -66,8 +89,35 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		clickOnElement(SEL_AED);
 	}
 	
+	public void Enter_Avai_Amt1() {
+//		try {
+//			String Avail_Amt = driver.findElement(AVAI_AMT).getText();
+//			System.out.println(Avail_Amt);
+//			String Avail_Amt1 = Avail_Amt.substring(17, Avail_Amt.length()-4);
+//			System.out.println(Avail_Amt1);
+//			float number = Float.valueOf(Avail_Amt1);
+//			float inc_amt = number+1;
+//			System.out.println("Add: "+inc_amt);
+//			String incr_amt = String.valueOf(inc_amt);
+//			System.out.println("Tr: "+incr_amt);
+//			enterText(TRAN_AMT, incr_amt);
+//		  	}
+//		catch (NumberFormatException e) {
+//		  		System.out.println("not a number");
+//		  	};
+		enterText(TRAN_AMT, Tran_amt3);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
+	}
+	
 	public void Enter_Amt_Cur() {
 		enterText(TRAN_AMT, Tran_amt);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
+	}
+	
+	public void Enter_Amt_Cur1() {
+		enterText(TRAN_AMT, Tran_amt3);
 		clickOnElement(SEL_CUR);
 		clickOnElement(SEL_AED);
 	}
@@ -102,6 +152,28 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		assertThat(xmlFormat, CoreMatchers.containsString(Great_val));
 	}
 	
+	public void  Verify_Great1() {
+		clickOnElement(CONF_BUT);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Great_val1));
+	}
+	
+	public void  Verify_Great2() {
+		clickOnElement(CONF_BUT);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Great_val1));
+	}
+	
+	public void  Verify_Great3() {
+		clickOnElement(CONF_BUT);
+		Verify_Validation_Message(Limit_Tran);
+	}
+	
+	public void  Verify_Great4() {
+		clickOnElement(CONT_BUT);
+		Verify_Validation_Message(Limit_Tran);
+	}
+	
 	public void Verf_Tran_Detail() {
 		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
 		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
@@ -115,11 +187,37 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		assert Remark_C.equals(Remark): "Remark is not equal";
 	}
 	
+	public void Verf_Tran_Detail1() {
+		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
+		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
+		assert Tran_Amt1.equals(Tran_amt): "Debit amount is not equal";
+		appiumHelpers.assertTrue(elementExists(CUR_ACC1), "Current Account number is not working");
+		String Reason = driver.findElement(REAS_CFN).getText();
+		assert Reason.equals(Reason_c): "Reason is not equal";
+		String Charge = driver.findElement(CHAR_BY).getText();
+		assert Charge.equals(Charge_c): "Charge is not equal";
+		String Remark_C = driver.findElement(REM_CFN).getText();
+		assert Remark_C.equals(Remark): "Remark is not equal";
+	}
+	
 	public void Verf_Sav_Tran_Detail() {
 		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
 		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
 		assert Tran_Amt1.equals(Tran_amt): "Debit amount is not equal";
 		appiumHelpers.assertTrue(elementExists(SAV_ACC), "Savings Account number is not working");
+		String Reason = driver.findElement(REAS_CFN).getText();
+		assert Reason.equals(Reason_c): "Reason is not equal";
+		String Charge = driver.findElement(CHAR_BY).getText();
+		assert Charge.equals(Charge_c): "Charge is not equal";
+		String Remark_C = driver.findElement(REM_CFN).getText();
+		assert Remark_C.equals(Remark): "Remark is not equal";
+	}
+	
+	public void Verf_Sav_Tran_Detail1() {
+		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
+		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
+		assert Tran_Amt1.equals(Tran_amt): "Debit amount is not equal";
+		appiumHelpers.assertTrue(elementExists(SAV_ACC1), "Savings Account number is not working");
 		String Reason = driver.findElement(REAS_CFN).getText();
 		assert Reason.equals(Reason_c): "Reason is not equal";
 		String Charge = driver.findElement(CHAR_BY).getText();
@@ -162,7 +260,56 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 	
 	public void Verify_Inact_Current() {
 		clickOnElement(FROM_ACC_DATA);
-		appiumHelpers.assertFalse(elementExists(INAC_CUR_ACC), "Zero Balance Savings Account should not Appear");
+		appiumHelpers.assertFalse(elementExists(INAC_CUR_ACC), "Zero Balance Savings Account should not Appear");	
+	}
+	
+	
+	public void Transfer_30K() {
+		clickOnElement(TRANF_TAB);
+		appiumHelpers.waitForVisibilityOfElement(CUR_ACC_AM);
+		appiumHelpers.waitForVisibilityOfElement(TRANF_TO_OTHERS);
+		clickOnElement(TRANF_TO_OTHERS);
+		appiumHelpers.waitForVisibilityOfElement(ADD_BENIF);
+		appiumHelpers.waitForVisibilityOfElement(LOC_THIRD_ACC);
+		clickOnElement(LOC_THIRD_ACC);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC_DATA);
+		Sel_Cur_Acc2();
+		Veri_Avai_Amt();
+		enterText(TRAN_AMT, Tran_amt2);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
+		clickOnElement(SEL_CHAR);
+		clickOnElement(SEL_ME);
+		Select_Reason();
+		Enter_Remark();
+		Nav_Tran_Con();
+		Complete_and_Verify();
+		clickOnElement(MY_ACC);
+		
+	}
+	
+	public void Transfer_30K_inter() {
+		clickOnElement(TRANF_TAB);
+		appiumHelpers.waitForVisibilityOfElement(CUR_ACC_AM);
+		appiumHelpers.waitForVisibilityOfElement(TRANF_TO_OTHERS);
+		clickOnElement(TRANF_TO_OTHERS);
+		appiumHelpers.waitForVisibilityOfElement(ADD_BENIF);
+		appiumHelpers.waitForVisibilityOfElement(THIRD_ACC);
+		clickOnElement(THIRD_ACC);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC_DATA);
+		Sel_Cur_Acc();
+		Veri_Avai_Amt();
+		enterText(TRAN_AMT, Tran_amt2);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
+		clickOnElement(SEL_CHAR);
+		clickOnElement(SEL_ME);
+		Select_Reason();
+		Enter_Remark();
+		Nav_Tran_Con();
+		Complete_and_Verify();
+		clickOnElement(MY_ACC);
+		
 	}
 
 }

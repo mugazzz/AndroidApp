@@ -98,8 +98,8 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
-			 Register_Specific_user(Act_Cust_No, Act_SMS_PN);
-			 //Register_using_Credit_Card();
+			 //Register_Specific_user(Act_Cust_No, Act_SMS_PN);
+			 Register_using_Credit_Card();
 		 }
 		 else {
 			 System.out.println("User already logged in");
@@ -111,6 +111,54 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
 			 Register_Specific_user(Act_Cust_No1, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_tran1() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Cust_No_Sav_0, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_tran2() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Cust_No_Sav_Inc, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_tran3() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Cust_No_Cur_0, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_tran4() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Cust_No_Cur_Inc, Act_SMS_PN);
 			 //Register_using_Credit_Card();
 		 }
 		 else {

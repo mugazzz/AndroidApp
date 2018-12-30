@@ -30,6 +30,12 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 	    Enter_IBAN_Num();
 	}
 	
+	@Then("^Choose other bank option and enter the IBAN number2$")
+	public void choose_other_bank_option_and_enter_the_IBAN_number2() {
+	    Tap_Other_Bank();
+	    Enter_IBAN_Num2();
+	}
+	
 	@Then("^Choose other bank options$")
 	public void choose_other_bank_options() {
 	    Tap_Other_Bank();
@@ -59,15 +65,30 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 	public void enter_the_full_name_and_nick_name_to_add_beneficiary3() {
 		Enter_Names(Full_Name3, Nick_Name3);
 	}
+	
+	@Then("^Enter the full name and nick name to add beneficiary5$")
+	public void enter_the_full_name_and_nick_name_to_add_beneficiary5() {
+		Enter_Names(Full_Name5, Nick_Name5);
+	}
 
 	@Then("^Tap next and navigate to cofirm details screen$")
 	public void tap_next_and_navigate_to_cofirm_details_screen() throws Throwable {
 		Tap_Next_Btn2();
 	}
+	
+	@Then("^Tap next and navigate to cofirm details screen2$")
+	public void tap_next_and_navigate_to_cofirm_details_screen2() throws Throwable {
+		Tap_Next_Btn3();
+	}
 
 	@Then("^Verify the entered details$")
 	public void verify_the_entered_details() throws Throwable {
 		Benif_Verify_Detials();
+	}
+	
+	@Then("^Verify the entered details5$")
+	public void verify_the_entered_details5() throws Throwable {
+		Benif_Verify_Detials5();
 	}
 	
 	@Then("^Verify the entered details1$")
@@ -127,7 +148,7 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 	@Then("^Enter the ahb full name and nick name to add beneficiary$")
 	public void enter_the_ahb_full_name_and_nick_name_to_add_beneficiary() {
 	   //Enter_Full_Name_ahb();
-	   Enter_Nick_Name();
+	   Enter_Nick_Name4();
 	}
 	
 	@Then("^Verify the entered details AHB$")

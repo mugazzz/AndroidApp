@@ -11,9 +11,20 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Tap_3rd_Acc();
 	}
 	
+	@Then("^Select any third party account and navigate to transfers screen1$")
+	public void select_any_third_party_account_and_navigate_to_transfers_screen1() throws Throwable {
+	   Tap_3rd_Acc1();
+	}
+	
+	
 	@Then("^Select any local third party account and navigate to transfers screen$")
 	public void select_any_local_third_party_account_and_navigate_to_transfers_screen() throws Throwable {
 	   Tap_Loc_3rd_Acc();
+	}
+	
+	@Then("^Select any local third party account and navigate to transfers screen1$")
+	public void select_any_local_third_party_account_and_navigate_to_transfers_screen1() throws Throwable {
+	   Tap_Loc_3rd_Acc1();
 	}
 
 	@Then("^Tap on from account and select the current account$")
@@ -26,9 +37,19 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Sel_Cur_Acc1();
 	}
 	
+	@Then("^Tap on from account and select the current account2$")
+	public void tap_on_from_account_and_select_the_current_account2() throws Throwable {
+	   Sel_Cur_Acc2();
+	}
+	
 	@Then("^Tap on from account and select the savings account$")
 	public void tap_on_from_account_and_select_the_savings_account() throws Throwable {
 	   Sel_Sav_Acc();
+	}
+	
+	@Then("^Tap on from account and select the savings account1$")
+	public void tap_on_from_account_and_select_the_savings_account1() throws Throwable {
+	   Sel_Sav_Acc1();
 	}
 
 	@Then("^Verify the available balance amount appears$")
@@ -70,15 +91,40 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	public void click_on_next_and_verify_the_validation_error(){
 	 Verify_Great();
 	}
+	
+	@Then("^Click on next and verify the validation errror appears1$")
+	public void click_on_next_and_verify_the_validation_error1(){
+	 Verify_Great1();
+	}
+	
+	@Then("^Click on next and verify the validation errror appears2$")
+	public void click_on_next_and_verify_the_validation_error2(){
+		Verify_Great4();
+	}
+	
+	@Then("^Verify the validation message$")
+	public void Verify_the_validation_message(){
+	Verify_Great3();
+	}
 
 	@Then("^Verify the transfer details$")
 	public void verify_the_transfer_details(){
 	 Verf_Tran_Detail();
 	}
 	
+	@Then("^Verify the transfer details1$")
+	public void verify_the_transfer_details1(){
+	 Verf_Tran_Detail1();
+	}
+	
 	@Then("^Verify the savings transfer details$")
 	public void verify_the_Save_transfer_details(){
 	 Verf_Sav_Tran_Detail();
+	}
+	
+	@Then("^Verify the savings transfer details1$")
+	public void verify_the_Save_transfer_details1(){
+	 Verf_Sav_Tran_Detail1();
 	}
 
 	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen$")
@@ -111,5 +157,27 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 		Enter_Avai_Amt();
 	}
 	
+	@Then("^Enter the Transfer amount and change the currency1$")
+	public void Enter_the_Transfer_amount_and_change_currency1() {
+		Enter_Avai_Amt1();
+	}
+	
+	@Then("^Transfer the amount 30K for 3 times$")
+	public void Transfer_the_amount_30K_for_3_times() {
+		for (int i=0; i<=3; i++) {
+			Transfer_30K();
+			System.out.println("Round number: "+i);
+		}
+	
+	}
+	
+	@Then("^Transfer the amount 30K for 3 times using international$")
+	public void Transfer_the_amount_30K_for_3_times_Inter() {
+		for (int i=0; i<=3; i++) {
+			Transfer_30K_inter();
+			System.out.println("Round number: "+i);
+		}
+	
+	}
 
 }

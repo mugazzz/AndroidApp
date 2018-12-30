@@ -43,6 +43,10 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No1 = "9677570";
+	    public static final String Cust_No_Sav_0 = "1212115";
+	    public static final String Cust_No_Cur_0 = "1212115";
+	    public static final String Cust_No_Sav_Inc = "1212115";
+	    public static final String Cust_No_Cur_Inc = "1212115";
 	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
 	    public static final String Act_Cust_No_Spec_No_bill = "4041984";
@@ -91,6 +95,8 @@ public class AppStrings {
 	    public static final String DUP_NICK = "The given nick name is already associated with the user";
 	    public static final String DUP_IBAN = "The beneficiary you are trying to add, already exists";
 	    public static final String Great_val = "The transfer amount entered is greater than the selected account's balance";
+	    public static final String Great_val1 = "You don't have an account with sufficient funds";
+	    public static final String Limit_Tran = "You have exceeded the transactional limit for Transfer to others";
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
@@ -110,6 +116,8 @@ public class AppStrings {
 	     
 	//Transfers section
 	    public static final String iban = "GB85NWBK60214774249150";
+	    public static final String iban_2 = "DE81260500010000141697";
+	    public static final String iban_21 = "DE81 2605 0001 0000 1416 97";
 	    public static final String inc_iban = "GB85NWBK60214774249152";
 	    public static final String iban1 = "GB85 NWBK 6021 4774 2491 50";
 	    public static final String iban2 = "NEW YORK,NY";
@@ -122,9 +130,14 @@ public class AppStrings {
 	    public static final String Nick_Name2 = "Tester2";
 	    public static final String Full_Name3 = "Automation3";
 	    public static final String Nick_Name3 = "Tester3";
+	    public static final String Nick_Name4 = "Tester4";
+	    public static final String Full_Name5 = "Automation5";
+	    public static final String Nick_Name5 = "Tester5";
 	    public static final String Contry = "Great Britain";
+	    public static final String Contry5 = "Germany";
 	    public static final String Contry1 = "United States of America";
 	    public static final String Bank_Name = "NATIONAL WESTMINSTER BANK PLC";
+	    public static final String Bank_Name5 = "Sparkasse Göttingen";
 	    public static final String Bank_Name1 = "BANK OF AMERICA, N.A.";
 	    public static final String Bank_Name_ahb = "AL Hilal Bank";
 	    public static final String Acc_Num = "898061194426";
@@ -137,6 +150,8 @@ public class AppStrings {
 	   
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
+	    public static final String Tran_amt3 = "150000.00";
+	    public static final String Tran_amt2 = "1.00";
 	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
 	    public static final String Reason_c = "Charitable Contributions";

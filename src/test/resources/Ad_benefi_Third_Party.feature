@@ -76,11 +76,11 @@ Given Verify the login check with Bio
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
 	Then Tap on add beneficiary option and navigate to add beneficiary screen
-	And Choose other bank option and enter the IBAN number
+	And Choose other bank option and enter the IBAN number2
 	Then Tap next and navigate to enter details screen
-	And Enter the full name and nick name to add beneficiary
+	And Enter the full name and nick name to add beneficiary5
 	Then Tap next and navigate to cofirm details screen
-	Then Verify the entered details
+	Then Verify the entered details5
 	And Tap confrim details button and verify the cofirm finger print popup appears
 	Then Tap on Cancel finger print popup and navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP1
@@ -145,7 +145,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts- Duplicate Nick Na
 	And Enter the full name and nick name to add beneficiary
 	And Tap confrim details button and verify the screen navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP1
-	Then Tap next and verify the validation
+	#Then Tap next and verify the validation1
 
 @Ad_Ben_Third_Party10 @Transfer_102
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate IBAN number
