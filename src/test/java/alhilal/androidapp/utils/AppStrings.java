@@ -43,6 +43,7 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No1 = "9677570";
+	    public static final String Act_Cust_No_100000 = "9667733";
 	    public static final String Cust_No_Sav_0 = "1212115";
 	    public static final String Cust_No_Cur_0 = "1212115";
 	    public static final String Cust_No_Sav_Inc = "1212115";
@@ -142,6 +143,14 @@ public class AppStrings {
 	    public static final String Bank_Name_ahb = "AL Hilal Bank";
 	    public static final String Acc_Num = "898061194426";
 	    public static final String Swif_Code = "BOFAUS3NXXX";
+	    public static final String Acc_Num_UK = "60214774249150";
+	    public static final String Swif_Code_UK = "NWBKGB2LXXX";
+	    public static final String Acc_Num_IN = "10310001873";
+	    public static final String Swif_Code_IN = "HDFCINBBXXX";
+	    public static final String Acc_Num_CA = "358320089516";
+	    public static final String Swif_Code_CA = "NOSCCATTXXX";
+	    public static final String Acc_Num_AU = "850434104";
+	    public static final String Swif_Code_AU = "NATAAU3303M";
 	    public static final String Incor_Swif_Code = "BOFAUS3NXXY";
 	    public static final String Con_Tm = "US";
 	    public static final String AHB_ACC = "4041984003";
@@ -150,11 +159,20 @@ public class AppStrings {
 	   
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
-	    public static final String Tran_amt3 = "150000.00";
+	    public static final String Tran_amt3 = "110000.00";
+	    public static final String Tran_amt4 = "100000.00";
 	    public static final String Tran_amt2 = "1.00";
 	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
 	    public static final String Reason_c = "Charitable Contributions";
-	    public static final String Charge_c = "Me";
+	    public static final String Charge_c = "By myself";
+	   
+	  //Contry Code
+	    public static final String Code_US = "Fed Wire or ABA";
+	    public static final String Code_UK = "Sort Code";
+	    public static final String Code_IN = "IFSC";
+	    public static final String Code_CA = "Transit Number";
+	    public static final String Code_AU = "BSB Number";
+	    
 	    
 }

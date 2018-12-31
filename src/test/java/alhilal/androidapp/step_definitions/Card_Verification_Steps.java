@@ -36,6 +36,11 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check();
 	}
 	
+	@Given("^Verify the login check 100000$")
+	public void verify_login_check_100000() {
+		Verify_Login_check_100000();
+	}
+	
 	@Given("^Verify the login check tran$")
 	public void verify_login_check_tran() {
 		Verify_Login_check_tran();

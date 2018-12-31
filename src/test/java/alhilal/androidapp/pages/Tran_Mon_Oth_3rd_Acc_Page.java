@@ -49,6 +49,12 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
 	}
 	
+	public void Sel_Cur_Acc100000() {
+		clickOnElement(FROM_ACC_DATA);
+		clickOnElement(CUR_ACC_AMT100000);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
+	}
+	
 	public void Sel_Sav_Acc() {
 		clickOnElement(FROM_ACC_DATA);
 		clickOnElement(SAV_ACC_AMT);
@@ -110,14 +116,62 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		clickOnElement(SEL_AED);
 	}
 	
+	public void Enter_Avai_Amt_USD() {
+//		try {
+//			String Avail_Amt = driver.findElement(AVAI_AMT).getText();
+//			System.out.println(Avail_Amt);
+//			String Avail_Amt1 = Avail_Amt.substring(17, Avail_Amt.length()-4);
+//			System.out.println(Avail_Amt1);
+//			float number = Float.valueOf(Avail_Amt1);
+//			float inc_amt = number+1;
+//			System.out.println("Add: "+inc_amt);
+//			String incr_amt = String.valueOf(inc_amt);
+//			System.out.println("Tr: "+incr_amt);
+//			enterText(TRAN_AMT, incr_amt);
+//		  	}
+//		catch (NumberFormatException e) {
+//		  		System.out.println("not a number");
+//		  	};
+		enterText(TRAN_AMT, Tran_amt3);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_USD);
+	}
+	
+	public void Enter_Avai_Amt_USD_100000() {
+//		try {
+//			String Avail_Amt = driver.findElement(AVAI_AMT).getText();
+//			System.out.println(Avail_Amt);
+//			String Avail_Amt1 = Avail_Amt.substring(17, Avail_Amt.length()-4);
+//			System.out.println(Avail_Amt1);
+//			float number = Float.valueOf(Avail_Amt1);
+//			float inc_amt = number+1;
+//			System.out.println("Add: "+inc_amt);
+//			String incr_amt = String.valueOf(inc_amt);
+//			System.out.println("Tr: "+incr_amt);
+//			enterText(TRAN_AMT, incr_amt);
+//		  	}
+//		catch (NumberFormatException e) {
+//		  		System.out.println("not a number");
+//		  	};
+		enterText(TRAN_AMT, Tran_amt4);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_USD);
+	}
+	
 	public void Enter_Amt_Cur() {
 		enterText(TRAN_AMT, Tran_amt);
 		clickOnElement(SEL_CUR);
 		clickOnElement(SEL_AED);
 	}
 	
+	public void Enter_Amt_Cur3() {
+		enterText(TRAN_AMT, Tran_amt4);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
+	}
+	
 	public void Enter_Amt_Cur1() {
-		enterText(TRAN_AMT, Tran_amt3);
+		enterText(TRAN_AMT, Tran_amt4);
 		clickOnElement(SEL_CUR);
 		clickOnElement(SEL_AED);
 	}
@@ -200,6 +254,19 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		assert Remark_C.equals(Remark): "Remark is not equal";
 	}
 	
+	public void Verf_Tran_Detail100000() {
+		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
+		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
+		assert Tran_Amt1.equals(Tran_amt4): "Debit amount is not equal";
+		appiumHelpers.assertTrue(elementExists(CUR_ACC100000), "Current Account number is not working");
+		String Reason = driver.findElement(REAS_CFN).getText();
+		assert Reason.equals(Reason_c): "Reason is not equal";
+		String Charge = driver.findElement(CHAR_BY).getText();
+		assert Charge.equals(Charge_c): "Charge is not equal";
+		String Remark_C = driver.findElement(REM_CFN).getText();
+		assert Remark_C.equals(Remark): "Remark is not equal";
+	}
+	
 	public void Verf_Sav_Tran_Detail() {
 		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
 		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
@@ -232,6 +299,23 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		String reference_no = driver.findElement(REF_NUM).getText();
 		System.out.println(reference_no);
 		appiumHelpers.assertTrue(elementExists(AMT_CNF), "Debited amount is not working");
+		LocalDate date = LocalDate.now();
+        String nextDate = date.toString();
+        System.out.println(nextDate);
+        String today = nextDate.substring(8, 10);
+        System.out.println(today);
+        String date2 = driver.findElement(CNF_DATE).getText();
+		String date1 = date2.substring(6, date2.length()-8);
+		System.out.println(date1);
+		assert date1.equals(today): "Date is not equal";
+	}
+	
+	public void Complete_and_Verify100000() {
+		clickOnElement(CONT_BUT);
+		appiumHelpers.waitForVisibilityOfElement(REF_NUM);
+		String reference_no = driver.findElement(REF_NUM).getText();
+		System.out.println(reference_no);
+		appiumHelpers.assertTrue(elementExists(AMT_CNF100000), "Debited amount is not working");
 		LocalDate date = LocalDate.now();
         String nextDate = date.toString();
         System.out.println(nextDate);

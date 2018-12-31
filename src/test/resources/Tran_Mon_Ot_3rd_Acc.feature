@@ -187,4 +187,88 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Choose the reason as charitable contributions
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
-		Then Click on next and verify the validation errror appears2	 
+		Then Click on next and verify the validation errror appears2
+		
+	@tran_mon_3rd_acc15 @reset @Transfer_48
+ 	Scenario: Able to transfer money to another local or international third party bank account - to local third party 100k AED(equal to limit) in one transaction
+ 	Given Verify the login check 100000
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the transfers icon on tab bar
+		And Select the option tranfer to others
+		Then Select any local third party account and navigate to transfers screen
+		And Tap on from account and select the current account_1000000
+		Then Verify the available balance amount appears
+		When Enter the amount and change the currency3
+		#Then Verify the indicative amount appears
+		And Select the from charges pay by and choose Me
+		Then Choose the reason as charitable contributions
+		And Enter the remarks
+		Then Click on next and verify the screen redirect to transfers details screen
+		Then Verify the transfer details100000
+		And Tap confirm button and verify the screen redirected to successfully transfered screen100000
+		
+		@tran_mon_3rd_acc15 @reset @Transfer_49
+ 	Scenario: Able to transfer money to another local or international third party bank account - to local third party 100k AED(equal to limit) in one transaction
+ 		Given Verify the login check 100000
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the transfers icon on tab bar
+		And Select the option tranfer to others
+		Then Select any third party account and navigate to transfers screen
+		And Tap on from account and select the current account_1000000
+		Then Verify the available balance amount appears
+		When Enter the amount and change the currency3
+		#Then Verify the indicative amount appears
+		And Select the from charges pay by and choose Me
+		Then Choose the reason as charitable contributions
+		And Enter the remarks
+		Then Click on next and verify the screen redirect to transfers details screen
+		Then Verify the transfer details100000
+		And Tap confirm button and verify the screen redirected to successfully transfered screen100000
+		
+	@tran_mon_3rd_acc16 @reset @Transfer_50
+ 	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
+ 	Given Verify the login check tran
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the transfers icon on tab bar
+		And Select the option tranfer to others
+		Then Select any third party account and navigate to transfers screen
+		And Tap on from account and select the current account
+		Then Verify the available balance amount appears
+		And Enter the Transfer amount and change the currency USD
+		And Select the from charges pay by and choose Me
+		Then Choose the reason as charitable contributions
+		And Enter the remarks
+		Then Click on next and verify the screen redirect to transfers details screen
+		Then Click on next and verify the validation errror appears2
+ 	
+ 	@tran_mon_3rd_acc17 @reset @Transfer_51
+ 	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
+		Given Verify the login check 100000
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the transfers icon on tab bar
+		And Select the option tranfer to others
+		Then Select any third party account and navigate to transfers screen
+		And Tap on from account and select the current account_1000000
+		Then Verify the available balance amount appears
+		And Enter the Transfer amount and change the currency USD
+		And Select the from charges pay by and choose Me
+		Then Choose the reason as charitable contributions
+		And Enter the remarks
+		Then Click on next and verify the screen redirect to transfers details screen
+		Then Click on next and verify the validation errror appears2
+ 	
+ 	@tran_mon_3rd_acc17 @reset @Transfer_52
+ 	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
+		Given Verify the login check 100000
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the transfers icon on tab bar
+		And Select the option tranfer to others
+		Then Select any third party account and navigate to transfers screen
+		And Tap on from account and select the current account_1000000
+		Then Verify the available balance amount appears
+		And Enter the Transfer amount and change the currency USD
+		And Select the from charges pay by and choose Me
+		Then Choose the reason as charitable contributions
+		And Enter the remarks
+		Then Click on next and verify the screen redirect to transfers details screen
+		Then Click on next and verify the validation errror appears2

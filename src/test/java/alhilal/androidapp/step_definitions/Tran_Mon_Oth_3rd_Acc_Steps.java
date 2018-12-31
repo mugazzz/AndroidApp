@@ -42,6 +42,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Sel_Cur_Acc2();
 	}
 	
+	@Then("^Tap on from account and select the current account_1000000$")
+	public void tap_on_from_account_and_select_the_current_account1000000() throws Throwable {
+	   Sel_Cur_Acc100000();
+	}
+	
 	@Then("^Tap on from account and select the savings account$")
 	public void tap_on_from_account_and_select_the_savings_account() throws Throwable {
 	   Sel_Sav_Acc();
@@ -60,6 +65,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@When("^Enter the amount and change the currency$")
 	public void enter_the_amount_and_change_the_currency() throws Throwable {
 	   Enter_Amt_Cur();
+	}
+	
+	@When("^Enter the amount and change the currency3$")
+	public void enter_the_amount_and_change_the_currency3() throws Throwable {
+	   Enter_Amt_Cur1();
 	}
 
 	@Then("^Verify the indicative amount appears$")
@@ -117,6 +127,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	 Verf_Tran_Detail1();
 	}
 	
+	@Then("^Verify the transfer details100000$")
+	public void verify_the_transfer_details100000(){
+	 Verf_Tran_Detail100000();
+	}
+	
 	@Then("^Verify the savings transfer details$")
 	public void verify_the_Save_transfer_details(){
 	 Verf_Sav_Tran_Detail();
@@ -130,6 +145,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen$")
 	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen(){
 	   Complete_and_Verify();
+	}
+	
+	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen100000$")
+	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen100000(){
+	   Complete_and_Verify100000();
 	}
 	
 	@Then("^Tap on from account and verify the savings account with zero balance is not shown$")
@@ -160,6 +180,16 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@Then("^Enter the Transfer amount and change the currency1$")
 	public void Enter_the_Transfer_amount_and_change_currency1() {
 		Enter_Avai_Amt1();
+	}
+	
+	@Then("^Enter the Transfer amount and change the currency USD$")
+	public void Enter_the_Transfer_amount_and_change_currency_USD() {
+		Enter_Avai_Amt_USD();
+	}
+	
+	@Then("^Enter the Transfer amount 100000 and change the currency USD$")
+	public void Enter_the_Transfer_amount_100000_and_change_currency_USD() {
+		Enter_Avai_Amt_USD_100000();
 	}
 	
 	@Then("^Transfer the amount 30K for 3 times$")
