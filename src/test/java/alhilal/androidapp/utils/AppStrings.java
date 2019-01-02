@@ -48,6 +48,8 @@ public class AppStrings {
 	    public static final String Cust_No_Cur_0 = "1212115";
 	    public static final String Cust_No_Sav_Inc = "1212115";
 	    public static final String Cust_No_Cur_Inc = "1212115";
+	    public static final String Cust_No_Cur_Inac = "1212115";
+	    public static final String Cust_No_Cur_Inac_Inter = "1212115";
 	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
 	    public static final String Act_Cust_No_Spec_No_bill = "4041984";
@@ -166,6 +168,7 @@ public class AppStrings {
 	    public static final String Remark = "Remark Testing";
 	    public static final String Reason_c = "Charitable Contributions";
 	    public static final String Charge_c = "By myself";
+	    public static final String Tran_Mode = "Yearly";
 	   
 	  //Contry Code
 	    public static final String Code_US = "Fed Wire or ABA";

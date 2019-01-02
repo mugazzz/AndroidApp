@@ -66,6 +66,16 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check_tran4();
 	}
 	
+	@Given("^Verify the login check inact$")
+	public void verify_login_check_inact() {
+		Verify_Login_check_inact();
+	}
+	
+	@Given("^Verify the login check inact inter$")
+	public void verify_login_check_inact_inter() {
+		Verify_Login_check_inact_inter();
+	}
+	
 	@Given("^Verify the login check with Bio$")
 	public void verify_login_check_Bio() {
 		Verify_Login_check_Bio();

@@ -15,6 +15,11 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	}
 	
+	public void Tap_card() {
+		clickOnElement(CARD_ACC);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
+	}
+	
 	public void Tap_3rd_Acc1() {
 		clickOnElement(THIRD_ACC1);
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
@@ -23,6 +28,11 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 	
 	public void Tap_Loc_3rd_Acc() {
 		clickOnElement(LOC_THIRD_ACC);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
+	}
+	
+	public void Tap_own_Acc() {
+		clickOnElement(OWN_ACC);
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	}
 	
@@ -241,6 +251,15 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		assert Remark_C.equals(Remark): "Remark is not equal";
 	}
 	
+	public void Verf_Tran_Detail_for_card() {
+		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
+		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
+		assert Tran_Amt1.equals(Tran_amt): "Debit amount is not equal";
+		appiumHelpers.assertTrue(elementExists(CUR_ACC), "Current Account number is not working");
+		String Remark_C = driver.findElement(REM_CFN).getText();
+		assert Remark_C.equals(Remark): "Remark is not equal";
+	}
+	
 	public void Verf_Tran_Detail1() {
 		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
 		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
@@ -345,6 +364,16 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 	public void Verify_Inact_Current() {
 		clickOnElement(FROM_ACC_DATA);
 		appiumHelpers.assertFalse(elementExists(INAC_CUR_ACC), "Zero Balance Savings Account should not Appear");	
+	}
+	
+	public void Verify_Inact_Current1() {
+		clickOnElement(FROM_ACC_DATA);
+		appiumHelpers.assertFalse(elementExists(INAC_CUR_ACC1), "Inactive Account should not Appear");	
+	}
+	
+	public void Verify_Inact_Current2() {
+		clickOnElement(FROM_ACC_DATA);
+		appiumHelpers.assertFalse(elementExists(INAC_CUR_ACC2), "Inactive Account should not Appear");	
 	}
 	
 	

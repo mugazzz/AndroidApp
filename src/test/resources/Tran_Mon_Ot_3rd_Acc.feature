@@ -189,7 +189,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Click on next and verify the screen redirect to transfers details screen
 		Then Click on next and verify the validation errror appears2
 		
-	@tran_mon_3rd_acc15 @reset @Transfer_48
+	@tran_mon_3rd_acc15 @reset @Transfer_47
  	Scenario: Able to transfer money to another local or international third party bank account - to local third party 100k AED(equal to limit) in one transaction
  	Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
@@ -207,7 +207,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Verify the transfer details100000
 		And Tap confirm button and verify the screen redirected to successfully transfered screen100000
 		
-		@tran_mon_3rd_acc15 @reset @Transfer_49
+		@tran_mon_3rd_acc15 @reset @Transfer_48
  	Scenario: Able to transfer money to another local or international third party bank account - to local third party 100k AED(equal to limit) in one transaction
  		Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
@@ -225,7 +225,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Verify the transfer details100000
 		And Tap confirm button and verify the screen redirected to successfully transfered screen100000
 		
-	@tran_mon_3rd_acc16 @reset @Transfer_50
+	@tran_mon_3rd_acc16 @reset @Transfer_49
  	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
  	Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -241,7 +241,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Click on next and verify the screen redirect to transfers details screen
 		Then Click on next and verify the validation errror appears2
  	
- 	@tran_mon_3rd_acc17 @reset @Transfer_51
+ 	@tran_mon_3rd_acc17 @reset @Transfer_50
  	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
 		Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
@@ -257,7 +257,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Click on next and verify the screen redirect to transfers details screen
 		Then Click on next and verify the validation errror appears2
  	
- 	@tran_mon_3rd_acc17 @reset @Transfer_52
+ 	@tran_mon_3rd_acc18 @reset @Transfer_51
  	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
 		Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
@@ -272,3 +272,22 @@ Feature: Transfer money to another local or international third party bank accou
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
 		Then Click on next and verify the validation errror appears2
+		
+	@tran_mon_3rd_acc19 @reset @Transfer_52
+ 	Scenario: Able to transfer money to another local or international third party bank account - Inactive local third party To account
+ 		Given Verify the login check inact
+  	And Verify the user redirected to Dashboard screen successfully
+  	Then Tap on the transfers icon on tab bar
+  	And Select the option tranfer to others
+  	Then Select any third party account and navigate to transfers screen1
+  	And Tap on from account and verify the inactive current account is not shown1
+  	
+  @tran_mon_3rd_acc19 @reset @Transfer_53
+ 	Scenario: Able to transfer money to another local or international third party bank account - Inactive international third party To account
+ 		Given Verify the login check inact inter
+  	And Verify the user redirected to Dashboard screen successfully
+  	Then Tap on the transfers icon on tab bar
+  	And Select the option tranfer to others
+  	Then Select any third party account and navigate to transfers screen1
+  	And Tap on from account and verify the inactive current account is not shown2
+ 		

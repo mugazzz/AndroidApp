@@ -11,6 +11,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Tap_3rd_Acc();
 	}
 	
+	@Then("^Select the AHB Card and navigate to transfer screen$")
+	public void Select_AHB_Card() throws Throwable {
+		Tap_card();
+	}
+	
 	@Then("^Select any third party account and navigate to transfers screen1$")
 	public void select_any_third_party_account_and_navigate_to_transfers_screen1() throws Throwable {
 	   Tap_3rd_Acc1();
@@ -22,6 +27,16 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Tap_Loc_3rd_Acc();
 	}
 	
+	@Then("^Select own account and navigate to transfers screen$")
+	public void select_own_account_and_navigate_to_transfers_screen() throws Throwable {
+	   Tap_own_Acc();
+	}
+	
+	@Then("^Select AHB account and navigate to transfers screen$")
+	public void select_AHB_account_and_navigate_to_transfers_screen() throws Throwable {
+	   Tap_own_Acc();
+	}
+	
 	@Then("^Select any local third party account and navigate to transfers screen1$")
 	public void select_any_local_third_party_account_and_navigate_to_transfers_screen1() throws Throwable {
 	   Tap_Loc_3rd_Acc1();
@@ -31,6 +46,7 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	public void tap_on_from_account_and_select_the_current_account() throws Throwable {
 	   Sel_Cur_Acc();
 	}
+	
 	
 	@Then("^Tap on from account and select the current account1$")
 	public void tap_on_from_account_and_select_the_current_account1() throws Throwable {
@@ -122,6 +138,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	 Verf_Tran_Detail();
 	}
 	
+	@Then("^Verify the transfer details for cards$")
+	public void verify_the_transfer_details_for_cards(){
+	 Verf_Tran_Detail_for_card();
+	}
+	
 	@Then("^Verify the transfer details1$")
 	public void verify_the_transfer_details1(){
 	 Verf_Tran_Detail1();
@@ -170,6 +191,16 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@Then("^Tap on from account and verify the inactive current account is not shown$")
 	public void tap_on_from_account_and_verify_the_inactive_current_account_with_zero_balance_is_not_shown() {
 		Verify_Inact_Current();
+	}
+	
+	@Then("^Tap on from account and verify the inactive current account is not shown1$")
+	public void tap_on_from_account_and_verify_the_inactive_current_account_with_zero_balance_is_not_shown1() {
+		Verify_Inact_Current1();
+	}
+	
+	@Then("^Tap on from account and verify the inactive current account is not shown2$")
+	public void tap_on_from_account_and_verify_the_inactive_current_account_with_zero_balance_is_not_shown2() {
+		Verify_Inact_Current2();
 	}
 	
 	@Then("^Enter the Transfer amount and change the currency$")

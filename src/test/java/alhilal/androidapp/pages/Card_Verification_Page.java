@@ -127,6 +127,7 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
+			 enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -171,6 +172,30 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
 			 Register_Specific_user(Cust_No_Cur_Inc, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_inact() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Cust_No_Cur_Inac, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_check_inact_inter() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Cust_No_Cur_Inac_Inter, Act_SMS_PN);
 			 //Register_using_Credit_Card();
 		 }
 		 else {
