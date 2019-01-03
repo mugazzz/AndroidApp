@@ -101,7 +101,7 @@ Feature: Transfer money to another local or international third party bank accou
   	 Then Tap on the transfers icon on tab bar
   	 And Select the option tranfer to others
   	 Then Select any third party account and navigate to transfers screen1
-  	 And Tap on from account and verify the current account with zero balance is not shown
+  	 And Tap on from account and verify the Current account with zero balance is not shown
   	 
 @tran_mon_3rd_acc8 @reset @Transfer_41
   Scenario: Able to transfer money to another local or international third party bank account -inactive current account

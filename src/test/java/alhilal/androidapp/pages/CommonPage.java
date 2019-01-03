@@ -40,7 +40,12 @@ public class CommonPage extends ConfigDriver {
                  .moveTo(ElementOption.element(slider, 20, -690)).release();
          scroll.perform();
     }
-
+    
+    public void Select_Mode(By locator) {
+		clickOnElement(SEL_MOD);
+		clickOnElement(locator);
+	}
+    
     public void navigateBack() {
         driver.navigate().back();
     }

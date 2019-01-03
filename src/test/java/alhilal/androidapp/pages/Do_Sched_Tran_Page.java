@@ -12,10 +12,6 @@ public class Do_Sched_Tran_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(SCHED_HD);
 	}
 	
-	public void Select_Mode(By locator) {
-		clickOnElement(SEL_MOD);
-		clickOnElement(locator);
-	}
 	
 	public void  Select_date() {
 		clickOnElement(DATE_NXT);

@@ -265,7 +265,7 @@ public class Locators {
 	
 	
 	//Tranfers
-	public static final By TRANF_TO_OTHERS = By.id("lblPayAPerson");
+	public static final By TRANF_TO_OTHERS = By.id("flxPayAPerson");
 	public static final By ADD_BENIF = By.id("lblAddBeneficiary");
 	public static final By OTHER_BANK = By.id("lblOtherBank");
 	public static final By ENT_IBAN = By.id("tbxIban");
@@ -303,6 +303,7 @@ public class Locators {
 	public static final By LOC_THIRD_ACC = By.xpath("//android.widget.TextView[@text='2639 2828']");
 	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE63 0530 0000 2967 7570 022']");
 	public static final By LOC_THIRD_ACC1 = By.xpath("//android.widget.TextView[@text='2639 6282 8']");
+	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='4041 9840 03']");
 	public static final By FROM_ACC = By.id("lblFromAccount1");
 	public static final By FROM_ACC_DATA = By.id("lbxFromAccountData");
 	public static final By TRAN_AMT = By.id("tbxTransferAmount");
@@ -370,11 +371,15 @@ public class Locators {
 	public static final By CARD_CHECK = By.xpath("//android.widget.TextView[@text='Smart Platinum No Fee']");
 	public static final By LOCAL_CHECK = By.xpath("//android.widget.TextView[@text='local']");
 	public static final By OWN_CHECK = By.xpath("//android.widget.TextView[@text='029677570022XXXXX']");
+	public static final By OTHER_CARD = By.id("flxTransferSomeOne");
+	public static final By AHB_CARD = By.id("tbxAccountNumber");
 	
 	//Successful Screen
 	public static final By REF_NUM = By.id("lblNumberHeader");
 	public static final By BEN_ACC = By.xpath("//android.widget.TextView[@text='Beneficiary account: GB85 NWBK 6021 4774 2491 50']");
 	public static final By AMT_CNF = By.xpath("//android.widget.TextView[@text='Amount: 1.00 AED']");
+	public static final By AMT_CNF2 = By.xpath("//android.widget.TextView[@text='Amount: 30,000.00 AED']");
+	public static final By AMT_CNF1 = By.xpath("//android.widget.TextView[@text='Amount: 1.00 USD']");
 	public static final By AMT_CNF100000 = By.xpath("//android.widget.TextView[@text='Amount: 100000.00 AED']");
 	public static final By CNF_DATE = By.id("lblDateHeader");
 	

@@ -41,6 +41,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	public void select_any_local_third_party_account_and_navigate_to_transfers_screen1() throws Throwable {
 	   Tap_Loc_3rd_Acc1();
 	}
+	
+	@Then("^Select any AHB account and navigate to transfers screen$")
+	public void Select_AHB_account() throws Throwable {
+		Tap_AHB_ACO();
+	}
 
 	@Then("^Tap on from account and select the current account$")
 	public void tap_on_from_account_and_select_the_current_account() throws Throwable {
@@ -143,6 +148,16 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	 Verf_Tran_Detail_for_card();
 	}
 	
+	@Then("^Verify the transfer details for cards_s$")
+	public void verify_the_transfer_details_for_cards_s(){
+	 Verf_Tran_Detail_for_card_s();
+	}
+	
+	@Then("^Verify the transfer details for cards1$")
+	public void verify_the_transfer_details_for_cards1(){
+	 Verf_Tran_Detail_for_card1();
+	}
+	
 	@Then("^Verify the transfer details1$")
 	public void verify_the_transfer_details1(){
 	 Verf_Tran_Detail1();
@@ -151,6 +166,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@Then("^Verify the transfer details100000$")
 	public void verify_the_transfer_details100000(){
 	 Verf_Tran_Detail100000();
+	}
+	
+	@Then("^Verify the transfer details1000001$")
+	public void verify_the_transfer_details1000001(){
+	 Verf_Tran_Detail1000001();
 	}
 	
 	@Then("^Verify the savings transfer details$")
@@ -168,9 +188,19 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Complete_and_Verify();
 	}
 	
+	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen1$")
+	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen1(){
+	   Complete_and_Verify1();
+	}
+	
 	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen100000$")
 	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen100000(){
 	   Complete_and_Verify100000();
+	}
+	
+	@Then("^Tap confirm button and verify the screen redirected to successfully transfered screen1000001$")
+	public void tap_confirm_button_and_verify_the_screen_redirected_to_successfully_transfered_screen1000001(){
+	   Complete_and_Verify1000001();
 	}
 	
 	@Then("^Tap on from account and verify the savings account with zero balance is not shown$")
@@ -216,6 +246,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@Then("^Enter the Transfer amount and change the currency USD$")
 	public void Enter_the_Transfer_amount_and_change_currency_USD() {
 		Enter_Avai_Amt_USD();
+	}
+	
+	@Then("^Enter the Transfer amount and change the currency USD1$")
+	public void Enter_the_Transfer_amount_and_change_currency_USD1() {
+		Enter_Avai_Amt_USD1();
 	}
 	
 	@Then("^Enter the Transfer amount 100000 and change the currency USD$")

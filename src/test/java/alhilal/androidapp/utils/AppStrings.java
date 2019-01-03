@@ -11,6 +11,7 @@ public class AppStrings {
     
     //Credit Card Registration
 	    public static final String Act_Credit_Card_No = "4584610105853560";
+	    public static final String Own_Credit_Card_No = "4584610164670400";
 //	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
 //	    public static final String Act_Credit_Card_Pin_Specific = "1234";
 	    public static final String Exp_Credit_Card_No = "4584610162603620";
@@ -161,8 +162,8 @@ public class AppStrings {
 	   
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
-	    public static final String Tran_amt3 = "110000.00";
-	    public static final String Tran_amt4 = "100000.00";
+	    public static final String Tran_amt3 = "110,000.00";
+	    public static final String Tran_amt4 = "1.00";
 	    public static final String Tran_amt2 = "1.00";
 	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
