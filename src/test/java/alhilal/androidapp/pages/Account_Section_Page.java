@@ -3,12 +3,15 @@ package alhilal.androidapp.pages;
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.touch.TouchActions;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 import io.appium.java_client.MobileElement;
 
@@ -170,10 +173,25 @@ public class Account_Section_Page extends CommonPage{
 		
 		public void  Verify_My_Deposit() {
 			scrollDown(ACT_DEPOSIT_ACC1);
+			scrollDown(ACT_DEPOSIT_ACC2);
 			scrollDown(FINANCES_LABEL);
 			appiumHelpers.waitForVisibilityOfElement(DEPOSIT_LABEL);
 			appiumHelpers.assertTrue(elementExists(DEPOSIT_LABEL), "My Deposit Section is available");
 		}
+		
+		/*public void verify_MY_Deposit1()
+		{
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+		    HashMap<String, String> scrollObjects = new HashMap<String, String>();
+		    scrollObjects.put("direction", "down");
+		    scrollObjects.put("element", ((RemoteWebElement) FINANCES_LABEL).getId());
+		    js.executeScript("mobile: scroll", scrollObjects);
+		    try {
+		        Thread.sleep(ONE_SECOND);
+		    } catch (InterruptedException e) {
+		        e.printStackTrace();
+		    }
+		}*/
 		
 		
 		public void Navigate_To_Finance_Details() {
@@ -291,16 +309,16 @@ public class Account_Section_Page extends CommonPage{
 		}
 		
 		public void Navigate_To_Deposit_Details() {
-			appiumHelpers.waitForVisibilityOfElement(DEPOSIT_ACC);
+			//appiumHelpers.waitForVisibilityOfElement(DEPOSIT_ACC);
 			clickOnElement(DEPOSIT_ACC);
 			//appiumHelpers.waitForVisibilityOfElement(CHEQUE_NO);
 			
 		}
 		
 		public void Verify_Deposit_Details() {
-			//appiumHelpers.waitForVisibilityOfElement(DEPOSIT_TYPE);
-			//String Deposit_Type = driver.findElement(DEPOSIT_TYPE).getText();
-			//assert Deposit_Type.length() >=0: "Deposit Type label is visible";
+			appiumHelpers.waitForVisibilityOfElement(DEPOSIT_TYPE);
+			String Deposit_Type = driver.findElement(DEPOSIT_TYPE).getText();
+			assert Deposit_Type.length() >=0: "Deposit Type label is visible";
 			String Deposit_Ac_No = driver.findElement(DEPOSIT_AC_NO).getText();
 			assert Deposit_Ac_No.length() >=0: "Deposit Account Number is working fine";
 			String Deposit_Ac_Bl_Lb = driver.findElement(DEPOSIT_AV_BAL_LB).getText();
