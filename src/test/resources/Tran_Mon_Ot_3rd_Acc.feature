@@ -1,4 +1,4 @@
-@tran_mon_3rd_acc @sprint4
+@tran_mon_3rd_acc @sprint4 @sprint4_5
 
 Feature: Transfer money to another local or international third party bank account
  I should be able to transfer money to another local or international third party bank account

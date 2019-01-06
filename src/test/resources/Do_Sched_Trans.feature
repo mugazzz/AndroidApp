@@ -1,4 +1,4 @@
-@do_sche_tran @sprint5
+@do_sche_tran @sprint5 @sprint4_5
 Feature: Perform scheduled transfers
   I should be able to perform scheduled transfers
 

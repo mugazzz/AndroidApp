@@ -1,4 +1,4 @@
-@tran_Anoth_AHB_Card @sprint5
+@tran_Anoth_AHB_Card @sprint5 @sprint4_5
 Feature: Transfer money to another AHB card
  I should be able to transfer money to another AHB card
 

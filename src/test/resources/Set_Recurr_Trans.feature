@@ -1,4 +1,4 @@
-@set_recur @sprint5
+@set_recur @sprint5 @sprint4_5
 Feature: Set recurring transfers
   I should be able to set recurring transfers
 

@@ -36,8 +36,10 @@ public class ConfigDriver {
 	        DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "0117115562950701");
 	        capabilities.setCapability("automationName", "UiAutomator");
-	        capabilities.setCapability("appPackage", "com.ahb.mb.dev");
-	        capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
+	        //capabilities.setCapability("appPackage", "com.ahb.mb.dev");
+	        capabilities.setCapability("appPackage", "com.ahb.mb.mobileqc");
+	        //capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
+	        capabilities.setCapability("appActivity", "com.ahb.mb.mobileqc.AlHilalBank");
 	        capabilities.setCapability(MobileCapabilityType.APP, appPath);
 	        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
 	        if (scenario.getSourceTagNames().contains("@reset")) {
