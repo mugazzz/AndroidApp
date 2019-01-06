@@ -387,7 +387,26 @@ public class Locators {
 	public static final By CONFIGBTN = By.id("fab_new");
 	public static final By VENDOR_SELECT = By.xpath("//android.widget.CheckedTextView[@text='MS SQL']");
 
-	
-	
+	//Payments
+	public static final By PAY_BILL = By.id("flxBillPay");
+	public static final By FLX_PAYEE = By.id("flxPayees");
+	public static final By PAY_MANAGE = By.id("flxManage");
+	public static final By ADD_PAYEE = By.id("lblAddPayee");
+	public static final By SELECT_SERVICE = By.id("lbxServiceProviderData");
+	public static final By ADDC = By.xpath("//android.widget.CheckedTextView[@text='ADDC']");
+	public static final By SALIK = By.xpath("//android.widget.CheckedTextView[@text='SALIK']");
+	public static final By ETISALAT = By.xpath("//android.widget.CheckedTextView[@text='ETISALAT']");
+	public static final By CON_NUMB = By.id("tbxAccountNo");
+	public static final By CON_NICK = By.id("tbxNickName");
+	public static final By CON_PIN = By.id("tbxConsumerPin");
+	public static final By NXT = By.id("btnNext");
+	public static final By SER_PRO = By.id("lblServiceProvider");
+	public static final By SER_PRO_VAL = By.id("lblServiceProviderValue");
+	public static final By CONS_LB = By.id("lblConsumerNumber");
+	public static final By CONS_LB_VAL = By.id("lblConsumerNumberValue");
+	public static final By NICK_LB = By.id("lblNickName");
+	public static final By NICK_LB_VAL = By.id("lblNickNameValue");
+	public static final By CTN = By.id("btnContinue");
+	public static final By CNF_IMG = By.id("imgConfirmation");
 	
 }

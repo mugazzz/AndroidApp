@@ -113,6 +113,13 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 		Verify_AutoFly();
 	}
 	
+	@Then("^Tap confrim details button and verify the screen navigate to OTP screen1$")
+	public void tap_confrim_details_button_and_verify_OTP_Screenaa1() {
+		appiumHelpers.waitForVisibilityOfElement(CTN);
+		clickOnElement(CTN);
+		Verify_AutoFly();
+	}
+	
 	@Then("^Tap on Cancel finger print popup and navigate to OTP screen$")
 	public void tap_on_cancel_finger_popup_andNavigate() {
 		clickOnElement(FINGERPRINTS_POPUP_CANCEL);

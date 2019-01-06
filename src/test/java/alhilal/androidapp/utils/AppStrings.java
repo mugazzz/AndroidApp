@@ -180,5 +180,12 @@ public class AppStrings {
 	    public static final String Code_CA = "Transit Number";
 	    public static final String Code_AU = "BSB Number";
 	    
-	    
+	  //Consumer Number
+	    public static final String Pay_Cons = "32421441";
+	    public static final String Pay_nick = "Automation5";
+	    public static final String Pay_Cons1 = "6464500000";
+	    public static final String Pay_nick1 = "Automation6";
+	    public static final String Pay_pin = "6568";
+	    public static final String SALIK1 = "SALIK";
+	    public static final String ADDC1 = "ADDC";
 }
