@@ -10,6 +10,7 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 	public void check_the_My_Cards_section_is_available_for_user(){
 	   Check_For_MyCards();
 	}
+	
 
 	@Then("^Tap on specific card and navigate to card details screen$")
 	public void tap_on_specific_card_and_navigate_to_card_details_screen(){

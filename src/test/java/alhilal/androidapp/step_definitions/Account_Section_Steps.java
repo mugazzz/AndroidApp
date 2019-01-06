@@ -88,6 +88,7 @@ public class Account_Section_Steps extends Account_Section_Page {
 	@Then("^Verify my deposits is availble for the user$")
 	public void verify_my_deposits_is_availble_for_the_user() {
 		Verify_My_Deposit();
+		//verify_MY_Deposit1();
 	}
 
 	@Then("^Tap on any deposit account and navigate to deposit detail screen$")

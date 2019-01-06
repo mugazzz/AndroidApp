@@ -3,10 +3,12 @@ package alhilal.androidapp.pages;
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
 
+import org.openqa.selenium.By;
+
 public class Card_Verification_Page extends CommonPage{
 
 	public void Check_For_MyCards() {
-		scrollDown(ACT_SAVING_ACC1);
+		scrollDown(ACT_SAVING_ACC);
 		scrollDown(CARD_LABEL);
 		appiumHelpers.waitForVisibilityOfElement(CARD_LABEL);
 		appiumHelpers.assertTrue(elementExists(CARD_LABEL), "Is available");
@@ -14,11 +16,12 @@ public class Card_Verification_Page extends CommonPage{
 	
 	public void Navigate_Card_Detail(){
 		clickOnElement(VISA_GOLD);
-		appiumHelpers.waitForVisibilityOfElement(CARD_SLIDE);
+		//appiumHelpers.waitForVisibilityOfElement(CARD_SLIDE);
 	}
 	
 	public void Verify_Card_Details() {
-		appiumHelpers.assertTrue(elementExists(AVL_CRD_LMT_LB), "Available Card limit is visible");
+		
+        appiumHelpers.assertTrue(elementExists(AVL_CRD_LMT_LB), "Available Card limit is visible");
 		String Available_Card_Limt = driver.findElement(AVL_CRD_LMT_VL).getText();
 		System.out.println("Available Card Limit: "+Available_Card_Limt);
 		appiumHelpers.assertTrue(elementExists(OUT_STANDING_LB), "Total OutStanding balance is visible");
@@ -28,6 +31,7 @@ public class Card_Verification_Page extends CommonPage{
 		System.out.println("Card Number is: "+Card_Number);
 		String Card_Holder_Name = driver.findElement(CARD_HOLD_NAME).getText();
 		System.out.println("Card Holder Name: "+Card_Holder_Name);
+		
 	}
 	
 	public void Verify_Add_Card_Details() {

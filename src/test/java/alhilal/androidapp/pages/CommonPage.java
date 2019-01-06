@@ -37,7 +37,7 @@ public class CommonPage extends ConfigDriver {
          Dimension size = slider.getSize();
          TouchAction scroll = new TouchAction(driver).press(ElementOption.element(slider, size.width / 2, -(size.height / 2 + size.height / 6)))
                  .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(5)))
-                 .moveTo(ElementOption.element(slider, 20, -890)).release();
+                 .moveTo(ElementOption.element(slider, 20, -690)).release();
          scroll.perform();
     }
 
