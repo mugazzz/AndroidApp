@@ -27,7 +27,7 @@ Scenario: Enable FingerPrint for the user
 	Then Enter the Active Credit Card number
 	And Enter the Active Credit Card PIN number
 	Then Verify the card details are validated on flying and navigate to OTP screen
-	Then Get the OTP from the third party app and enter the OTP
+	Then Get the OTP from the third party app and enter the OTPq
 	And Confirm the screen navigates to you are all set! screen
 	Then Tap on Skip without Enable the Fingerprints button and verify the screen redirects to Dashboard screen
 	

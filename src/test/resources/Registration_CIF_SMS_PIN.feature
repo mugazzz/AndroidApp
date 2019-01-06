@@ -75,7 +75,7 @@ Scenario: Registration process should allow user to activate biometric login - b
 	Then Enter the valid customer number
 	Then Enter the valid SMS PIN 
 	Then Verify the card details are validated on fly and navigate to OTP screen
-	Then Get the OTP from the third party app and enter the OTP
+	Then Get the OTP from the third party app and enter the OTPq
 	And Confirm the screen navigates to you are all set! screen
 	Then Tap on Enable Fingerprints button and verify the screen redirects to Dashboard screen
 	

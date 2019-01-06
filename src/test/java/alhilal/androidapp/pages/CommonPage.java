@@ -7,10 +7,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static alhilal.androidapp.utils.Locators.*;
 import static org.junit.Assert.assertThat;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +21,9 @@ import alhilal.androidapp.utils.AppiumHelpers;
 import alhilal.androidapp.utils.ConfigDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.StartsActivity;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
@@ -143,6 +149,63 @@ public class CommonPage extends ConfigDriver {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		enterText(OPT_FIELD, OTP);
 	}
+    
+    public void OTPq() throws MalformedURLException {
+    	DesiredCapabilities capabilities1 = new DesiredCapabilities();
+		capabilities1.setCapability("VERSION", "8.0.0"); 
+    	capabilities1.setCapability("deviceName","ce12171ca29fc41504");
+    	capabilities1.setCapability("platformName","Android");
+		capabilities1.setCapability("appPackage", "com.kriskast.remotedb");
+    	capabilities1.setCapability("appActivity", "com.kriskast.remotedb.SplashScreenActivity");
+    	AndroidDriver<MobileElement> driver2 = new AndroidDriver<>(new URL("http://0.0.0.0:4734/wd/hub"), capabilities1);
+    	driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("fab_new")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("text1")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(VENDOR_SELECT).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("et_desc")).sendKeys("SMS");
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("et_host")).sendKeys("10.10.137.140");
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("et_port")).sendKeys("1433");
+		driver2.hideKeyboard();
+		MobileElement slider = driver2.findElement(By.id("et_user"));
+        Dimension size = slider.getSize();
+        TouchAction scroll = new TouchAction(driver2).press(ElementOption.element(slider, size.width / 2, -(size.height / 2 + size.height / 6)))
+                .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(5)))
+                .moveTo(ElementOption.element(slider, 20, -690)).release();
+        scroll.perform();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("et_user")).sendKeys("sms");
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);;
+		//driver2.findElement(By.id("tv_url")).click();
+		driver2.hideKeyboard();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("et_pass")).sendKeys("sms");
+		driver2.hideKeyboard();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("btn_save")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("card_view")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("button1")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[2]")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("et_query")).sendKeys(Query);
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver2.findElement(By.id("btn_execute")).click();
+		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		String TotalKey = driver2.findElement(By.xpath("//android.widget.HorizontalScrollView[@index='12']/android.support.v7.widget.RecyclerView[@index='0']/android.widget.TextView[@index='1']")).getText();
+		System.out.println(TotalKey);
+		String OTP = TotalKey.substring(55, 62);
+		System.out.println(OTP);
+		driver.activateApp("com.ahb.mb.qa");
+		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		enterText(OPT_FIELD, OTP);
+    }
     
     public void Register_using_Credit_Card() {
 		driver.resetApp();

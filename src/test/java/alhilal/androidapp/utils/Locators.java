@@ -12,7 +12,7 @@ public class Locators {
 	
 	//Registration screen
 	
-	public static final By Landing_Screen_Logo = By.id("com.ahb.mb.dev:id/imgLogo");
+	public static final By Landing_Screen_Logo = By.id("imgLogo");
 	public static final By REG_CARD_BTN = By.xpath("//android.widget.Button[@text='Register using card number']");
 	public static final By REG_CARD_BTNID = By.id("btnLetsgetStarted");
 	public static final By CONACT_US = By.xpath("//android.widget.TextView[@text='Contact Us']");
@@ -382,6 +382,12 @@ public class Locators {
 	public static final By AMT_CNF1 = By.xpath("//android.widget.TextView[@text='Amount: 1.00 USD']");
 	public static final By AMT_CNF100000 = By.xpath("//android.widget.TextView[@text='Amount: 100000.00 AED']");
 	public static final By CNF_DATE = By.id("lblDateHeader");
+	
+	//OTP
+	public static final By CONFIGBTN = By.id("fab_new");
+	public static final By VENDOR_SELECT = By.xpath("//android.widget.CheckedTextView[@text='MS SQL']");
+
+	
 	
 	
 }

@@ -3,6 +3,8 @@ package alhilal.androidapp.pages;
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
 
+import java.net.MalformedURLException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -57,6 +59,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	public void Verify_AutoFly() {
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
+		driver.runAppInBackground(Duration.ofSeconds(0));
 	}
 	
 	public void Enter_Incor_Cred_Card(){
@@ -90,7 +93,17 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 			OTP();	
 		}
 		}
-		
+	}
+	
+		public void Third_PartyAppq() throws MalformedURLException {
+			OTPq();
+			if(elemenDoesnotExists(ALL_SET)){
+				if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+				clickOnElement(RESEND_OTP);
+				OTPq();	
+			}
+			}
+			
 		/*driver.runAppInBackground(Duration.ofSeconds(3));
 		DesiredCapabilities capabilities1 = new DesiredCapabilities();
 		capabilities1.setCapability("VERSION", "8.0.0"); 

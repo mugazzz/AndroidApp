@@ -126,6 +126,11 @@ public class Reg_Use_Credit_Card_Steps extends Reg_Use_Credit_Card_Page {
 		Third_PartyApp();
 	}
 	
+	@Then("^Get the OTP from the third party app and enter the OTPq$")
+	public void get_the_OTP_from_the_third_party_app_and_enter_the_OTPq() throws MalformedURLException{
+		Third_PartyAppq();
+	}
+	
 	@Then("^Get the OTP from the third party app and enter the OTP1$")
 	public void get_the_OTP_from_the_third_party_app_and_enter_the_OTP1() throws MalformedURLException{
 		Third_PartyApp1();

@@ -49,7 +49,7 @@ public class AppStrings {
 	    public static final String Cust_No_Cur_0 = "1212115";
 	    public static final String Cust_No_Sav_Inc = "1212115";
 	    public static final String Cust_No_Cur_Inc = "1212115";
-	    public static final String Cust_No_Cur_Inac = "1212115";
+	    public static final String Cust_No_Cur_Inac = "1212115";	
 	    public static final String Cust_No_Cur_Inac_Inter = "1212115";
 	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
@@ -106,6 +106,8 @@ public class AppStrings {
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
 	    public static final String web_username = "administrator";
 	    public static final String web_password = "password1";
+	    public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc";
+	    
     
 	//Advanced Search Screen
 	    public static final String Cheque_from = "10";
