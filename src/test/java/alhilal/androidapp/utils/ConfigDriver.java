@@ -37,9 +37,9 @@ public class ConfigDriver {
 	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "0117115562950701");
 	        capabilities.setCapability("automationName", "UiAutomator");
 	        //capabilities.setCapability("appPackage", "com.ahb.mb.dev");
-	        capabilities.setCapability("appPackage", "com.ahb.mb.mobileqc");
 	        //capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
-	        capabilities.setCapability("appActivity", "com.ahb.mb.mobileqc.AlHilalBank");
+	        capabilities.setCapability("appPackage", "com.ahb.mb.qa");
+	        capabilities.setCapability("appActivity", "com.ahb.mb.qa.AlHilalBank");
 	        capabilities.setCapability(MobileCapabilityType.APP, appPath);
 	        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
 	        if (scenario.getSourceTagNames().contains("@reset")) {
@@ -80,6 +80,7 @@ public class ConfigDriver {
 	            }
 	        }
 	        return null;
+	        
 	    }
 
 }
