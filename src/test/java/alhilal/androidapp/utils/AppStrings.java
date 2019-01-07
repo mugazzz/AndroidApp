@@ -101,6 +101,12 @@ public class AppStrings {
 	    public static final String Great_val = "The transfer amount entered is greater than the selected account's balance";
 	    public static final String Great_val1 = "You don't have an account with sufficient funds";
 	    public static final String Limit_Tran = "You have exceeded the transactional limit for Transfer to others";
+	    public static final String Incorrect_Cons = "Consumer number not recognized. Please enter a valid consumer number";
+	    public static final String Alrea_Payee = "Payee already exists for the user";
+	    public static final String Alrea_Nick = "You already have a beneficiary registered with the same nickname";
+	    public static final String GSM_Digiti_Valid = "Please enter a consumer number of 10 digits.";
+	    
+	    
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
@@ -184,8 +190,25 @@ public class AppStrings {
 	    public static final String Pay_Cons = "32421441";
 	    public static final String Pay_nick = "Automation5";
 	    public static final String Pay_Cons1 = "6464500000";
+	    public static final String Pay_inCons = "6464500007";
 	    public static final String Pay_nick1 = "Automation6";
+	    public static final String Pay_Cons2 = "3273153588";
+	    public static final String Pay_nick2 = "Automation7";
+	    public static final String Pay_Cons3 = "316055166";
+	    public static final String Pay_Cons4 = "597993408";
+	    public static final String Pay_nick3 = "Automation8";
+	    public static final String Pay_nick4 = "Automation9";
+	    public static final String Pay_Cons5 = "4319594496";
+	    public static final String Pay_Cons6 = "6589771618";
+	    public static final String Pay_nick5 = "Automation10";
+	    public static final String Pay_nick6 = "Automation11";
 	    public static final String Pay_pin = "6568";
 	    public static final String SALIK1 = "SALIK";
 	    public static final String ADDC1 = "ADDC";
+	    public static final String AADC1 = "AADC";
+	    public static final String DEWA1 = "DEWA";
+	    public static final String Pay_Cons_GSM_8 = "05044710";
+	    public static final String Pay_Cons_GSM = "0504471040";
+	    public static final String Pay_Cons_GSM_11 = "05044710401";
+	    public static final String Pay_nick_gsm = "Automationgsm";
 }

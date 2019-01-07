@@ -34,7 +34,7 @@ public class ConfigDriver {
 	    	
 	  
 	        DesiredCapabilities capabilities = new DesiredCapabilities();
-	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "0117115562950701");
+	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ce12171ca29fc41504");
 	        capabilities.setCapability("automationName", "UiAutomator");
 	        capabilities.setCapability("appPackage", "com.ahb.mb.dev");
 	        capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
@@ -50,7 +50,7 @@ public class ConfigDriver {
 	            capabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
 	        }
 
-	        driver = new AndroidDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+	        driver = new AndroidDriver<>(new URL("http://0.0.0.0:4734/wd/hub"), capabilities);
 	        wait = new WebDriverWait(driver, 20);
 	        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    }

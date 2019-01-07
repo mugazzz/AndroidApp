@@ -188,6 +188,7 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(FINGERPRINTS_POPUP);
 	}
 	
+	
 	public void Verify_AutoFly() {
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");

@@ -7,7 +7,7 @@ public class Add_Pay_Benifi extends CommonPage{
 	
 	public void  Tap_Pay_Bill() {
 		clickOnElement(PAY_BILL);
-		appiumHelpers.waitForVisibilityOfElement(FLX_PAYEE);
+		//appiumHelpers.waitForVisibilityOfElement(FLX_PAYEE);
 	}
 	
 	public void Tap_Make_Payment() {
@@ -36,6 +36,50 @@ public class Add_Pay_Benifi extends CommonPage{
 		
 	}
 	
+	public void Tap_Nxt_Scr_AADC() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details(AADC1, Pay_Cons2, Pay_nick2);
+		clickOnElement(CTN);
+		
+	}
+	
+	public void Tap_Nxt_Scr_AADC1() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details(AADC1, Pay_Cons5, Pay_nick5);
+		clickOnElement(CTN);
+		
+	}
+	
+	public void Tap_Nxt_Scr_DEWA() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details(DEWA1, Pay_Cons3, Pay_nick3);
+		clickOnElement(CTN);
+		
+	}
+	
+	public void Tap_Nxt_Scr_GSM() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details(DEWA1, Pay_Cons3, Pay_nick3);
+		clickOnElement(CTN);
+		
+	}
+	
+	public void Tap_Nxt_Scr_DEWA1() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details(DEWA1, Pay_Cons4, Pay_nick4);
+		clickOnElement(CTN);
+		
+	}
+	
+	public void Verify_Fing_Pop() {
+		appiumHelpers.waitForVisibilityOfElement(FINGERPRINTS_POPUP);
+	}
+	
 	public void Verify_Details(String service_LB, String consumer_LB, String Nick_LB) {
 		String Service = driver.findElement(SER_PRO_VAL).getText();
 		System.out.println(Service);
@@ -48,5 +92,23 @@ public class Add_Pay_Benifi extends CommonPage{
 		assert Nick.equals(Nick_LB) : "Nick IS EQUAL";
 	}
 	
-
+	public void Verify_validation() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(Incorrect_Cons);
+	}
+	
+	public void Verify_validation_dup_con() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(Alrea_Payee);
+	}
+	
+	public void Verify_validation_dup_nick() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(Alrea_Nick);
+	}
+	
+	public void Verify_validation_Gsm() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(GSM_Digiti_Valid);
+	}
 }

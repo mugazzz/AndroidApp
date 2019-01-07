@@ -23,15 +23,87 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	  Add_Payee();
 	}
 
+	@Then("^Select the service provider DEWA$")
+	public void select_the_service_provider_DEWA() {
+		clickOnElement(SELECT_SERVICE);
+		clickOnElement(DEWA);
+	}
+
+	@Then("^Enter the DEWA consumer number$")
+	public void enter_the_DEWA_consumer_number() {
+		enterText(CON_NUMB, Pay_Cons3);
+	}
+	
+	@Then("^Enter the DEWA consumer number1$")
+	public void enter_the_DEWA_consumer_number1() {
+		enterText(CON_NUMB, Pay_Cons4);
+	}
+
+	@Then("^Enter the DEWA nick name$")
+	public void enter_the_DEWA_nick_name() {
+		enterText(CON_NICK, Pay_nick3);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Enter the DEWA nick name1$")
+	public void enter_the_DEWA_nick_name1() {
+		enterText(CON_NICK, Pay_nick4);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Enter the DEWA nick name2$")
+	public void enter_the_DEWA_nick_name2() {
+		enterText(CON_NICK, Pay_nick6);
+		driver.hideKeyboard();
+	}
+	
 	@Then("^Select the service provider ADDC$")
 	public void select_the_service_provider_ADDC() {
 		clickOnElement(SELECT_SERVICE);
 		clickOnElement(ADDC);
 	}
 
+	@Then("^Enter the AADC consumer number$")
+	public void enter_the_AADC_consumer_number() {
+		enterText(CON_NUMB, Pay_Cons2);
+	}
+
+	@Then("^Enter the AADC nick name$")
+	public void enter_the_AADC_nick_name() {
+		enterText(CON_NICK, Pay_nick2);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Enter the AADC consumer number1$")
+	public void enter_the_AADC_consumer_number1() {
+		enterText(CON_NUMB, Pay_Cons5);
+	}
+
+	@Then("^Enter the AADC nick name1$")
+	public void enter_the_AADC_nick_name1() {
+		enterText(CON_NICK, Pay_nick5);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Select the service provider AADC$")
+	public void select_the_service_provider_AADC() {
+		clickOnElement(SELECT_SERVICE);
+		clickOnElement(AADC);
+	}
+
 	@Then("^Enter the ADDC consumer number$")
 	public void enter_the_ADDC_consumer_number() {
 		enterText(CON_NUMB, Pay_Cons1);
+	}
+	
+	@Then("^Enter the ADDC consumer number1$")
+	public void enter_the_ADDC_consumer_number1() {
+		enterText(CON_NUMB, Pay_Cons6);
+	}
+	
+	@Then("^Enter the AADC incorrect consumer number$")
+	public void enter_the_ADDC_incorrect_onsumer_number() {
+		enterText(CON_NUMB, Pay_inCons);
 	}
 
 	@Then("^Enter the ADDC nick name$")
@@ -72,11 +144,98 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	public void tap_on_Next_button_and_verify_the_navigated_screen_for_payee_ADDC() {
 		Tap_Nxt_Scr_ADDC();
 	}
-
+	
+	@Then("^Tap on Next button and verify the navigated screen for payee AADC$")
+	public void tap_on_Next_button_and_verify_the_navigated_screen_for_payee_AADC() {
+		Tap_Nxt_Scr_AADC();
+	}
+	
+	@Then("^Tap on Next button and verify the navigated screen for payee AADC1$")
+	public void tap_on_Next_button_and_verify_the_navigated_screen_for_payee_AADC1() {
+		Tap_Nxt_Scr_AADC1();
+	}
+	
+	@Then("^Tap on Next button and verify the navigated screen for payee DEWA$")
+	public void tap_on_Next_button_and_verify_the_navigated_screen_for_payee_DEWA() {
+		Tap_Nxt_Scr_DEWA();
+	}
+	
+	@Then("^Tap on Next button and verify the navigated screen for payee DEWA1$")
+	public void tap_on_Next_button_and_verify_the_navigated_screen_for_payee_DEWA1() {
+		Tap_Nxt_Scr_DEWA1();
+	}
 
 	@Then("^Verify the screen redirected to successfully account payment beneficiary added screen$")
 	public void verify_the_screen_redirected_to_successfully_account_payment_beneficiary_added_screen() {
 		appiumHelpers.waitForVisibilityOfElement(CNF_IMG);
+	}
+	
+	@Then("^Tap confrim details button and verify the cofirm finger print popup appears1$")
+	public void tap_confrim_details_button_and_verify_the_cofirm_finger_print_popup_appears1() {
+	   Verify_Fing_Pop();
+	}
+	
+	@Then("^Tap on Next button and verify validation message appears$")
+	public void tap_confrim_details_button_and_verify_message_validation() {
+	   Verify_validation();
+	}
+	
+	@Then("^Tap on Next button and verify validation message appears for dup consumer$")
+	public void tap_confrim_details_button_and_verify_message_validation_dup_cons() {
+	   Verify_validation_dup_con();
+	}
+	
+	@Then("^Tap on Next button and verify validation message appears for dup nick$")
+	public void tap_confrim_details_button_and_verify_message_validation_dup_nick() {
+	   Verify_validation_dup_nick();
+	}
+	
+	@Then("^Select the service provider Etisalat$")
+	public void select_the_service_provider_Etisalat() {
+		clickOnElement(SELECT_SERVICE);
+		clickOnElement(ETISALAT);
+	}
+
+	@Then("^Select the service type of etisalat$")
+	public void select_the_service_type_of_etisalat() {
+		clickOnElement(SER_TYPE);
+		clickOnElement(SER_GSM);
+	}
+
+	@Then("^Enter the consumer number less than 9 digits$")
+	public void enter_the_consumer_number_less_than_digits() {
+		enterText(CON_NUMB, Pay_Cons_GSM_8);
+		driver.hideKeyboard();
+	}
+
+	@Then("^Enter the nick name of etisalat$")
+	public void enter_the_nick_name_of_etisalat() throws Throwable {
+		enterText(CON_NICK, Pay_nick_gsm);
+		driver.hideKeyboard();
+	}
+
+	@Then("^Tap the next button and verify the navigated screen for payee GSM$")
+	public void tap_on_next_button_and_verify_the_validation_message() throws Throwable {
+		Verify_validation_Gsm();
+	}
+
+	@Then("^Enter the consumer number more than 10 digits$")
+	public void enter_the_consumer_number_more_than_digits() {
+		driver.findElement(CON_NUMB).clear();
+		enterText(CON_NUMB, Pay_Cons_GSM_11);
+		driver.hideKeyboard();
+	}
+
+	@Then("^enter the valid consumer number$")
+	public void enter_the_valid_consumer_number(){
+		driver.findElement(CON_NUMB).clear();
+		enterText(CON_NUMB, Pay_Cons_GSM);
+		driver.hideKeyboard();
+	}
+
+	@Then("^Tap the next button and verify the navigated screen for payee GSM$")
+	public void tap_the_next_button_and_verify_the_navigated_screen_for_payee_GSM() {
+		Tap_Nxt_Scr_GSM();
 	}
 
 	

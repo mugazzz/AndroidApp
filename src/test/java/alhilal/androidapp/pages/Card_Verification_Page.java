@@ -214,6 +214,7 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 	}
 	
+	
 	public void Verify_Absence_Card_Section() {
 		appiumHelpers.assertFalse(elementExists(CARD_LABEL), "My Card Section is available");
 	}
