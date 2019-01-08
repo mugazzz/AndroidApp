@@ -405,6 +405,7 @@ public class Locators {
 	public static final By SER_PRO = By.id("lblServiceProvider");
 	public static final By SER_PRO_VAL = By.id("lblServiceProviderValue");
 	public static final By CONS_LB = By.id("lblConsumerNumber");
+	public static final By SER_PRO_TYP = By.id("lblServiceTypeValue");
 	public static final By CONS_LB_VAL = By.id("lblConsumerNumberValue");
 	public static final By NICK_LB = By.id("lblNickName");
 	public static final By NICK_LB_VAL = By.id("lblNickNameValue");

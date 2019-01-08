@@ -180,6 +180,11 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	   Verify_validation();
 	}
 	
+	@Then("^Tap on next button and verify the validation message$")
+	public void tap_on_next_button_and_verify_the_validation_message1() {
+		Verify_validation_Gsm();
+	}
+	
 	@Then("^Tap on Next button and verify validation message appears for dup consumer$")
 	public void tap_confrim_details_button_and_verify_message_validation_dup_cons() {
 	   Verify_validation_dup_con();
@@ -201,6 +206,12 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		clickOnElement(SER_TYPE);
 		clickOnElement(SER_GSM);
 	}
+	
+	@Then("^Select the service type of etisalat as WASEL$")
+	public void select_the_service_type_of_etisalat_WASEL() {
+		clickOnElement(SER_TYPE);
+		clickOnElement(SER_WASEL);
+	}
 
 	@Then("^Enter the consumer number less than 9 digits$")
 	public void enter_the_consumer_number_less_than_digits() {
@@ -208,6 +219,12 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		driver.hideKeyboard();
 	}
 
+	@Then("^Enter the nick name of WASEL$")
+	public void enter_the_nick_name_of_WASEL() throws Throwable {
+		enterText(CON_NICK, Pay_nick_wasel);
+		driver.hideKeyboard();
+	}
+	
 	@Then("^Enter the nick name of etisalat$")
 	public void enter_the_nick_name_of_etisalat() throws Throwable {
 		enterText(CON_NICK, Pay_nick_gsm);
@@ -216,7 +233,12 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 
 	@Then("^Tap the next button and verify the navigated screen for payee GSM$")
 	public void tap_on_next_button_and_verify_the_validation_message() throws Throwable {
-		Verify_validation_Gsm();
+		Verify_Gsm_Details();
+	}
+	
+	@Then("^Tap the next button and verify the navigated screen for payee WASEL$")
+	public void tap_on_next_button_and_verify_the_validation_message_WASEL() throws Throwable {
+		Verify_WASEL_Details();
 	}
 
 	@Then("^Enter the consumer number more than 10 digits$")
@@ -232,10 +254,12 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		enterText(CON_NUMB, Pay_Cons_GSM);
 		driver.hideKeyboard();
 	}
-
-	@Then("^Tap the next button and verify the navigated screen for payee GSM$")
-	public void tap_the_next_button_and_verify_the_navigated_screen_for_payee_GSM() {
-		Tap_Nxt_Scr_GSM();
+	
+	@Then("^enter the valid consumer number WASEL$")
+	public void enter_the_valid_consumer_number_wasel(){
+		driver.findElement(CON_NUMB).clear();
+		enterText(CON_NUMB, Pay_Cons_GSM);
+		driver.hideKeyboard();
 	}
 
 	

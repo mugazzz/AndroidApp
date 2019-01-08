@@ -207,8 +207,13 @@ public class AppStrings {
 	    public static final String ADDC1 = "ADDC";
 	    public static final String AADC1 = "AADC";
 	    public static final String DEWA1 = "DEWA";
+	    public static final String ETISALAT1 = "ETISALAT";
 	    public static final String Pay_Cons_GSM_8 = "05044710";
 	    public static final String Pay_Cons_GSM = "0504471040";
+	    public static final String Pay_Cons_WASEL = "0504930008";
 	    public static final String Pay_Cons_GSM_11 = "05044710401";
 	    public static final String Pay_nick_gsm = "Automationgsm";
+	    public static final String Pay_nick_wasel = "Automationwasel";
+	    public static final String Pay_type_gsm = "GSM";
+	    public static final String Pay_type_wasel = "WASEL RECHARGE";
 }

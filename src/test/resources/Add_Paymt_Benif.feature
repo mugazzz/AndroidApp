@@ -142,3 +142,22 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
+		@Payment_96 @add_pay_beni9
+	 Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for Etisalat - WASEL Recharge Utility
+    Given Verify the login check tran
+		And Verify the user redirected to Dashboard screen successfully
+		Then Tap on the pay bills icon on tab bar
+		And Tap on Make a payment tab
+		Then Tap on Add payee option and navigate to add payee screen
+		Then Select the service provider Etisalat
+		And Select the service type of etisalat as WASEL
+		Then Enter the consumer number less than 9 digits
+		Then Enter the nick name of WASEL
+		Then Tap on next button and verify the validation message
+		Then Enter the consumer number more than 10 digits
+		And Tap on next button and verify the validation message
+		Then enter the valid consumer number WASEL
+		And Tap the next button and verify the navigated screen for payee WASEL
+		Then Get the OTP from the third party app and enter the OTP1
+		And Verify the screen redirected to successfully account payment beneficiary added screen
+		

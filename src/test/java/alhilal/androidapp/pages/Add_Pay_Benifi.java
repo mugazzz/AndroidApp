@@ -92,6 +92,21 @@ public class Add_Pay_Benifi extends CommonPage{
 		assert Nick.equals(Nick_LB) : "Nick IS EQUAL";
 	}
 	
+	public void Verify_Details_Etisalat(String service_LB, String consumer_LB, String Nick_LB, String Type_LB) {
+		String Service = driver.findElement(SER_PRO_VAL).getText();
+		System.out.println(Service);
+		assert Service.equals(service_LB) : "SERVICE IS EQUAL";
+		String Consumer = driver.findElement(CONS_LB_VAL).getText();
+		System.out.println(Consumer);
+		assert Consumer.equals(consumer_LB) : "Consumer IS EQUAL";
+		String Nick = driver.findElement(NICK_LB_VAL).getText();
+		System.out.println(Nick);
+		assert Nick.equals(Nick_LB) : "Nick IS EQUAL";
+		String Type = driver.findElement(SER_TYPE).getText();
+		System.out.println(Type);
+		assert Type.equals(Type_LB) : "Type IS EQUAL";
+	}
+	
 	public void Verify_validation() {
 		clickOnElement(NXT);
 		Verify_Validation_Message(Incorrect_Cons);
@@ -110,5 +125,19 @@ public class Add_Pay_Benifi extends CommonPage{
 	public void Verify_validation_Gsm() {
 		clickOnElement(NXT);
 		Verify_Validation_Message(GSM_Digiti_Valid);
+	}
+	
+	public void Verify_Gsm_Details() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details_Etisalat (ETISALAT1, Pay_Cons_GSM, Pay_nick_gsm, Pay_type_gsm);
+		clickOnElement(CTN);
+	}
+	
+	public void Verify_WASEL_Details() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details_Etisalat (ETISALAT1, Pay_Cons_WASEL, Pay_nick_wasel, Pay_type_wasel);
+		clickOnElement(CTN);
 	}
 }
