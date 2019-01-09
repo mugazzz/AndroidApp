@@ -306,16 +306,20 @@ public class Locators {
 	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='4041 9840 03']");
 	public static final By FROM_ACC = By.id("lblFromAccount1");
 	public static final By FROM_ACC_DATA = By.id("lbxFromAccountData");
+	public static final By FROM_ACC_DATA1 = By.id("lbxFromAcc");
 	public static final By TRAN_AMT = By.id("tbxTransferAmount");
 	public static final By AVAI_AMT = By.id("lblAvailableAmount");
+	public static final By AVAI_AMT1 = By.id("lblAvbBal");
 	public static final By IND_AMT = By.id("lblIndicativeAmount");
 	public static final By SEL_CUR = By.id("lbxCurrency");
 	public static final By CUR_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Current account 9677570004']");
 	public static final By CUR_ACC_AMT2 = By.xpath("//android.widget.CheckedTextView[@text='Current account 1212115018']");
+	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.CheckedTextView[@text='Current account 9677570022']");
 	public static final By CUR_ACC_AMT100000 = By.xpath("//android.widget.CheckedTextView[@text='Current account 9667733028']");
 	public static final By CUR_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Current account 9677570022']");
 	public static final By SAV_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Saving account 1212115003']");
 	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Saving account 9677570038']");
+	public static final By CARD_C = By.xpath("//android.widget.CheckedTextView[@text='Credit card 458461******0400']");
 	public static final By SEL_CHAR = By.id("lbxChargesData");
 	public static final By SEL_REASON = By.id("lbxReasonData");
 	public static final By SEL_REASONS = By.xpath("//android.widget.CheckedTextView[@text='Charitable Contributions']");
@@ -426,5 +430,40 @@ public class Locators {
 	public static final By AADC_Card = By.xpath("//android.widget.TextView[@text='6464500000']");
 	public static final By From_Acc = By.id("lbxFromAcc");
 	public static final By From_Cur_Acc = By.xpath("//android.widget.CheckedTextView[@text='Current account 9677570022']");
+	public static final By Sel_AADC = By.xpath("//android.widget.TextView[@text='AADC']");
+	public static final By Sel_ADDC = By.xpath("//android.widget.TextView[@text='ADDC']");
+	public static final By Sel_DEWA = By.xpath("//android.widget.TextView[@text='DEWA']");
+	public static final By Sel_Salik = By.xpath("//android.widget.TextView[@text='Salik']");
+	public static final By Sel_AADC1 = By.xpath("//android.widget.TextView[@text='AADC1']");
+	public static final By Sel_ADDC1 = By.xpath("//android.widget.TextView[@text='ADDC1']");
+	public static final By Sel_DEWA1 = By.xpath("//android.widget.TextView[@text='DEWA1']");
+	public static final By Sel_Salik1 = By.xpath("//android.widget.TextView[@text='Salik1']");
+	public static final By Sel_ADDC2 = By.xpath("//android.widget.TextView[@text='ADDC2']");
+	public static final By Sel_Salik2 = By.xpath("//android.widget.TextView[@text='Salik2']");
+	public static final By Sel_Shamil = By.xpath("//android.widget.TextView[@text='Al Shamil']");
+	public static final By Sel_Shamil1 = By.xpath("//android.widget.TextView[@text='Al Shamil1']");
+	public static final By Pay_all = By.id("btnPayAllSeleted");
+	public static final By Out_Stand = By.id("lblTotalAmt");
+	public static final By Continue = By.id("btnContinue");
+	public static final By Sucess_mess = By.xpath("//android.widget.TextView[@text='Your transfer has been submitted successfully!']");
+	public static final By Failed_mess = By.xpath("//android.widget.TextView[@text='Sorry, your payments cannot be processed now. Please try again later']");
+	
+	
+	//Edit Payee
+	public static final By Edit_Payee = By.id("lblEditPayee");
+	public static final By Reg_Payee = By.id("lblRegisteredPayee");
+	public static final By Reg_Pay_Refren = By.id("lblPayeeReferenceNumber");
+	public static final By Del_Payee = By.id("btnDeleteRecipient");
+	public static final By Edit_Payee_link = By.id("btnCancel");
+	public static final By Edit_Payee_Text = By.id("txtRecipientName");
+	public static final By Save_Edit = By.id("btnNext");
+	public static final By Nick_Name_E = By.id("lblNickName");
+	
+	
+	
+	
+	
+	
+	
 	
 }

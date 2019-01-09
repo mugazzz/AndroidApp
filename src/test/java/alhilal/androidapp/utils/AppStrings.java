@@ -102,6 +102,7 @@ public class AppStrings {
 	    public static final String Great_val1 = "You don't have an account with sufficient funds";
 	    public static final String Limit_Tran = "You have exceeded the transactional limit for Transfer to others";
 	    public static final String Incorrect_Cons = "Consumer number not recognized. Please enter a valid consumer number";
+	    public static final String Valid_Mul = "Consumer number not recognized. Please enter a valid consumer number";
 	    public static final String Alrea_Payee = "Payee already exists for the user";
 	    public static final String Alrea_Nick = "You already have a beneficiary registered with the same nickname";
 	    public static final String GSM_Digiti_Valid = "Please enter a consumer number of 10 digits.";
@@ -109,6 +110,7 @@ public class AppStrings {
 	    public static final String GSM_Digiti_Valid2 = "Please enter a consumer number between 9 to 10 digits.";
 	    public static final String GSM_Digiti_Valid3 = "Please enter a consumer number of 8 digits.";
 	    public static final String GSM_Digiti_Valid4 = "Please enter a consumer number between 9 to 12 digits.";
+	    public static final String Edit_Nick_Val = "Payee nickname changed";
 	    
 	    
 	//Web Application for OTP  
@@ -228,5 +230,6 @@ public class AppStrings {
 	    public static final String Pay_type_wasel = "WASEL RECHARGE";
 	    public static final String Pay_type_Landline = "Landline";
 	    public static final String Pay_type_SHAMIL = "Etisalat  Al Shamil";
+	    public static final String Edit_Payee_name = "Edit Name Auto";
 	    
 }
