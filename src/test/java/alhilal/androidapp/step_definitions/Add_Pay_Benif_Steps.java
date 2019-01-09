@@ -90,6 +90,12 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		clickOnElement(SELECT_SERVICE);
 		clickOnElement(AADC);
 	}
+	
+	@Then("^Select the service provider SEWA$")
+	public void select_the_service_provider_SEWA () {
+		clickOnElement(SELECT_SERVICE);
+		clickOnElement(SEWA );
+	}
 
 	@Then("^Enter the ADDC consumer number$")
 	public void enter_the_ADDC_consumer_number() {
@@ -185,6 +191,26 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		Verify_validation_Gsm();
 	}
 	
+	@Then("^Tap on next button and verify the validation message1$")
+	public void tap_on_next_button_and_verify_the_validation_message2() {
+		Verify_validation_Gsm1();
+	}
+	
+	@Then("^Tap on next button and verify the validation message2$")
+	public void tap_on_next_button_and_verify_the_validation_message3() {
+		Verify_validation_Gsm2();
+	}
+	
+	@Then("^Tap on next button and verify the validation message3$")
+	public void tap_on_next_button_and_verify_the_validation_message4() {
+		Verify_validation_Gsm3();
+	}
+	
+	@Then("^Tap on next button and verify the validation message4$")
+	public void tap_on_next_button_and_verify_the_validation_message5() {
+		Verify_validation_Gsm4();
+	}
+	
 	@Then("^Tap on Next button and verify validation message appears for dup consumer$")
 	public void tap_confrim_details_button_and_verify_message_validation_dup_cons() {
 	   Verify_validation_dup_con();
@@ -212,6 +238,18 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		clickOnElement(SER_TYPE);
 		clickOnElement(SER_WASEL);
 	}
+	
+	@Then("^Select the service type of etisalat as Landline$")
+	public void select_the_service_type_of_etisalat_Landline() {
+		clickOnElement(SER_TYPE);
+		clickOnElement(SER_LAND);
+	}
+	
+	@Then("^Select the service type of etisalat as Al SHAMIL$")
+	public void select_the_service_type_of_etisalat_SHAMIL() {
+		clickOnElement(SER_TYPE);
+		clickOnElement(SHAMIL);
+	}
 
 	@Then("^Enter the consumer number less than 9 digits$")
 	public void enter_the_consumer_number_less_than_digits() {
@@ -219,9 +257,27 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 		driver.hideKeyboard();
 	}
 
+	@Then("^Enter the nick name of Landline$")
+	public void enter_the_nick_name_of_Landline() throws Throwable {
+		enterText(CON_NICK, Pay_nick_Landline);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Enter the nick name of Landline1$")
+	public void enter_the_nick_name_of_Landline1() throws Throwable {
+		enterText(CON_NICK, Pay_nick_Landline1);
+		driver.hideKeyboard();
+	}
+	
 	@Then("^Enter the nick name of WASEL$")
 	public void enter_the_nick_name_of_WASEL() throws Throwable {
 		enterText(CON_NICK, Pay_nick_wasel);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Enter the nick name of Al SHAMIL$")
+	public void enter_the_nick_name_of_SHAMIL() throws Throwable {
+		enterText(CON_NICK, Pay_nick_SHAMIL);
 		driver.hideKeyboard();
 	}
 	
@@ -239,6 +295,21 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Tap the next button and verify the navigated screen for payee WASEL$")
 	public void tap_on_next_button_and_verify_the_validation_message_WASEL() throws Throwable {
 		Verify_WASEL_Details();
+	}
+	
+	@Then("^Tap the next button and verify the navigated screen for payee Landline$")
+	public void tap_on_next_button_and_verify_the_validation_message_Landline() throws Throwable {
+		Verify_Landline_Details();
+	}
+	
+	@Then("^Tap the next button and verify the navigated screen for payee Landline1$")
+	public void tap_on_next_button_and_verify_the_validation_message_Landline1() throws Throwable {
+		Verify_Landline_Details1();
+	}
+	
+	@Then("^Tap the next button and verify the navigated screen for payee Al SHAMIL$")
+	public void tap_on_next_button_and_verify_the_validation_message_SHAMIL() throws Throwable {
+		Verify_SHAMIL_Details();
 	}
 
 	@Then("^Enter the consumer number more than 10 digits$")
@@ -258,7 +329,28 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^enter the valid consumer number WASEL$")
 	public void enter_the_valid_consumer_number_wasel(){
 		driver.findElement(CON_NUMB).clear();
-		enterText(CON_NUMB, Pay_Cons_GSM);
+		enterText(CON_NUMB, Pay_Cons_WASEL);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^enter the valid consumer number Landline$")
+	public void enter_the_valid_consumer_number_Landline(){
+		driver.findElement(CON_NUMB).clear();
+		enterText(CON_NUMB, Pay_Cons_Landline);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^enter the valid consumer number Landline1$")
+	public void enter_the_valid_consumer_number_Landline1(){
+		driver.findElement(CON_NUMB).clear();
+		enterText(CON_NUMB, Pay_Cons_Landline1);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^enter the valid consumer number Al SHAMIL$")
+	public void enter_the_valid_consumer_number_ASHAMIL(){
+		driver.findElement(CON_NUMB).clear();
+		enterText(CON_NUMB, Pay_Cons_SHAMIL);
 		driver.hideKeyboard();
 	}
 

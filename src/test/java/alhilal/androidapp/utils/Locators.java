@@ -398,6 +398,7 @@ public class Locators {
 	public static final By DEWA = By.xpath("//android.widget.CheckedTextView[@text='DEWA']");
 	public static final By SALIK = By.xpath("//android.widget.CheckedTextView[@text='SALIK']");
 	public static final By ETISALAT = By.xpath("//android.widget.CheckedTextView[@text='ETISALAT']");
+	public static final By SEWA  = By.xpath("//android.widget.CheckedTextView[@text='SEWA']");
 	public static final By CON_NUMB = By.id("tbxAccountNo");
 	public static final By CON_NICK = By.id("tbxNickName");
 	public static final By CON_PIN = By.id("tbxConsumerPin");
@@ -412,9 +413,18 @@ public class Locators {
 	public static final By CTN = By.id("btnContinue");
 	public static final By CNF_IMG = By.id("imgConfirmation");
 	public static final By SER_TYPE = By.id("lbxSeviceType");
+	public static final By SER_TYPE_VAL = By.id("lblServiceTypeValue");
 	public static final By SER_AL_SHAMIL = By.xpath("//android.widget.CheckedTextView[@text='Etisalat  Al Shamil']");
 	public static final By SER_GSM = By.xpath("//android.widget.CheckedTextView[@text='GSM']");
 	public static final By SER_WASEL = By.xpath("//android.widget.CheckedTextView[@text='WASEL RECHARGE']");
 	public static final By SER_LAND = By.xpath("//android.widget.CheckedTextView[@text='Landline']");
+	public static final By SHAMIL = By.xpath("//android.widget.CheckedTextView[@text='Etisalat  Al Shamil']");
+	public static final By CAN_BTN = By.id("btnCancel");
+	public static final By CAN_OK = By.id("btnOK");
+	
+	//Payment Process
+	public static final By AADC_Card = By.xpath("//android.widget.TextView[@text='6464500000']");
+	public static final By From_Acc = By.id("lbxFromAcc");
+	public static final By From_Cur_Acc = By.xpath("//android.widget.CheckedTextView[@text='Current account 9677570022']");
 	
 }

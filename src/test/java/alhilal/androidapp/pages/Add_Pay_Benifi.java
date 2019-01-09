@@ -102,7 +102,7 @@ public class Add_Pay_Benifi extends CommonPage{
 		String Nick = driver.findElement(NICK_LB_VAL).getText();
 		System.out.println(Nick);
 		assert Nick.equals(Nick_LB) : "Nick IS EQUAL";
-		String Type = driver.findElement(SER_TYPE).getText();
+		String Type = driver.findElement(SER_TYPE_VAL).getText();
 		System.out.println(Type);
 		assert Type.equals(Type_LB) : "Type IS EQUAL";
 	}
@@ -127,6 +127,26 @@ public class Add_Pay_Benifi extends CommonPage{
 		Verify_Validation_Message(GSM_Digiti_Valid);
 	}
 	
+	public void Verify_validation_Gsm1() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(GSM_Digiti_Valid1);
+	}
+	
+	public void Verify_validation_Gsm2() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(GSM_Digiti_Valid2);
+	}
+	
+	public void Verify_validation_Gsm3() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(GSM_Digiti_Valid3);
+	}
+	
+	public void Verify_validation_Gsm4() {
+		clickOnElement(NXT);
+		Verify_Validation_Message(GSM_Digiti_Valid4);
+	}
+	
 	public void Verify_Gsm_Details() {
 		clickOnElement(NXT);
 		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
@@ -138,6 +158,26 @@ public class Add_Pay_Benifi extends CommonPage{
 		clickOnElement(NXT);
 		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
 		Verify_Details_Etisalat (ETISALAT1, Pay_Cons_WASEL, Pay_nick_wasel, Pay_type_wasel);
+		clickOnElement(CTN);
+	}
+	
+	public void Verify_Landline_Details() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details_Etisalat (ETISALAT1, Pay_Cons_Landline, Pay_nick_Landline, Pay_type_Landline);
+		clickOnElement(CTN);
+	}
+	
+	public void Verify_Landline_Details1() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details_Etisalat (ETISALAT1, Pay_Cons_Landline1, Pay_nick_Landline1, Pay_type_Landline);
+	}
+	
+	public void Verify_SHAMIL_Details() {
+		clickOnElement(NXT);
+		appiumHelpers.waitForVisibilityOfElement(SER_PRO);
+		Verify_Details_Etisalat (ETISALAT1, Pay_Cons_SHAMIL, Pay_nick_SHAMIL, Pay_type_SHAMIL);
 		clickOnElement(CTN);
 	}
 }

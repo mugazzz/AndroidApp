@@ -105,7 +105,10 @@ public class AppStrings {
 	    public static final String Alrea_Payee = "Payee already exists for the user";
 	    public static final String Alrea_Nick = "You already have a beneficiary registered with the same nickname";
 	    public static final String GSM_Digiti_Valid = "Please enter a consumer number of 10 digits.";
-	    
+	    public static final String GSM_Digiti_Valid1 = "Please enter a consumer number of 9 digits.";
+	    public static final String GSM_Digiti_Valid2 = "Please enter a consumer number between 9 to 10 digits.";
+	    public static final String GSM_Digiti_Valid3 = "Please enter a consumer number of 8 digits.";
+	    public static final String GSM_Digiti_Valid4 = "Please enter a consumer number between 9 to 12 digits.";
 	    
 	    
 	//Web Application for OTP  
@@ -113,6 +116,7 @@ public class AppStrings {
 	    public static final String web_username = "administrator";
 	    public static final String web_password = "password1";
 	    public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc";
+	    public static final String InvOTP = "230071";
 	    
     
 	//Advanced Search Screen
@@ -208,12 +212,21 @@ public class AppStrings {
 	    public static final String AADC1 = "AADC";
 	    public static final String DEWA1 = "DEWA";
 	    public static final String ETISALAT1 = "ETISALAT";
-	    public static final String Pay_Cons_GSM_8 = "05044710";
+	    public static final String Pay_Cons_GSM_8 = "0504470";
 	    public static final String Pay_Cons_GSM = "0504471040";
 	    public static final String Pay_Cons_WASEL = "0504930008";
-	    public static final String Pay_Cons_GSM_11 = "05044710401";
+	    public static final String Pay_Cons_Landline = "042586698";
+	    public static final String Pay_Cons_Landline1 = "043482300";
+	    public static final String Pay_Cons_SHAMIL = "490100009";
+	    public static final String Pay_Cons_GSM_11 = "0504471040112";
 	    public static final String Pay_nick_gsm = "Automationgsm";
 	    public static final String Pay_nick_wasel = "Automationwasel";
+	    public static final String Pay_nick_SHAMIL = "AutomationSHAMIL";
+	    public static final String Pay_nick_Landline = "AutomationLandline";
+	    public static final String Pay_nick_Landline1 = "AutomationLandline1";
 	    public static final String Pay_type_gsm = "GSM";
 	    public static final String Pay_type_wasel = "WASEL RECHARGE";
+	    public static final String Pay_type_Landline = "Landline";
+	    public static final String Pay_type_SHAMIL = "Etisalat  Al Shamil";
+	    
 }
