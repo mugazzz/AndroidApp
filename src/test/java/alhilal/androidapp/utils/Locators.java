@@ -12,7 +12,7 @@ public class Locators {
 	
 	//Registration screen
 	
-	public static final By Landing_Screen_Logo = By.id("com.ahb.mb.dev:id/imgLogo");
+	public static final By Landing_Screen_Logo = By.id("imgLogo");
 	public static final By REG_CARD_BTN = By.xpath("//android.widget.Button[@text='Register using card number']");
 	public static final By REG_CARD_BTNID = By.id("btnLetsgetStarted");
 	public static final By CONACT_US = By.xpath("//android.widget.TextView[@text='Contact Us']");

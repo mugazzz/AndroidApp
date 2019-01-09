@@ -56,6 +56,11 @@ public class Reg_Use_Credit_Card_Steps extends Reg_Use_Credit_Card_Page {
 		public void verify_the_validation_message_appears_for_inactive_card() {
 			Verify_Validation_Message(Inactive_crad_Validation_Message);
 		}
+		
+		@Then("^Verify the validation message appears for inactive card1$")
+		public void verify_the_validation_message_appears_for_inactive_card1() {
+			Verify_Validation_Message(Inactive_crad_Validation_Message);
+		}
 
 		
 		@Then("^Enter the incorrect Credit Card number$")

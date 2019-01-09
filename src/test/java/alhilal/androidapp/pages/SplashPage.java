@@ -23,7 +23,7 @@ public class SplashPage extends CommonPage{
 	}
 	
 	public void RetriveAppFromBG(){
-		driver.activateApp("com.ahb.mb.dev");
+		driver.activateApp("com.ahb.mb.qa");
 	}
 	
 	public void AbscenceOfSplashScreen() {

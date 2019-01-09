@@ -12,14 +12,14 @@ public class AppStrings {
 	    public static final String customerSms = "123456";
     
     //Credit Card Registration
-	    public static final String Act_Credit_Card_No = "4584610105853560"; 
+	    public static final String Act_Credit_Card_No = "4584610162793956"; 
 //	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
 //	    public static final String Act_Credit_Card_Pin_Specific = "1234";
-	    public static final String Exp_Credit_Card_No = "4584610169393586";
-	    public static final String Inactive_Credit_Card_No = "4192347816130000";
+	    public static final String Exp_Credit_Card_No = "4714847770083320";
+	    public static final String Inactive_Credit_Card_No = "4714847770083320";
 	    public static final String Inactive_Credit_Card_Pin = "2345";
-	    public static final String Act_Credit_Card_No_Pin = "5291068800621800"; 
-	    public static final String Act_Credit_Card_Inact_Pin = "5174000000180000";
+	    public static final String Act_Credit_Card_No_Pin = "4714847770083320"; 
+	    public static final String Act_Credit_Card_Inact_Pin = "4714847770083320";
 	    public static final String Act_Credit_Card_Inact_Pin_Inact = "3456";
 	    public static final String Inval_Credit_Card_No = "4584610167454560";
 	    public static final String Incor_Credit_Card_No = "4584610105853561";
@@ -88,7 +88,7 @@ public class AppStrings {
 	    public static final String Inactive_CIF_Validation_Message_R = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Pin_notSet_notActive_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
 	    public static final String Pin_notSet_notActive_Validation_Message1 = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
-	    public static final String Expired_Card_Validation_Message = "You have entered an invalid Al Hilal Bank card number";
+	    public static final String Expired_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Invalid_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Card_block_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    //public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc;";
@@ -103,9 +103,9 @@ public class AppStrings {
 	    public static final String Inactive_CIF_Validation_Message_R1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    
 	//Web Application for OTP  
-	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
+	    public static final String OTPweb = "https://10.10.137.153:8445/SMS/LoginAction.do";
 	    public static final String web_username = "administrator";
-	    public static final String web_password = "password1";
+	    public static final String web_password = "password14";
     
 	//Advanced Search Screen
 	    public static final String Cheque_from = "10";
