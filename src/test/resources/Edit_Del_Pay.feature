@@ -24,7 +24,7 @@ I should able to edit and delete payee
 	 Then Tap on Edit payees link
 	 And Select a listed payee to edit
 	 Then Tap on delete button and confirm the process
-	 Then Get the OTP from the third party app and enter the OTP1
+	 Then Get the OTP from the third party app and enter the OTP2
 	 And Verify the payee delete confirmation message
 	 
 	 

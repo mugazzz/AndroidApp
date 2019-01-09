@@ -111,6 +111,9 @@ public class AppStrings {
 	    public static final String GSM_Digiti_Valid3 = "Please enter a consumer number of 8 digits.";
 	    public static final String GSM_Digiti_Valid4 = "Please enter a consumer number between 9 to 12 digits.";
 	    public static final String Edit_Nick_Val = "Payee nickname changed";
+	    public static final String Delete_Val = "has been deleted";
+	    public static final String Edit_Beni_Val = "Beneficiary nickname changed";
+	    
 	    
 	    
 	//Web Application for OTP  

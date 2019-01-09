@@ -458,6 +458,15 @@ public class Locators {
 	public static final By Edit_Payee_Text = By.id("txtRecipientName");
 	public static final By Save_Edit = By.id("btnNext");
 	public static final By Nick_Name_E = By.id("lblNickName");
+	public static final By Seg_Acc_Page = By.id("segAccounts");
+	
+	//Edit Benificary
+	public static final By Edit_Benifi = By.id("lblEditBeneficiary");
+	public static final By Reg_Benif_card = By.id("flxBenificiaryMain");
+	public static final By Save_BTN = By.id("btnSave");
+	public static final By Edit_Bin_Name = By.id("lblBeneficiaryNickname");
+	public static final By Recep_Page = By.id("segRecipients");
+	
 	
 	
 	
