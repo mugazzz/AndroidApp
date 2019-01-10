@@ -10,7 +10,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "json:target/cucumber-reports/cucumber.json", "junit:target/cucumber-reports/Cucumber.xml",
         "html:target/cucumber-reports/html-report", "rerun:target/rerun.txt"},
-		features="src/test/resources", tags="@reg_cred_card1")
+		features="src/test/resources", tags="@reg_cred_card5")
 
 public class RunTest{
 //private static AppiumDriverLocalService service;
