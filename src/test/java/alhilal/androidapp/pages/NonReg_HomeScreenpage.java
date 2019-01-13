@@ -45,8 +45,8 @@ public class NonReg_HomeScreenpage extends CommonPage{
 		clickOnElement(AREG_CUS_LINK);
 		appiumHelpers.assertTrue(elementExists(AREG_CUS_NO), "Customer number field is displayed in Arabic");
 		appiumHelpers.assertTrue(elementExists(AREG_CUS_HD), "Page Header is displayed in Arabic");
-		appiumHelpers.assertTrue(elementExists(AREG_CUS_PIN), "Customer Pin field is displayed in Arabic");
-		appiumHelpers.assertTrue(elementExists(AREG_CUS_SMS), "Customer SMS field is displayed in Arabic");
+		//appiumHelpers.assertTrue(elementExists(REG_CUS_PIN), "Customer Pin field is displayed in Arabic");
+		//appiumHelpers.assertTrue(elementExists(REG_CUS_SMS), "Customer SMS field is displayed in Arabic");
         //appiumHelpers.assertTrue(elementExists(AREG_CUS_RG), "Page registration button is displayed in Arabic");
 		clickOnElement(HEAD_BACK);
 	}

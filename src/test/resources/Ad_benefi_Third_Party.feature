@@ -1,4 +1,4 @@
-@Ad_Ben_Third_Party @sprint @reset
+@Ad_Ben_Third_Party @sprint4 @reset
 Feature: I should be able to add a beneficiary for Third Party Accounts 
 
 @Ad_Ben_Third_Party0 @reset @Transfer_82

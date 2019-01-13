@@ -194,7 +194,7 @@ public class Cheques_Screen_Steps extends Cheques_Screen_Pages{
 	public void verify_the_validation_message_appears_for_invalid_cheque_ranges() throws InterruptedException {
 		Thread.sleep(3000);
 		String xmlFormat = driver.getPageSource();
-		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message));
+		assertThat(xmlFormat, CoreMatchers.containsString(Greater_Amount));
 	}
 	
 	@Then("^Verify the validation message appears for invalid cheque range2$")

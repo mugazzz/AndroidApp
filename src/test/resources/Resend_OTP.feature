@@ -59,7 +59,7 @@ Scenario: Register the user using Credit card to create existing user environmen
 	And Enter the Active Credit Card PIN number
 	Then Verify the card details are validated on flying and navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP
-	And Confirm the screen navigates to you are all sets! screen
+	And Confirm the screen navigates to you are all set! screen
 	Then Tap on Skip without Enable the Fingerprints button and verify the screen redirects to Dashboard screen
 	
 @resend_otp5

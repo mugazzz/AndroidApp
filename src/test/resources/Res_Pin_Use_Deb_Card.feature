@@ -1,4 +1,4 @@
-@res_pin_use_DC @sprint1_2
+@res_pin_use_DC @sprint1_2 @sprint1-3
 Feature: Reset PIN using user Debit card
 I should be able to reset my PIN by verifying myself using my Debit Card and Debit Card pin
 

@@ -15,14 +15,14 @@ public class Locators {
 	public static final By Landing_Screen_Logo = By.id("imgLogo");
 	public static final By REG_CARD_BTN = By.xpath("//android.widget.Button[@text='Register using card number']");
 	public static final By REG_CARD_BTNID = By.id("btnLetsgetStarted");
-	public static final By CONACT_US = By.xpath("//android.widget.TextView[@text='Contact Us']");
-	public static final By BRANCH_LOCATOR = By.xpath("//android.widget.TextView[@text='ATM / Branch Locator']");
+	public static final By CONACT_US = By.xpath("//android.widget.TextView[@text='Contact us']");
+	public static final By BRANCH_LOCATOR = By.id("lblATMText");
 	public static final By REG_CUS_LINK = By.xpath("//android.widget.Button[@text='Or register using your customer number']");
 	public static final By ARAB_BTN = By.id("btnArabic");
 	public static final By AREG_CARD_BTN = By.xpath("//android.widget.Button[@text='التسجيل عن طريق رقم بطاقتك']");
-	public static final By ACONACT_US = By.xpath("//android.widget.TextView[@text='اتصل بنا']");
+	public static final By ACONACT_US = By.xpath("//android.widget.TextView[@text='تواصل معنا']");
 	public static final By ABRANCH_LOCATOR = By.xpath("//android.widget.TextView[@text='أجهزة الصراف الآلي | الفروع']");
-	public static final By AREG_CUS_LINK = By.xpath("//android.widget.Button[@text='أو عن طريق رقم المتعامل']");
+	public static final By AREG_CUS_LINK = By.xpath("//android.widget.Button[@text='أو التسجيل عن طريق رقم المتعامل']");
 	public static final By ENG_BTN = By.xpath("//android.widget.Button[@text='English']");
 	public static final By REG_CUS_NO_LINK = By.id("btnRegisterUsingAccountNumber");
 	
@@ -44,7 +44,7 @@ public class Locators {
 	public static final By REG_CUS_TPIN_FD = By.id("tbxTpinNo");
 	public static final By REG_CUS_TPIN_NT = By.id("btnNext");
 
-	public static final By AREG_CUS_NO = By.xpath("//android.widget.TextView[@text='رقم المتعامل']");
+	public static final By AREG_CUS_NO = By.xpath("//android.widget.TextView[@text='(CIF) رقم المتعامل']");
 	public static final By AREG_CUS_HD = By.xpath("//android.widget.TextView[@text='التسجيل']");
 	public static final By AREG_CUS_SMS = By.xpath("//android.widget.Button[@text='رمز خدمة الرسائل النصية  ']");
 	public static final By AREG_CUS_PIN = By.xpath("//android.widget.Button[@text='رمز خدمة الهاتف ']");
@@ -72,9 +72,9 @@ public class Locators {
 	public static final By FINGERPRINTS_POPUP_CANCEL =By.id("lblCancel");
 	public static final By REG_HOME_LOGIN = By.xpath("//android.widget.TextView[@text='Login PIN']");
 	public static final By REG_HOME_USE_FING = By.xpath("//android.widget.TextView[@text='Or use Fingerprints for login']");
-	public static final By REG_HOME_FORGOT_PIN = By.xpath("//android.widget.Button[@text='Forgot Login PIN']");
+	public static final By REG_HOME_FORGOT_PIN = By.xpath("//android.widget.Button[@text='Forgot PIN?']");
 	public static final By REG_HOME_CHANGE_USER = By.xpath("//android.widget.Button[@text='Change User']");
-	public static final By REG_HOME_BRANCH_LOCATOR = By.xpath("//android.widget.TextView[@text='ATM / Branch Locator']");
+	public static final By REG_HOME_BRANCH_LOCATOR = By.id("lblATMText");
 	public static final By REG_HOME_CONTACT_US = By.xpath("//android.widget.TextView[@text='Contact Us']");
 	public static final By REG_HOME_ENG_LANG = By.xpath("//android.widget.Button[@text='English']");
 	public static final By REG_HOME_ENG_LNG = By.id("btnEnglishLogin");
@@ -108,15 +108,15 @@ public class Locators {
 	public static final By ACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='Accounts']");
 	public static final By FINANCES_LABEL = By.xpath("//android.widget.TextView[@text='Finances']");
 	public static final By AACCOUNT_LABEL = By.xpath("//android.widget.TextView[@text='Accounts']");
-	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
-	public static final By ACT_SAVING_ACC = By.xpath("//android.widget.TextView[@text='AE73 0530 0000 2404 1984 011']");
+	public static final By ACT_CURRENT_ACC = By.xpath("//android.widget.TextView[@text='AE47 0530 0000 2161 1231 021']");
+	public static final By ACT_SAVING_ACC = By.xpath("//android.widget.TextView[@text='AE69 0530 0000 2161 1231 013']");
 	public static final By ACT_SAVING_ACC1 = By.xpath("//android.widget.TextView[@text='AE30 0530 0000 2404 1984 007']");
 	public static final By ACT_DEPOSIT_ACC1 = By.xpath("//android.widget.TextView[@text='AE59 0530 0000 2444 6919 008']");
 	public static final By ACT_DEPOSIT_ACC2 = By.xpath("//android.widget.TextView[@text='AE05 0530 0000 2444 6919 010']");
 	
 	
 	public static final By CARD_LABEL = By.xpath("//android.widget.TextView[@text='Cards']");
-	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='VISA GOLD UJRAH']");
+	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='Smart Platinum No Fee']");
 	public static final By CURRENT_ACC_LST = By.xpath("//android.widget.TextView[@text='Current Account']");
 	public static final By ACT_BALANCE_VAL = By.id("lblAccountBalValue");
 	public static final By GO_BACK = By.id("btnBack");
@@ -128,8 +128,8 @@ public class Locators {
 	
 	//Current Account Screen
 	public static final By HEAD_CHECK = By.id("lblHeading");
-	public static final By CHEQUE_VIEW = By.xpath("//android.widget.Button[@text='Cheques View']");
-	public static final By HEAD_CHEQUE = By.xpath("//android.widget.TextView[@text='Cheque List']");
+	public static final By CHEQUE_VIEW = By.xpath("//android.widget.Button[@text='Cheques view']");
+	public static final By HEAD_CHEQUE = By.xpath("//android.widget.TextView[@text='Cheque list']");
 	public static final By IMAGE_INFO =By.id("flxAccounts");
 	public static final By ACCO_NUMBER =By.id("lblAccountNumber");
 	public static final By CARD_BAL =By.id("lblBalanceAmount");
@@ -143,13 +143,13 @@ public class Locators {
 	public static final By CHEQUE_INDIVIDUAL = By.id("flxTransactionsManage");
 	
 	//Cheque Details
-	public static final By CHEQ_HD = By.xpath("//android.widget.TextView[@text='Cheque Details']");
+	public static final By CHEQ_HD = By.xpath("//android.widget.TextView[@text='Cheque details']");
 	public static final By CHEQ_IMG = By.id("imgCheckFront");
 	
 	//Advanced Search
-	public static final By ADV_SER_HD = By.xpath("//android.widget.TextView[@text='Advanced Search']");
+	public static final By ADV_SER_HD = By.xpath("//android.widget.TextView[@text='Advanced search']");
 	public static final By TIME_RANGE = By.id("flxTimeRangeWrapper");
-	public static final By CUSTOM_PERIOD = By.xpath("//android.widget.TextView[@text='Custom Period']");
+	public static final By CUSTOM_PERIOD = By.xpath("//android.widget.TextView[@text='Custom period']");
 	public static final By START_LAB = By.id("lblStartDate");
 	//public static final By START_DATE = By.xpath("//android.widget.ScrollView[1]/android.view.ViewGroup[0]/android.view.ViewGroup[1]/android.view.ViewGroup[0]/android.view.ViewGroup[1]/android.view.ViewGroup[0]/android.widget.LinearLayout[2]/android.widget.LinearLayout[0]");
 	public static final By START_DATE = By.xpath("//android.widget.TextView[@text='mm/dd/yyyy']");
@@ -170,10 +170,10 @@ public class Locators {
 	
 	//Cards Detail
 	public static final By CARD_SLIDE = By.id("flxAHBCards");
-	public static final By AVL_CRD_LMT_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']//android.widget.TextView[@index='0']");
-	public static final By AVL_CRD_LMT_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
-	public static final By OUT_STANDING_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
-	public static final By OUT_STANDING_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By AVL_CRD_LMT_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
+	public static final By AVL_CRD_LMT_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By OUT_STANDING_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
+	public static final By OUT_STANDING_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
 	public static final By CARD_NUMBER = By.id("lblCardNumber");
 	public static final By CARD_HOLD_NAME = By.xpath("//android.support.v4.view.ViewPager[@index='0']/android.widget.ScrollView[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
 	public static final By INFO_BTN = By.id("imgInfo");
@@ -182,7 +182,7 @@ public class Locators {
 	
 	//Additional Card Details:
 	public static final By ADD_CARD_HD = By.xpath("//android.widget.TextView[@text='Card details']");
-	public static final By CARD_NUM = By.id("lblCurrentAccountValue");
+	public static final By CARD_NUM = By.id("lblCurrentAccount");
 	public static final By ACC_AMOUNT = By.id("lblAmount");
 	public static final By AVL_CRD_LMT_LB_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
 	public static final By AVL_CRD_LMT_VL_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
@@ -195,11 +195,11 @@ public class Locators {
 	public static final By MIN_AMT_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='3']/android.widget.TextView[@index='0']");
 	public static final By MIN_AMT_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='3']/android.widget.TextView[@index='1']");
 	public static final By CARD_OWNER_A_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='5']/android.widget.TextView[@index='0']");
-	public static final By CARD_OWNER_A_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='5']/android.widget.TextView[@index='1']");
+	public static final By CARD_OWNER_A_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='6']/android.widget.TextView[@index='1']");
 	public static final By CARD_STATUS_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='6']/android.widget.TextView[@index='0']");
-	public static final By CARD_STATUS_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='6']/android.widget.TextView[@index='1']");
+	public static final By CARD_STATUS_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='7']/android.widget.TextView[@index='1']");
 	public static final By TOT_CARD_LMT_LB = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='7']/android.widget.TextView[@index='0']");
-	public static final By TOT_CARD_LMT_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='7']/android.widget.TextView[@index='1']");
+	public static final By TOT_CARD_LMT_FD = By.xpath("//android.support.v7.widget.RecyclerView[@index='0']/android.view.ViewGroup[@index='8']/android.widget.TextView[@index='1']");
 	
 	//Login Screen
 	public static final By LOGIN_PIN_FD = By.id("flxTbxPin");
@@ -208,18 +208,18 @@ public class Locators {
 	public static final By ACC_DETAIL = By.xpath("//android.widget.TextView[@text='Account details']");
 	public static final By FIN_DETAIL = By.xpath("//android.widget.TextView[@text='Finance details']");
 	public static final By ACC_AMT = By.id("lblAmount");
-	public static final By IBAN = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@text='IBAN']");
-	public static final By IBANV = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
-	public static final By Account_Number_D = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Account number']");
-	public static final By Account_Number_D_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
-	public static final By SCodeD = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='2']/android.widget.TextView[@text='SWIFT Code']");
-	public static final By SCodeD_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='2']/android.widget.TextView[@index='1']");
-	public static final By Account_holderD = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='3']/android.widget.TextView[@text='Account holder']");
-	public static final By Account_holderD_v = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='3']/android.widget.TextView[@index='1']");
-	public static final By Account_holder_CIF = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='4']/android.widget.TextView[@text='Account holder CIF']");
-	public static final By Account_holder_CIF_v = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='4']/android.widget.TextView[@index='1']");
-	public static final By Branch = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='5']/android.widget.TextView[@text='Branch']");
-	public static final By BranchV = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='5']/android.widget.TextView[@index='1']");
+	public static final By IBAN = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='0']/android.widget.TextView[@text='IBAN']");
+	public static final By IBANV = By.xpath("//android.widget.ScrollView[@index='2']/android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
+	public static final By Account_Number_D = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='1']/android.widget.TextView[@text='Account number']");
+	public static final By Account_Number_D_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='1']/android.widget.TextView[@index='1']");
+	public static final By SCodeD = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='2']/android.widget.TextView[@text='SWIFT code']");
+	public static final By SCodeD_V = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='2']/android.widget.TextView[@index='1']");
+	public static final By Account_holderD = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='3']/android.widget.TextView[@text='Account holder']");
+	public static final By Account_holderD_v = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='3']/android.widget.TextView[@index='1']");
+	public static final By Account_holder_CIF = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='4']/android.widget.TextView[@text='Account holder CIF']");
+	public static final By Account_holder_CIF_v = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='4']/android.widget.TextView[@index='1']");
+	public static final By Branch = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='5']/android.widget.TextView[@text='Branch']");
+	public static final By BranchV = By.xpath("//android.support.v7.widget.RecyclerView[@index='4']/android.view.ViewGroup[@index='5']/android.widget.TextView[@index='1']");
 	public static final By LINKEDDEBIT = By.id("lblLinkedDebitCards");
 	public static final By LINKD1 = By.xpath("//android.widget.ScrollView[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='3']/android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
 	public static final By LINKD1V = By.xpath("//android.widget.ScrollView[@index='1']/android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='3']/android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");

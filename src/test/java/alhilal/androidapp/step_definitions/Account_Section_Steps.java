@@ -1,6 +1,6 @@
 package alhilal.androidapp.step_definitions;
 
-import static alhilal.androidapp.utils.Locators.ACT_SAVING_ACC1;
+import static alhilal.androidapp.utils.Locators.*;
 
 import alhilal.androidapp.pages.Account_Section_Page;
 import cucumber.api.java.en.Given;
@@ -10,7 +10,7 @@ public class Account_Section_Steps extends Account_Section_Page {
 
 	@Then("^Verify the operative current account details in dashboard$")
 	public void verify_the_operative_account_details_in_dashboard() throws Throwable {
-		scrollDown(ACT_SAVING_ACC1);
+		//scrollDown(ACT_CURRENT_ACC);
 		Verify_Current_Accounts_List();
 	}
 
@@ -21,7 +21,7 @@ public class Account_Section_Steps extends Account_Section_Page {
 	
 	@Then("^Verify the operative saving account details in dashboard$")
 	public void verify_the_operative_saving_account_details_in_dashboard() throws Throwable {
-		scrollDown(ACT_SAVING_ACC1);
+		//scrollDown(ACT_SAVING_ACC1);
 		Verify_Saving_Accounts_List();
 	}
 

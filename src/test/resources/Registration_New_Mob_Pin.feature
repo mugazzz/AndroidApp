@@ -1,4 +1,4 @@
-@reg_new_mob_pin @reset @sprint1_2
+@reg_new_mob_pin @reset @sprint1_2 @sprint1-3
 Feature: I should be able set my new mobile banking pin
 	
 #@reset @reg_new_mob_pin0

@@ -1,4 +1,4 @@
-@splash @sprint1_2
+@splash @sprint1_2 @sprint1-3
 Feature: Splash Screen
 
 @splash0

@@ -1,5 +1,7 @@
 package alhilal.androidapp.step_definitions;
 
+import static alhilal.androidapp.utils.AppStrings.*;
+
 import alhilal.androidapp.pages.Card_Verification_Page;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -80,7 +82,7 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 	
 	@Given("^Register the user who doesnot have card account$")
 	public void register_the_user_who_doesnot_have_card_account() {
-		Register_Specific_user();
+		Register_Specific_user(Act_Cust_No_Card, Act_SMS_PN_Spec_No_bill);
 	}
 
 }

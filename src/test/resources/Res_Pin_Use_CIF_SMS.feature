@@ -1,4 +1,4 @@
-@res_pin_CIF_SMS @sprint1_2
+@res_pin_CIF_SMS @sprint1_2 @sprint1-3
 Feature: Existing registered user - Reset Pin validation using my CIF and SMS PIN
 I should be able to reset my PIN by verifying myself using my CIF number and SMS PIN
 

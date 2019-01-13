@@ -40,18 +40,20 @@ public class AppStrings {
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
-	    public static final String Act_Cust_No = "4041984";
+	    //public static final String Act_Cust_No = "4041984";
+	    public static final String Act_Cust_No = "7799712";
 	    public static final String Act_Cust_No_Acc = "7799712";
 	    public static final String Act_SMS_PN = "123456";
-	    public static final String Act_Cust_No_Spec_Card = "4041984";
+	    public static final String Act_Cust_No_Spec_Card = "7799712";
+	    public static final String Act_Cust_No_Card = "9090903";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
-	    public static final String Act_Cust_No_Spec_No_bill = "4041984";
+	    public static final String Act_Cust_No_Spec_No_bill = "7799712";
 	    public static final String Act_SMS_PN_Spec_No_bill = "123456";
 	    public static final String Act_Cust_No_Spec_Acc = "4041984";
 	    public static final String Act_SMS_PN_Spec_Acc = "123456";
 	    public static final String Act_Cust_No_Spec_Dep = "4446919";
 	    public static final String Act_SMS_PN_Spec_Dep = "123456";
-	    public static final String Act_Cust_No_Spec_Fin = "7266677";
+	    public static final String Act_Cust_No_Spec_Fin = "9090903";
 	    public static final String Act_SMS_PN_No_Spec_Fin = "123456";
 	    public static final String Inact_Cust_No = "6700067";
 	    public static final String Cust_No_with_No_Pin = "6556425";
@@ -75,24 +77,24 @@ public class AppStrings {
 	    public static final String Inactive_crad_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    
 	    public static final String Incorrect_Cheque_Number = "No records available";
-
-	    public static final String Inactive_CIF_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
-	    public static final String Check_Filter_Validation ="To cheque number must be greater than from cheque number ";
-	    public static final String Inactive_CIF_Validation_Message_InvSMS = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Greater_Amount ="To amount must be greater than from amount";
+	    public static final String Inactive_CIF_Validation_Message = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
+	    public static final String Check_Filter_Validation ="To cheque number must be greater than from cheque number";
+	    public static final String Inactive_CIF_Validation_Message_InvSMS = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_T = "The Account number is incorrect";
 	    public static final String Inactive_CIF_Validation_Message_T1 = "The combination of CIF/T-PIN entered is incorrect.Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_T2 = "something went wrong, please try after some time. If problem continues please contact support.";
 	    
 	    public static final String Inactive_CIF_Validation_Message_R = "something went wrong, please try after some time. If problem continues please contact support.";
-	    public static final String Pin_notSet_notActive_Validation_Message = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Pin_notSet_notActive_Validation_Message = "Something went wrong, please try again after some time";
 	    public static final String Pin_notSet_notActive_Validation_Message1 = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Expired_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Invalid_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Card_block_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    //public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc;";
-	    public static final String Invalid_Pin_Validation = "Incorrect login PIN! Please try again.";
-	    public static final String Pin_Blocked_Message = "Your Login PIN has been blocked due to wrong repeated rerties. Please click forget login PIN to reset it.";
+	    public static final String Invalid_Pin_Validation = "Incorrect login PIN. Please try again";
+	    public static final String Pin_Blocked_Message = "Your Login PIN has been blocked due to exceeding incorrect entries. Please click forgot PIN to reset";
 	    public static final String WEBVIEW_CONTEXT = "WEBVIEW";
 	    public static final String OTP_Validation = "The One Time Password you entered is incorrect. Please try again or click re-send OTP to receive a new one";
 	    public static final String INVALID_SWIFT = "You have entered an invalid SWIFT Code";
@@ -113,14 +115,14 @@ public class AppStrings {
 	    public static final String web_password = "password14";
     
 	//Advanced Search Screen
-	    public static final String Cheque_from = "10";
+	    public static final String Cheque_from = "20";
 	    public static final String Cheque_from_incorrect = "100000";
-	    public static final String Cheque_to = "20";
+	    public static final String Cheque_to = "35";
 	    public static final String Cheque_to_1 = "9";
 	    public static final String Cheque_from_1 = "18";
-	    public static final String Amount_from = "36000";
+	    public static final String Amount_from = "2000";
 	    public static final String Amount_from_1 = "37000";
-	    public static final String Amount_to = "40000";
+	    public static final String Amount_to = "50000";
 	    public static final String Amount_to_1 = "35000";
 	    
 	    
