@@ -1,4 +1,4 @@
-@edit_del_ben @sprint5
+@edit_del_ben @sprint5 @sprint4-6
 Feature: Edit and Delete benificiary accounts
   I should able to edit and delete benificiary accounts
 

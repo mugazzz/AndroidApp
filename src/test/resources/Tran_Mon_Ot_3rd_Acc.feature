@@ -1,16 +1,17 @@
-@tran_mon_3rd_acc @sprint4 @sprint4_5
+@tran_mon_3rd_acc @sprint4 @sprint4_5 @sprint4-6
 
 Feature: Transfer money to another local or international third party bank account
  I should be able to transfer money to another local or international third party bank account
 
 @tran_mon_3rd_acc0 @reset @Transfer_35
   Scenario: Able to transfer money to another local or international third party bank account- From Currents Account To local third party Account
-	  Given Verify the login check
+	  #Given Verify the login check
+	  Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen
-		And Tap on from account and select the current account2
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		#Then Verify the indicative amount appears

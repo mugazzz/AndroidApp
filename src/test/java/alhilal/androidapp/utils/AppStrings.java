@@ -44,6 +44,7 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No1 = "9677570";
+	    //public static final String Act_Cust_No1 = "8813779";
 	    public static final String Act_Cust_No_100000 = "9667733";
 	    public static final String Cust_No_Sav_0 = "1212115";
 	    public static final String Cust_No_Cur_0 = "1212115";
@@ -94,10 +95,10 @@ public class AppStrings {
 	    public static final String Pin_Blocked_Message = "Your Login PIN has been blocked due to wrong repeated rerties. Please click forget login PIN to reset it.";
 	    public static final String WEBVIEW_CONTEXT = "WEBVIEW";
 	    public static final String OTP_Validation = "The One Time Password you entered is incorrect. Please try again or click re-send OTP to receive a new one";
-	    public static final String INVALID_SWIFT = "You have entered an invalid SWIFT Code";
+	    public static final String INVALID_SWIFT = "You have entered an invalid SWIFT code";
 	    public static final String INVALID_IBAN = "You have entered an invalid IBAN";
 	    public static final String DUP_NICK = "The given nick name is already associated with the user";
-	    public static final String DUP_IBAN = "The beneficiary you are trying to add, already exists";
+	    public static final String DUP_IBAN = "You already have a beneficiary registered with the same account details";
 	    public static final String Great_val = "The transfer amount entered is greater than the selected account's balance";
 	    public static final String Great_val1 = "You don't have an account with sufficient funds";
 	    public static final String Limit_Tran = "You have exceeded the transactional limit for Transfer to others";
@@ -117,9 +118,11 @@ public class AppStrings {
 	    
 	    
 	//Web Application for OTP  
-	    public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
+	    //public static final String OTPweb = "http://10.10.182.210:8080/SMS/";
+	    public static final String OTPweb = "https://10.10.137.153:8445/SMS/";
 	    public static final String web_username = "administrator";
-	    public static final String web_password = "password1";
+	    //public static final String web_password = "password1";
+	    public static final String web_password = "password14";
 	    public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc";
 	    public static final String InvOTP = "230071";
 	    

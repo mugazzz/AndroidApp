@@ -49,7 +49,7 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Tap_Next_Btn() {
 		clickOnElement(NXT_BTN);
-		appiumHelpers.waitForVisibilityOfElement(FUL_NAME);
+		appiumHelpers.waitForVisibilityOfElement(NICK_NAME);
 	}
 	
 	

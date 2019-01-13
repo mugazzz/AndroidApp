@@ -1,4 +1,4 @@
-@add_pay_conf @sprint6
+@add_pay_conf @sprint6 @sprint4-6
 Feature: Title of your feature
   I want to use this template for my feature file
 

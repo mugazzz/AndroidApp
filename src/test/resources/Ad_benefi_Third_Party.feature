@@ -1,4 +1,4 @@
-@Ad_Ben_Third_Party @sprint4 @reset @sprint4_5
+@Ad_Ben_Third_Party @sprint4 @reset @sprint4_5 @sprint4-6
 Feature: I should be able to add a beneficiary for Third Party Accounts 
 
 @Ad_Ben_Third_Party0 @reset @Transfer_82
@@ -147,7 +147,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts- Duplicate Nick Na
 	Then Get the OTP from the third party app and enter the OTP1
 	#Then Tap next and verify the validation1
 
-@Ad_Ben_Third_Party10 @Transfer_102
+@Ad_Ben_Third_Party11 @Transfer_102
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate IBAN number
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -162,7 +162,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate 
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the validation for dup iban
 
-@Ad_Ben_Third_Party10 @Transfer_103
+@Ad_Ben_Third_Party12 @Transfer_103
 Scenario: Able to add a beneficiary  for Third Party Accounts - Duplicate Account Number
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
