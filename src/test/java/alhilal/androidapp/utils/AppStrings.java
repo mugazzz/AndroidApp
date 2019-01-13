@@ -1,7 +1,5 @@
 package alhilal.androidapp.utils;
 
-import static alhilal.androidapp.utils.AppStrings.Inactive_CIF_Validation_Message;
-
 public class AppStrings {
 	
 	 //Waits
@@ -29,20 +27,21 @@ public class AppStrings {
 	    public static final String Incor_Credit_Card_Pin = "1236";
     
 	//Debit Card Registration
-	    public static final String Act_Debit_Card_No = "4714846389753638"; 
-	    public static final String Act_Debit_Card_Pin = "4567";
-	    public static final String Inactive_Debit_Card_No = "4714844186466215";
+	    public static final String Act_Debit_Card_No = "4714847252810901"; 
+	    public static final String Act_Debit_Card_Pin = "1234";
+	    public static final String Inactive_Debit_Card_No = "4714847770083320";
 	    public static final String Inactive_Debit_Card_Pin = "5678";
-	    public static final String Incor_Debit_Card_No = "471484638975363";
+	    public static final String Incor_Debit_Card_No = "4714847770083320";
 	    public static final String Incor_Debit_Card_Pin = "456";
-	    public static final String Act_Debit_Card_No_Pin = "4714847975785216";
-	    public static final String Act_Debit_Card_Inact_Pin = "4192360973053109";
+	    public static final String Act_Debit_Card_No_Pin = "4714847770083320";
+	    public static final String Act_Debit_Card_Inact_Pin = "4714847770083320";
 	    public static final String Act_Debit_Card_Inact_Pin_Inact = "4567";
-	    public static final String Exp_Debit_Card_No = "4192360230719320";
+	    public static final String Exp_Debit_Card_No = "4714847770083320";
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
 	    public static final String Act_Cust_No = "4041984";
+	    public static final String Act_Cust_No_Acc = "7799712";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
@@ -101,6 +100,12 @@ public class AppStrings {
 	    public static final String DUP_NICK = "The given nick name is already associated with the user";
 	    public static final String DUP_IBAN = "The beneficiary you are trying to add, already exists";
 	    public static final String Inactive_CIF_Validation_Message_R1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
+	    public static final String Act_Nick_Val = "Device nickname changed";
+	    public static final String Dup_Nick_Val = "You already have a device registered with the same nickname";
+	    public static final String PIN_SUCE = "Login PIN has been changes successfully";
+	    public static final String INCOR_SUCC = "Current PIN entered is incorrect. Please try again or change your Login PIN using the";
+	    public static final String MIS_PIN = "Login PINs entered do not match";
+	    
 	    
 	//Web Application for OTP  
 	    public static final String OTPweb = "https://10.10.137.153:8445/SMS/LoginAction.do";
@@ -142,5 +147,14 @@ public class AppStrings {
 	    public static final String AHB_ACC1 = "4041 9840 03";
 	    public static final String Full_Name_AHB = "AHBAutomation";
 	    		
+	  //Support
+	    public static final String Nick_Na = "Active Nick Name";
+	    public static final String Nick_Na1 = "Active Nick Name1";
+	    
+	  //Transfers
+	    public static final String Tran_amt = "1.00";
+	    public static final String Remark = "Remark Testing";
+	    
+	  
 
 }

@@ -44,7 +44,7 @@ Scenario: Register using Debit Card and Debit card pin - Pin is not set
 	And Verify the homescreen button Register using card number
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Debit Card number with no Pin
-	And Enter the Active Debit Card PIN number
+	And Enter the inactive Debit Card PIN number
 	Then Verify the validation for Card pin fails
 
 @reg_debit_card5 @reset

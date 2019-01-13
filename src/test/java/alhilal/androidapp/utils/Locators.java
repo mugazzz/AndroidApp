@@ -298,6 +298,43 @@ public class Locators {
 	public static final By CONT_SWIFT = By.id("lblSwift");
 	public static final By CONT_SWIFT_DA = By.id("lblSwiftData");
 	
+	//Accounts
+	public static final By CARD_USD = By.xpath("//android.widget.TextView[@text='4192 33** **** 0001']");
+	public static final By CUR_USD = By.xpath("//android.widget.TextView[@text='AE20 0530 0000 2779 9712 003']");
+	public static final By SAV_USD = By.xpath("//android.widget.TextView[@text='AE63 0530 0000 2779 9712 005']");
+	public static final By FROM_ACC = By.id("lbxFromAccountData");
+	public static final By FROM_CUR = By.xpath("//android.widget.CheckedTextView[@text='Current account 7799712002']");
+	public static final By FROM_CUR1 = By.xpath("//android.widget.CheckedTextView[@text='Current account 7799712003']");
+	public static final By AVAI_AMT = By.id("lblAvailableAmount");
+	public static final By TRAN_AMT = By.id("tbxTransferAmount");
+	public static final By SEL_CUR = By.id("lbxCurrency");
+	public static final By USD = By.xpath("//android.widget.CheckedTextView[@text='USD']");
+	public static final By AED = By.xpath("//android.widget.CheckedTextView[@text='AED']");
+	public static final By INDICATIVE = By.id("lblIndicativeAmount");
+	public static final By REMARK = By.id("txtAreaRemarks");
+	public static final By CONF_BUT = By.id("btnConfirm");
+	public static final By FLX_CONF = By.id("flxConfirmationMain");
+	public static final By CONT_BUT = By.id("btnContinue");
+	public static final By REF_NUM = By.id("lblNumberHeader");
+	public static final By CNF_DATE = By.id("lblDateHeader");
 	
 	
+	
+	//Support
+	public static final By MORE_OPT = By.id("flxMore");
+	public static final By SET_OPT = By.id("flxSettings");
+	public static final By ACT_OPT = By.id("flxAciveDevices");
+	public static final By SEG_PAG = By.id("segDeviceList");
+	public static final By DEV_LIS = By.id("flxDeviceListMain");
+	public static final By DEV_LIS1 = By.xpath("//android.widget.TextView[@text='Account details']");
+	public static final By DEV_NAM = By.id("lblDeviceName");
+	public static final By NICK_EDIT = By.id("btnCancel");
+	public static final By ENT_NICK = By.id("txtDeviceName");
+	public static final By CNF_BTN = By.id("btnConfirm");
+	public static final By BK_BTN = By.id("btnBack");
+	public static final By PIN_LINK = By.id("lblMobilePin");
+	public static final By ENT_CUR_PIN = By.id("flxResetPin");
+	public static final By ENT_NEW_PIN = By.id("flxTextPin");
+	public static final By ENT_RE_PIN = By.id("flxRePinText");
+	public static final By AMT_CNF2 = By.xpath("//android.widget.TextView[@text='Amount: 30,000.00 AED']");
 }

@@ -37,6 +37,16 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check();
 	}
 	
+	@Given("^Verify the login check Acc$")
+	public void verify_login_check_Acc() {
+		Verify_Login_check_Acc();
+	}
+	
+	@Given("^Verify the login check Card$")
+	public void verify_login_check_card() {
+		Verify_Login_check_Card();
+	}
+	
 	@Given("^Verify the login check with Bio$")
 	public void verify_login_check_Bio() {
 		Verify_Login_check_Bio();
