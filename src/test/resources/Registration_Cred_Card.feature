@@ -2,7 +2,7 @@
 Feature: Registration process using Credit Card
 I should be able to register using my Credit card and Credit card pin
 
-@reg_cred_card0 @reset
+@reg_cred_card0 @reset @datacheck
 Scenario: Register using Credit Card and Credit Card pin - Active Card
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number
@@ -11,7 +11,7 @@ Scenario: Register using Credit Card and Credit Card pin - Active Card
 	And Enter the Active Credit Card PIN number
 	Then Verify the card details are validated on fly and navigate to OTP screen
 
-@reg_cred_card1
+@reg_cred_card1 @datacheck
 Scenario: Register using Credit Card and Credit card pin - Inactive Card
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number
@@ -38,7 +38,7 @@ Scenario: Register using Credit Card and Credit card pin -incorrect number of ca
 	And Enter the incorrect Credit Card PIN number
 	Then Verify the user is not allowed to proceed further
 
-@reg_cred_card4
+@reg_cred_card4 @datacheck
 Scenario: Register using Credit Card and Credit card pin - Pin is not set
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number
@@ -56,7 +56,7 @@ Scenario: Register using Credit Card and Credit card pin - Pin is not active
 	And Enter the Inactive Pin number
 	Then Verify the validation for Card pin fails
 
-@reg_cred_card6
+@reg_cred_card6 @datacheck
 Scenario: Register using Credit Card and Credit card pin - Expiry date is lesser than today
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number

@@ -39,6 +39,11 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check();
 	}
 	
+	@Given("^Verify the login check tran$")
+	public void verify_login_check_tran() {
+		Verify_Login_check_tran();
+	}
+	
 	@Given("^Verify the login check Acc$")
 	public void verify_login_check_Acc() {
 		Verify_Login_check_Acc();
@@ -54,6 +59,10 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check_Bio();
 	}
 
+	@Given("^Verify the login check with Bio1$")
+	public void verify_login_check_Bio1() {
+		Verify_Login_check_Bio1();
+	}
 	@Then("^Close and relaunch the app$")
 	public void close_and_relaunch_the_app() {
 	  driver.closeApp();

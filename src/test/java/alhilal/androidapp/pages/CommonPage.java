@@ -128,7 +128,7 @@ public class CommonPage extends ConfigDriver {
 		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver2.findElement(By.name("button")).click();
 		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver2.findElement(By.xpath("//td[5]/a")).click();
+		driver2.findElement(By.xpath("//td[3]/a")).click();
 		driver2.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		String OTPMSG = driver2.findElement(By.xpath("//tr[2]/td[3]")).getText();
 		System.out.println(OTPMSG);

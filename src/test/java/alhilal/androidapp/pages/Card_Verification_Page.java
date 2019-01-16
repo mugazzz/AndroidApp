@@ -124,6 +124,19 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 	}
 	
+	public void Verify_Login_check_tran() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Act_Cust_No, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+			 enterText(LOGIN_PIN_FD, Enter_Pin);
+		 }
+	}
+	
 	public void Verify_Login_check_Card() {
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
@@ -138,15 +151,47 @@ public class Card_Verification_Page extends CommonPage{
 	}
 	
 	public void Verify_Login_check_Bio() {
-		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
-		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
-		 if(elementExists(REG_CARD_BTN)) {
-			 Register_Specific_user_Bio(Act_Cust_No, Act_SMS_PN);
-		 }
-		 else {
-			 System.out.println("User already logged in");
-		 }
+		if(elementExists(Landing_Screen_Logo))
+		{	
+			appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+			appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+			if(elementExists(REG_CARD_BTN)) {
+				Register_Specific_user_Bio(Act_Cust_No1, Act_SMS_PN);
+			}
+			else {
+				System.out.println("User already logged in");
+				enterText(LOGIN_PIN_FD, Enter_Pin);
+			}
+		}
+		else
+		{
+			clickOnElement(FINGERPRINTS_POPUP_CANCEL);
+			enterText(LOGIN_PIN_FD, Enter_Pin);
+			
+		}
 	}
+	
+	public void Verify_Login_check_Bio1() {
+		if(elementExists(FINGERPRINTS_POPUP_CANCEL))
+		{	
+			clickOnElement(FINGERPRINTS_POPUP_CANCEL);
+			enterText(LOGIN_PIN_FD, Enter_Pin);
+		}
+		else
+		{
+			appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+			appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+			if(elementExists(REG_CARD_BTN)) {
+				Register_Specific_user_Bio(Act_Cust_No1, Act_SMS_PN);
+			}
+			else {
+				System.out.println("User already logged in");
+				enterText(LOGIN_PIN_FD, Enter_Pin);
+			}
+		}
+	}
+	
+	
 	
 	public void Verify_Absence_Card_Section() {
 		appiumHelpers.assertFalse(elementExists(CARD_LABEL), "My Card Section is available");

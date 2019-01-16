@@ -10,13 +10,13 @@ public class AppStrings {
 	    public static final String customerSms = "123456";
     
     //Credit Card Registration
-	    public static final String Act_Credit_Card_No = "4584610162793956"; 
+	    public static final String Act_Credit_Card_No = "4584610162170809"; 
 //	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
 //	    public static final String Act_Credit_Card_Pin_Specific = "1234";
-	    public static final String Exp_Credit_Card_No = "4714847770083320";
-	    public static final String Inactive_Credit_Card_No = "4714847770083320";
+	    public static final String Exp_Credit_Card_No = "4584610168800037";
+	    public static final String Inactive_Credit_Card_No = "4584610169749803";
 	    public static final String Inactive_Credit_Card_Pin = "2345";
-	    public static final String Act_Credit_Card_No_Pin = "4714847770083320"; 
+	    public static final String Act_Credit_Card_No_Pin = "4584610163073101"; 
 	    public static final String Act_Credit_Card_Inact_Pin = "4714847770083320";
 	    public static final String Act_Credit_Card_Inact_Pin_Inact = "3456";
 	    public static final String Inval_Credit_Card_No = "4584610167454560";
@@ -27,21 +27,22 @@ public class AppStrings {
 	    public static final String Incor_Credit_Card_Pin = "1236";
     
 	//Debit Card Registration
-	    public static final String Act_Debit_Card_No = "4714847252810901"; 
+	    public static final String Act_Debit_Card_No = "4714845567915712"; 
 	    public static final String Act_Debit_Card_Pin = "1234";
-	    public static final String Inactive_Debit_Card_No = "4714847770083320";
+	    public static final String Inactive_Debit_Card_No = "4714847609904308";
 	    public static final String Inactive_Debit_Card_Pin = "5678";
 	    public static final String Incor_Debit_Card_No = "4714847770083320";
 	    public static final String Incor_Debit_Card_Pin = "456";
-	    public static final String Act_Debit_Card_No_Pin = "4714847770083320";
+	    public static final String Act_Debit_Card_No_Pin = "4714845584467705";
 	    public static final String Act_Debit_Card_Inact_Pin = "4714847770083320";
 	    public static final String Act_Debit_Card_Inact_Pin_Inact = "4567";
-	    public static final String Exp_Debit_Card_No = "4714847770083320";
+	    public static final String Exp_Debit_Card_No = "4192360100391810";
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
 	    //public static final String Act_Cust_No = "4041984";
 	    public static final String Act_Cust_No = "7799712";
+	    public static final String Act_Cust_No1 = "9677570";
 	    public static final String Act_Cust_No_Acc = "7799712";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No_Spec_Card = "7799712";
@@ -66,6 +67,9 @@ public class AppStrings {
 	    public static final String Invalid_SMS_PN = "123595";
 	    public static final String Act_TPIN_PN = "123456";
 	    public static final String Incorr_TPN = "12345";
+	    public static final String Act_Cust_No_TPIN_SMS= "9500000";
+	    public static final String Act_Cust_No_1000k= "9600000";
+	    
 	    
 	    
 	//Set PIN Screen
