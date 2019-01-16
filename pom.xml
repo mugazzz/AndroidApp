@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>alhilal</groupId>
-  <artifactId>AlhilalAndroidApp</artifactId>
+  <artifactId>AlhilalAndroidAppS1_3</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>AlhilalAndroidApp</name>
+  <name>AlhilalAndroidAppS1_3</name>
   <url>http://maven.apache.org</url>
 
   <properties>
