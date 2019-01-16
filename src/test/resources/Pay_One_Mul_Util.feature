@@ -63,7 +63,7 @@ Feature: Pay for one or multiple utilities
     Then Tap confirm payment button
     And Verify the Payment Confirmation screen
     
-    @pay_one_mul4 @Payment_13
+    @pay_one_mul5 @Payment_13
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Savings Account
   	Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -76,7 +76,7 @@ Feature: Pay for one or multiple utilities
     Then Tap confirm payment button
     And Verify the Payment Confirmation screen
     
-    @pay_one_mul4 @Payment_14
+    @pay_one_mul6 @Payment_14
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Card
   	Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -89,7 +89,7 @@ Feature: Pay for one or multiple utilities
     Then Tap confirm payment button
     And Verify the Payment Confirmation screen
     
-    @pay_one_mul4 @Payment_14
+    @pay_one_mul7 @Payment_14
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Card
   	Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -102,7 +102,7 @@ Feature: Pay for one or multiple utilities
     Then Tap confirm payment button
     And Verify the Payment Confirmation screen
     
-    @pay_one_mul4 @Payment_14
+    @pay_one_mul8 @Payment_14
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Card
   	Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully

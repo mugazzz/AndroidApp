@@ -1,6 +1,6 @@
 @add_pay_conf @sprint6 @sprint4-6
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Add payee confirmaiton screen
+I should able to verify the add payee confirmation screen
 
   @add_pay_conf0
   Scenario: Able to see a confirmation page with the details of the payee to be added-click Cancel 

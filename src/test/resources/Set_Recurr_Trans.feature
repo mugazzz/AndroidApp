@@ -9,7 +9,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then select other Al hilal Bank cardholder option
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the AHB Card number
@@ -30,7 +30,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then select other Al hilal Bank cardholder option
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the AHB Card number
@@ -51,7 +51,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then select other Al hilal Bank cardholder option
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the AHB Card number
@@ -72,7 +72,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then select other Al hilal Bank cardholder option
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the AHB Card number
@@ -93,7 +93,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then select other Al hilal Bank cardholder option
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the AHB Card number
@@ -113,7 +113,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the AHB Card and navigate to transfer screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -130,7 +130,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the AHB Card and navigate to transfer screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -147,7 +147,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the AHB Card and navigate to transfer screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -164,7 +164,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the AHB Card and navigate to transfer screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -181,7 +181,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the AHB Card and navigate to transfer screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -199,7 +199,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen1
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Select the from charges pay by and choose Me
@@ -219,7 +219,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen1
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Select the from charges pay by and choose Me
@@ -239,7 +239,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen1
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Select the from charges pay by and choose Me
@@ -259,7 +259,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen1
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Select the from charges pay by and choose Me
@@ -279,7 +279,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen1
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Select the from charges pay by and choose Me
@@ -299,7 +299,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD1
 		And Enter the remarks
@@ -317,7 +317,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD1
 		And Enter the remarks
@@ -335,7 +335,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD1
 		And Enter the remarks
@@ -353,7 +353,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD1
 		And Enter the remarks
@@ -371,7 +371,7 @@ Feature: Set recurring transfers
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD1
 		And Enter the remarks
@@ -388,7 +388,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		Then Select AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -405,7 +405,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		Then Select AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -422,7 +422,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		Then Select AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -439,7 +439,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		Then Select AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks
@@ -456,7 +456,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		Then Select AHB account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account3
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		And Enter the remarks

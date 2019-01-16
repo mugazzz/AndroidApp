@@ -2,9 +2,11 @@
 Feature: Edit and Delete benificiary accounts
   I should able to edit and delete benificiary accounts
 
+#Add one benificary for the the account 9500000
+
   @edit_del_ben0
   Scenario: I should able to edit benificary account nick name
-   	Given Verify the login check tran
+   	Given Verify the login check tran_950000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others

@@ -44,6 +44,7 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No1 = "9677570";
+	    public static final String Act_Cust_No_9500000 = "9500000";
 	    //public static final String Act_Cust_No1 = "8813779";
 	    public static final String Act_Cust_No_100000 = "9667733";
 	    public static final String Cust_No_Sav_0 = "1212115";
@@ -114,7 +115,6 @@ public class AppStrings {
 	    public static final String Edit_Nick_Val = "Payee nickname changed";
 	    public static final String Delete_Val = "has been deleted";
 	    public static final String Edit_Beni_Val = "Beneficiary nickname changed";
-	    
 	    
 	    
 	//Web Application for OTP  
