@@ -10,14 +10,14 @@ public class AppStrings {
 	    public static final String customerSms = "123456";
     
     //Credit Card Registration
-	    public static final String Act_Credit_Card_No = "4584610105853560";
+	    public static final String Act_Credit_Card_No = "4584610162170809";
 	    public static final String Own_Credit_Card_No = "4584610164670400";
 //	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
 //	    public static final String Act_Credit_Card_Pin_Specific = "1234";
-	    public static final String Exp_Credit_Card_No = "4584610162603620";
-	    public static final String Inactive_Credit_Card_No = "4192347816130004";
+	    public static final String Exp_Credit_Card_No = "4584610168800037";
+	    public static final String Inactive_Credit_Card_No = "4584610169749803";
 	    public static final String Inactive_Credit_Card_Pin = "2345";
-	    public static final String Act_Credit_Card_No_Pin = "5291068800621801";
+	    public static final String Act_Credit_Card_No_Pin = "4584610163073101";
 	    public static final String Act_Credit_Card_Inact_Pin = "5174000000180009";
 	    public static final String Act_Credit_Card_Inact_Pin_Inact = "3456";
 	    public static final String Inval_Credit_Card_No = "4584610167454560";
@@ -28,23 +28,24 @@ public class AppStrings {
 	    public static final String Incor_Credit_Card_Pin = "123";
     
 	//Debit Card Registration
-	    public static final String Act_Debit_Card_No = "4714846389753638";
+	    public static final String Act_Debit_Card_No = "4714845567915712";
 	    public static final String Act_Debit_Card_Pin = "4567";
-	    public static final String Inactive_Debit_Card_No = "4714844186466215";
+	    public static final String Inactive_Debit_Card_No = "4714847609904308";
 	    public static final String Inactive_Debit_Card_Pin = "5678";
 	    public static final String Incor_Debit_Card_No = "471484638975363";
 	    public static final String Incor_Debit_Card_Pin = "456";
-	    public static final String Act_Debit_Card_No_Pin = "4714847975785216";
+	    public static final String Act_Debit_Card_No_Pin = "4714845584467705";
 	    public static final String Act_Debit_Card_Inact_Pin = "4192360973053109";
 	    public static final String Act_Debit_Card_Inact_Pin_Inact = "6789";
-	    public static final String Exp_Debit_Card_No = "4714844804927700";
+	    public static final String Exp_Debit_Card_No = "4192360100391810";
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
-	    public static final String Act_Cust_No1 = "9677570";
+	    public static final String Act_Cust_No1 = "9600000";
 	    public static final String Act_Cust_No_9500000 = "9500000";
+	    public static final String Act_Cust_No_9600000 = "9600000";
 	    //public static final String Act_Cust_No1 = "8813779";
 	    public static final String Act_Cust_No_100000 = "9667733";
 	    public static final String Cust_No_Sav_0 = "1212115";
@@ -237,5 +238,13 @@ public class AppStrings {
 	    public static final String Pay_type_Landline = "Landline";
 	    public static final String Pay_type_SHAMIL = "Etisalat  Al Shamil";
 	    public static final String Edit_Payee_name = "Edit Name Auto";
+	    
+//Make Payment
+	    
+	    public static final String Payment_Amount_Valid = "10.00";
+	    public static final String Payment_Amount_InValid = "1";
+	    public static final String PaymentSuccess="Your transfer has been submitted successfully!";
+	    public static final String PaymentFailure="Sorry, your payments cannot be processed now. Please try again later";
+	    
 	    
 }

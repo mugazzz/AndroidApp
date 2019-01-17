@@ -1,4 +1,4 @@
-@pay_one_mul @sprint6 @sprint4-6
+@pay_one_mul @sprint6 @sprint4-6 @payment @reset
 Feature: Pay for one or multiple utilities
   I should be able to pay for one or multiple utilities
 

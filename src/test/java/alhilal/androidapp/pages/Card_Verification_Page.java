@@ -144,6 +144,19 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 	}
 	
+	public void Verify_Login_check_tran_9600000() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Act_Cust_No_9600000, Act_SMS_PN);
+			 //Register_using_Credit_Card();
+		 }
+		 else {
+			 System.out.println("User already logged in");
+			 enterText(LOGIN_PIN_FD, Enter_Pin);
+		 }
+	}
+	
 	public void Verify_Login_check_tran1() {
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");

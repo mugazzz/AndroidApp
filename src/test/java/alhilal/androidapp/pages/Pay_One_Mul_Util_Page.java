@@ -35,4 +35,10 @@ public class Pay_One_Mul_Util_Page extends CommonPage{
 	public void Validation_Message() {
 		Verify_Validation_Message(Incorrect_Cons);
 	}
+	
+	public void Sel_Cur_Acc3() {
+		clickOnElement(FROM_ACC_DATA);
+		clickOnElement(CUR_ACC_AMT3);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
+	}
 }

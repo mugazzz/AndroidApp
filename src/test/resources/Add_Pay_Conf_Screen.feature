@@ -1,4 +1,4 @@
-@add_pay_conf @sprint6 @sprint4-6
+@add_pay_conf @sprint6 @sprint4-6 @payment
 Feature: Add payee confirmaiton screen
 I should able to verify the add payee confirmation screen
 

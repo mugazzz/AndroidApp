@@ -314,11 +314,11 @@ public class Locators {
 	public static final By SEL_CUR = By.id("lbxCurrency");
 	public static final By CUR_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9677570004']");
 	public static final By CUR_ACC_AMT2 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115018']");
-	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9677570022']");
+	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9600000029']");
 	public static final By CUR_ACC_AMT100000 = By.xpath("//android.widget.CheckedTextView[@text='Current account 9667733028']");
 	public static final By CUR_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9677570022']");
 	public static final By SAV_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 1212115003']");
-	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 9677570038']");
+	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 9600000018']");
 	public static final By CARD_C = By.xpath("//android.widget.CheckedTextView[@text='Credit card 458461******0400']");
 	public static final By SEL_CHAR = By.id("lbxChargesData");
 	public static final By SEL_REASON = By.id("lbxReasonData");
@@ -407,6 +407,7 @@ public class Locators {
 	public static final By CON_NICK = By.id("tbxNickName");
 	public static final By CON_PIN = By.id("tbxConsumerPin");
 	public static final By NXT = By.id("btnNext");
+	//public static final By NXT = By.xpath("//XCUIElementTypeButton[@name='btnNext']");
 	public static final By SER_PRO = By.id("lblServiceProvider");
 	public static final By SER_PRO_VAL = By.id("lblServiceProviderValue");
 	public static final By CONS_LB = By.id("lblConsumerNumber");
@@ -430,9 +431,9 @@ public class Locators {
 	public static final By AADC_Card = By.xpath("//android.widget.TextView[@text='6464500000']");
 	public static final By From_Acc = By.id("lbxFromAcc");
 	public static final By From_Cur_Acc = By.xpath("//android.widget.CheckedTextView[@text='Current account 9677570022']");
-	public static final By Sel_AADC = By.xpath("//android.widget.TextView[@text='AADC']");
-	public static final By Sel_ADDC = By.xpath("//android.widget.TextView[@text='ADDC']");
-	public static final By Sel_DEWA = By.xpath("//android.widget.TextView[@text='DEWA']");
+	public static final By Sel_AADC = By.xpath("//android.widget.TextView[@text='Payee1']");
+	public static final By Sel_ADDC = By.xpath("//android.widget.TextView[@text='Payee2']");
+	public static final By Sel_DEWA = By.xpath("//android.widget.TextView[@text='Payee3']");
 	public static final By Sel_Salik = By.xpath("//android.widget.TextView[@text='Salik']");
 	public static final By Sel_AADC1 = By.xpath("//android.widget.TextView[@text='AADC1']");
 	public static final By Sel_ADDC1 = By.xpath("//android.widget.TextView[@text='ADDC1']");
@@ -466,6 +467,23 @@ public class Locators {
 	public static final By Save_BTN = By.id("btnSave");
 	public static final By Edit_Bin_Name = By.id("lblBeneficiaryNickname");
 	public static final By Recep_Page = By.id("segRecipients");
+	
+	//Make Payment
+	
+	public static final By PAYEE=By.id("lblServiceOperator");
+	public static final By Payment_PageHeader = By.id("lblHeading");
+	public static final By Select_FromAcc = By.id("lbxFromAcc");
+	public static final By fromAcc=By.xpath("//android.widget.CheckedTextView[@index='1']");
+	public static final By Pay_amount= By.id("tbxBillAmount");
+	public static final By Invalid_Validation= By.id("flxRules");
+	public static final By Payee_List=By.xpath("//XCUIElementTypeOther[@name='segMakePayment']/XCUIElementTypeOther/XCUIElementTypeTable");
+	public static final By Total_Amount= By.id("lblAmtCur");
+	public static final By From_Account= By.id("lblAccountValur");
+	public static final By To_Payee= By.id("lblBeneName");
+	public static final By confirmPay= By.id("btnContinue");
+	public static final By PaymentStatus = By.xpath("//XCUIElementTypeStaticText[@text='Payments are completed successfully']");
+	public static final By status= By.id("lblMessage");
+	
 	
 	
 	

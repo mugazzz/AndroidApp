@@ -1,4 +1,4 @@
-@add_pay_beni @sprint6 @sprint4-6
+@add_pay_beni @sprint6 @sprint4-6 @payment @reset
 Feature: Add a payment beneficiary-Consumer number
   I should able to add a payment beneficiary
 
