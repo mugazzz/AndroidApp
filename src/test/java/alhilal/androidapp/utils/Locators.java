@@ -57,6 +57,9 @@ public class Locators {
 	public static final By OPT_FIELD = By.className("android.widget.EditText");
 	public static final By RESEND_OTP = By.id("btnResendCode");
 	
+	//Login Popup
+	public static final By FING_CANCEL = By.id("lblCancel");
+	
 	
 	//All set screen
 	public static final By CRE_LOGIN_PIN_LB = By.id("lblCreatePin");

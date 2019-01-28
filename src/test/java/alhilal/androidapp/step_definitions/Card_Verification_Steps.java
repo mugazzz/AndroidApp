@@ -86,9 +86,20 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check_inact_inter();
 	}
 	
+	
 	@Given("^Verify the login check with Bio$")
 	public void verify_login_check_Bio() {
 		Verify_Login_check_Bio();
+	}
+	
+	@Given("^Verify the login check with Bio clean$")
+	public void verify_login_check_Bio_clean() {
+		Verify_Login_check_Bio_cleanl();
+	}
+	
+	@Given("^Login by cancel the login popup$")
+	public void Login_Cancel_Login_popup() {
+		Verify_Login_check_Cancel();
 	}
 
 	@Then("^Close and relaunch the app$")

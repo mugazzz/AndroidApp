@@ -44,8 +44,8 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No1 = "9600000";
-	    public static final String Act_Cust_No_9500000 = "9500000";
-	    public static final String Act_Cust_No_9600000 = "9600000";
+	    public static final String Act_Cust_No9500000 = "9500000";
+	    public static final String Act_Cust_No9600000 = "9600000";
 	    //public static final String Act_Cust_No1 = "8813779";
 	    public static final String Act_Cust_No_100000 = "9667733";
 	    public static final String Cust_No_Sav_0 = "1212115";
@@ -99,7 +99,7 @@ public class AppStrings {
 	    public static final String OTP_Validation = "The One Time Password you entered is incorrect. Please try again or click re-send OTP to receive a new one";
 	    public static final String INVALID_SWIFT = "You have entered an invalid SWIFT code";
 	    public static final String INVALID_IBAN = "You have entered an invalid IBAN";
-	    public static final String DUP_NICK = "The given nick name is already associated with the user";
+	    public static final String DUP_NICK = "You already have a beneficiary registered with the same nickname";
 	    public static final String DUP_IBAN = "You already have a beneficiary registered with the same account details";
 	    public static final String Great_val = "The transfer amount entered is greater than the selected account's balance";
 	    public static final String Great_val1 = "You don't have an account with sufficient funds";

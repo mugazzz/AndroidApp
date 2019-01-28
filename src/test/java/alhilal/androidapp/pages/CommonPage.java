@@ -299,8 +299,8 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
 		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
 		clickOnElement(ENABLE_FINGERPRINTS);
-		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
-		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
+//		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
+//		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
 
 }

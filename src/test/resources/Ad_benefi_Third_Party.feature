@@ -1,9 +1,13 @@
-@Ad_Ben_Third_Party @sprint4 @reset @sprint4_5 @sprint4-6
+@Ad_Ben_Third_Party @sprint4 @sprint4_5 @sprint4-6
 Feature: I should be able to add a beneficiary for Third Party Accounts 
 
-@Ad_Ben_Third_Party0 @reset @Transfer_82
+## Remove all benificary accounts for 960000
+
+@Ad_Ben_Third_Party0 @Transfer_82
 Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number- biometric is enabled
-	Given Verify the login check with Bio
+	Given Verify the login check with Bio clean
+	And Close and relaunch the app
+	Then Login by cancel the login popup
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -18,7 +22,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number- 
 #	Then Get the OTP from the third party app and enter the OTP1
 #	And Verify the screen redirected to successfully registered screen
 	
-@Ad_Ben_Third_Party1 @Transfer_83
+@Ad_Ben_Third_Party1 @Transfer_83 @reset
 Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number international bank - biometric is not enabled	
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -34,7 +38,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number i
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the screen redirected to successfully account added screen
 
-@Ad_Ben_Third_Party2 @Transfer_87
+@Ad_Ben_Third_Party2 @Transfer_87 @reset
 Scenario: Able to add a beneficiary for Third Party Accounts - Account number using SWIFT code - Enter Country Code - biometrics are not enabled
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -53,7 +57,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts - Account number us
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the screen redirected to successfully account added screen
 	
-@Ad_Ben_Third_Party3 @Transfer_92
+@Ad_Ben_Third_Party3 @Transfer_92 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts - IBAN belongs to an AHB account
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -71,7 +75,9 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - IBAN belongs to 
 	
 @Ad_Ben_Third_Party4 @Transfer_93
 Scenario: Able to add a beneficiary  for Third Party Accounts - biometric is enabled but user clicks on cancel
-Given Verify the login check with Bio
+	Given Verify the login check with Bio clean
+	And Close and relaunch the app
+	Then Login by cancel the login popup
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -86,7 +92,7 @@ Given Verify the login check with Bio
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the screen redirected to successfully account added screen
 	
-@Ad_Ben_Third_Party5 @Transfer_94
+@Ad_Ben_Third_Party5 @Transfer_94 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect Swift Code
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -98,7 +104,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect 
 	Then Enter Account number and Enter incorrect swift code
 	And Verify the user is restricted
 
-@Ad_Ben_Third_Party6 @Transfer_95
+@Ad_Ben_Third_Party6 @Transfer_95 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect IBAN number
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -108,9 +114,9 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter incorrect 
 	And Choose other bank option and enter the incorrect IBAN number
 	And Verify the user is restricted invalid iban
 
-@Ad_Ben_Third_Party7 @Transfer_96
+@Ad_Ben_Third_Party7 @Transfer_96 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter more/less number of digits in account number
-	Given Verify the login check with Bio
+	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
@@ -120,7 +126,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter more/less 
 	Then Enter more/less than ten digit Account number
 	And Verify the Third party account number is not restricted to ten digits
 	
-@Ad_Ben_Third_Party8 @Transfer_97
+@Ad_Ben_Third_Party8 @Transfer_97 @reset
 Scenario: Able to add a beneficiary  for local Third Party Accounts  - enter more/less number of digits in IBAN number
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -130,7 +136,7 @@ Scenario: Able to add a beneficiary  for local Third Party Accounts  - enter mor
 	And Enter more/less number of IBAN number
 	Then Verify IBAN number is not restricted to fixed number of digits
 	
-@Ad_Ben_Third_Party9 @Transfer_100
+@Ad_Ben_Third_Party9 @Transfer_100 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts- Duplicate Nick Name
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -143,11 +149,12 @@ Scenario: Able to add a beneficiary  for Third Party Accounts- Duplicate Nick Na
 	And Tap on Next button and navigate to contry code
 	Then Enter the contry code and tap next button
 	And Enter the full name and nick name to add beneficiary
+	Then Tap next and navigate to cofirm details screen
 	And Tap confrim details button and verify the screen navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP1
-	#Then Tap next and verify the validation1
+	Then Tap next and verify the validation
 
-@Ad_Ben_Third_Party11 @Transfer_102
+@Ad_Ben_Third_Party11 @Transfer_102 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate IBAN number
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
@@ -162,7 +169,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - enter duplicate 
 	Then Get the OTP from the third party app and enter the OTP1
 	And Verify the validation for dup iban
 
-@Ad_Ben_Third_Party12 @Transfer_103
+@Ad_Ben_Third_Party12 @Transfer_103 @reset
 Scenario: Able to add a beneficiary  for Third Party Accounts - Duplicate Account Number
 	Given Verify the login check tran
 	And Verify the user redirected to Dashboard screen successfully
