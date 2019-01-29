@@ -12,11 +12,16 @@ public class Tran_Anoth_AHB_Card_Steps extends Tran_Anoth_AHB_Card_Page{
 	
 	@Then("^Transfer the amount 30K for 3 times1$")
 	public void Transfer_the_amount_30K_for_3_times1() {
-		for (int i=0; i<=3; i++) {
+		for (int i=0; i<=2; i++) {
 			Transfer_30K();
 			System.out.println("Round number: "+i);
 		}
 	
+	}
+	
+	@Then("^Transfer the amount 30K for 1 more times$")
+	public void Transfer_the_amount_30K_for_1_times() {
+			Transfer_30K();     
 	}
 	
 	@Then("^Verify the validation error appears1$")

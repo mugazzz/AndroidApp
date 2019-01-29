@@ -300,10 +300,10 @@ public class Locators {
 	public static final By CUR_ACC_AM = By.xpath("//android.widget.TextView[@text='Current account']");
 	
 	//Transfer Amount
-	public static final By THIRD_ACC = By.xpath("//android.widget.TextView[@text='GB85 NWBK 6021 4774 2491 50']");
+	public static final By THIRD_ACC = By.xpath("//android.widget.TextView[@text='HDFC BANK LIMITED - 1031 0001 873']");
 	public static final By CARD_ACC = By.xpath("//android.widget.TextView[@text='Smart Platinum No Fee']");
 	public static final By THIRD_ACC1 = By.id("flxScheduledTransfer");
-	public static final By LOC_THIRD_ACC = By.xpath("//android.widget.TextView[@text='ABU DHABI ISLAMIC BANK - 2639 2828']");
+	public static final By LOC_THIRD_ACC = By.xpath("//android.widget.TextView[@text='otherThird1']");
 	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE44 0530 0000 2966 7733 012']");
 	public static final By LOC_THIRD_ACC1 = By.xpath("//android.widget.TextView[@text='ABU DHABI ISLAMIC BANK - 2639 2828']");
 	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='AL Hilal Bank - 4041 9840 27']");
@@ -318,10 +318,10 @@ public class Locators {
 	public static final By CUR_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9667733028']");
 	public static final By CUR_ACC_AMT2 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115018']");
 	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9600000029']");
-	public static final By CUR_ACC_AMT100000 = By.xpath("//android.widget.CheckedTextView[@text='Current account 9667733028']");
+	public static final By CUR_ACC_AMT100000 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 7799712002']");
 	public static final By CUR_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9677570022']");
 	public static final By SAV_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 1212115003']");
-	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 9600000018']");
+	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 7799712004']");
 	public static final By CARD_C = By.xpath("//android.widget.CheckedTextView[@text='Credit card 458461******0400']");
 	public static final By SEL_CHAR = By.id("lbxChargesData");
 	public static final By SEL_REASON = By.id("lbxReasonData");
@@ -343,14 +343,14 @@ public class Locators {
 	public static final By CUR_ACC96 = By.xpath("//android.widget.TextView[@text='9600 0000 29']");
 	public static final By CUR_ACC1 = By.xpath("//android.widget.TextView[@text='1212 1150 18']");
 	public static final By SAV_ACC = By.xpath("//android.widget.TextView[@text='1212 1150 03']");
-	public static final By SAV_ACC1 = By.xpath("//android.widget.TextView[@text='9677 5700 38']");
-	public static final By CUR_ACC100000 = By.xpath("//android.widget.TextView[@text='9667 7330 28']");
-	public static final By ZERO_CUR_ACC = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115002']");
-	public static final By ZERO_SAV_ACC = By.xpath("//android.widget.CheckedTextView[@text='Saving Account 1212115003']");
-	public static final By INAC_SAV_ACC = By.xpath("//android.widget.CheckedTextView[@text='Saving Account 1212115003']");
-	public static final By INAC_CUR_ACC = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115003']");
-	public static final By INAC_CUR_ACC1 = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115003']");
-	public static final By INAC_CUR_ACC2 = By.xpath("//android.widget.CheckedTextView[@text='Current Account 1212115003']");
+	public static final By SAV_ACC1 = By.xpath("//android.widget.TextView[@text='7799 7120 04']");
+	public static final By CUR_ACC100000 = By.xpath("//android.widget.TextView[@text='7799 7120 02']");
+	public static final By ZERO_CUR_ACC = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115002']");
+	public static final By ZERO_SAV_ACC = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 1212115002']");
+	public static final By INAC_SAV_ACC = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 1212115002']");
+	public static final By INAC_CUR_ACC = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115002']");
+	public static final By INAC_CUR_ACC1 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115002']");
+	public static final By INAC_CUR_ACC2 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115002']");
 	public static final By CONT_BUT = By.id("btnContinue");
 	public static final By MY_ACC = By.id("lblNavigate");
 	

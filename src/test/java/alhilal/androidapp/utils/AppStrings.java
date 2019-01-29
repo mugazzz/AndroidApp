@@ -48,13 +48,13 @@ public class AppStrings {
 	    public static final String Act_Cust_No9500000 = "9500000";
 	    public static final String Act_Cust_No9600000 = "9600000";
 	    //public static final String Act_Cust_No1 = "8813779";
-	    public static final String Act_Cust_No_100000 = "9667733";
-	    public static final String Cust_No_Sav_0 = "1212115";
-	    public static final String Cust_No_Cur_0 = "1212115";
-	    public static final String Cust_No_Sav_Inc = "1212115";
-	    public static final String Cust_No_Cur_Inc = "1212115";
-	    public static final String Cust_No_Cur_Inac = "1212115";	
-	    public static final String Cust_No_Cur_Inac_Inter = "1212115";
+	    public static final String Act_Cust_No_100000 = "7799712";
+	    public static final String Cust_No_Sav_0 = "9600000";
+	    public static final String Cust_No_Cur_0 = "9600000";
+	    public static final String Cust_No_Sav_Inc = "9600000";
+	    public static final String Cust_No_Cur_Inc = "9600000";
+	    public static final String Cust_No_Cur_Inac = "9600000";	
+	    public static final String Cust_No_Cur_Inac_Inter = "9600000";
 	    public static final String Act_Cust_No_Spec_Card = "4041984";
 	    public static final String Act_SMS_PN_Spec_Card = "123456";
 	    public static final String Act_Cust_No_Spec_No_bill = "4041984";
@@ -185,8 +185,8 @@ public class AppStrings {
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
 	    public static final String Tran_amt3 = "110,000.00";
-	    public static final String Tran_amt4 = "1.00";
-	    public static final String Tran_amt2 = "1.00";
+	    public static final String Tran_amt4 = "100,000.00";
+	    public static final String Tran_amt2 = "30,000.00";
 	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
 	    public static final String Reason_c = "Charitable contributions";

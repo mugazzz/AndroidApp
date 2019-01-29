@@ -4,8 +4,6 @@ Feature: Able to view all my cheques
 @TC_Cheques_32_1 @cheques_screen1
 Scenario: Able to view all my cheques - Using Dates filter
 	Given Verify the login check
-	Given Verify the screen redirected to landing page
-	Then Enter the Login PIN
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on Chart Size toggle button to mimize the chart
 	And Check the My accounts section is available for user

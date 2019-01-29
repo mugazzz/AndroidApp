@@ -296,7 +296,17 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
 		System.out.println("DEbit: "+Tran_Amt1);
 		assert Tran_Amt1.equals(Tran_amt3): "Debit amount is not equal";
-		appiumHelpers.assertTrue(elementExists(CUR_ACC), "Current Account number is not working");
+		appiumHelpers.assertTrue(elementExists(CUR_ACC100000), "Current Account number is not working");
+		String Remark_C = driver.findElement(REM_CFN).getText();
+		assert Remark_C.equals(Remark): "Remark is not equal";
+	}
+	
+	public void Verf_Tran_Detail_for_card2() {
+		String Tran_Amt = driver.findElement(DEBIT_AMT).getText();
+		String Tran_Amt1 = Tran_Amt.substring(0, Tran_Amt.length()-4);
+		System.out.println("DEbit: "+Tran_Amt1);
+		assert Tran_Amt1.equals(Tran_amt): "Debit amount is not equal";
+		appiumHelpers.assertTrue(elementExists(CUR_ACC100000), "Current Account number is not working");
 		String Remark_C = driver.findElement(REM_CFN).getText();
 		assert Remark_C.equals(Remark): "Remark is not equal";
 	}

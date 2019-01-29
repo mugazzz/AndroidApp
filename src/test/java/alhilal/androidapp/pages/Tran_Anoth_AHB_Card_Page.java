@@ -23,7 +23,7 @@ public class Tran_Anoth_AHB_Card_Page extends CommonPage{
 		clickOnElement(OTHER_CARD);
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 		clickOnElement(FROM_ACC_DATA);
-		clickOnElement(CUR_ACC_AMT);
+		clickOnElement(CUR_ACC_AMT100000);
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
 		enterText(TRAN_AMT, Tran_amt2);
 		clickOnElement(SEL_CUR);
@@ -35,8 +35,10 @@ public class Tran_Anoth_AHB_Card_Page extends CommonPage{
 		clickOnElement(SUB_SCHED);
 		appiumHelpers.waitForVisibilityOfElement(SCHED_HD);
 		Select_Mode(SEL_YEAR);
+		clickOnElement(SEL_D);
 		clickOnElement(DATE_NXT);
 		clickOnElement(SEL_DATE);
+		clickOnElement(SEL_OK);
 		clickOnElement(DATE_CTN);
 		appiumHelpers.waitForVisibilityOfElement(DEBIT_AMT);
 		clickOnElement(CONT_BUT);
@@ -47,6 +49,41 @@ public class Tran_Anoth_AHB_Card_Page extends CommonPage{
 			String reference_no = driver.findElement(REF_NUM).getText();
 			System.out.println(reference_no);
 			clickOnElement(CONF_BUT);
+		}
 	
-	}
+	public void Transfer_30() {
+		clickOnElement(TRANF_TAB);
+		appiumHelpers.waitForVisibilityOfElement(CUR_ACC_AM);
+		appiumHelpers.waitForVisibilityOfElement(TRANF_TO_OTHERS);
+		clickOnElement(TRANF_TO_OTHERS);
+		appiumHelpers.waitForVisibilityOfElement(ADD_BENIF);
+		appiumHelpers.waitForVisibilityOfElement(OTHER_CARD);
+		clickOnElement(OTHER_CARD);
+		appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
+		clickOnElement(FROM_ACC_DATA);
+		clickOnElement(CUR_ACC_AMT100000);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
+		enterText(TRAN_AMT, Tran_amt2);
+		clickOnElement(SEL_CUR);
+		clickOnElement(SEL_AED);
+		enterText(AHB_CARD, Act_Credit_Card_No);
+		driver.hideKeyboard();
+		enterText(REMARK, Remark);
+		driver.hideKeyboard();
+		clickOnElement(SUB_SCHED);
+		appiumHelpers.waitForVisibilityOfElement(SCHED_HD);
+		Select_Mode(SEL_YEAR);
+		clickOnElement(SEL_D);
+		clickOnElement(DATE_NXT);
+		clickOnElement(SEL_DATE);
+		clickOnElement(SEL_OK);
+		clickOnElement(DATE_CTN);
+		appiumHelpers.waitForVisibilityOfElement(DEBIT_AMT);
+		clickOnElement(CONT_BUT);
+		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
+		//Complete_and_Verify();
+		OTP();
+		}
+		
+	
 }

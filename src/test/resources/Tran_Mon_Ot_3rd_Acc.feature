@@ -1,16 +1,16 @@
-@tran_mon_3rd_acc @sprint4 @sprint4_5 @sprint4-6
+@tran_mon_3rd_acc @sprint4 @sprint4_5 @sprint4-6 @transfers
 Feature: Transfer money to another local or international third party bank account
  I should be able to transfer money to another local or international third party bank account
 
-@tran_mon_3rd_acc0 @reset @Transfer_35
+@tran_mon_3rd_acc0 @reset @Transfer_35 @reset
   Scenario: Able to transfer money to another local or international third party bank account- From Currents Account To local third party Account
 	  #Given Verify the login check
-	  Given Verify the login check tran
+	  Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen
-		And Tap on from account and select the current account3
+		And Tap on from account and select the current account_1000000
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		#Then Verify the indicative amount appears
@@ -18,18 +18,18 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Choose the reason as charitable contributions
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
-		Then Verify the transfer details1
+		Then Verify the transfer details for cards2
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 	
  
 @tran_mon_3rd_acc1 @reset @Transfer_36
   Scenario: Able to transfer money to another local or international third party bank account - From Currents Account To international third party
-	  Given Verify the login check tran
+	  Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any third party account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account_1000000
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		#Then Verify the indicative amount appears
@@ -37,17 +37,17 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Choose the reason as charitable contributions
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
-		Then Verify the transfer details
+		Then Verify the transfer details for cards2
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
 	@tran_mon_3rd_acc2 @reset @Transfer_37
   Scenario: Able to transfer money to another local or international third party bank account - From Savings Account To local third party
-	  Given Verify the login check
+	 Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen
-		And Tap on from account and select the savings account
+		And Tap on from account and select the savings account1
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
 		#Then Verify the indicative amount appears
@@ -55,12 +55,12 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Choose the reason as charitable contributions
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
-		Then Verify the savings transfer details
+		Then Verify the transfer details for cards_s
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
 	@tran_mon_3rd_acc4 @reset @Transfer_37_1
   Scenario: Able to transfer money to another local or international third party bank account - From Savings Account To international third party
-	  Given Verify the login check tran
+	 Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -73,12 +73,12 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Choose the reason as charitable contributions
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
-		Then Verify the savings transfer details1
+		Then Verify the transfer details for cards_s
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
 	@tran_mon_3rd_acc5 @reset @Transfer_38
   Scenario: Able to transfer money to another local or international third party bank account -Active savings account with Account balance is zero
-  	 Given Verify the login check tran1
+  	 Given Verify the login check 100000
   	 And Verify the user redirected to Dashboard screen successfully
   	 Then Tap on the transfers icon on tab bar
   	 And Select the option tranfer to others
@@ -87,7 +87,7 @@ Feature: Transfer money to another local or international third party bank accou
   	 
  @tran_mon_3rd_acc6 @reset @Transfer_39
   Scenario: Able to transfer money to another local or international third party bank account -inactive savings account 
-  	 Given Verify the login check tran2
+  	 Given Verify the login check 100000
   	 And Verify the user redirected to Dashboard screen successfully
   	 Then Tap on the transfers icon on tab bar
   	 And Select the option tranfer to others
@@ -96,7 +96,7 @@ Feature: Transfer money to another local or international third party bank accou
  
  @tran_mon_3rd_acc7 @reset @Transfer_40
   Scenario: Able to transfer money to another local or international third party bank account -Active current account with Account balance is zero
-  	 Given Verify the login check tran3
+  	Given Verify the login check 100000
   	 And Verify the user redirected to Dashboard screen successfully
   	 Then Tap on the transfers icon on tab bar
   	 And Select the option tranfer to others
@@ -105,7 +105,7 @@ Feature: Transfer money to another local or international third party bank accou
   	 
 @tran_mon_3rd_acc8 @reset @Transfer_41
   Scenario: Able to transfer money to another local or international third party bank account -inactive current account
-  	 Given Verify the login check tran4
+  	Given Verify the login check 100000
   	 And Verify the user redirected to Dashboard screen successfully
   	 Then Tap on the transfers icon on tab bar
   	 And Select the option tranfer to others
@@ -114,7 +114,7 @@ Feature: Transfer money to another local or international third party bank accou
  
  @tran_mon_3rd_acc9 @reset @Transfer_42
  Scenario: Able to transfer money to another local or international third party bank account - To international third party - Transferred amount is more than Account balance
- 		Given Verify the login check tran
+ 		Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -164,7 +164,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any third party account and navigate to transfers screen
-		And Tap on from account and select the current account
+		And Tap on from account and select the savings account1
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency1
 		And Select the from charges pay by and choose Me
@@ -227,7 +227,7 @@ Feature: Transfer money to another local or international third party bank accou
 		
 	@tran_mon_3rd_acc16 @reset @Transfer_49
  	Scenario: Able to transfer money to another local or international third party bank account - to international third party with more than 100k AED in one transaction - transfer using USD currency
- 	Given Verify the login check tran
+ 	Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -282,7 +282,7 @@ Feature: Transfer money to another local or international third party bank accou
   	Then Select any third party account and navigate to transfers screen1
   	And Tap on from account and verify the inactive current account is not shown1
   	
-  @tran_mon_3rd_acc19 @reset @Transfer_53
+  @tran_mon_3rd_acc20 @reset @Transfer_53
  	Scenario: Able to transfer money to another local or international third party bank account - Inactive international third party To account
  		Given Verify the login check inact inter
   	And Verify the user redirected to Dashboard screen successfully
