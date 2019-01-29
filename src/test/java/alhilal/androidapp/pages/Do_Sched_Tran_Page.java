@@ -12,10 +12,11 @@ public class Do_Sched_Tran_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(SCHED_HD);
 	}
 	
-	
 	public void  Select_date() {
+		clickOnElement(SEL_D);
 		clickOnElement(DATE_NXT);
 		clickOnElement(SEL_DATE);
+		clickOnElement(SEL_OK);
 	}
 	
 	public void Submit_Verify() {

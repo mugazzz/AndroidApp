@@ -44,6 +44,7 @@ public class AppStrings {
 	    public static final String Act_Cust_No = "4041984";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No1 = "9600000";
+	    public static final String Act_Cust_Sch = "9667733";
 	    public static final String Act_Cust_No9500000 = "9500000";
 	    public static final String Act_Cust_No9600000 = "9600000";
 	    //public static final String Act_Cust_No1 = "8813779";
@@ -123,7 +124,7 @@ public class AppStrings {
 	    public static final String OTPweb = "https://10.10.137.153:8445/SMS/";
 	    public static final String web_username = "administrator";
 	    //public static final String web_password = "password1";
-	    public static final String web_password = "password14";
+	    public static final String web_password = "password1";
 	    public static final String Query = "select tabdata from ibpushmessages order by recddatetime desc";
 	    public static final String InvOTP = "230071";
 	    
@@ -188,7 +189,7 @@ public class AppStrings {
 	    public static final String Tran_amt2 = "1.00";
 	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
-	    public static final String Reason_c = "Charitable Contributions";
+	    public static final String Reason_c = "Charitable contributions";
 	    public static final String Charge_c = "By myself";
 	    public static final String Tran_Mode = "Yearly";
 	   

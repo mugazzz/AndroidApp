@@ -1,8 +1,8 @@
-@Add_Code @sprint4 @sprint4_5 @sprint4-6
+@Add_Code @sprint4 @sprint4_5 @sprint4-6 @transfers
 Feature: Shown an input field for additional codes for specific countries
   I should be shown an input field for additional codes for specific countries
 
-  @Add_Code0 @Transfer_104 @reset
+  @Add_Code0 @Transfer_104
   Scenario: Able to see an input field for additional codes for specific countries - US
     Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -15,7 +15,7 @@ Feature: Shown an input field for additional codes for specific countries
 		And Tap on Next button and navigate to contry code
 		Then Verify fields Fed wire & ABA are displayed
 		
-	@Add_Code1 @Transfer_105 @reset
+	@Add_Code1 @Transfer_105
   Scenario: Able to see an input field for additional codes for specific countries - UK
     Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -28,7 +28,7 @@ Feature: Shown an input field for additional codes for specific countries
 		And Tap on Next button and navigate to contry code
 		Then Verify fields UK are displayed
 		
-	@Add_Code2 @Transfer_106 @reset
+	@Add_Code2 @Transfer_106
   Scenario: Able to see an input field for additional codes for specific countries - India
     Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -41,7 +41,7 @@ Feature: Shown an input field for additional codes for specific countries
 		And Tap on Next button and navigate to contry code
 		Then Verify fields IN are displayed
 		
-	@Add_Code3 @Transfer_107 @reset
+	@Add_Code3 @Transfer_107
   Scenario: Able to see an input field for additional codes for specific countries - Canada
     Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -54,7 +54,7 @@ Feature: Shown an input field for additional codes for specific countries
 		And Tap on Next button and navigate to contry code
 		Then Verify fields CA are displayed
 		
-	@Add_Code4 @Transfer_108 @reset
+	@Add_Code4 @Transfer_108
   Scenario: Able to see an input field for additional codes for specific countries - Australia
     Given Verify the login check tran
 		And Verify the user redirected to Dashboard screen successfully

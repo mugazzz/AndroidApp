@@ -1,4 +1,4 @@
-@Ad_Ben_Third_Party @sprint4 @sprint4_5 @sprint4-6
+@Ad_Ben_Third_Party @sprint4 @sprint4_5 @sprint4-6 @transfers
 Feature: I should be able to add a beneficiary for Third Party Accounts 
 
 ## Remove all benificary accounts for 960000

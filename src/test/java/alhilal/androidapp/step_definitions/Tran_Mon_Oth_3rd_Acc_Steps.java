@@ -158,6 +158,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	 Verf_Tran_Detail_for_card();
 	}
 	
+	@Then("^Verify the transfer details for cards96$")
+	public void verify_the_transfer_details_for_cards96(){
+	 Verf_Tran_Detail_for_card96();
+	}
+	
 	@Then("^Verify the transfer details for cards_s$")
 	public void verify_the_transfer_details_for_cards_s(){
 	 Verf_Tran_Detail_for_card_s();

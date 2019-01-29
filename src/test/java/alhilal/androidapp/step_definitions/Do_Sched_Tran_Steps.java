@@ -1,6 +1,5 @@
 package alhilal.androidapp.step_definitions;
 
-import org.openqa.selenium.By;
 import static alhilal.androidapp.utils.Locators.*;
 import alhilal.androidapp.pages.Do_Sched_Tran_Page;
 import cucumber.api.java.en.Given;
@@ -80,7 +79,7 @@ public class Do_Sched_Tran_Steps extends Do_Sched_Tran_Page{
 	
 	@Then("^Verify the listed Card Transfers$")
 	public void verify_the_listed_card_Transfers() throws Throwable {
-		Verify_Listed_Scheduled_Account_Transfer(CARD_CHECK);
+		Verify_Listed_Scheduled_Account_Transfer(CARD_CHECK_C);
 	}
 	
 	@Then("^Verify the listed local Transfers$")

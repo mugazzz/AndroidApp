@@ -1,4 +1,4 @@
-@edit_del_ben @sprint5 @sprint4-6
+@edit_del_ben @sprint5 @sprint4-6 @transfers @reset
 Feature: Edit and Delete benificiary accounts
   I should able to edit and delete benificiary accounts
 
@@ -19,7 +19,7 @@ Feature: Edit and Delete benificiary accounts
 	 
 	  @edit_del_ben1
  	 Scenario: Delete a benficiary from listed payee list
-   	Given Verify the login check tran
+   	Given Verify the login check tran_950000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
