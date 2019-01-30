@@ -194,7 +194,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 			System.out.println(e);
 		}
 		clickOnElement(ENABLE_FINGERPRINTS);
-		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
-		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
+		appiumHelpers.waitForVisibilityOfElement(FINGERPRINTS_POPUP);
+		//appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
 }

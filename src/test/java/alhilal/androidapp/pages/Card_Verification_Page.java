@@ -137,6 +137,54 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 	}
 	
+	public void Verify_Login_Res() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_user(Act_Cust_No, Act_SMS_PN);
+			 driver.closeApp();
+			 driver.launchApp();
+			 //Register_using_Credit_Card();
+		 }
+		 else if (elementExists(FINGERPRINTS_POPUP)){
+			 driver.findElement(FINGERPRINTS_POPUP_CANCEL).click();
+			 System.out.println("Fingerprint cancelled");
+		 }
+		 else {
+			 System.out.println("User already logged in");
+		 }
+	}
+	
+	public void Verify_Login_debit() {
+		Register_using_Card(Act_Debit_Card_No, Act_Credit_Card_Pin);
+			 driver.closeApp();
+			 driver.launchApp();
+	}
+	
+	public void Verify_Login_credit() {
+		Register_using_Card(Act_Credit_Card_No, Act_Credit_Card_Pin);
+			 driver.closeApp();
+			 driver.launchApp();
+	}
+	
+	public void Verify_Login_Tpin() {
+		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
+		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
+//		 if(elementExists(REG_CARD_BTN)) {
+			 Register_Specific_Tpin(Act_Cust_No2, Act_TPIN_PN);
+			 driver.closeApp();
+			 driver.launchApp();
+			 //Register_using_Credit_Card();
+//		 }
+//		 else if (elementExists(FINGERPRINTS_POPUP)){
+//			 driver.findElement(FINGERPRINTS_POPUP_CANCEL).click();
+//			 System.out.println("Fingerprint cancelled");
+//		 }
+//		 else {
+//			 System.out.println("User already logged in");
+//		 }
+	}
+	
 	public void Verify_Login_check_Card() {
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");

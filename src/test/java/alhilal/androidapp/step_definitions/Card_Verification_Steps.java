@@ -44,6 +44,26 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_check_tran();
 	}
 	
+	@Given("^Verify the login reset$")
+	public void verify_login_reset() {
+		Verify_Login_Res();
+	}
+	
+	@Given("^Verify the login debit$")
+	public void verify_login_debit() {
+		Verify_Login_debit();
+	}
+	
+	@Given("^Verify the login credit$")
+	public void verify_login_credit() {
+		Verify_Login_credit();
+	}
+	
+	@Given("^Verify the login Tpin$")
+	public void verify_login_Tpin() {
+		Verify_Login_Tpin();
+	}
+	
 	@Given("^Verify the login check Acc$")
 	public void verify_login_check_Acc() {
 		Verify_Login_check_Acc();

@@ -1,8 +1,8 @@
-@reg_debit_card @sprint1_2 @sprint1-3
+@reg_debit_card @sprint1_2 @sprint1-3 @reset @res_pin_CIF_TPIN @res
 Feature: Registration process using Debit Card
 I should be able to register using my Debit Card and Debit Card pin
 
-@reg_debit_card0 @reset
+@reg_debit_card0
 Scenario: Register using Debit Card and Debit card pin - Active Card
 	Given Verify the screen redirected to landing page
 	And Verify the homescreen button Register using card number
@@ -54,7 +54,7 @@ Scenario: Register using Debit Card and Debit card pin - Pin is not active
 	When Tap on Register using card number button and navigate to registration screen
 	Then Enter the Active Debit Card number whose Pin is not active
 	And Enter the Inactive Debit Pin number
-	Then Verify the validation for Card pin fails
+	Then Verify the validation for Card pin fails1
 
 @reg_debit_card6
 Scenario: Register using Debit Card and Debit card pin - Expiry date is lesser than today

@@ -16,6 +16,11 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 	public void enter_the_valid_customer_number() {
 		Ent_Valid_Cus_No();
 	}
+	
+	@Then("^Enter the valid customer number1$")
+	public void enter_the_valid_customer_number1() {
+		Ent_Valid_Cus_No1();
+	}
 
 	@Then("^Enter the valid SMS PIN$")
 	public void enter_the_valid_SMS_PIN() {
@@ -92,6 +97,11 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 	@Then("^Verify the validation for SMS pin fails$")
 	public void verify_the_validation_for_SMS_pin_fails(){
 		Verify_Validation_Message(Inactive_CIF_Validation_Message_InvSMS);
+	}
+	
+	@Then("^Verify the validation for Tpin fails$")
+	public void verify_the_validation_for_Tpin_fails(){
+		Verify_Validation_Message(Inactive_CIF_Validation_Message_InvTPIN);
 	}
 	
 	@Then("^Verify the validation for SMS pin fails for reset PIN$")

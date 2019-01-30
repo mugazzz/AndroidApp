@@ -1,4 +1,4 @@
-@reg_cif_spin @sprint1_2 @reset @sprint1-3
+@reg_cif_spin @sprint1_2 @reset @sprint1-3 @res
 Feature: Registration using CIF number and SPIN number
 I should be able to register using my CIF Number & SMS Pin
 
@@ -17,7 +17,8 @@ Scenario: Register using CIF number & SMS PIN - Inactive CIF
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the inactive CIF Card number
 	Then Enter the valid SMS PIN
-	Then Verify the validation message appears for inactive CIF
+	#Then Verify the validation message appears for inactive CIF
+	Then Verify the validation for Card pin fails
 
 @reg_cif_spin2
 Scenario: Register using CIF number & SMS PIN -incorrect number of CIF numbers

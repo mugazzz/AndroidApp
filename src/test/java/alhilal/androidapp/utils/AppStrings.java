@@ -10,7 +10,8 @@ public class AppStrings {
 	    public static final String customerSms = "123456";
     
     //Credit Card Registration
-	    public static final String Act_Credit_Card_No = "4584610162170809"; 
+	    //public static final String Act_Credit_Card_No = "4584610162170809";
+	    public static final String Act_Credit_Card_No = "4714845567915712"; 
 //	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
 //	    public static final String Act_Credit_Card_Pin_Specific = "1234";
 	    public static final String Exp_Credit_Card_No = "4584610168800037";
@@ -43,6 +44,7 @@ public class AppStrings {
 	    //public static final String Act_Cust_No = "4041984";
 	    public static final String Act_Cust_No = "7799712";
 	    public static final String Act_Cust_No1 = "9677570";
+	    public static final String Act_Cust_No2 = "5000436";
 	    public static final String Act_Cust_No_Acc = "7799712";
 	    public static final String Act_SMS_PN = "123456";
 	    public static final String Act_Cust_No_Spec_Card = "7799712";
@@ -65,7 +67,7 @@ public class AppStrings {
 	    public static final String Inact_TPN_Cus = "2125533";
 	    public static final String Inact_SMS_PN = "123455";
 	    public static final String Invalid_SMS_PN = "123595";
-	    public static final String Act_TPIN_PN = "123456";
+	    public static final String Act_TPIN_PN = "12345";
 	    public static final String Incorr_TPN = "12345";
 	    public static final String Act_Cust_No_TPIN_SMS= "9500000";
 	    public static final String Act_Cust_No_1000k= "9600000";
@@ -85,13 +87,16 @@ public class AppStrings {
 	    public static final String Inactive_CIF_Validation_Message = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Check_Filter_Validation ="To cheque number must be greater than from cheque number";
 	    public static final String Inactive_CIF_Validation_Message_InvSMS = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
+	    public static final String Inactive_CIF_Validation_Message_InvTPIN = "The combination of CIF/T-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_T = "The Account number is incorrect";
 	    public static final String Inactive_CIF_Validation_Message_T1 = "The combination of CIF/T-PIN entered is incorrect.Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_T2 = "something went wrong, please try after some time. If problem continues please contact support.";
 	    
 	    public static final String Inactive_CIF_Validation_Message_R = "something went wrong, please try after some time. If problem continues please contact support.";
+	    public static final String Pin_notSet_notActive_Validation_Message2 = "You have entered an invalid Al Hilal Bank card number";
 	    public static final String Pin_notSet_notActive_Validation_Message = "Something went wrong, please try again after some time";
+	    public static final String Pin_notSet_notActive_Validation_Message3 = "Something went wrong, please try again after some time";
 	    public static final String Pin_notSet_notActive_Validation_Message1 = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Expired_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
 	    public static final String Invalid_Card_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
@@ -116,7 +121,7 @@ public class AppStrings {
 	//Web Application for OTP  
 	    public static final String OTPweb = "https://10.10.137.153:8445/SMS/LoginAction.do";
 	    public static final String web_username = "administrator";
-	    public static final String web_password = "password14";
+	    public static final String web_password = "password1";
     
 	//Advanced Search Screen
 	    public static final String Cheque_from = "20";

@@ -23,8 +23,8 @@ public class Reg_Use_CIF_TPIN_Page extends CommonPage {
 	public void Tap_On_Next() {
 		driver.hideKeyboard();
 		clickOnElement(REG_CUS_TPIN_NT);
-		String xmlFormat = driver.getPageSource();
-		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message_T1));
+//		String xmlFormat = driver.getPageSource();
+//		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message_T1));
 	}
 	
 	public void Enter_Incor_TPin() {

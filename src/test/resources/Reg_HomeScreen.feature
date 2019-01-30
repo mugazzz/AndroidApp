@@ -1,4 +1,4 @@
-@reg_home_screen @sprint1_2 @sprint1-3
+@reg_home_screen @sprint1_2 @sprint1-3 @res
 Feature: Home Screen for Registered Users
 I should be taken to a home screen  / landing page after opening the app
 
