@@ -25,8 +25,8 @@ Scenario: Reset Pin using CIF number & TPIN - Inactive CIF
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	#Then Verify the validation message appears for inactive CIFT1
-	Then Verify the validation for Card pin fails
+	Then Verify the validation message appears for inactive CIFT1
+	#Then Verify the validation for Card pin fails
 
 @res_pin_CIF_TPIN3
 Scenario: Reset Pin using CIF number & TPIN -incorrect number of CIF numbers
@@ -59,8 +59,8 @@ Scenario: Reset Pin using CIF number & TPIN - TPin is not set
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	#Then Verify the validation message appears for inactive CIFT
-	Then Verify the validation for Card pin fails
+	Then Verify the validation message appears for inactive CIFT
+	#Then Verify the validation for Card pin fails
 
 @res_pin_CIF_TPIN6
 Scenario: Reset Pin using CIF number & TPIN - TPin is not active
@@ -71,8 +71,8 @@ Scenario: Reset Pin using CIF number & TPIN - TPin is not active
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the inactive TPIN number
 	And Tap on Next button
-	#Then Verify the validation message appears for inactive CIFT
-	Then Verify the validation for Tpin fails
+	Then Verify the validation message appears for inactive CIFT
+	#Then Verify the validation for Tpin fails
 
 @res_pin_CIF_TPIN7
 Scenario: Reset Pin using CIF number & TPIN - Invalid CIF Number or TPIN
@@ -83,8 +83,8 @@ Scenario: Reset Pin using CIF number & TPIN - Invalid CIF Number or TPIN
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the invalid TPIN number
 	And Tap on Next button
-	#Then Verify the validation for SMS pin fails
-	Then Verify the validation for Card pin fails
+	Then Verify the validation message appears for inactive CIFT
+	#Then Verify the validation for Card pin fails
 
 #@res_pin_CIF_TPIN8
 #Scenario: Reset PIN using CIF number & TPIN - wrong TPIN for 5 times

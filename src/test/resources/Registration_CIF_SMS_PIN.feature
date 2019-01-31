@@ -17,8 +17,8 @@ Scenario: Register using CIF number & SMS PIN - Inactive CIF
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the inactive CIF Card number
 	Then Enter the valid SMS PIN
-	#Then Verify the validation message appears for inactive CIF
-	Then Verify the validation for Card pin fails
+	Then Verify the validation message appears for inactive CIF
+	#Then Verify the validation for Card pin fails
 
 @reg_cif_spin2
 Scenario: Register using CIF number & SMS PIN -incorrect number of CIF numbers

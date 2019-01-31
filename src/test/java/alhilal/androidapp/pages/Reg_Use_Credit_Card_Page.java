@@ -149,6 +149,15 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	
 	}
 	
+	public void Third_PartyApp2() {
+		OTP();
+		if(elemenDoesnotExists(ACT_OPT)){
+			clickOnElement(RESEND_OTP);
+			OTP();	
+		}
+	
+	}
+	
 	public void VerifyAllsetScreen() {
 		if (elementExists(CRE_LOGIN_PIN_LB)) {
 			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);

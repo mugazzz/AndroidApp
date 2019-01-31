@@ -7,6 +7,7 @@ import static org.junit.Assert.assertThat;
 import org.hamcrest.CoreMatchers;
 
 import alhilal.androidapp.pages.Support_Page;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class Support_Steps extends Support_Page{
@@ -28,6 +29,11 @@ public class Support_Steps extends Support_Page{
 	@Then("^Select the device to edit nick name$")
 	public void select_the_device_to_edit_nick_name() throws Throwable {
 	 Tap_Act_Dev_Edit();
+	}
+	
+	@Then("^Select the device to edit nick name2$")
+	public void select_the_device_to_edit_nick_name2() throws Throwable {
+	 Tap_Act_Dev_Edit2();
 	}
 	
 	@Then("^Select the device to edit nick name1$")
@@ -94,6 +100,12 @@ public class Support_Steps extends Support_Page{
 	@Then("^Enter the confirm new pin$")
 	public void enter_the_confirm_new_pin() throws Throwable {
 		enterText(ENT_RE_PIN, Enter_Pin);
+		driver.hideKeyboard();
+	}
+	
+	@Then("^Enter the confirm new pin1$")
+	public void enter_the_confirm_new_pin1() throws Throwable {
+		enterText(ENT_RE_PIN, Enter_Pin);
 	}
 
 	@Then("^change pin button$")
@@ -120,6 +132,16 @@ public class Support_Steps extends Support_Page{
 	public void verify_pin_mismatch() throws Throwable {
 		String xmlFormat = driver.getPageSource();
 		assertThat(xmlFormat, CoreMatchers.containsString(MIS_PIN));
+	}
+	
+	@Then("^Verify the login check with Bio card$")
+	public void Bio_Card() throws Throwable {
+		Register_using_Card_Bio(Act_Debit_Card_No, Act_Credit_Card_Pin);
+	}
+	
+	@Given("^Login by cancel the login popup$")
+	public void Login_Cancel_Login_popup() {
+		Verify_Login_check_Cancel();
 	}
 
 

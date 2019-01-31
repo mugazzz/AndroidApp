@@ -52,7 +52,8 @@ public class Reg_Use_CIF_TPIN extends Reg_Use_CIF_TPIN_Page{
 	
 	@Then("^Verify the validation message appears for inactive CIFT$")
 	public void verify_the_validation_message_appears_for_inactive_CIF() {
-		Verify_Validation_Message(Inactive_CIF_Validation_Message_T1);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(Inactive_CIF_Validation_Message_T1));
 	}
 	
 	@Then("^Verify the validation message appears for inactive CIFT1$")

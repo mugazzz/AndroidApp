@@ -27,6 +27,11 @@ public class Support_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(DEV_NAM);
 	}
 	
+	public void  Tap_Act_Dev_Edit2() {
+		clickOnElement(DEV_LIS1);
+		appiumHelpers.waitForVisibilityOfElement(DEV_NAM);
+	}
+	
 	public void  Tap_Act_Dev_Edit1() {
 		clickOnElement(DEV_LIS);
 		appiumHelpers.waitForVisibilityOfElement(DEV_NAM);
@@ -64,7 +69,7 @@ public class Support_Page extends CommonPage{
 	public void  Verify_Not_Saved() {
 		clickOnElement(BK_BTN);
 		String nick = driver.findElement(DEV_NAM).getText();
-		assert !nick.equals(Nick_Na): "Device nick name is not saved";
+		assert !nick.equals(Nick_Na1): "Device nick name is not saved";
 	}
 	
 	public void Tap_Login_Pin() {
@@ -79,6 +84,12 @@ public class Support_Page extends CommonPage{
 	
 	public void Tap_Change_Pin1() {
 		clickOnElement(CNF_BTN);
+	}
+	
+	public void Verify_Login_check_Cancel() {
+		appiumHelpers.waitForVisibilityOfElement(FING_CANCEL);
+		clickOnElement(FING_CANCEL);
+		enterText(LOGIN_PIN_FD, Enter_Pin);
 	}
 	
 }

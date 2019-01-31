@@ -326,7 +326,7 @@ public class Locators {
 	public static final By ACT_OPT = By.id("flxAciveDevices");
 	public static final By SEG_PAG = By.id("segDeviceList");
 	public static final By DEV_LIS = By.id("flxDeviceListMain");
-	public static final By DEV_LIS1 = By.xpath("//android.widget.TextView[@text='Account details']");
+	public static final By DEV_LIS1 = By.xpath("//android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
 	public static final By DEV_NAM = By.id("lblDeviceName");
 	public static final By NICK_EDIT = By.id("btnCancel");
 	public static final By ENT_NICK = By.id("txtDeviceName");

@@ -80,8 +80,9 @@ public class Ad_benefi_Third_Party_Steps extends Ad_benefi_Third_Party_Page{
 	
 	@Then("^Tap on Cancel finger print popup and navigate to OTP screen$")
 	public void tap_on_cancel_finger_popup_andNavigate() {
-		clickOnElement(FINGERPRINTS_POPUP_CANCEL);
-		Verify_AutoFly();
+//		driver.hideKeyboard();
+//		clickOnElement(FINGERPRINTS_POPUP_CANCEL);
+//		Verify_AutoFly();
 	}
 	
 	@Given("^Tap on account number and SWIFT link and navigate to enter account number screen$")

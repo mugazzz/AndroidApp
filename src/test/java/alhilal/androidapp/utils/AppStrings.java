@@ -1,5 +1,7 @@
 package alhilal.androidapp.utils;
 
+import org.openqa.selenium.By;
+
 public class AppStrings {
 	
 	 //Waits
@@ -41,7 +43,7 @@ public class AppStrings {
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
-	    //public static final String Act_Cust_No = "4041984";
+	    public static final String Act_Cust_No3 = "4041984";
 	    public static final String Act_Cust_No = "7799712";
 	    public static final String Act_Cust_No1 = "9677570";
 	    public static final String Act_Cust_No2 = "5000436";
@@ -113,9 +115,10 @@ public class AppStrings {
 	    public static final String Inactive_CIF_Validation_Message_R1 = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Act_Nick_Val = "Device nickname changed";
 	    public static final String Dup_Nick_Val = "You already have a device registered with the same nickname";
-	    public static final String PIN_SUCE = "Login PIN has been changes successfully";
+	    public static final String PIN_SUCE = "Login PIN has been changed successfully";
 	    public static final String INCOR_SUCC = "Current PIN entered is incorrect. Please try again or change your Login PIN using the";
 	    public static final String MIS_PIN = "Login PINs entered do not match";
+	    public static final By FING_CANCEL = By.id("lblCancel");
 	    
 	    
 	//Web Application for OTP  
@@ -159,8 +162,8 @@ public class AppStrings {
 	    public static final String Full_Name_AHB = "AHBAutomation";
 	    		
 	  //Support
-	    public static final String Nick_Na = "Active Nick Name";
-	    public static final String Nick_Na1 = "Active Nick Name1";
+	    public static final String Nick_Na = "ZZZ";
+	    public static final String Nick_Na1 = "ZZZ1";
 	    
 	  //Transfers
 	    public static final String Tran_amt = "1.00";

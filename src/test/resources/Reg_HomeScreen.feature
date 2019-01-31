@@ -2,16 +2,18 @@
 Feature: Home Screen for Registered Users
 I should be taken to a home screen  / landing page after opening the app
 
-@reset @reg_home_screen0
+@reg_home_screen0
 Scenario: Enable FingerPrint for the user
-	Given Verify the screen redirected to landing page
-	And Verify the homescreen button Register using card number
-	When Tap on Register using card number button and navigate to registration screen
-	Then Enter the Active Credit Card number
-	And Enter the Active Credit Card PIN number
-	Then Verify the card details are validated on flying and navigate to OTP screen
+	Given Verify the login Tpin
+	Then Tap on the Forgot login PIN link and navigate to related registration screen
+	Then Tap on register using your customer number link and navigate to customer registration screen
+	Then Enter the valid customer number1
+	And Tap on T-PIN tab to enter T-PIN
+	Then Enter the valid T-PIN
+	And Tap on Next button 
+	Then Verify the card details are validated on fly and navigate to OTP screen
 	Then Get the OTP from the third party app and enter the OTP
-	And Confirm the screen navigates to you are all set! screen
+	And Confirm the screen navigates to you are all sets! screen2
 	Then Tap on Enable Fingerprints button and verify the screen redirects to Dashboard screen
 	
 @reg_home_screen1
