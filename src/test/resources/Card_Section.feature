@@ -27,9 +27,9 @@ Scenario: Cards section is not displayed  in case of no cards
 	Then Tap on Chart Size toggle button to mimize the chart
 	Then Verify the card section is displayed in case of no cards
 
-@card_section4 @TC_Cards_27_3
+@card_section4 @TC_Cards_27_3 @reset
 Scenario: Bill payment from cards should not show for specific card statuses
-	Given Register the user whose card should not show specific card status
+	Given Verify the login check
 	Then Tap on Chart Size toggle button to mimize the chart
 	And Check the My Cards section is available for user
 	Then Tap on specific card and navigate to card details screen

@@ -329,7 +329,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 	        date = date.plusDays(1);
 	        String nextDate = date.toString();
 	        System.out.println(nextDate);
-	        String tommorrow = nextDate.substring(8, 10);
+	        String tommorrow = nextDate.substring(9, 10);
 	        System.out.println(tommorrow);
 	        clickOnElement(START_DATE);
 	        String xpath = "//android.view.View[@text='"+tommorrow+"']"; 
@@ -346,7 +346,7 @@ public class Cheques_Screen_Pages extends CommonPage{
         date = date.minusDays(1);
         String nextDate = date.toString();
         System.out.println(nextDate);
-        String tommorrow = nextDate.substring(8, 10);
+        String tommorrow = nextDate.substring(9, 10);
         System.out.println(tommorrow);
         String xpath = "//android.view.View[@text='"+tommorrow+"']"; 
         MobileElement tommrw = driver.findElement(By.xpath(xpath));
@@ -421,7 +421,7 @@ public class Cheques_Screen_Pages extends CommonPage{
 		  String Year = Date.substring(6, 8);
 		  int ActualYear = Integer.parseInt(Year);
 		  System.out.println("Actual Year: " + ActualYear);
-		  assert ActualYear>=17 : "Fitler using date is not working fine";
+		  assert ActualYear>=15 : "Fitler using date is not working fine";
 		}
 		elementExists(CHEQUE_NO);
 		elementExists(CHEQUE_AMT);
@@ -467,18 +467,19 @@ public class Cheques_Screen_Pages extends CommonPage{
 	}
 	
 	public void Verify_Search_for_to_Check_Number() {
-		List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
-		for(MobileElement link : elements)
-		{
-		  String cheq_no = link.getText();
-		  System.out.println("List cheque no: "+cheq_no);
-		  int Actual_cheq_no = Integer.parseInt(cheq_no);
-		  int Cheque_ton = Integer.parseInt(Cheque_to_1);
-		  assert Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
-		}
-		elementExists(CHEQUE_DATE);
-		elementExists(CHEQUE_AMT);
-		elementExists(CHEQUE_STATUS);
+		elementExists(CHEQUE_NO_REC);
+//		List<MobileElement> elements = driver.findElements(By.id("lblAccountName"));
+//		for(MobileElement link : elements)
+//		{
+//		  String cheq_no = link.getText();
+//		  System.out.println("List cheque no: "+cheq_no);
+//		  int Actual_cheq_no = Integer.parseInt(cheq_no);
+//		  int Cheque_ton = Integer.parseInt(Cheque_to_1);
+//		  assert Actual_cheq_no <= Cheque_ton : "Fitler using Cheque number is not working fine";
+//		}
+//		elementExists(CHEQUE_DATE);
+//		elementExists(CHEQUE_AMT);
+//		elementExists(CHEQUE_STATUS);
 	}
 	
 	public void Verify_Search_for_From_Check_Number() {

@@ -15,13 +15,14 @@ public class Card_Verification_Page extends CommonPage{
 	}
 	
 	public void Navigate_Card_Detail(){
+		scrollDown(CARD_LABEL);
 		clickOnElement(VISA_GOLD);
 		//appiumHelpers.waitForVisibilityOfElement(CARD_SLIDE);
 	}
 	
 	public void Verify_Card_Details() {
 		
-        appiumHelpers.assertTrue(elementExists(AVL_CRD_LMT_LB), "Available Card limit is visible");
+        //appiumHelpers.assertTrue(elementExists(AVL_CRD_LMT_LB), "Available Card limit is visible");
 		String Available_Card_Limt = driver.findElement(AVL_CRD_LMT_VL).getText();
 		System.out.println("Available Card Limit: "+Available_Card_Limt);
 		//appiumHelpers.assertTrue(elementExists(OUT_STANDING_LB), "Total OutStanding balance is visible");
@@ -259,7 +260,7 @@ public class Card_Verification_Page extends CommonPage{
 	}
 	
 	public void Verify_Presence_Bill_Payment(){
-		appiumHelpers.assertTrue(elementExists(BILL_PAYMENT), "Bill payment button is shown");
+		appiumHelpers.assertFalse(elementExists(BILL_PAYMENT), "Bill payment button is shown");
 	}
 	
 	public void Verify_Absence_Bill_Payment(){

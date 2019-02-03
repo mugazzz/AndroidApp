@@ -14,7 +14,7 @@ Scenario: Able to view all my operative accounts and their details
 
 @account_section1 @TC_Accounts_25_1  @reset
 Scenario: Able to view all my finance accounts and their details
-	Given Register using credit card to create existing user scenario
+	Given Register the user who have Deposit account section
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on Chart Size toggle button to mimize the chart
 	Then Verify my finances is availble for the user

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mvn clean test -Dcucumber.options="--tags @res"
+mvn clean test -Dcucumber.options="--tags @cheques_screen"
 
     if [ $? -eq 1 ]; then
        echo "rerunning failed scenario"

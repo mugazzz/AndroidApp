@@ -144,7 +144,7 @@ public class Account_Section_Page extends CommonPage{
 	}
 	
 	public void Navigate_Back_Dashboard() {
-		for(int i =0; i<=0; i++) {
+		for(int i =0; i<=1; i++) {
 			clickOnElement(GO_BACK);
 		}
 		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);

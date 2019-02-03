@@ -43,7 +43,7 @@ public class AppStrings {
 	    public static final String Inval_Debit_Card_Pin = "4569";
 	    
 	//Customer Number Registration
-	    public static final String Act_Cust_No3 = "4041984";
+	    public static final String Act_Cust_No3 = "9677570";
 	    public static final String Act_Cust_No = "7799712";
 	    public static final String Act_Cust_No1 = "9677570";
 	    public static final String Act_Cust_No2 = "5000436";
@@ -129,12 +129,12 @@ public class AppStrings {
 	//Advanced Search Screen
 	    public static final String Cheque_from = "20";
 	    public static final String Cheque_from_incorrect = "100000";
-	    public static final String Cheque_to = "35";
+	    public static final String Cheque_to = "50";
 	    public static final String Cheque_to_1 = "9";
 	    public static final String Cheque_from_1 = "18";
 	    public static final String Amount_from = "2000";
 	    public static final String Amount_from_1 = "37000";
-	    public static final String Amount_to = "50000";
+	    public static final String Amount_to = "90000";
 	    public static final String Amount_to_1 = "35000";
 	    
 	    
