@@ -1,4 +1,4 @@
-@card_section @sprint3 @sprint1-3
+@card_section @sprint3 @sprint1-3 @acc
 Feature: Card Section Verification
 
 @card_section1 @TC_Cards_27_1 @reset

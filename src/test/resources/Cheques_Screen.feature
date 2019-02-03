@@ -1,4 +1,4 @@
-@cheques_screen @sprint3 @sprint1-3
+@cheques_screen @sprint3 @sprint1-3 @acc
 Feature: Able to view all my cheques
 
 @TC_Cheques_32_1 @cheques_screen1 @reset
