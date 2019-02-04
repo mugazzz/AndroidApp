@@ -4,7 +4,7 @@ I should be able to make a payment
 
 @makePayment0 @invalidPayment @reset
  	Scenario: Able to make a payment - validate with invalid amount
-	Given Verify the login check tran_950000
+	Given Verify the login check tran_960000
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the pay bills icon on tab bar
 	And Tap on Make a payment tab
@@ -15,7 +15,7 @@ I should be able to make a payment
 	
 @makePayment1 @validPayment
 	Scenario: Able to make a payment - validate with valid amount
-	Given Verify the login check tran_950000
+	Given Verify the login check tran_960000
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on the pay bills icon on tab bar
 	And Tap on Make a payment tab

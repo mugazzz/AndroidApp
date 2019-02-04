@@ -34,7 +34,7 @@ public class ConfigDriver {
 	    	
 	  
 	        DesiredCapabilities capabilities = new DesiredCapabilities();
-	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ce12171ca29fc41504");
+	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "0117115562950701");
 	        capabilities.setCapability("automationName", "UiAutomator");
 	        //capabilities.setCapability("appPackage", "com.ahb.mb.dev");
 	        //capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");

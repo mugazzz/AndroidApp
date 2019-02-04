@@ -256,7 +256,7 @@ public class Card_Verification_Page extends CommonPage{
 	}
 	
 	public void Verify_Login_check_Bio_cleanl() {
-			 Register_Specific_user_Bio(Act_Cust_No1, Act_SMS_PN);
+			 Register_Specific_user_Bio(Act_Cust_No9500000, Act_SMS_PN);
 	}
 	
 	public void Verify_Login_check_Cancel() {

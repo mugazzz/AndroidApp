@@ -1,6 +1,6 @@
 package alhilal.androidapp.pages;
 
-import static alhilal.androidapp.utils.AppStrings.Incorrect_Cons;
+import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
 
 import org.openqa.selenium.By;
@@ -34,6 +34,10 @@ public class Pay_One_Mul_Util_Page extends CommonPage{
 	
 	public void Validation_Message() {
 		Verify_Validation_Message(Incorrect_Cons);
+	}
+	
+	public void Mul_Validation_Message() {
+		Verify_Validation_Message(Mul_Vala);
 	}
 	
 	public void Sel_Cur_Acc3() {

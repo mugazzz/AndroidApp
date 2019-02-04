@@ -54,6 +54,30 @@ public class Pay_One_Mul_Util_Step extends Pay_One_Mul_Util_Page{
 		Tap_Element(Sel_Shamil);
 	}
 	
+	@Then("^Select GSM utility for payment$")
+	public void select_GSM_utility_for_payment() throws Throwable {
+		Tap_Element(GSM);
+	}
+	
+	@Then("^Select GSM and SHAMIL utility for payment$")
+	public void select_GSM_utility_for_payment1() throws Throwable {
+		Tap_Element(GSM2);
+		Tap_Element(Sel_Shamil);
+	}
+	
+	@Then("^Select more than five utilities for payment$")
+	public void select_GSM_utility_for_payme() throws Throwable {
+		Tap_Element(GSM);
+		Tap_Element(Sel_Shamil);
+		Tap_Element(GSM2);
+		scrollDown(GSM2);
+		Tap_Element(Sel_Shamil2);
+		Tap_Element(GSM3);
+		Tap_Element(Sel_Shamil3);
+		scrollDown(GSM3);
+		Tap_Element(GSM4);
+	}
+	
 	@Then("^Select Shamil utility for payment1$")
 	public void select_Shamil_utility_for_payment1() throws Throwable {
 		scrollDown(Sel_DEWA);
@@ -97,6 +121,11 @@ public class Pay_One_Mul_Util_Step extends Pay_One_Mul_Util_Page{
 		appiumHelpers.waitForVisibilityOfElement(Sucess_mess);
 	}
 	
+	@Then("^Verify the Payment Confirmation screen pay$")
+	public void verify_the_Payment_Confirmation_screen_pay() throws Throwable {
+		appiumHelpers.waitForVisibilityOfElement(Sucess_messp);
+	}
+	
 	@Then("^Tap on from account and select the card$")
 	public void tap_on_from_account_and_select_the_card() throws Throwable {
 		Sel_card();
@@ -104,7 +133,7 @@ public class Pay_One_Mul_Util_Step extends Pay_One_Mul_Util_Page{
 	
 	@Then("^Verify the Validation message appears for multiple payments$")
 	public void Validation_message_appears_for_multiple_payments() throws Throwable {
-		Validation_Message();
+		Mul_Validation_Message();
 	}
 
 }

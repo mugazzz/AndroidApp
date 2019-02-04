@@ -25,20 +25,18 @@ public class Make_Payment_Page  extends CommonPage
 	public void selectAccount()
 	{
 		clickOnElement(Select_FromAcc);
-		TouchAction touchAction = new TouchAction(driver);
-		touchAction.tap(PointOption.point(188, 597)).perform();
-		
+		clickOnElement(Select_Payee);
 	}
 	
 	public void enterValidAmount()
 	{
 		enterText(Pay_amount, Payment_Amount_Valid );
-		driver.findElement(By.id("Hide")).click();
+		driver.hideKeyboard();
 	}
 	public void enterInvalidAmount()
 	{
 		enterText(Pay_amount, Payment_Amount_InValid );
-		driver.findElement(By.id("Hide")).click();
+		driver.hideKeyboard();
 	}
 	
 	

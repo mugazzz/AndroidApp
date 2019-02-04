@@ -4,7 +4,7 @@ I should able to edit and delete payee
 
   @edit_delete_pay0
   Scenario: Edit Payees nickname and verify the details
-   Given Verify the login check tran
+   Given Verify the login check tran_9500000
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on the pay bills icon on tab bar
 	 And Tap on Make a payment tab
@@ -17,7 +17,7 @@ I should able to edit and delete payee
 	 
 	@edit_delete_pay1
  	 Scenario: Delete a payee from listed payee list
-   Given Verify the login check tran
+   Given Verify the login check tran_9500000
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on the pay bills icon on tab bar
 	 And Tap on Make a payment tab

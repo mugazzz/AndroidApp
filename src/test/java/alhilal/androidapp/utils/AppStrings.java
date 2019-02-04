@@ -106,9 +106,10 @@ public class AppStrings {
 	    public static final String Great_val1 = "You don't have an account with sufficient funds";
 	    public static final String Limit_Tran = "You have exceeded the transactional limit for Transfer to others";
 	    public static final String Incorrect_Cons = "Consumer number not recognized. Please enter a valid consumer number";
+	    public static final String Mul_Vala = "Maximum number of payees has been selected";
 	    public static final String Valid_Mul = "Consumer number not recognized. Please enter a valid consumer number";
-	    public static final String Alrea_Payee = "Payee already exists for the user";
-	    public static final String Alrea_Nick = "You already have a beneficiary registered with the same nickname";
+	    public static final String Alrea_Payee = "You already have a payee registered with the same consumer number";
+	    public static final String Alrea_Nick = "You already have a payee registered with the same nickname";
 	    public static final String GSM_Digiti_Valid = "Please enter a consumer number of 10 digits.";
 	    public static final String GSM_Digiti_Valid1 = "Please enter a consumer number of 9 digits.";
 	    public static final String GSM_Digiti_Valid2 = "Please enter a consumer number between 9 to 10 digits.";

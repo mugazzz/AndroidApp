@@ -318,10 +318,12 @@ public class Locators {
 	public static final By CUR_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9667733028']");
 	public static final By CUR_ACC_AMT2 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 1212115018']");
 	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9600000029']");
+	public static final By CUR_ACC_AMT3P = By.xpath("//android.widget.CheckedTextView[@text='Current account 9600000029']");
 	public static final By CUR_ACC_AMT100000 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 7799712002']");
 	public static final By CUR_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 9677570022']");
 	public static final By SAV_ACC_AMT = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 1212115003']");
 	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.CheckedTextView[@text='Saving account - 7799712004']");
+	public static final By SAV_ACC_AMT2 = By.xpath("//android.widget.CheckedTextView[@text='Saving account 9600000018']");
 	public static final By CARD_C = By.xpath("//android.widget.CheckedTextView[@text='Credit card 458461******0400']");
 	public static final By SEL_CHAR = By.id("lbxChargesData");
 	public static final By SEL_REASON = By.id("lbxReasonData");
@@ -448,12 +450,19 @@ public class Locators {
 	public static final By Sel_Salik1 = By.xpath("//android.widget.TextView[@text='Salik1']");
 	public static final By Sel_ADDC2 = By.xpath("//android.widget.TextView[@text='ADDC2']");
 	public static final By Sel_Salik2 = By.xpath("//android.widget.TextView[@text='Salik2']");
-	public static final By Sel_Shamil = By.xpath("//android.widget.TextView[@text='Al Shamil']");
+	public static final By Sel_Shamil = By.xpath("//android.widget.TextView[@text='ALSHAMIL']");
+	public static final By Sel_Shamil2 = By.xpath("//android.widget.TextView[@text='ALSHAMIL2']");
+	public static final By GSM = By.xpath("//android.widget.TextView[@text='GSM1']");
+	public static final By GSM2 = By.xpath("//android.widget.TextView[@text='GSM2']");
+	public static final By GSM3 = By.xpath("//android.widget.TextView[@text='GSM3']");
+	public static final By GSM4 = By.xpath("//android.widget.TextView[@text='GSM4']");
+	public static final By Sel_Shamil3 = By.xpath("//android.widget.TextView[@text='ALSHAMIL3']");
 	public static final By Sel_Shamil1 = By.xpath("//android.widget.TextView[@text='Al Shamil1']");
 	public static final By Pay_all = By.id("btnPayAllSeleted");
 	public static final By Out_Stand = By.id("lblTotalAmt");
 	public static final By Continue = By.id("btnContinue");
 	public static final By Sucess_mess = By.xpath("//android.widget.TextView[@text='Your transfer has been submitted successfully!']");
+	public static final By Sucess_messp = By.xpath("//android.widget.TextView[@text='Payments are completed successfully']");
 	public static final By Failed_mess = By.xpath("//android.widget.TextView[@text='Sorry, your payments cannot be processed now. Please try again later']");
 	
 	
@@ -480,6 +489,7 @@ public class Locators {
 	public static final By PAYEE=By.id("lblServiceOperator");
 	public static final By Payment_PageHeader = By.id("lblHeading");
 	public static final By Select_FromAcc = By.id("lbxFromAcc");
+	public static final By Select_Payee = By.xpath("//android.widget.CheckedTextView[@text='Current account 9600000029']");
 	public static final By fromAcc=By.xpath("//android.widget.CheckedTextView[@index='1']");
 	public static final By Pay_amount= By.id("tbxBillAmount");
 	public static final By Invalid_Validation= By.id("flxRules");
@@ -490,13 +500,6 @@ public class Locators {
 	public static final By confirmPay= By.id("btnContinue");
 	public static final By PaymentStatus = By.xpath("//XCUIElementTypeStaticText[@text='Payments are completed successfully']");
 	public static final By status= By.id("lblMessage");
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

@@ -68,6 +68,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Sel_Cur_Acc3();
 	}
 	
+	@Then("^Tap on from account and select the current account4$")
+	public void tap_on_from_account_and_select_the_current_account4() throws Throwable {
+	   Sel_Cur_Acc4();
+	}
+	
 	@Then("^Tap on from account and select the current account_1000000$")
 	public void tap_on_from_account_and_select_the_current_account1000000() throws Throwable {
 	   Sel_Cur_Acc100000();
@@ -86,6 +91,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	@Then("^Tap on from account and select the savings account2$")
 	public void tap_on_from_account_and_select_the_savings_account2() throws Throwable {
 	   Sel_Sav_Acc2();
+	}
+	
+	@Then("^Tap on from account and select the savings account3$")
+	public void tap_on_from_account_and_select_the_savings_account3() throws Throwable {
+	   Sel_Sav_Acc3();
 	}
 
 	@Then("^Verify the available balance amount appears$")

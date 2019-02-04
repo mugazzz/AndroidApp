@@ -71,6 +71,12 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT);
 	}
 	
+	public void Sel_Cur_Acc4() {
+		clickOnElement(FROM_ACC_DATA1);
+		clickOnElement(CUR_ACC_AMT3P);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT1);
+	}
+	
 	public void Sel_Cur_Acc100000() {
 		clickOnElement(FROM_ACC_DATA);
 		clickOnElement(CUR_ACC_AMT100000);
@@ -92,6 +98,12 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 	public void Sel_Sav_Acc2() {
 		clickOnElement(FROM_ACC_DATA1);
 		clickOnElement(SAV_ACC_AMT1);
+		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT1);
+	}
+	
+	public void Sel_Sav_Acc3() {
+		clickOnElement(FROM_ACC_DATA1);
+		clickOnElement(SAV_ACC_AMT2);
 		appiumHelpers.waitForVisibilityOfElement(AVAI_AMT1);
 	}
 	

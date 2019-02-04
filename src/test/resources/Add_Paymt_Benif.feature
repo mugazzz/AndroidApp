@@ -1,10 +1,10 @@
-@add_pay_beni @sprint6 @sprint4-6 @payment @reset
+@add_pay_beni @sprint6 @sprint4-6 @payment
 Feature: Add a payment beneficiary-Consumer number
   I should able to add a payment beneficiary
 
   	@Payment_83 @add_pay_beni0 @reset
   Scenario: Able to add a payment beneficiary- For  Salik
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -17,9 +17,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_84 @add_pay_beni1
+		@Payment_84 @add_pay_beni1 @reset
   Scenario: Able to add a payment beneficiary- For ADDC
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -31,9 +31,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_85 @add_pay_beni2
+		@Payment_85 @add_pay_beni2 @reset
   Scenario: Able to add a payment beneficiary- For AADC
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -45,9 +45,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_87 @add_pay_beni3
+		@Payment_87 @add_pay_beni3 @reset
   Scenario: Able to add a payment beneficiary- For DEWA
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -61,7 +61,9 @@ Feature: Add a payment beneficiary-Consumer number
 		
 		@Payment_89 @add_pay_beni4
   Scenario: Able to add a payment beneficiary- Biometric  option is enabled
-   Given Verify the login check with Bio
+   Given Verify the login check with Bio clean
+	And Close and relaunch the app
+	Then Login by cancel the login popup
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -74,7 +76,9 @@ Feature: Add a payment beneficiary-Consumer number
 		
 	 @Payment_90 @add_pay_beni5
   Scenario: Able to add a payment beneficiary- Biometric  option is enabled and click cancel button
-   Given Verify the login check with Bio
+   Given Verify the login check with Bio clean
+	And Close and relaunch the app
+	Then Login by cancel the login popup
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -87,9 +91,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-	@Payment_92 @add_pay_beni7
+	@Payment_92 @add_pay_beni7 @reset
   Scenario: Able to add a payment beneficiary- incorrect consumer number
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -99,9 +103,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the AADC nick name1
 		And Tap on Next button and verify validation message appears
 	
-	@Payment_93 @add_pay_beni8
+	@Payment_93 @add_pay_beni8 @reset
   Scenario: Able to add a payment beneficiary- Duplicate consumer number
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -111,9 +115,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the DEWA nick name2
 		And Tap on Next button and verify validation message appears for dup consumer
 		
-		@Payment_94 @add_pay_beni9
+		@Payment_94 @add_pay_beni9 @reset
   Scenario: Able to add a payment beneficiary- Duplicate nick name
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -123,9 +127,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the DEWA nick name1
 		And Tap on Next button and verify validation message appears for dup nick
 		
-	 @Payment_95 @add_pay_beni10
+	 @Payment_95 @add_pay_beni10 @reset
 	Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for Etisalat - GSM Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -142,9 +146,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_96 @add_pay_beni11
+		@Payment_96 @add_pay_beni11 @reset
 	 Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for Etisalat - WASEL Recharge Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -161,9 +165,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_97 @add_pay_beni12
+		@Payment_97 @add_pay_beni12 @reset
 	 Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for Etisalat - Landline Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -180,9 +184,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_99 @add_pay_beni13
+		@Payment_99 @add_pay_beni13 @reset
 	 Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for Etisalat - Al SHAMIL Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -199,9 +203,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Get the OTP from the third party app and enter the OTP1
 		And Verify the screen redirected to successfully account payment beneficiary added screen
 		
-		@Payment_109 @add_pay_beni14
+		@Payment_109 @add_pay_beni14 @reset
 	 Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for SALIK  Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -214,9 +218,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the consumer number more than 10 digits
 		And Tap on next button and verify the validation message3
 
-		@Payment_110 @add_pay_beni15
+		@Payment_110 @add_pay_beni15 @reset
 	 Scenario: Able to add a payment beneficiary-Consumer number digits less or more number of digits- for DEWA  Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -224,13 +228,13 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Select the service provider DEWA
 		Then Enter the consumer number less than 9 digits
 		Then Enter the DEWA nick name
-		Then Tap on next button and verify the validation message3
+		Then Tap on next button and verify the validation message1
 		Then Enter the consumer number more than 10 digits
 		And Tap on next button and verify the validation message3
 		
-		@Payment_111 @add_pay_beni16
+		@Payment_111 @add_pay_beni16 @reset
 	 Scenario: Payment_111:Able to add a payment beneficiary-Consumer number digits less or more number of digits- for ADDC  Utility.
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -242,9 +246,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the consumer number more than 10 digits
 		And Tap on next button and verify the validation message
 		
-		@Payment_112 @add_pay_beni17
+		@Payment_112 @add_pay_beni17 @reset
 	 Scenario: Payment_111:Able to add a payment beneficiary-Consumer number digits less or more number of digits- for AADC  Utility
-     Given Verify the login check tran
+     Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
@@ -256,9 +260,9 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the consumer number more than 10 digits
 		And Tap on next button and verify the validation message
 		
-			@Payment_113 @add_pay_beni18
+			@Payment_113 @add_pay_beni18 @reset
 	 Scenario: Payment_111:Able to add a payment beneficiary-Consumer number digits less or more number of digits- for SEWA  Utility
-    Given Verify the login check tran
+    Given Verify the login check tran_9500000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
