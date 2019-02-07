@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mvn clean test -Dcucumber.options="--tags @acc"
+mvn clean test -Dcucumber.options="--tags @sprint3"
 
     if [ $? -eq 1 ]; then
        echo "rerunning failed scenario"
