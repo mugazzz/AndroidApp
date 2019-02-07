@@ -304,9 +304,9 @@ public class Locators {
 	public static final By CARD_ACC = By.xpath("//android.widget.TextView[@text='Smart Platinum No Fee']");
 	public static final By THIRD_ACC1 = By.id("flxScheduledTransfer");
 	public static final By LOC_THIRD_ACC = By.xpath("//android.widget.TextView[@text='otherThird1']");
-	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE44 0530 0000 2966 7733 012']");
+	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE44 0530 0000 2966 7733 012	']");
 	public static final By LOC_THIRD_ACC1 = By.xpath("//android.widget.TextView[@text='ABU DHABI ISLAMIC BANK - 2639 2828']");
-	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='AL Hilal Bank - 4041 9840 27']");
+	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='Al Hilal Bank - 4041 9840 27']");
 	public static final By FROM_ACC = By.id("lblFromAccount1");
 	public static final By FROM_ACC_DATA = By.id("lbxFromAccountData");
 	public static final By FROM_ACC_DATA1 = By.id("lbxFromAcc");

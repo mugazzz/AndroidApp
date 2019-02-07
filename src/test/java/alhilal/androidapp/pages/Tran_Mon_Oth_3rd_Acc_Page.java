@@ -535,7 +535,7 @@ public class Tran_Mon_Oth_3rd_Acc_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(LOC_THIRD_ACC);
 		clickOnElement(LOC_THIRD_ACC);
 		appiumHelpers.waitForVisibilityOfElement(FROM_ACC_DATA);
-		Sel_Cur_Acc2();
+		Sel_Cur_Acc4();
 		Veri_Avai_Amt();
 		enterText(TRAN_AMT, Tran_amt2);
 		clickOnElement(SEL_CUR);

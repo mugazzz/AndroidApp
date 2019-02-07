@@ -4,7 +4,7 @@ Feature: Transfer money to another AHB card
  
 #Used account 7799712
 
-  @tran_Anoth_AHB_Card0 @Transfers_118
+  @tran_Anoth_AHB_Card0 @Transfers_118 @reset
   Scenario: Able to transfer money to another AHB card - Transfer 100K AED(limit)
     Given Verify the login check 100000
 		And Verify the user redirected to Dashboard screen successfully

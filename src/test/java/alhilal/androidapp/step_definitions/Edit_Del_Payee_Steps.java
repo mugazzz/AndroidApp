@@ -67,6 +67,7 @@ public class Edit_Del_Payee_Steps extends Edit_Del_Payee_Page{
 
 	@Then("^Verify the payee delete confirmation message$")
 	public void verify_the_payee_delete_confirmation_message() throws Throwable {
+		waitForProgressBarToDismiss();
 		String xmlFormat = driver.getPageSource();
 		assertThat(xmlFormat, CoreMatchers.containsString(Delete_Val));
 	}

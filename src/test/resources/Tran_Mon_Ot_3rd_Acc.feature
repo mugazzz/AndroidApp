@@ -134,7 +134,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen
-		And Tap on from account and select the current account2
+		And Tap on from account and select the current account4
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency
 		And Select the from charges pay by and choose Me
@@ -164,7 +164,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any third party account and navigate to transfers screen
-		And Tap on from account and select the savings account1
+		And Tap on from account and select the savings account3
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency1
 		And Select the from charges pay by and choose Me
@@ -180,7 +180,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any local third party account and navigate to transfers screen1
-		And Tap on from account and select the current account
+		And Tap on from account and select the current account4
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency1
 		And Select the from charges pay by and choose Me

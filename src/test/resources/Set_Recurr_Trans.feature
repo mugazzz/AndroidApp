@@ -1,4 +1,4 @@
-@set_recur @sprint5 @sprint4_5 @sprint4-6 @transfers
+@set_recur @sprint5 @sprint4_5 @sprint4-6 @transfers @reset
 Feature: Set recurring transfers
   I should be able to set recurring transfers
 
@@ -140,7 +140,7 @@ Feature: Set recurring transfers
 		And Select the mode of schedule quaterly
 		Then select the date for scheduled transfer
 		And Set the schedule transfer and verify the confirmation screen
-		Then Verify the transfer details for cards96
+		Then Verify the transfer details for cards
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
  @set_recur7 @Transfers_174
@@ -157,7 +157,7 @@ Feature: Set recurring transfers
 		And Select the mode of schedule monthly
 		Then select the date for scheduled transfer
 		And Set the schedule transfer and verify the confirmation screen
-		Then Verify the transfer details for cards96
+		Then Verify the transfer details for cards
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
 	@set_recur8 @Transfers_173
@@ -174,7 +174,7 @@ Feature: Set recurring transfers
 		And Select the mode of schedule weekly
 		Then select the date for scheduled transfer
 		And Set the schedule transfer and verify the confirmation screen
-		Then Verify the transfer details for cards96
+		Then Verify the transfer details for cards
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
 	@set_recur9 @Transfers_172
@@ -191,7 +191,7 @@ Feature: Set recurring transfers
 		And Select the mode of schedule
 		Then select the date for scheduled transfer
 		And Set the schedule transfer and verify the confirmation screen
-		Then Verify the transfer details for cards96
+		Then Verify the transfer details for cards
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		
 	@set_recur10 @Transfers_171

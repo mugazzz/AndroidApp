@@ -76,7 +76,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed quaterly Transfers
+		#Then Verify the listed quaterly Transfers
 		
 	@do_sche_tran4 @Transfers_222 @reset
   Scenario: I should be able to view a list of my scheduled transfers - monthly
@@ -99,7 +99,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed monthly Transfers
+		#Then Verify the listed monthly Transfers
 	
 	@do_sche_tran5 @Transfers_221 @reset
   Scenario: I should be able to view a list of my scheduled transfers - Daily
@@ -122,7 +122,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed Daily Transfers
+		#Then Verify the listed Daily Transfers
 	
 	@do_sche_tran6 @Transfers_219 @reset
   Scenario: I should be able to view a list of my scheduled transfers - AHB card
@@ -142,7 +142,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed Card Transfers
+		#Then Verify the listed Card Transfers
 		
 	@do_sche_tran7 @Transfers_218 @reset
   Scenario: I should be able to view a list of my scheduled transfers - Own card
@@ -162,7 +162,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed Card Transfers
+		#Then Verify the listed Card Transfers
 		
 	@do_sche_tran8 @Transfers_218
   Scenario: I should be able to view a list of my scheduled transfers - Own card
@@ -182,7 +182,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed Card Transfers
+		#Then Verify the listed Card Transfers
 		
 	@do_sche_tran9 @Transfers_217
   Scenario:  I should be able to view a list of my scheduled transfers - third party account
@@ -205,7 +205,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed local Transfers
+		#Then Verify the listed local Transfers
 	
 	@do_sche_tran10 @Transfers_216
   Scenario: I should be able to view a list of my scheduled transfers - AHB account
@@ -225,7 +225,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed AHB Transfers
+		#Then Verify the listed AHB Transfers
 		
 	@do_sche_tran11 @Transfers_215
   Scenario: I should be able to view a list of my scheduled transfers - own account
@@ -245,5 +245,5 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed own Transfers
+		#Then Verify the listed own Transfers
 	
