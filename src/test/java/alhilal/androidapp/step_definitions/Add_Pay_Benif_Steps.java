@@ -115,7 +115,7 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the ADDC nick name$")
 	public void enter_the_ADDC_nick_name() {
 		enterText(CON_NICK, Pay_nick1);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 	
 	@Then("^Select the service provider Salik$")
