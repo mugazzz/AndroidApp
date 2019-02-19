@@ -159,6 +159,9 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
+		else {
+			System.out.println("test");
+		}
 	
 	}
 	
@@ -168,6 +171,9 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
+		else {
+			System.out.println("test");
+		}
 	
 	}
 	
@@ -176,6 +182,9 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 		if(elemenDoesnotExists(Recep_Page)){
 			clickOnElement(RESEND_OTP);
 			OTP();	
+		}
+		else {
+			System.out.println("test");
 		}
 	
 	}

@@ -84,7 +84,8 @@ public class Make_Payment_Page  extends CommonPage
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -97,7 +98,8 @@ public class Make_Payment_Page  extends CommonPage
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 

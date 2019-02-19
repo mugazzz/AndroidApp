@@ -52,7 +52,7 @@ Feature: Pay for one or multiple utilities
 
    @pay_one_mul4 @Payment_
   Scenario: I should be able to pay for utilities_Single Payment-Pay for Al Shamil
-  		Given Verify the login check tran
+  		Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select Shamil utility for payment
@@ -64,7 +64,7 @@ Feature: Pay for one or multiple utilities
     	
    @pay_one_mul5 @Payment_GSM
   Scenario: I should be able to pay for utilities_Single Payment-Pay for GSM
-  		Given Verify the login check tran
+  		Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select GSM utility for payment
@@ -76,7 +76,7 @@ Feature: Pay for one or multiple utilities
     
     @pay_one_mul6 @Payment_12
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Current Account
-  	Given Verify the login check tran
+  	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select GSM and SHAMIL utility for payment
@@ -88,7 +88,7 @@ Feature: Pay for one or multiple utilities
     
     @pay_one_mul6 @Payment_13
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Savings Account
-  	Given Verify the login check tran
+  	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select GSM and SHAMIL utility for payment
@@ -100,7 +100,7 @@ Feature: Pay for one or multiple utilities
     
     @pay_one_mul7 @Payment_14
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Card
-  	Given Verify the login check tran
+  	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select GSM and SHAMIL utility for payment
@@ -112,7 +112,7 @@ Feature: Pay for one or multiple utilities
     
     @pay_one_mul8 @Payment_14
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay from Card
-  		Given Verify the login check tran
+  		Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select GSM and SHAMIL utility for payment
@@ -124,7 +124,7 @@ Feature: Pay for one or multiple utilities
     
     @pay_one_mul9 @Payment_14
   Scenario: I should be able to pay for utilities_Multiple Payments-Pay - Multiple restriction
-  	Given Verify the login check tran
+  	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the pay bills icon on tab bar
 		And Select more than five utilities for payment

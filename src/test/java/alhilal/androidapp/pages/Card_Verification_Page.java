@@ -103,7 +103,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -116,7 +117,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -124,12 +126,13 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
-			 Register_Specific_user(Act_Cust_No1, Act_SMS_PN);
+			 Register_Specific_user(Act_Cust_No9500000, Act_SMS_PN);
 			 //Register_using_Credit_Card();
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -142,7 +145,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -150,12 +154,13 @@ public class Card_Verification_Page extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {
-			 Register_Specific_user(Act_Cust_No9600000, Act_SMS_PN);
+			 Register_Specific_user(Act_Cust_No9500000, Act_SMS_PN);
 			 //Register_using_Credit_Card();
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		 }
 	}
 	
@@ -168,7 +173,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
+			 //enterText(LOGIN_PIN_FD, Enter_Pin);
 		 }
 	}
 	
@@ -262,7 +268,8 @@ public class Card_Verification_Page extends CommonPage{
 	public void Verify_Login_check_Cancel() {
 		appiumHelpers.waitForVisibilityOfElement(FING_CANCEL);
 		clickOnElement(FING_CANCEL);
-		enterText(LOGIN_PIN_FD, Enter_Pin);
+		//enterText(LOGIN_PIN_FD, Enter_Pin);
+		enterText_Runtime(Enter_Pin);
 	}
 	
 	public void Verify_Absence_Card_Section() {

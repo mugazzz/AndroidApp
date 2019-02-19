@@ -1,8 +1,10 @@
 package alhilal.androidapp.pages;
 
 import static alhilal.androidapp.utils.Locators.*;
+import static org.junit.Assert.assertThat;
 
 import org.apache.tools.ant.Location;
+import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.Point;
 
 import io.appium.java_client.TouchAction;
@@ -212,17 +214,21 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Dup_Validation() {
 		//appiumHelpers.waitForVisibilityOfElement();
-		Verify_Validation_Message(DUP_NICK);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(DUP_NICK));
+		//Verify_Validation_Message(DUP_NICK);
 	}
 	
 	public void Dup_iban_Validation() {
 		//appiumHelpers.waitForVisibilityOfElement();
-		Verify_Validation_Message(DUP_IBAN);
+		//Verify_Validation_Message(DUP_IBAN);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(DUP_IBAN));
 	}
 	
 	public void Ent_Con_Cod() {
 		enterText(CONT_COD, Con_Tm);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 		clickOnElement(CONT_SKIP);
 		appiumHelpers.waitForVisibilityOfElement(FUL_NAME);
 	}

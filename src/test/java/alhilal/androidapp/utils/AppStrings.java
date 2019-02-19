@@ -28,7 +28,7 @@ public class AppStrings {
 	    public static final String Incor_Credit_Card_Pin = "123";
     
 	//Debit Card Registration
-	    public static final String Act_Debit_Card_No = "4714845567915712";
+	    public static final String Act_Debit_Card_No = "4714845537366509";
 	    public static final String Act_Debit_Card_Pin = "4567";
 	    public static final String Inactive_Debit_Card_No = "4714847609904308";
 	    public static final String Inactive_Debit_Card_Pin = "5678";
@@ -247,6 +247,7 @@ public class AppStrings {
 	    public static final String Payment_Amount_InValid = "1";
 	    public static final String PaymentSuccess="Your transfer has been submitted successfully!";
 	    public static final String PaymentFailure="Sorry, your payments cannot be processed now. Please try again later";
+	    
 	    
 	    
 }

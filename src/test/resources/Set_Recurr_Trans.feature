@@ -6,7 +6,7 @@ Feature: Set recurring transfers
 
   @set_recur0 @Transfers_181
   Scenario: Able to set recurring transfers - From Current/Savings account to  AHB card  - Yearly
-   	Given Verify the login check tran
+   	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -27,7 +27,7 @@ Feature: Set recurring transfers
 		
 	@set_recur1 @Transfers_180
   Scenario: Able to set recurring transfers - From Current/Savings account to  AHB card  - Quarterly
-   	Given Verify the login check tran
+   	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -48,7 +48,7 @@ Feature: Set recurring transfers
 		
 	@set_recur2 @Transfers_179
   Scenario: Able to set recurring transfers - From Current/Savings account to  AHB card  - Monthly
-   	Given Verify the login check tran
+   Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -69,7 +69,7 @@ Feature: Set recurring transfers
 		
 	@set_recur3 @Transfers_178
   Scenario:  Able to set recurring transfers - From Current/Savings account to  AHB card  - Weekly
-   	Given Verify the login check tran
+   	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
@@ -90,7 +90,7 @@ Feature: Set recurring transfers
 		
 	@set_recur4 @Transfers_177
   Scenario:   Able to set recurring transfers - From Current/Savings account to  AHB card  - Daily
-   	Given Verify the login check tran
+   	Given Verify the login check tran_960000
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others

@@ -1,4 +1,4 @@
-@Add_Code @sprint4 @sprint4_5 @sprint4-6 @transfers
+@Add_Code @sprint4 @sprint4_5 @sprint4-6 @transfers @reset
 Feature: Shown an input field for additional codes for specific countries
   I should be shown an input field for additional codes for specific countries
 

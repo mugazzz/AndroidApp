@@ -1,4 +1,4 @@
-@make_payment @sprint6 @payment
+@make_payment @sprint6 @payment @sprint4-6
 Feature: Make payment
 I should be able to make a payment 
 

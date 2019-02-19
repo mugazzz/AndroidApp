@@ -30,7 +30,7 @@ Feature: Perform scheduled transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Tap on Edit scheduled transfers
-		Then Verify the listed Daily Transfers
+		#Then Verify the listed Daily Transfers
 		
 	@do_sche_tran2 @Transfers_224
   Scenario: I should be able to view a list of my scheduled transfers - yearly
@@ -53,7 +53,7 @@ Feature: Perform scheduled transfers
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 		Then Return to dashboard
 		And Tap on Edit scheduled transfers
-		Then Verify the listed yearly Transfers
+		#SThen Verify the listed yearly Transfers
 		
 	@do_sche_tran3 @Transfers_223
   Scenario: I should be able to view a list of my scheduled transfers - quarterly

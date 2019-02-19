@@ -132,13 +132,13 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the salik nick name$")
 	public void enter_the_salik_nick_name() {
 		enterText(CON_NICK, Pay_nick);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 	
 	@Then("^Enter the salik PIN number$")
 	public void enter_the_salik_pin_name() {
 		enterText(CON_PIN, Pay_pin);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 
 	@Then("^Tap on Next button and verify the navigated screen for payee SALIK$")
@@ -266,7 +266,7 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the nick name of Landline1$")
 	public void enter_the_nick_name_of_Landline1() throws Throwable {
 		enterText(CON_NICK, Pay_nick_Landline1);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 	
 	@Then("^Enter the nick name of WASEL$")
@@ -344,7 +344,7 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	public void enter_the_valid_consumer_number_Landline1(){
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_Landline1);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 	
 	@Then("^enter the valid consumer number Al SHAMIL$")

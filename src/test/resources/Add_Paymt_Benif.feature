@@ -230,7 +230,7 @@ Feature: Add a payment beneficiary-Consumer number
 		Then Enter the DEWA nick name
 		Then Tap on next button and verify the validation message1
 		Then Enter the consumer number more than 10 digits
-		And Tap on next button and verify the validation message3
+		And Tap on next button and verify the validation message1
 		
 		@Payment_111 @add_pay_beni16 @reset
 	 Scenario: Payment_111:Able to add a payment beneficiary-Consumer number digits less or more number of digits- for ADDC  Utility.

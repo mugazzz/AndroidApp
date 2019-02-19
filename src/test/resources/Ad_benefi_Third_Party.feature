@@ -1,7 +1,7 @@
 @Ad_Ben_Third_Party @sprint4 @sprint4_5 @sprint4-6 @transfers
 Feature: I should be able to add a beneficiary for Third Party Accounts 
 
-## Remove all benificary accounts for 960000
+## Remove all benificary accounts for 950000
 
 @Ad_Ben_Third_Party0 @Transfer_82
 Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number- biometric is enabled

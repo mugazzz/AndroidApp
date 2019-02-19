@@ -2,6 +2,8 @@
 Feature: Edit and delete payee
 I should able to edit and delete payee
 
+# Add payees for account 950000
+
   @edit_delete_pay0
   Scenario: Edit Payees nickname and verify the details
    Given Verify the login check tran_9500000
