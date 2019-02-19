@@ -12,10 +12,10 @@ public class AppStrings {
 	    public static final String customerSms = "123456";
     
     //Credit Card Registration
-	    //public static final String Act_Credit_Card_No = "4584610162170809";
-	    public static final String Act_Credit_Card_No = "4714845567915712"; 
-//	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
-//	    public static final String Act_Credit_Card_Pin_Specific = "1234";
+	    public static final String Act_Credit_Card_No = "4584610162170809";
+//	    public static final String Act_Credit_Card_No = "4714845567915712"; 
+	    public static final String Act_Credit_Card_No_Specific = "4584610105853560";
+	    public static final String Act_Credit_Card_Pin_Specific = "1234";
 	    public static final String Exp_Credit_Card_No = "4584610168800037";
 	    public static final String Inactive_Credit_Card_No = "4584610169749803";
 	    public static final String Inactive_Credit_Card_Pin = "2345";
@@ -44,8 +44,9 @@ public class AppStrings {
 	    
 	//Customer Number Registration
 	    public static final String Act_Cust_No3 = "9677570";
-	    public static final String Act_Cust_No = "7799712";
+	    public static final String Act_Cust_No = "8326602";
 	    public static final String Act_Cust_No1 = "9677570";
+	    public static final String Card_Sec_Ver = "9677570";
 	    public static final String Act_Cust_No2 = "5000436";
 	    public static final String Act_Cust_No_Acc = "7799712";
 	    public static final String Act_SMS_PN = "123456";
@@ -168,6 +169,19 @@ public class AppStrings {
 	  //Transfers
 	    public static final String Tran_amt = "1.00";
 	    public static final String Remark = "Remark Testing";
+	    
+	    
+	    //CardDetails
+	    public static final String CardDetail_Limit_Txt = "Available card limit";
+	    public static final String Tot_OutStanding_Bal_Txt = "Total outstanding balance";
+	    public static final String Card_Number_Txt ="Card number";
+	    public static final String Statement_Balance_Txt ="Statement balance";
+	    public static final String Statement_Date_Txt ="Statement date";
+	    public static final String Minimum_Amt_Txt ="Minimum amount due";
+	    public static final String Card_Owner_Txt ="Card owner";
+	    public static final String Card_Status_Txt ="Card status";
+	    public static final String Total_Card_Limit_Txt ="Total card limit";
+	    
 	    
 	  
 

@@ -115,6 +115,7 @@ public class Locators {
 	public static final By ACT_DEPOSIT_ACC2 = By.xpath("//android.widget.TextView[@text='AE05 0530 0000 2444 6919 010']");
 	
 	
+	public static final By DASHBOARD_SEGMENT = By.id("segAccounts");
 	public static final By CARD_LABEL = By.xpath("//android.widget.TextView[@text='Cards']");
 	public static final By VISA_GOLD = By.xpath("//android.widget.TextView[@text='Smart Platinum No Fee']");
 	public static final By CURRENT_ACC_LST = By.xpath("//android.widget.TextView[@text='Current Account']");
@@ -158,7 +159,7 @@ public class Locators {
 	public static final By STA_YEAR_PIC = By.xpath("//android.widget.TextView[@text='2015']");
 	public static final By STA_YEAR_PIC1 = By.xpath("//android.widget.TextView[@text='2017']");
 	public static final By START_OK = By.id("button1");
-	public static final By SEARCH_BTN = By.id("btnSearch");
+	public static final By SEARCH_BTN = By.id("lblSearch");
 	public static final By STA_YEARs = By.id("Filter is not working fine");
 	public static final By ADD_RANGE = By.id("lblAddRangeTitleTwo");
 	public static final By REMOVE_RANGE = By.id("lblAddRangeTitleOne");
@@ -170,6 +171,9 @@ public class Locators {
 	public static final By START_DATE_ONLY = By.id("calStartDate");
 	
 	//Cards Detail
+	public static final By CARD_DET_ACC_INFO = By.id("segAccountInformation");
+	public static final By SEG_CARD_DET = By.id("segCardDetails");
+	public static final By CARD_SEG_ACC_DET = By.id("segAccDetails");
 	public static final By CARD_SLIDE = By.id("flxAHBCards");
 	public static final By AVL_CRD_LMT_LB = By.xpath("//android.widget.TextView[@text='Available card limit']");
 	public static final By AVL_CRD_LMT_VL = By.xpath("//android.support.v7.widget.RecyclerView[@index='1']/android.view.ViewGroup[@index='1']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");
@@ -182,8 +186,15 @@ public class Locators {
 	
 	
 	//Additional Card Details:
+	public static final By CARD_DET_ACC_INFO_GROUP = By.id("flxChartsSpending");
+	public static final By CARD_SEG_ACC_DET_GROUP = By.id("flxContent");
+	public static final By SEGMENT_ITEM_KEY = By.id("lblSpending");
+	public static final By SEGMENT_ITEM_VALUE = By.id("lblAmountSpent");
+	public static final By CARD_SEG_ACC_DET_GROUP_KEY = By.id("lblName");
+	public static final By CARD_SEG_ACC_DET_GROUP_VALUE = By.id("lblValue");
+	
 	public static final By ADD_CARD_HD = By.xpath("//android.widget.TextView[@text='Card details']");
-	public static final By CARD_NUM = By.id("lblCurrentAccount");
+	public static final By CARD_NAME = By.id("lblCurrentAccount");
 	public static final By ACC_AMOUNT = By.id("lblAmount");
 	public static final By AVL_CRD_LMT_LB_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='0']");
 	public static final By AVL_CRD_LMT_VL_A = By.xpath("//android.support.v7.widget.RecyclerView[@index='2']/android.view.ViewGroup[@index='0']/android.widget.TextView[@index='1']");

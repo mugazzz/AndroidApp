@@ -60,6 +60,7 @@ public class AppiumHelpers {
         Assert.assertTrue("The " + element + "is not as expected", value);
     }
 
+    
     public void assertFalse(Boolean value, String element) {
         Assert.assertFalse("The " + element + "is as expected", value);
     }

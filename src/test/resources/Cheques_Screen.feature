@@ -1,7 +1,7 @@
-@cheques_screen @sprint3 @sprint1-3 @acc
+@cheques_screen @sprint3 @sprint1-3 @acc @reset
 Feature: Able to view all my cheques
 
-@TC_Cheques_32_1 @cheques_screen1 @reset
+@TC_Cheques_32_1 @cheques_screen1
 Scenario: Able to view all my cheques - Using Dates filter
 	Given Verify the login check account
 	And Verify the user redirected to Dashboard screen successfully

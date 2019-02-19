@@ -1,9 +1,11 @@
 @card_section @sprint3 @sprint1-3 @acc
 Feature: Card Section Verification
 
-@card_section1 @TC_Cards_27_1 @reset
+
+
+@card_section1 @TC_Cards_27_1
 Scenario: Able to view all my cards and their details
-	Given Verify the login check
+	Given Verify the login check Card
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on Chart Size toggle button to mimize the chart
 	And Check the My Cards section is available for user
@@ -13,7 +15,7 @@ Scenario: Able to view all my cards and their details
 	
 @card_section2 @TC_Cards_27_4 @reset
 Scenario: Bill payment from cards should show for specific card statuses
-	Given Verify the login check
+	Given Verify the login check Card
 	And Verify the user redirected to Dashboard screen successfully
 	Then Tap on Chart Size toggle button to mimize the chart
 	And Check the My Cards section is available for user
