@@ -29,9 +29,11 @@ public class Tran_Anoth_AHB_Card_Page extends CommonPage{
 		clickOnElement(SEL_CUR);
 		clickOnElement(SEL_AED);
 		enterText(AHB_CARD, Act_Credit_Card_No);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		enterText(REMARK, Remark);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(SUB_SCHED);
 		appiumHelpers.waitForVisibilityOfElement(SCHED_HD);
 		Select_Mode(SEL_YEAR);
@@ -67,9 +69,11 @@ public class Tran_Anoth_AHB_Card_Page extends CommonPage{
 		clickOnElement(SEL_CUR);
 		clickOnElement(SEL_AED);
 		enterText(AHB_CARD, Act_Credit_Card_No);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		enterText(REMARK, Remark);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(SUB_SCHED);
 		appiumHelpers.waitForVisibilityOfElement(SCHED_HD);
 		Select_Mode(SEL_YEAR);

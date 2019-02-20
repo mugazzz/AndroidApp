@@ -1,4 +1,4 @@
-@edit_delete_pay @sprint6 @sprint4-6 @payment
+@edit_delete_pay @sprint6 @sprint4-6 @payment @reset
 Feature: Edit and delete payee
 I should able to edit and delete payee
 

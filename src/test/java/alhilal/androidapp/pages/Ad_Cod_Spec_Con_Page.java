@@ -10,7 +10,8 @@ public class Ad_Cod_Spec_Con_Page extends CommonPage{
 	public void Enter_Acc_Swifs(String Acc_Num, String Swif_Code) {
 		enterText(ACC_NUM, Acc_Num);
 		enterText(SWIF_COD, Swif_Code);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Verify_Code(By idLocator, String code) {

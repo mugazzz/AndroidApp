@@ -8,7 +8,7 @@ Scenario: Able to add a beneficiary for Third Party Accounts using IBAN number- 
 	Given Verify the login check with Bio clean
 	And Close and relaunch the app
 	Then Login by cancel the login popup
-	And Verify the user redirected to Dashboard screen successfully
+	And Verify the user redirected to Dashboard screen successfully finger
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
 	Then Tap on add beneficiary option and navigate to add beneficiary screen
@@ -78,7 +78,7 @@ Scenario: Able to add a beneficiary  for Third Party Accounts - biometric is ena
 	Given Verify the login check with Bio clean
 	And Close and relaunch the app
 	Then Login by cancel the login popup
-	And Verify the user redirected to Dashboard screen successfully
+	And Verify the user redirected to Dashboard screen successfully finger
 	Then Tap on the transfers icon on tab bar
 	And Select the option tranfer to others
 	Then Tap on add beneficiary option and navigate to add beneficiary screen

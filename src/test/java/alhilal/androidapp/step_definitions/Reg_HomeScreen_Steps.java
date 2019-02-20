@@ -37,7 +37,8 @@ public class Reg_HomeScreen_Steps extends Reg_HomeScreen_Page{
 
 	@Then("^Tap on English to Arabic language button$")
 	public void tap_on_English_to_Arabic_language_button() {
-	    driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	    TapOnArabicButton();
 	}
 
@@ -48,7 +49,8 @@ public class Reg_HomeScreen_Steps extends Reg_HomeScreen_Page{
 	
 	@Then("^Tap on Arabic to English language button$")
 	public void tap_on_Arabic_to_English_language_button() throws Throwable {
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		TapOnEnglishButton();
 	}
 

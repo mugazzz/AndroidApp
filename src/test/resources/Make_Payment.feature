@@ -1,8 +1,8 @@
-@make_payment @sprint6 @payment @sprint4-6
+@make_payment @sprint6 @payment @sprint4-6 @reset
 Feature: Make payment
 I should be able to make a payment 
 
-@makePayment0 @invalidPayment @reset
+@makePayment0 @invalidPayment
  	Scenario: Able to make a payment - validate with invalid amount
 	Given Verify the login check tran_960000
 	And Verify the user redirected to Dashboard screen successfully

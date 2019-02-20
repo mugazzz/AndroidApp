@@ -36,17 +36,20 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Enter_IBAN_Num() {
 		enterText(ENT_IBAN, iban);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Enter_IBAN_Num2() {
 		enterText(ENT_IBAN, iban_2);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Enter_Incoi_IBAN_Num() {
 		enterText(ENT_IBAN, inc_iban);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Tap_Next_Btn() {
@@ -57,18 +60,21 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Enter_Nick_Name() {
 		enterText(NICK_NAME, Nick_Name);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Enter_Nick_Name4() {
 		enterText(NICK_NAME, Nick_Name4);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void  Enter_Names(String Full_Nam, String Nick_Nam) {
 		 enterText(FUL_NAME, Full_Nam);
 		 enterText(NICK_NAME, Nick_Nam);
-			driver.hideKeyboard();
+//			driver.hideKeyboard();
+		 hideKeyboard();
 	}
 	
 	
@@ -204,7 +210,8 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	public void Enter_Acc_Swif() {
 		enterText(ACC_NUM, Acc_Num);
 		enterText(SWIF_COD, Swif_Code);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Nav_Con_Code() {
@@ -214,28 +221,30 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Dup_Validation() {
 		//appiumHelpers.waitForVisibilityOfElement();
-		String xmlFormat = driver.getPageSource();
-		assertThat(xmlFormat, CoreMatchers.containsString(DUP_NICK));
-		//Verify_Validation_Message(DUP_NICK);
+//		String xmlFormat = driver.getPageSource();
+//		assertThat(xmlFormat, CoreMatchers.containsString(DUP_NICK));
+		Verify_Validation_Message(DUP_NICK);
 	}
 	
 	public void Dup_iban_Validation() {
 		//appiumHelpers.waitForVisibilityOfElement();
-		//Verify_Validation_Message(DUP_IBAN);
-		String xmlFormat = driver.getPageSource();
-		assertThat(xmlFormat, CoreMatchers.containsString(DUP_IBAN));
+		Verify_Validation_Message(DUP_IBAN);
+//		String xmlFormat = driver.getPageSource();
+//		assertThat(xmlFormat, CoreMatchers.containsString(DUP_IBAN));
 	}
 	
 	public void Ent_Con_Cod() {
 		enterText(CONT_COD, Con_Tm);
 		//driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(CONT_SKIP);
 		appiumHelpers.waitForVisibilityOfElement(FUL_NAME);
 	}
 	
 	public void Ent_AHB_Acc() {
 		enterText(ACC_NUM, AHB_ACC);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Enter_Full_Name_ahb() {
@@ -249,7 +258,8 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	public void Enter_Acc_Incor_Swif() {
 		enterText(ACC_NUM, Acc_Num);
 		enterText(SWIF_COD, Incor_Swif_Code);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Veri_Vali() {

@@ -155,14 +155,14 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	
 	public void Third_PartyApp1() {
 		OTP();
-		if(elemenDoesnotExists(SUCCESS_PAGE)){
-			clickOnElement(RESEND_OTP);
-			OTP();	
-		}
-		else {
-			System.out.println("test");
-		}
-	
+//		if(elemenDoesnotExists(SUCCESS_PAGE)){
+//			clickOnElement(RESEND_OTP);
+//			OTP();	
+//		}
+//		else {
+//			System.out.println("test");
+//		}
+//	
 	}
 	
 	public void Third_PartyApp2() {
@@ -205,7 +205,8 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
 			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
 			 driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-			 driver.hideKeyboard();
+//				driver.hideKeyboard();
+				hideKeyboard();
 			 clickOnElement(CRE_LOGIN_PIN_CF);
 		}
 		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
@@ -215,7 +216,8 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	
 	public void EnableFingerPrint() {
 		try {
-			driver.hideKeyboard();
+//			driver.hideKeyboard();
+			hideKeyboard();
 		}
 		catch(Exception e) {
 			System.out.println(e);

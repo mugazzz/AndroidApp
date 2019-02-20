@@ -16,6 +16,12 @@ public class Login_Using_Pin_Page extends CommonPage{
 	appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
 	
+	public void Verify_Dashboard_login() {
+		driver.navigate().back();
+		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
+		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
+		}
+	
 	public void Enter_Login_Incorrect_Pin() {
 		enterText(LOGIN_PIN_FD, Renter_Pin);
 	}

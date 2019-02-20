@@ -200,7 +200,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
-		Then Select any local third party account and navigate to transfers screen1
+		Then Select any local third party account and navigate to transfers screen96677
 		And Tap on from account and select the current account
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
@@ -220,7 +220,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
-		Then Select any local third party account and navigate to transfers screen1
+		Then Select any local third party account and navigate to transfers screen96677
 		And Tap on from account and select the current account
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
@@ -240,7 +240,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
-		Then Select any local third party account and navigate to transfers screen1
+		Then Select any local third party account and navigate to transfers screen96677
 		And Tap on from account and select the current account
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency
@@ -280,7 +280,7 @@ Feature: Set recurring transfers
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
-		Then Select any local third party account and navigate to transfers screen1
+		Then Select any local third party account and navigate to transfers screen96677
 		And Tap on from account and select the current account
 		Then Verify the available balance amount appears
 		When Enter the amount and change the currency

@@ -13,12 +13,14 @@ public class Set_Recur_Trans_Page extends CommonPage {
 	
 	public void Enter_AHB() {
 		enterText(AHB_CARD, Act_Credit_Card_No);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Enter_OWN() {
 		enterText(AHB_CARD, Own_Credit_Card_No);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Confirm_OTP() {

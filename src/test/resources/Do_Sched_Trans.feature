@@ -1,10 +1,10 @@
-@do_sche_tran @sprint5 @sprint4_5 @sprint4-6 @transfers
+@do_sche_tran @sprint5 @sprint4_5 @sprint4-6 @transfers @reset
 Feature: Perform scheduled transfers
   I should be able to perform scheduled transfers
 
 ## Use CIF number 9667733
 
-  @do_sche_tran0 @Transfers_140 @reset
+  @do_sche_tran0 @Transfers_140
   Scenario: Able to perform scheduled transfers - Scheduled Amount is greater than current amount
     Given Verify the login check scheduled tran
 		And Verify the user redirected to Dashboard screen successfully
@@ -24,7 +24,7 @@ Feature: Perform scheduled transfers
 		#Then Verify the transfer details
 		And Tap confirm button and verify the screen redirected to successfully transfered screen
 
-	@do_sche_tran1 @Transfers_225 @reset
+	@do_sche_tran1 @Transfers_225
   Scenario: Able to perform scheduled transfers -Scheduled Amount is greater than current amount
     Given Verify the login check scheduled tran
 		And Verify the user redirected to Dashboard screen successfully

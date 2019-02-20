@@ -100,11 +100,12 @@ public class AppStrings {
 	    public static final String OTP_Validation = "The One Time Password you entered is incorrect. Please try again or click re-send OTP to receive a new one";
 	    public static final String INVALID_SWIFT = "You have entered an invalid SWIFT code";
 	    public static final String INVALID_IBAN = "You have entered an invalid IBAN";
-	    public static final String DUP_NICK = "You already have a beneficiary registered with the same nickname";
+	    public static final String DUP_NICK = "You already have a beneficiary registered with the same account details";
 	    public static final String DUP_IBAN = "You already have a beneficiary registered with the same account details";
 	    public static final String Great_val = "The transfer amount entered is greater than the selected account's balance";
-	    public static final String Great_val1 = "You don't have an account with sufficient funds";
-	    public static final String Limit_Tran = "You have exceeded the transactional limit for Transfer to others";
+	    public static final String Great_val_enter = "The transfer amount entered is greater than the selected account's balance";
+	    public static final String Great_val1 = "You don’t have enough balance currently to perform this transfer, please ensure you have enough balance at the date of the transfer";
+	    public static final String Limit_Tran = "You have exceeded the transactional limit for";
 	    public static final String Incorrect_Cons = "Consumer number not recognized. Please enter a valid consumer number";
 	    public static final String Mul_Vala = "Maximum number of payees has been selected";
 	    public static final String Valid_Mul = "Consumer number not recognized. Please enter a valid consumer number";
@@ -185,12 +186,15 @@ public class AppStrings {
 	   
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
-	    public static final String Tran_amt3 = "110,000.00";
-	    public static final String Tran_amt4 = "100,000.00";
-	    public static final String Tran_amt2 = "30,000.00";
+	    public static final String Tran_amt3 = "110000.00";
+	    public static final String Tran_amt4 = "100000.00";
+	    public static final String Tran_amt2 = "30000.00";
+	    public static final String Tran_amt3r = "110,000.00";
+	    public static final String Tran_amt4r = "100,000.00";
+	    public static final String Tran_amt2r = "30,000.00";
 	    public static final String Tran_amt1 = "9000000000000";
 	    public static final String Remark = "Remark Testing";
-	    public static final String Reason_c = "Charitable contributions";
+	    public static final String Reason_c = "Family support";
 	    public static final String Charge_c = "By myself";
 	    public static final String Tran_Mode = "Yearly";
 	   

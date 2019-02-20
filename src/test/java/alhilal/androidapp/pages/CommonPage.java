@@ -20,10 +20,12 @@ import java.util.concurrent.TimeUnit;
 
 import alhilal.androidapp.utils.AppiumHelpers;
 import alhilal.androidapp.utils.ConfigDriver;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.HasDeviceDetails;
 import io.appium.java_client.android.StartsActivity;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.WaitOptions;
@@ -59,6 +61,24 @@ public class CommonPage extends ConfigDriver {
     
     public void enterText(By idLocator, String keys) {
         driver.findElement(idLocator).sendKeys(keys);
+    }
+    
+    public void hideKeyboard() {
+    	try 
+    	{
+//    	if(Adriver == null)
+//    	{
+//    		Adriver = new AndroidDriver(null);
+//    	}
+    		if(driver.isKeyboardShown()) {
+    			driver.hideKeyboard();
+        	}
+    	}
+    	catch (Exception ex)
+    	{
+    		System.out.println("So "+ex);
+    	}
+    	
     }
     
     public void enterText_Runtime(String text) {
@@ -237,6 +257,7 @@ public class CommonPage extends ConfigDriver {
 		OTP();
 		if(elemenDoesnotExists(ALL_SET)){
 			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+				hideKeyboard();
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
@@ -272,6 +293,7 @@ public class CommonPage extends ConfigDriver {
 		OTP();
 		if(elemenDoesnotExists(ALL_SET)){
 			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+			hideKeyboard();
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
@@ -306,6 +328,7 @@ public class CommonPage extends ConfigDriver {
 		OTP();
 		if(elemenDoesnotExists(ALL_SET)){
 			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+				hideKeyboard();
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
@@ -322,7 +345,7 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
 		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
 		clickOnElement(ENABLE_FINGERPRINTS);
-//		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
+		appiumHelpers.waitForVisibilityOfElement(FING_CANCEL);
 //		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
 

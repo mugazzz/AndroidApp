@@ -23,7 +23,8 @@ public class Add_Pay_Conf_Page extends CommonPage{
 	
 	public void Enter_Inv_OTP() {
 		clickOnElement(CTN);
-		enterText(OPT_FIELD, InvOTP);
+		//enterText(OPT_FIELD, InvOTP);
+		enterText_Runtime(InvOTP);
 	}
 	
 	public void Verify_Inv_OTP() {

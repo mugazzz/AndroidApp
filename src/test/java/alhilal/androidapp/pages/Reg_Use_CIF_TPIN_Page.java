@@ -18,7 +18,8 @@ public class Reg_Use_CIF_TPIN_Page extends CommonPage {
 	}
 	
 	public void Tap_On_Next() {
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(REG_CUS_TPIN_NT);
 	}
 	

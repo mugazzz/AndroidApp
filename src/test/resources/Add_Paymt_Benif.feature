@@ -64,7 +64,7 @@ Feature: Add a payment beneficiary-Consumer number
    Given Verify the login check with Bio clean
 	And Close and relaunch the app
 	Then Login by cancel the login popup
-		And Verify the user redirected to Dashboard screen successfully
+		And Verify the user redirected to Dashboard screen successfully finger
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
 		Then Tap on Add payee option and navigate to add payee screen
@@ -79,7 +79,7 @@ Feature: Add a payment beneficiary-Consumer number
    Given Verify the login check with Bio clean
 	And Close and relaunch the app
 	Then Login by cancel the login popup
-		And Verify the user redirected to Dashboard screen successfully
+		And Verify the user redirected to Dashboard screen successfully finger
 		Then Tap on the pay bills icon on tab bar
 		And Tap on Make a payment tab
 		Then Tap on Add payee option and navigate to add payee screen

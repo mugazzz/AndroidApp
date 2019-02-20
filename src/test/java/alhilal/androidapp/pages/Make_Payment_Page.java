@@ -31,12 +31,14 @@ public class Make_Payment_Page  extends CommonPage
 	public void enterValidAmount()
 	{
 		enterText(Pay_amount, Payment_Amount_Valid );
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	public void enterInvalidAmount()
 	{
 		enterText(Pay_amount, Payment_Amount_InValid );
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	

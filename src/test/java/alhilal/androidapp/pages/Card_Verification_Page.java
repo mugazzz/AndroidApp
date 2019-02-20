@@ -270,6 +270,7 @@ public class Card_Verification_Page extends CommonPage{
 		clickOnElement(FING_CANCEL);
 		//enterText(LOGIN_PIN_FD, Enter_Pin);
 		enterText_Runtime(Enter_Pin);
+		//hideKeyboard();
 	}
 	
 	public void Verify_Absence_Card_Section() {

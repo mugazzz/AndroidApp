@@ -36,6 +36,7 @@ public class Edit_Del_Payee_Page extends CommonPage{
 		driver.findElement(Edit_Payee_Text).clear();
 		enterText(Edit_Payee_Text, Edit_Payee_name);
 //		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Tap_Cnt_Ver() {

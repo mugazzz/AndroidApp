@@ -91,19 +91,22 @@ public class Cheques_Screen_Pages extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
 		enterText(CHEQ_FROM, Cheque_from);
 		enterText(CHEQ_TO, Cheque_to);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Add_To_Cheque_numbers() {
 		appiumHelpers.waitForVisibilityOfElement(CHEQ_TO);
 		enterText(CHEQ_TO, Cheque_to_1);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Add_From_Cheque_numbers() {
 		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
 		enterText(CHEQ_FROM, Cheque_from_1);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Verify_Search_Result_Check_Number() {
@@ -144,14 +147,16 @@ public class Cheques_Screen_Pages extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(AMOUNT_FROM);
 		enterText(AMOUNT_FROM, Amount_from);
 		enterText(AMOUNT_TO, Amount_to);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Add_Amount_Values_Max_min() {
 		appiumHelpers.waitForVisibilityOfElement(AMOUNT_FROM);
 		enterText(AMOUNT_FROM, Amount_to);
 		enterText(AMOUNT_TO, Amount_from);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(SEARCH_BTN);
 	}
 	
@@ -359,14 +364,16 @@ public class Cheques_Screen_Pages extends CommonPage{
 		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
 		enterText(CHEQ_FROM, Cheque_to);
 		enterText(CHEQ_TO, Cheque_from);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(SEARCH_BTN);
 	}
 	
 	public void Ente_incorrect_Cheque_number() {
 		appiumHelpers.waitForVisibilityOfElement(CHEQ_FROM);
 		enterText(CHEQ_FROM, Cheque_from_incorrect);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 		clickOnElement(SEARCH_BTN);
 	}
 	
@@ -403,13 +410,15 @@ public class Cheques_Screen_Pages extends CommonPage{
 	public void Add_Only_To_Amount_Values() {
 		appiumHelpers.waitForVisibilityOfElement(AMOUNT_TO);
 		enterText(AMOUNT_TO, Amount_to_1);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Add_Only_From_Amount_Values() {
 		appiumHelpers.waitForVisibilityOfElement(AMOUNT_FROM);
 		enterText(AMOUNT_FROM, Amount_from_1);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	public void Verify_Search_Result_For_start() {

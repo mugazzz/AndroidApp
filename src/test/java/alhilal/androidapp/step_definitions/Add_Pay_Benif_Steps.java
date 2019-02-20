@@ -42,19 +42,22 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the DEWA nick name$")
 	public void enter_the_DEWA_nick_name() {
 		enterText(CON_NICK, Pay_nick3);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the DEWA nick name1$")
 	public void enter_the_DEWA_nick_name1() {
 		enterText(CON_NICK, Pay_nick4);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the DEWA nick name2$")
 	public void enter_the_DEWA_nick_name2() {
 		enterText(CON_NICK, Pay_nick6);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Select the service provider ADDC$")
@@ -71,7 +74,8 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the AADC nick name$")
 	public void enter_the_AADC_nick_name() {
 		enterText(CON_NICK, Pay_nick2);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the AADC consumer number1$")
@@ -82,7 +86,8 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the AADC nick name1$")
 	public void enter_the_AADC_nick_name1() {
 		enterText(CON_NICK, Pay_nick5);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Select the service provider AADC$")
@@ -115,7 +120,8 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the ADDC nick name$")
 	public void enter_the_ADDC_nick_name() {
 		enterText(CON_NICK, Pay_nick1);
-		//driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Select the service provider Salik$")
@@ -132,13 +138,15 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the salik nick name$")
 	public void enter_the_salik_nick_name() {
 		enterText(CON_NICK, Pay_nick);
-		//driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the salik PIN number$")
 	public void enter_the_salik_pin_name() {
 		enterText(CON_PIN, Pay_pin);
-		//driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 
 	@Then("^Tap on Next button and verify the navigated screen for payee SALIK$")
@@ -254,37 +262,43 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	@Then("^Enter the consumer number less than 9 digits$")
 	public void enter_the_consumer_number_less_than_digits() {
 		enterText(CON_NUMB, Pay_Cons_GSM_8);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 
 	@Then("^Enter the nick name of Landline$")
 	public void enter_the_nick_name_of_Landline() throws Throwable {
 		enterText(CON_NICK, Pay_nick_Landline);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();;
 	}
 	
 	@Then("^Enter the nick name of Landline1$")
 	public void enter_the_nick_name_of_Landline1() throws Throwable {
 		enterText(CON_NICK, Pay_nick_Landline1);
-		//driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the nick name of WASEL$")
 	public void enter_the_nick_name_of_WASEL() throws Throwable {
 		enterText(CON_NICK, Pay_nick_wasel);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the nick name of Al SHAMIL$")
 	public void enter_the_nick_name_of_SHAMIL() throws Throwable {
 		enterText(CON_NICK, Pay_nick_SHAMIL);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^Enter the nick name of etisalat$")
 	public void enter_the_nick_name_of_etisalat() throws Throwable {
 		enterText(CON_NICK, Pay_nick_gsm);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 
 	@Then("^Tap the next button and verify the navigated screen for payee GSM$")
@@ -316,42 +330,48 @@ public class Add_Pay_Benif_Steps extends Add_Pay_Benifi{
 	public void enter_the_consumer_number_more_than_digits() {
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_GSM_11);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 
 	@Then("^enter the valid consumer number$")
 	public void enter_the_valid_consumer_number(){
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_GSM);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^enter the valid consumer number WASEL$")
 	public void enter_the_valid_consumer_number_wasel(){
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_WASEL);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^enter the valid consumer number Landline$")
 	public void enter_the_valid_consumer_number_Landline(){
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_Landline);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^enter the valid consumer number Landline1$")
 	public void enter_the_valid_consumer_number_Landline1(){
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_Landline1);
-		//driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 	
 	@Then("^enter the valid consumer number Al SHAMIL$")
 	public void enter_the_valid_consumer_number_ASHAMIL(){
 		driver.findElement(CON_NUMB).clear();
 		enterText(CON_NUMB, Pay_Cons_SHAMIL);
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		hideKeyboard();
 	}
 
 	

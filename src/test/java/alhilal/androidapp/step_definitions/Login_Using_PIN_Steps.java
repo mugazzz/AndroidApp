@@ -22,6 +22,11 @@ public class Login_Using_PIN_Steps extends Login_Using_Pin_Page{
 	public void verify_the_user_redirected_to_Dashboard_screen_successfully() {
 	   Verify_Dashboard();
 	}
+	
+	@Then("^Verify the user redirected to Dashboard screen successfully finger$")
+	public void verify_the_user_redirected_to_Dashboard_screen_successfully_login() {
+	   Verify_Dashboard_login();
+	}
 
 	@Then("^Enter the incorrect Login PIN$")
 	public void enter_the_incorrect_Login_PIN() {

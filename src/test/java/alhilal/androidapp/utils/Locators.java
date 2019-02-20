@@ -301,21 +301,24 @@ public class Locators {
 	
 	//Transfer Amount
 	public static final By THIRD_ACC = By.xpath("//android.widget.TextView[@text='HDFC BANK LIMITED - 1031 0001 873']");
+	public static final By THIRD_ACC_96 = By.xpath("//android.widget.TextView[@text='ThirdParty']");
 	public static final By CARD_ACC = By.xpath("//android.widget.TextView[@text='Smart Platinum No Fee']");
 	public static final By THIRD_ACC1 = By.id("flxScheduledTransfer");
 	public static final By LOC_THIRD_ACC = By.xpath("//android.widget.TextView[@text='otherThird1']");
-	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE44 0530 0000 2966 7733 012	']");
-	public static final By LOC_THIRD_ACC1 = By.xpath("//android.widget.TextView[@text='ABU DHABI ISLAMIC BANK - 2639 2828']");
+	public static final By LOC_THIRD_ACC_96 = By.xpath("//android.widget.TextView[@text='LocalThird']");
+	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE44 0530 0000 2966 7733 012']");
+	public static final By LOC_THIRD_ACC1 = By.xpath("//android.widget.TextView[@text='Local Thrid Party']");
+	public static final By LOC_THIRD_ACC_96677 = By.xpath("//android.widget.TextView[@text='Wassim']");
 	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='Al Hilal Bank - 4041 9840 27']");
 	public static final By FROM_ACC = By.id("lblFromAccount1");
 	public static final By FROM_ACC_DATA = By.id("lblFromAccountData");
 	public static final By FROM_ACC_PAYE = By.id("lblCustFromAcc");
-	public static final By FROM_ACC_DATA1 = By.id("lbxFromAcc");
+	public static final By FROM_ACC_DATA1 = By.id("lblFromAccountData");
 	public static final By TRAN_AMT = By.id("tbxTransferAmount");
 	public static final By AVAI_AMT = By.id("lblAvailableAmount");
 	public static final By AVAI_AMT1 = By.id("lblAvbBal");
 	public static final By IND_AMT = By.id("lblIndicativeAmount");
-	public static final By SEL_CUR = By.id("lbxCurrency");
+	public static final By SEL_CUR = By.id("lblCurrency");
 	public static final By CUR_ACC_AMT = By.xpath("//android.widget.TextView[@text='Current account - 9667733028']");
 	public static final By CUR_ACC_AMT2 = By.xpath("//android.widget.TextView[@text='Current account - 1212115018']");
 	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.TextView[@text='Current account - 9600000029']");
@@ -326,8 +329,8 @@ public class Locators {
 	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.TextView[@text='Saving account - 7799712004']");
 	public static final By SAV_ACC_AMT2 = By.xpath("//android.widget.TextView[@text='Saving account 9600000018']");
 	public static final By CARD_C = By.xpath("//android.widget.TextView[@text='Credit card 458461******0400']");
-	public static final By SEL_CHAR = By.id("lbxChargesData");
-	public static final By SEL_REASON = By.id("lbxReasonData");
+	public static final By SEL_CHAR = By.id("lblChargesData");
+	public static final By SEL_REASON = By.id("lblReasonData");
 	public static final By SEL_REASONS = By.xpath("//android.widget.TextView[@text='Family support']");
 	public static final By REMARK = By.id("txtAreaRemarks");
 	public static final By SEL_ME = By.xpath("//android.widget.TextView[@text='By myself']");
@@ -355,15 +358,17 @@ public class Locators {
 	public static final By INAC_CUR_ACC1 = By.xpath("//android.widget.TextView[@text='Current account - 1212115002']");
 	public static final By INAC_CUR_ACC2 = By.xpath("//android.widget.TextView[@text='Current account - 1212115002']");
 	public static final By CONT_BUT = By.id("btnContinue");
+	public static final By CONF_BTN = By.id("btnConfirm");
+	public static final By CONT_LBL = By.id("lblContinue");
 	public static final By MY_ACC = By.id("lblNavigate");
 	
 	//Scheduled Transfers
 	public static final By SUB_SCHED = By.id("btnSubmit");
 	public static final By SCHED_HD = By.id("lblFrequencyHeading");
-	public static final By SEL_MOD = By.id("lbxFrequency");
+	public static final By SEL_MOD = By.id("lblFreqVal");
 	public static final By SEL_DAI = By.xpath("//android.widget.TextView[@text='Daily']");
 	public static final By SEL_D = By.id("calScheduleDate");
-	public static final By DATE_NXT = By.id("next");		;
+	public static final By DATE_NXT = By.id("android:id/next");		;
 	public static final By SEL_DATE = By.xpath("//android.view.View[@text='28']");
 	public static final By SEL_OK = By.xpath("//android.widget.Button[@text='OK']");
 	public static final By DATE_CTN = By.id("btnContinue");
@@ -404,7 +409,7 @@ public class Locators {
 	//Payments
 	public static final By PAY_BILL = By.id("flxBillPay");
 	public static final By FLX_PAYEE = By.id("flxPayees");
-	public static final By PAY_MANAGE = By.id("flxManage");
+	public static final By PAY_MANAGE = By.id("lblManage");
 	public static final By ADD_PAYEE = By.id("lblAddPayee");
 	public static final By SELECT_SERVICE = By.id("lblServProvData");
 	public static final By ADDC = By.xpath("//android.widget.TextView[@text='ADDC']");
@@ -459,7 +464,7 @@ public class Locators {
 	public static final By GSM4 = By.xpath("//android.widget.TextView[@text='GSM']");
 	public static final By Sel_Shamil3 = By.xpath("//android.widget.TextView[@text='ALSHAMIL3']");
 	public static final By Sel_Shamil1 = By.xpath("//android.widget.TextView[@text='Al Shamil1']");
-	public static final By Pay_all = By.id("btnPayAllSeleted");
+	public static final By Pay_all = By.id("lblPayAllSeleted");
 	public static final By Out_Stand = By.id("lblTotalAmt");
 	public static final By Continue = By.id("btnContinue");
 	public static final By Sucess_mess = By.xpath("//android.widget.TextView[@text='Your transfer has been submitted successfully!']");
