@@ -186,10 +186,10 @@ public class AppStrings {
 	   
 	 //Transfer amount
 	    public static final String Tran_amt = "1.00";
-	    public static final String Tran_amt3 = "110000.00";
+	    public static final String Tran_amt3 = "108000.00";
 	    public static final String Tran_amt4 = "100000.00";
 	    public static final String Tran_amt2 = "30000.00";
-	    public static final String Tran_amt3r = "110,000.00";
+	    public static final String Tran_amt3r = "108,000.00";
 	    public static final String Tran_amt4r = "100,000.00";
 	    public static final String Tran_amt2r = "30,000.00";
 	    public static final String Tran_amt1 = "9000000000000";

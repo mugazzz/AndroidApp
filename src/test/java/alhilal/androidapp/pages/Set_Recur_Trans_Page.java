@@ -24,7 +24,7 @@ public class Set_Recur_Trans_Page extends CommonPage {
 	}
 	
 	public void Confirm_OTP() {
-		clickOnElement(CONT_BUT);
+		clickOnElement(CONT_LBL);
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 	}
 	

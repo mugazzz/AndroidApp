@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import alhilal.androidapp.utils.AppiumHelpers;
@@ -35,7 +36,7 @@ import io.appium.java_client.touch.offset.ElementOption;
 public class CommonPage extends ConfigDriver {
 
     protected AppiumHelpers appiumHelpers = new AppiumHelpers();
-
+    
     public void clickOnElement(By element) {
         appiumHelpers.waitForVisibilityOfElement(element);
         driver.findElement(element).click();
@@ -348,5 +349,32 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(FING_CANCEL);
 //		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
+    
+    
+   // Segment selection
+    
+    public String getValueForKeyInSegment( By segment ,By segmentitem ,By KEY_ID , By VALUE_ID , String Key)
+	{
+		String retVal = null;
+//		 By segmentitem = By.id("flxChartsSpending");
+//		 By KEY_ID = By.id("lblSpending");
+//		 By VALUE_ID = By.id("lblAmountSpent");
+		 
+		 MobileElement parent = (MobileElement)driver.findElement(segment);
+		 List<MobileElement> child1 = parent.findElements(segmentitem);
+		 
+		 
+		 for (MobileElement element : child1)
+		 {
+			 MobileElement labelText_Element = element.findElement(KEY_ID);
+			 MobileElement labelValue_Element = element.findElement(VALUE_ID);
+			 if(labelText_Element.getText().equals(Key))
+			 {
+				 retVal =  labelValue_Element.getText();
+			 }
+		 }
+		 return retVal;
+	}
+	
 
 }

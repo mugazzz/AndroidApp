@@ -225,7 +225,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any third party account and navigate to transfers screen
-		And Tap on from account and select the current account_1000000
+		And Tap on from account and select the current usd account_1000000
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD
 		And Select the from charges pay by and choose Me
@@ -241,7 +241,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any third party account and navigate to transfers screen
-		And Tap on from account and select the current account_1000000
+		And Tap on from account and select the current usd account_1000000
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD
 		And Select the from charges pay by and choose Me
@@ -257,7 +257,7 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Tap on the transfers icon on tab bar
 		And Select the option tranfer to others
 		Then Select any third party account and navigate to transfers screen
-		And Tap on from account and select the current account_1000000
+		And Tap on from account and select the current usd account_1000000
 		Then Verify the available balance amount appears
 		And Enter the Transfer amount and change the currency USD
 		And Select the from charges pay by and choose Me

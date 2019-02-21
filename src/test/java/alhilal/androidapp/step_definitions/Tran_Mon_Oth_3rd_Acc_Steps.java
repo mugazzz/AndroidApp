@@ -93,6 +93,11 @@ public class Tran_Mon_Oth_3rd_Acc_Steps extends Tran_Mon_Oth_3rd_Acc_Page{
 	   Sel_Cur_Acc100000();
 	}
 	
+	@Then("^Tap on from account and select the current usd account_1000000$")
+	public void tap_on_from_account_and_select_the_current_usd_account1000000() throws Throwable {
+	   Sel_Cur_usd_Acc100000();
+	}
+	
 	@Then("^Tap on from account and select the savings account$")
 	public void tap_on_from_account_and_select_the_savings_account() throws Throwable {
 	   Sel_Sav_Acc();

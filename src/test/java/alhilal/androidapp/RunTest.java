@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "json:target/cucumber-reports/cucumber.json", "junit:target/cucumber-reports/Cucumber.xml",
         "html:target/cucumber-reports/html-report", "rerun:target/rerun.txt"},
-		features="src/test/resources", tags="@pay_one_mul9")
+		features="src/test/resources", tags="@Transfer_50")
 
 public class RunTest{
 //private static AppiumDriverLocalService service;

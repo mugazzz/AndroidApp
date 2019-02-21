@@ -324,6 +324,7 @@ public class Locators {
 	public static final By CUR_ACC_AMT3 = By.xpath("//android.widget.TextView[@text='Current account - 9600000029']");
 	public static final By CUR_ACC_AMT3P = By.xpath("//android.widget.TextView[@text='Current account 9600000029']");
 	public static final By CUR_ACC_AMT100000 = By.xpath("//android.widget.TextView[@text='Current account - 7799712002']");
+	public static final By CUR_ACC_USD_AMT100000 = By.xpath("//android.widget.TextView[@text='Saving account - 7799712005']");
 	public static final By CUR_ACC_AMT1 = By.xpath("//android.widget.TextView[@text='Current account - 9677570022']");
 	public static final By SAV_ACC_AMT = By.xpath("//android.widget.TextView[@text='Saving account - 1212115003']");
 	public static final By SAV_ACC_AMT1 = By.xpath("//android.widget.TextView[@text='Saving account - 7799712004']");
