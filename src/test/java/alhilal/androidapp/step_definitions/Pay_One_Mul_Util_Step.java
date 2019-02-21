@@ -68,13 +68,14 @@ public class Pay_One_Mul_Util_Step extends Pay_One_Mul_Util_Page{
 	
 	@Then("^Select more than five utilities for payment$")
 	public void select_GSM_utility_for_payme() throws Throwable {
-		Tap_Element(GSM);
 		Tap_Element(Sel_Shamil);
+		Tap_Element(GSM);
 		Tap_Element(Sel_Shamil2);
-		scrollDown(Sel_Shamil2);
-		Tap_Element(Sel_Shamil3);
+		scrollDown(GSM2);
 		Tap_Element(GSM2);
-		scrollDown(GSM3);
+		Tap_Element(Sel_Shamil3);
+		Tap_Element(GSM3);
+		scrollDown(GSM4);
 		Tap_Element(GSM4);
 	}
 	

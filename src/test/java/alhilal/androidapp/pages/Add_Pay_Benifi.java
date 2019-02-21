@@ -2,6 +2,9 @@ package alhilal.androidapp.pages;
 
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
+import static org.junit.Assert.assertThat;
+
+import org.hamcrest.CoreMatchers;
 
 public class Add_Pay_Benifi extends CommonPage{
 	
@@ -129,7 +132,9 @@ public class Add_Pay_Benifi extends CommonPage{
 	
 	public void Verify_validation_Gsm1() {
 		clickOnElement(NXT);
-		Verify_Validation_Message(GSM_Digiti_Valid1);
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(GSM_Digiti_Valid1));
+		//Verify_Validation_Message(GSM_Digiti_Valid1);
 	}
 	
 	public void Verify_validation_Gsm2() {

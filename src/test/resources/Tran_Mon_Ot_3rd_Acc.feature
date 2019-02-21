@@ -121,11 +121,8 @@ Feature: Transfer money to another local or international third party bank accou
 		Then Select any third party account and navigate to transfers screen
 		And Tap on from account and select the current account_1000000
 		Then Verify the available balance amount appears
-		And Enter the Transfer amount and change the currency
-		And Select the from charges pay by and choose Me
-		Then Choose the reason as charitable contributions
-		And Enter the remarks
-		Then Click on next and verify the validation errror appears1
+		And Enter the Transfer amount and verify the validation
+	
 	
 	@tran_mon_3rd_acc10 @reset @Transfer_43
  	Scenario: Able to transfer money to another local or international third party bank account - Local third party- Transferred amount is more than Account balance

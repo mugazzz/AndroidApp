@@ -3,11 +3,14 @@ package alhilal.androidapp.pages;
 import static alhilal.androidapp.utils.AppStrings.*;
 import static alhilal.androidapp.utils.Locators.*;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 
 public class Pay_One_Mul_Util_Page extends CommonPage{
 	
-	public void Tap_Element(By locator) {
+	public void Tap_Element(By locator) throws InterruptedException {
+		TimeUnit.SECONDS.sleep(1);
 		clickOnElement(locator);
 	}
 	
@@ -23,7 +26,7 @@ public class Pay_One_Mul_Util_Page extends CommonPage{
 	
 	public void  Tap_Confirm() {
 		clickOnElement(Continue);
-		appiumHelpers.waitForVisibilityOfElement(CONF_BUT);
+		//appiumHelpers.waitForVisibilityOfElement(CONF_BUT);
 	}
 	
 	public void Sel_card() {
