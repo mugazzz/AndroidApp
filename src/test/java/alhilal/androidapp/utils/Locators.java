@@ -308,7 +308,7 @@ public class Locators {
 	public static final By LOC_THIRD_ACC_96 = By.xpath("//android.widget.TextView[@text='LocalThird']");
 	public static final By OWN_ACC = By.xpath("//android.widget.TextView[@text='AE44 0530 0000 2966 7733 012']");
 	public static final By LOC_THIRD_ACC1 = By.xpath("//android.widget.TextView[@text='Local Thrid Party']");
-	public static final By LOC_THIRD_ACC_96677 = By.xpath("//android.widget.TextView[@text=''Local Thrid Party']");
+	public static final By LOC_THIRD_ACC_96677 = By.xpath("//android.widget.TextView[@text='Local Thrid Party']");
 	public static final By AHB_ACC7 = By.xpath("//android.widget.TextView[@text='Al Hilal Bank - 4041 9840 27']");
 	public static final By FROM_ACC = By.id("lblFromAccount1");
 	public static final By FROM_ACC_DATA = By.id("lblFromAccountData");
