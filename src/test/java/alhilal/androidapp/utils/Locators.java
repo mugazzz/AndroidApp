@@ -80,7 +80,7 @@ public class Locators {
 	public static final By REG_HOME_ENG_LNG = By.id("btnEnglishLogin");
 	
 	public static final By REG_HOME_ARB_LNG = By.id("btnArabicLogin");
-	public static final By AREG_HOME_LOGIN = By.xpath("//android.widget.TextView[@text='رمز تسجيل الدخول']");
+	public static final By AREG_HOME_LOGIN = By.xpath("//android.widget.TextView[@text='رمز الدخول']");
 	public static final By AREG_HOME_USE_FING = By.xpath("//android.widget.TextView[@text='Or use Fingerprints for login']");
 	public static final By AREG_HOME_FORGOT_PIN = By.xpath("//android.widget.Button[@text='نسيت رمز تسجيل الدخول']");
 	public static final By AREG_HOME_CHANGE_USER = By.xpath("//android.widget.Button[@text='تغيير المستخدم']");

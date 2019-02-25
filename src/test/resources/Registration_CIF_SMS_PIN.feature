@@ -32,7 +32,8 @@ Scenario: Register using CIF number & SMS PIN -incorrect number of CIF numbers
 Scenario: Register using CIF number & SMS PIN -incorrect number of SMS PIN numbers
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+	Then Enter the inactive CIF Card number
 	And Enter the incorrect SMS PIN number
 	Then Verify the user is not allowed to proceed further
 
@@ -56,7 +57,8 @@ Scenario: Register using CIF number & SMS PIN is not active
 Scenario: Register using CIF number & SMS PIN - Invalid CIF Number or SMS PIN
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+	Then Enter the inactive CIF Card number
 	And Enter the invalid SMS PIN number
 	Then Verify the validation for SMS pin fails
 
