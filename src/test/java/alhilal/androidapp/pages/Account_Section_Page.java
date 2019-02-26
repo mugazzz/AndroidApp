@@ -301,7 +301,8 @@ public class Account_Section_Page extends CommonPage{
 		}
 		
 		public void Register_Specific_user_No_Finance() {
-			Register_using_Card(Act_Debit_Card_No, Act_Credit_Card_Pin);
+			//Register_using_Card(Act_Debit_Card_No, Act_Credit_Card_Pin);
+			Register_Specific_user(Act_Cust_No_TPIN_SMS, Act_SMS_PN_Spec_Dep);
 			//Register_using_Credit_Card();
 		}
 		

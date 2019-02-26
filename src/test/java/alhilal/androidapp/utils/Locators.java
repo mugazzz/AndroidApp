@@ -73,19 +73,19 @@ public class Locators {
 	public static final By REG_HOME_LOGIN = By.xpath("//android.widget.TextView[@text='Login PIN']");
 	public static final By REG_HOME_USE_FING = By.xpath("//android.widget.TextView[@text='Or use Fingerprints for login']");
 	public static final By REG_HOME_FORGOT_PIN = By.xpath("//android.widget.Button[@text='Forgot PIN?']");
-	public static final By REG_HOME_CHANGE_USER = By.xpath("//android.widget.Button[@text='Change User']");
+	public static final By REG_HOME_CHANGE_USER = By.xpath("//android.widget.Button[@text='Change user']");
 	public static final By REG_HOME_BRANCH_LOCATOR = By.id("lblATMText");
-	public static final By REG_HOME_CONTACT_US = By.xpath("//android.widget.TextView[@text='Contact Us']");
+	public static final By REG_HOME_CONTACT_US = By.xpath("//android.widget.TextView[@text='Contact us']");
 	public static final By REG_HOME_ENG_LANG = By.xpath("//android.widget.Button[@text='English']");
 	public static final By REG_HOME_ENG_LNG = By.id("btnEnglishLogin");
 	
 	public static final By REG_HOME_ARB_LNG = By.id("btnArabicLogin");
 	public static final By AREG_HOME_LOGIN = By.xpath("//android.widget.TextView[@text='رمز الدخول']");
 	public static final By AREG_HOME_USE_FING = By.xpath("//android.widget.TextView[@text='Or use Fingerprints for login']");
-	public static final By AREG_HOME_FORGOT_PIN = By.xpath("//android.widget.Button[@text='نسيت رمز تسجيل الدخول']");
+	public static final By AREG_HOME_FORGOT_PIN = By.xpath("//android.widget.Button[@text='نسيت رمز الدخول؟']");
 	public static final By AREG_HOME_CHANGE_USER = By.xpath("//android.widget.Button[@text='تغيير المستخدم']");
 	public static final By AREG_HOME_BRANCH_LOCATOR = By.xpath("//android.widget.TextView[@text='أجهزة الصراف الآلي | الفروع']");
-	public static final By AREG_HOME_CONTACT_US = By.xpath("//android.widget.TextView[@text='اتصل بنا']");
+	public static final By AREG_HOME_CONTACT_US = By.xpath("//android.widget.TextView[@text='تواصل معنا']");
 	
 	//SQL Client
 	/*public static final By CONFIGBTN = By.id("fab_new");

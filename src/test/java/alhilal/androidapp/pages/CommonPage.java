@@ -8,6 +8,8 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.sun.jna.platform.win32.WinDef.BOOL;
+
 import static alhilal.androidapp.utils.Locators.*;
 import static org.junit.Assert.assertThat;
 
@@ -43,6 +45,20 @@ public class CommonPage extends ConfigDriver {
 
     public void navigateBack() {
         driver.navigate().back();
+    }
+    
+    public void hideKeyboard() {
+    	try 
+    	{
+    		if(driver.isKeyboardShown()) {
+    			driver.hideKeyboard();
+        	}
+    	}
+    	catch (Exception ex)
+    	{
+    		System.out.println("So "+ex);
+    	}
+    	
     }
     
     public void enterText(By idLocator, String keys) {
@@ -100,6 +116,26 @@ public class CommonPage extends ConfigDriver {
     		assertThat(xmlFormat, CoreMatchers.containsString(Message));
     	}
     
+    public void Verify_Validation_Message_InactiveCIF(String Message ,String Message2){
+		waitForProgressBarToDismiss();
+		String xmlFormat = driver.getPageSource();
+		boolean isValid = xmlFormat.contains(Message);
+		boolean isValid2 = xmlFormat.contains(Message2);
+		if(!isValid && !isValid2)
+		{
+			assert false : "Inactive CIF Error Message not shown";
+		}
+	}
+    
+    public boolean verifyValidationMessageShown(String Message){
+    	 appiumHelpers.implicitWait(2);
+		waitForProgressBarToDismiss();
+		String xmlFormat = driver.getPageSource();
+		boolean isValid = xmlFormat.contains(Message);
+		System.out.println("----verifyValidationMessageShown----" + isValid);
+		return isValid;
+	}
+    
     public void OTP() {
     	String path = System.getProperty("user.dir");
 		String chromepath = path+"/src/test/build/chromedriver";
@@ -152,22 +188,50 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
 		OTP();
-		if(elemenDoesnotExists(ALL_SET)){
-			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+		if(verifyValidationMessageShown(Incorrect_OTP_Validation_Message))
+		{
+			System.out.println("----RESEND_OTP----");
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
-		}
-			if(elementExists(CRE_LOGIN_PIN_LB)) {
+		else if(elementExists(CRE_LOGIN_PIN_LB)) 
+		{
+			 System.out.println("----CRE_LOGIN_PIN_LB----");
 			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
 			 appiumHelpers.waitForVisibilityOfElement(CRE_LOGIN_REPIN_FD);
 			 clickOnElement(CRE_LOGIN_REPIN_FD);
 			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
 			 clickOnElement(CRE_LOGIN_PIN_CF);
+			 
+			 appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+				appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+				clickOnElement(SKIP_FINGERPRINT);
 		}
-		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
-		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
-		clickOnElement(SKIP_FINGERPRINT);
+		else
+		{
+			System.out.println("----ALL_SET----");
+			appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+			appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+			clickOnElement(SKIP_FINGERPRINT);
+		}
+		
+//		if(elemenDoesnotExists(ALL_SET)){
+//			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+//			clickOnElement(RESEND_OTP);
+//			OTP();	
+//		}
+//		}
+//			if(elementExists(CRE_LOGIN_PIN_LB)) {
+//			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+//			 appiumHelpers.waitForVisibilityOfElement(CRE_LOGIN_REPIN_FD);
+//			 clickOnElement(CRE_LOGIN_REPIN_FD);
+//			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+//			 clickOnElement(CRE_LOGIN_PIN_CF);
+//		}
+//		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+//		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+//		clickOnElement(SKIP_FINGERPRINT);
+		
 		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
 		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}
@@ -251,22 +315,52 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
 		OTP();
-		if(elemenDoesnotExists(ALL_SET)){
-			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+		
+		if(verifyValidationMessageShown(Incorrect_OTP_Validation_Message))
+		{
+			System.out.println("----RESEND_OTP----");
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
-		}
-			if(elementExists(CRE_LOGIN_PIN_LB)) {
+		else if(elementExists(CRE_LOGIN_PIN_LB)) 
+		{
+			 System.out.println("----CRE_LOGIN_PIN_LB----");
 			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
 			 appiumHelpers.waitForVisibilityOfElement(CRE_LOGIN_REPIN_FD);
 			 clickOnElement(CRE_LOGIN_REPIN_FD);
 			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
 			 clickOnElement(CRE_LOGIN_PIN_CF);
+			 
+			 appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+				appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+				clickOnElement(SKIP_FINGERPRINT);
 		}
-		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
-		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
-		clickOnElement(SKIP_FINGERPRINT);
+		else
+		{
+			System.out.println("----ALL_SET----");
+			appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+			appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+			clickOnElement(SKIP_FINGERPRINT);
+		}
+		
+		
+//		if(elemenDoesnotExists(ALL_SET)){
+//			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+//			clickOnElement(RESEND_OTP);
+//			OTP();	
+//		}
+//		}
+//			if(elementExists(CRE_LOGIN_PIN_LB)) {
+//			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+//			 appiumHelpers.waitForVisibilityOfElement(CRE_LOGIN_REPIN_FD);
+//			 clickOnElement(CRE_LOGIN_REPIN_FD);
+//			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+//			 clickOnElement(CRE_LOGIN_PIN_CF);
+//		}
+//		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
+//		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
+//		clickOnElement(SKIP_FINGERPRINT);
+		
 		appiumHelpers.waitForVisibilityOfElement(DASHBOARD_HEADING);
 		appiumHelpers.assertTrue(elementExists(DASHBOARD_HEADING), "Screen navigated to the dashboard screen");
 	}

@@ -30,7 +30,7 @@ public class AppStrings {
 	    public static final String Incor_Credit_Card_Pin = "1236";
     
 	//Debit Card Registration
-	    public static final String Act_Debit_Card_No = "4714845567915712"; 
+	    public static final String Act_Debit_Card_No = "4714845537366509"; 
 	    public static final String Act_Debit_Card_Pin = "1234";
 	    public static final String Inactive_Debit_Card_No = "4714847609904308";
 	    public static final String Inactive_Debit_Card_Pin = "5678";
@@ -45,6 +45,7 @@ public class AppStrings {
 	//Customer Number Registration
 	    public static final String Act_Cust_No3 = "9677570";
 	    public static final String Act_Cust_No = "8326602";
+	    public static final String Act_Cust_No_Reg_CIF_SMS_PIN = "4041984";
 	    public static final String Act_Cust_No1 = "9677570";
 	    public static final String Card_Sec_Ver = "9677570";
 	    public static final String Act_Cust_No2 = "5000436";
@@ -84,10 +85,12 @@ public class AppStrings {
 	    
     //Validation Messages
 	    public static final String Inactive_crad_Validation_Message = "The card you are using is either expired, blocked or inactive.  Please use another card or use another option to register.";
+	    public static final String Incorrect_OTP_Validation_Message = "The One Time Password you entered is incorrect.";
 	    
 	    public static final String Incorrect_Cheque_Number = "No records available";
 	    public static final String Greater_Amount ="To amount must be greater than from amount";
 	    public static final String Inactive_CIF_Validation_Message = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
+	    public static final String Alternate_Err_Msg_Inactive_CIF_SMS_PIN_Reg = "Something went wrong, please try again after some time";
 	    public static final String Check_Filter_Validation ="To cheque number must be greater than from cheque number";
 	    public static final String Inactive_CIF_Validation_Message_InvSMS = "The combination of CIF/SMS-PIN entered is incorrect. Please try again or use another option to register";
 	    public static final String Inactive_CIF_Validation_Message_InvTPIN = "The combination of CIF/T-PIN entered is incorrect. Please try again or use another option to register";

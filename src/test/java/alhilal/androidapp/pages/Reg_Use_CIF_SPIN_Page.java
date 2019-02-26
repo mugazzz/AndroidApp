@@ -13,7 +13,7 @@ public class Reg_Use_CIF_SPIN_Page extends CommonPage {
 	}
 	
 	public void Ent_Valid_Cus_No() {
-		enterText(REG_CUS_NO_FD, Act_Cust_No);
+		enterText(REG_CUS_NO_FD, Act_Cust_No_Reg_CIF_SMS_PIN);
 	}
 	
 	public void Ent_Valid_Cus_No1() {

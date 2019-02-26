@@ -35,7 +35,9 @@ public class Reg_Use_CIF_SPIN_Steps extends Reg_Use_CIF_SPIN_Page{
 	
 	@Then("^Verify the validation message appears for inactive CIF$")
 	public void verify_the_validation_message_appears_for_inactive_CIF() {
-		Verify_Validation_Message(Inactive_CIF_Validation_Message);
+		Verify_Validation_Message_InactiveCIF(Inactive_CIF_Validation_Message,Alternate_Err_Msg_Inactive_CIF_SMS_PIN_Reg);
+//		Verify_Validation_Message(Inactive_CIF_Validation_Message);
+	
 	}
 	
 	@Then("^Verify the validation message appears for inactive CIF for reset PIN$")

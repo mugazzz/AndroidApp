@@ -1,4 +1,4 @@
-@card_section @sprint3 @sprint1-3 @acc
+@card_section @sprint3 @sprint1-3 @reset
 Feature: Card Section Verification
 
 
