@@ -63,14 +63,29 @@ public class CommonPage extends ConfigDriver {
     }
     
     public void enterText(By idLocator, String keys) {
-        driver.findElement(idLocator).sendKeys(keys);
+//        driver.findElement(idLocator).sendKeys(keys);
+    	driver.findElement(idLocator).clear();
+    	clickOnElement(idLocator);
+    	enterText_Runtime(idLocator,keys);
     }
     
     public void enterText_Runtime(String text) {
     	String Comm = "adb shell input text \""+ text +"\"";
 		try {
+			System.out.println("Input value to field -----" + text);
 			Process result = Runtime.getRuntime().exec(Comm);
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    public void enterText_Runtime(By idLocator, String text) {
+    	String Comm = "adb shell input text \""+ text +"\"";
+		try {
+			System.out.println("Input value to field -----" + text);
+			Process result = Runtime.getRuntime().exec(Comm);
+			result.waitFor();
+		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
