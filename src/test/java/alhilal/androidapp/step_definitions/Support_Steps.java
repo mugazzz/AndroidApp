@@ -100,7 +100,7 @@ public class Support_Steps extends Support_Page{
 	@Then("^Enter the confirm new pin$")
 	public void enter_the_confirm_new_pin() throws Throwable {
 		enterText(ENT_RE_PIN, Enter_Pin);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 	
 	@Then("^Enter the confirm new pin1$")

@@ -4,7 +4,7 @@ Feature: Check support modules
 
  @Support0 @Support_35
   Scenario: I should able to edit the nicknames of my active devices
-   Given Verify the login debit
+   Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on more options icon
 	 Then Tap on Settings option
@@ -16,7 +16,7 @@ Feature: Check support modules
 	 
 	 @Support1 @Support_36
   Scenario: I should able to edit the nicknames of my active devices - duplicate nic
-  Given Verify the login debit
+	Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on more options icon
 	 Then Tap on Settings option
@@ -28,7 +28,7 @@ Feature: Check support modules
 	 
 	 @Support2 @Support_37
   Scenario: I should able to edit the nicknames of my active devices - Click back icon
-  Given Verify the login debit
+ Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on more options icon
 	 Then Tap on Settings option
@@ -40,7 +40,7 @@ Feature: Check support modules
 	 
 	  @Support3 @Support_25
   Scenario: I should able to change my mobile banking PIN using OTP
-   Given Verify the login debit
+   Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on more options icon
 	 Then Tap on Settings option
@@ -54,7 +54,7 @@ Feature: Check support modules
 	
 	 	@Support4 @Support_
   Scenario: I should able to change my mobile banking PIN using incorrect current pin
-   Given Verify the login debit
+   Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on more options icon
 	 Then Tap on Settings option
@@ -67,7 +67,7 @@ Feature: Check support modules
 	 
 	 @Support5 @Support_
   Scenario: I should able to change my mobile banking PIN using incorrect new pin
-   Given Verify the login debit
+   Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
 	 Then Tap on more options icon
 	 Then Tap on Settings option

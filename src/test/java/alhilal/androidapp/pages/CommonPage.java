@@ -443,6 +443,7 @@ public class CommonPage extends ConfigDriver {
 		appiumHelpers.waitForVisibilityOfElement(ALL_SET);
 		appiumHelpers.assertTrue(elementExists(ALL_SET), "Screen navigated to All set screen");
 		clickOnElement(ENABLE_FINGERPRINTS);
+		appiumHelpers.waitForVisibilityOfElement(FINGERPRINTS_POPUP_CANCEL);
 	}
 
 }

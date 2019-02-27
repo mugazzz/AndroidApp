@@ -253,6 +253,10 @@ public class Card_Verification_Page extends CommonPage{
 			 driver.launchApp();
 	}
 	
+	public void Verify_Login_debit_wt_rl() {
+		Register_using_Card(Act_Debit_Card_No, Act_Credit_Card_Pin);
+	}
+	
 	public void Verify_Login_credit() {
 		Register_using_Card(Act_Credit_Card_No, Act_Credit_Card_Pin);
 			 driver.closeApp();

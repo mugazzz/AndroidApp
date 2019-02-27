@@ -7,7 +7,7 @@ public class Ad_benefi_Third_Party_Page extends CommonPage{
 	
 	public void Tap_Tab_Transfer_Icon() {
 		clickOnElement(TRANF_TAB);
-		appiumHelpers.waitForVisibilityOfElement(TRANF_TO_OTHERS);
+		//appiumHelpers.waitForVisibilityOfElement(TRANF_TO_OTHERS);
 	}
 	
 	public void Select_other_option() {

@@ -59,6 +59,11 @@ public class Card_Verification_Steps extends Card_Verification_Page{
 		Verify_Login_debit();
 	}
 	
+	@Given("^Verify the login debit without relaunch$")
+	public void verify_login_debit1() {
+		Verify_Login_debit_wt_rl();
+	}
+	
 	@Given("^Verify the login credit$")
 	public void verify_login_credit() {
 		Verify_Login_credit();

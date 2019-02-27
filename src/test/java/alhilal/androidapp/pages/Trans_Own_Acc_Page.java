@@ -7,18 +7,18 @@ import java.time.LocalDate;
 
 public class Trans_Own_Acc_Page extends CommonPage{
 	 public void Select_Saving_usd() {
-		 clickOnElement(SAV_USD);
+		 clickOnElement(SAV_USD_404);
 		 appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	 }
 	 
 	 public void Select_Current_usd() {
-		 clickOnElement(CUR_USD);
+		 clickOnElement(CUR_USD404);
 		 appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	 }
 	 
 	 public void Select_Card_usd() {
-		 scrollDown(SAV_USD);
-		 clickOnElement(CARD_USD);
+		 //scrollDown(SAV_USD);
+		 clickOnElement(CARD_USD404);
 		 appiumHelpers.waitForVisibilityOfElement(FROM_ACC);
 	 }
 	 
