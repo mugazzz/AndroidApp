@@ -1,4 +1,4 @@
-@reg_cif_spin @sprint1_2 @reset @sprint1-3 @res
+@reg_cif_spin @sprint1_2 @reset @sprint1-3
 Feature: Registration using CIF number and SPIN number
 I should be able to register using my CIF Number & SMS Pin
 

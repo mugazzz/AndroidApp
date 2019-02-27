@@ -1,4 +1,4 @@
-@res_pin_CIF_SMS @sprint1_2 @sprint1-3 @res
+@res_pin_CIF_SMS @sprint1_2 @sprint1-3 
 Feature: Existing registered user - Reset Pin validation using my CIF and SMS PIN
 I should be able to reset my PIN by verifying myself using my CIF number and SMS PIN
 	
@@ -21,7 +21,8 @@ Scenario: Reset Pin using CIF number & SMS PIN - Inactive CIF
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the inactive CIF Card number
 	Then Enter the valid SMS PIN
-	Then Verify the validation message appears for inactive CIF for reset PIN1
+#	Then Verify the validation message appears for inactive CIF for reset PIN1
+Then Verify the user is not allowed to proceed further
 	
 @res_pin_CIF_SMS3
 Scenario: Reset Pin using CIF number & SMS PIN -incorrect number of CIF numbers
@@ -37,7 +38,8 @@ Scenario: Reset Pin using CIF number & SMS PIN -incorrect number of SMS PIN numb
 	Given Verify the login reset
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+Then Enter the customer number with inactive pin
 	And Enter the incorrect SMS PIN number
 	Then Verify the user is not allowed to proceed further
 
@@ -48,7 +50,8 @@ Scenario: Reset Pin using CIF number & SMS PIN - SMS Pin is not set
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the customer number with no spin set
 	And Enter the valid SMS PIN
-	Then Verify the validation for SMS pin fails for reset PIN
+#	Then Verify the validation for SMS pin fails for reset PIN
+Then Verify the user is not allowed to proceed further
 
 @res_pin_CIF_SMS6
 Scenario: Reset Pin using CIF number & SMS PIN - SMS PIN is not active
@@ -57,16 +60,19 @@ Scenario: Reset Pin using CIF number & SMS PIN - SMS PIN is not active
 	Then Tap on register using your customer number link and navigate to customer registration screen
 	Then Enter the customer number with inactive pin
 	And Enter the inactive SMS PIN number
-	Then Verify the validation for SMS pin fails for reset PIN
+#	Then Verify the validation for SMS pin fails for reset PIN
+Then Verify the user is not allowed to proceed further
 
 @res_pin_CIF_SMS7
 Scenario: Reset Pin using CIF number & SMS PIN - Invalid CIF Number or SMS PIN
 	Given Verify the login reset
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+Then Enter the customer number with inactive pin
 	And Enter the invalid SMS PIN number
-	Then Verify the validation for SMS pin fails for reset PIN
+#	Then Verify the validation for SMS pin fails for reset PIN
+Then Verify the user is not allowed to proceed further
 
 #@res_pin_CIF_SMS8
 #Scenario: Reset PIN using CIF number & SMS PIN - wrong TPIN for 5 times
@@ -77,7 +83,7 @@ Scenario: Reset Pin using CIF number & SMS PIN - Invalid CIF Number or SMS PIN
 #	And Enter the invalid SMS PIN number for 5 times
 #	Then Verify the card is blocked error message appears
 	
-@res_pin_CIF_SMS9 @reset
+@res_pin_CIF_SMS9 
 Scenario: Pin Reset - Registration process should allow user to activate biometric login - biometrics features are enabled and set for the device
 	Given Verify the login reset
 	Then Tap on the Forgot login PIN link and navigate to related registration screen

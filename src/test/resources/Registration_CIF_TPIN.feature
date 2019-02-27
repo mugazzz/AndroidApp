@@ -1,4 +1,4 @@
-@reg_cif_tpin @reset @sprint1_2 @sprint1-3 @res
+@reg_cif_tpin @reset @sprint1_2 @sprint1-3
 Feature: Registration using CIF and TPIN
 I should be able to register using my CIF number & TPIN
 
@@ -22,7 +22,8 @@ Scenario: Register using CIF number & TPIN - Inactive CIF
 	Then Enter the valid T-PIN
 	And Tap on Next button
 	#Then Verify the validation message appears for inactive CIF
-	Then Verify the validation for Card pin fails
+#	Then Verify the validation for Card pin fails
+Then Verify the user is not allowed to proceed further
 
 @reg_cif_tpin2
 Scenario: Register using CIF number & TPIN -incorrect number of CIF numbers
@@ -38,7 +39,8 @@ Scenario: Register using CIF number & TPIN -incorrect number of CIF numbers
 Scenario: Register using CIF number & TPIN -incorrect number of TPIN numbers
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+	Then Enter the inactive CIF Card number
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the incorrect TPIN number
 	And Tap on Next button
@@ -52,7 +54,8 @@ Scenario: Register using CIF number & TPIN - TPin is not set
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	Then Verify the validation for Card pin fails
+#	Then Verify the validation for Card pin fails
+Then Verify the user is not allowed to proceed further
 
 @reg_cif_tpin5
 Scenario: Register using CIF number & TPIN - TPin is not active
@@ -62,17 +65,20 @@ Scenario: Register using CIF number & TPIN - TPin is not active
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the inactive TPIN number
 	And Tap on Next button
-	Then Verify the validation for Tpin fails
+#	Then Verify the validation for Tpin fails
+Then Verify the user is not allowed to proceed further
 
 @reg_cif_tpin6
 Scenario: Register using CIF number & TPIN - Invalid CIF Number or TPIN
 	Given Verify the screen redirected to landing page
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+	Then Enter the inactive CIF Card number
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the invalid TPIN number
 	And Tap on Next button
-	Then Verify the validation for Card pin fails
+#	Then Verify the validation for Card pin fails
+Then Verify the user is not allowed to proceed further
 
 #@reg_cif_tpin7
 #Scenario: Register using CIF number & TPIN - wrong TPIN for 5 times

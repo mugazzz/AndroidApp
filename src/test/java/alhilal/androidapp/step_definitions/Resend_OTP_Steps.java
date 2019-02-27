@@ -16,6 +16,7 @@ public class Resend_OTP_Steps extends Resend_OTP_Page{
 
 	@Then("^Tap on Resend OTP button$")
 	public void tap_on_Resend_OTP_button(){
+		hideKeyboard();
 		clickOnElement(RESEND_OTP);
 	}
 	

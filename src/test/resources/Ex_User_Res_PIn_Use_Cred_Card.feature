@@ -1,4 +1,4 @@
-@ex_user_res_pin_use_CC @sprint1_2 @sprint1-3 @res
+@ex_user_res_pin_use_CC @sprint1_2 @sprint1-3
 Feature: Existing registered user - Reset Pin validation using Credit Card.
 I should be able to reset my PIN by verifying myself using my Credit Card and Credit Card pin
 	
@@ -19,7 +19,8 @@ Scenario: Reset PIN using Credit Card and Credit card pin - Inactive Card
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the inactive Credit Card number
 	And Enter the inactive Credit Card PIN number
-	Then Verify the validation message appears for inactive card
+	Then Verify the user is not allowed to proceed further
+	#Then Verify the validation message appears for inactive card
 
 @ex_user_res_pin_use_CC3
 Scenario: Reset PIN using Credit Card and Credit card pin -incorrect number of card numbers
@@ -33,7 +34,8 @@ Scenario: Reset PIN using Credit Card and Credit card pin -incorrect number of c
 Scenario: Reset PIN using Credit Card and Credit card pin -incorrect number of card PIN numbers
 	Given Verify the login credit
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
-	Then Enter the Active Credit Card number
+#	Then Enter the Active Credit Card number
+And Enter the inactive Credit Card PIN number
 	And Enter the incorrect Credit Card PIN number
 	Then Verify the user is not allowed to proceed further
 
@@ -43,7 +45,8 @@ Scenario: Reset PIN using Credit Card and Credit card pin - Pin is not set
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Active Credit Card number with no Pin
 	And Enter the Active Credit Card PIN number
-	Then Verify the validation for Card pin fails1
+	Then Verify the user is not allowed to proceed further
+	#Then Verify the validation for Card pin fails1
 
 @ex_user_res_pin_use_CC6
 Scenario: Reset PIN using Credit Card and Credit card pin - Pin is not active
@@ -51,7 +54,8 @@ Scenario: Reset PIN using Credit Card and Credit card pin - Pin is not active
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Active Credit Card number whose Pin is not active
 	And Enter the Inactive Pin number
-	Then Verify the card is blocked error message appears
+	Then Verify the user is not allowed to proceed further
+	#Then Verify the card is blocked error message appears
 
 @ex_user_res_pin_use_CC7
 Scenario: Reset PIN using Credit Card and Credit card pin - Expiry date is lesser than today
@@ -59,15 +63,18 @@ Scenario: Reset PIN using Credit Card and Credit card pin - Expiry date is lesse
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Expired Credit Card number
 	And Enter the Active Credit Card PIN number
-	Then Verify the validation for Card pin fails
+	Then Verify the user is not allowed to proceed further
+	#Then Verify the validation for Card pin fails
 
 @ex_user_res_pin_use_CC8
 Scenario: Reset PIN using Credit Card and Credit card pin - Invalid Credit Card Number or Credit Card PIN
 	Given Verify the login credit
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
-	Then Enter the Active Credit Card number
+#	Then Enter the Active Credit Card number
+And Enter the inactive Credit Card PIN number
 	And Enter the invalid Credit Card PIN number
-	Then Verify the validation for Card pin fails1
+	Then Verify the user is not allowed to proceed further
+	#Then Verify the validation for Card pin fails1
 
 
 #@ex_user_res_pin_use_CC9

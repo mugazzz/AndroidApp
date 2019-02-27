@@ -8,7 +8,7 @@ public class Locators {
 	
 	
 	//Splash Screen
-	public static final By SPLASH_VIDEO = By.className("android.widget.VideoView");
+	public static final By SPLASH_VIDEO = By.className("com.sec.android.app.launcher:id/apps_content");
 	
 	//Registration screen
 	

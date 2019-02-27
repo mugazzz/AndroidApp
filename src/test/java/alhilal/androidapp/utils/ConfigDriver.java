@@ -36,6 +36,7 @@ public class ConfigDriver {
 	        DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "9889da324e31445355");
 	        capabilities.setCapability("automationName", "UiAutomator");
+	        capabilities.setCapability("maxTypingFrequency", 29.8);
 	        //capabilities.setCapability("appPackage", "com.ahb.mb.dev");
 	        //capabilities.setCapability("appActivity", "com.ahb.mb.dev.AlHilalBank");
 	        capabilities.setCapability("appPackage", "com.ahb.mb.qa");

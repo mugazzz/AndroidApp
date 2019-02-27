@@ -229,6 +229,7 @@ public class Card_Verification_Page extends CommonPage{
 	}
 	
 	public void Verify_Login_Res() {
+		driver.resetApp();
 		appiumHelpers.waitForVisibilityOfElement(Landing_Screen_Logo);
 		appiumHelpers.assertTrue(elementExists(Landing_Screen_Logo), "Successfully redirected to landing screen");
 		 if(elementExists(REG_CARD_BTN)) {

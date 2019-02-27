@@ -84,6 +84,7 @@ public class Resend_OTP_Page extends CommonPage{
 			String OTP = OTPMSG.substring(0, 6);
 			System.out.println("OTP NO"+i+"= "+OTP);
 			driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+			hideKeyboard();
 			clickOnElement(RESEND_OTP);
 		}
 	}
@@ -159,6 +160,7 @@ public class Resend_OTP_Page extends CommonPage{
 				System.out.println("OTP NO"+i+"= "+OTP);
 				driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 				waitForProgressBarToDismiss();
+				hideKeyboard();
 				clickOnElement(RESEND_OTP);
 			}
 			driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);

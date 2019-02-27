@@ -1,4 +1,4 @@
-@res_pin_CIF_TPIN @sprint1_2 @sprint1-3 @res
+@res_pin_CIF_TPIN @sprint1_2 @sprint1-3 
 Feature: Existing registered user - Reset Pin validation using my CIF and TPIN
 I should be able to reset my PIN by verifying myself using my CIF number and TPIN
 	
@@ -7,7 +7,7 @@ Scenario: Reset PIN using CIF number and TPIN
 	Given Verify the login Tpin
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+	Then Enter the valid customer number for TPIN
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
@@ -25,8 +25,9 @@ Scenario: Reset Pin using CIF number & TPIN - Inactive CIF
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	Then Verify the validation message appears for inactive CIFT1
+#	Then Verify the validation message appears for inactive CIFT1
 	#Then Verify the validation for Card pin fails
+	Then Verify the user is not allowed to proceed further
 
 @res_pin_CIF_TPIN3
 Scenario: Reset Pin using CIF number & TPIN -incorrect number of CIF numbers
@@ -44,7 +45,8 @@ Scenario: Reset Pin using CIF number & TPIN -incorrect number of TPIN numbers
 	Given Verify the login Tpin
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+Then Enter the customer number with inactive Tpin
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the incorrect TPIN number
 	And Tap on Next button
@@ -59,8 +61,9 @@ Scenario: Reset Pin using CIF number & TPIN - TPin is not set
 	And Tap on T-PIN tab to enter T-PIN
 	Then Enter the valid T-PIN
 	And Tap on Next button
-	Then Verify the validation message appears for inactive CIFT
+#	Then Verify the validation message appears for inactive CIFT
 	#Then Verify the validation for Card pin fails
+	Then Verify the user is not allowed to proceed further
 
 @res_pin_CIF_TPIN6
 Scenario: Reset Pin using CIF number & TPIN - TPin is not active
@@ -71,20 +74,23 @@ Scenario: Reset Pin using CIF number & TPIN - TPin is not active
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the inactive TPIN number
 	And Tap on Next button
-	Then Verify the validation message appears for inactive CIFT
+#	Then Verify the validation message appears for inactive CIFT
 	#Then Verify the validation for Tpin fails
+	Then Verify the user is not allowed to proceed further
 
 @res_pin_CIF_TPIN7
 Scenario: Reset Pin using CIF number & TPIN - Invalid CIF Number or TPIN
 	Given Verify the login Tpin
 	Then Tap on the Forgot login PIN link and navigate to related registration screen	
 	Then Tap on register using your customer number link and navigate to customer registration screen
-	Then Enter the valid customer number
+#	Then Enter the valid customer number
+Then Enter the customer number with inactive Tpin
 	And Tap on T-PIN tab to enter T-PIN
 	And Enter the invalid TPIN number
 	And Tap on Next button
-	Then Verify the validation message appears for inactive CIFT
+#	Then Verify the validation message appears for inactive CIFT
 	#Then Verify the validation for Card pin fails
+	Then Verify the user is not allowed to proceed further
 
 #@res_pin_CIF_TPIN8
 #Scenario: Reset PIN using CIF number & TPIN - wrong TPIN for 5 times

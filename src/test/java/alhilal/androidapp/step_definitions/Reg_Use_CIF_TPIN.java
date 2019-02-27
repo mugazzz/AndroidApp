@@ -40,6 +40,11 @@ public class Reg_Use_CIF_TPIN extends Reg_Use_CIF_TPIN_Page{
 		Ent_Cus_No_inactive_TPin();
 	}
 	
+	@Then("^Enter the valid customer number for TPIN$")
+	public void enter_the_valid_customer_number_for_TPIN(){
+		Ent_Valid_CustomerNo_TPIN();
+	}
+	
 	@Then("^Enter the invalid TPIN number$")
 	public void enter_the_invalid_TPIN_number(){
 		Ent_invalid_TPin();

@@ -1,4 +1,4 @@
-@res_pin_use_DC @sprint1_2 @sprint1-3 @res
+@res_pin_use_DC @sprint1_2 @sprint1-3
 Feature: Reset PIN using user Debit card
 I should be able to reset my PIN by verifying myself using my Debit Card and Debit Card pin
 	
@@ -17,9 +17,10 @@ Scenario: Reset PIN using Debit Card and Debit Card PIN - Active Card
 Scenario: Reset Pin using Debit Card and Debit card pin - Inactive Card
 	Given Verify the login debit
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
-	Then Enter the Active Debit Card number
-	And Enter the invalid Debit Card PIN number
-	Then Verify the invalid card or PIN number Validation appears
+	Then Enter the inactive Debit Card number
+	And Enter the Active Debit Card PIN number
+#	Then Verify the invalid card or PIN number Validation appears
+Then Verify the user is not allowed to proceed further
 	
 @res_pin_use_DC3
 Scenario: Reset Pin using Debit Card and Debit card pin -incorrect number of card numbers
@@ -33,7 +34,7 @@ Scenario: Reset Pin using Debit Card and Debit card pin -incorrect number of car
 Scenario: Reset Pin using Debit Card and Debit card pin -incorrect number of card PIN numbers
 	Given Verify the login debit
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
-	Then Enter the Active Debit Card number
+	Then Enter the inactive Debit Card number
 	And Enter the incorrect Debit Card PIN number
 	Then Verify the user is not allowed to proceed further
 
@@ -43,7 +44,8 @@ Scenario: Reset PIn using Debit Card and Debit card pin - Pin is not set
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Active Debit Card number with no Pin
 	And Enter the Active Debit Card PIN number
-	Then Verify the validation for Card pin fails
+#	Then Verify the validation for Card pin fails
+	Then Verify the user is not allowed to proceed further
 
 @res_pin_use_DC6
 Scenario: Reset Pin using Debit Card and Debit card pin - Pin is not active
@@ -51,7 +53,8 @@ Scenario: Reset Pin using Debit Card and Debit card pin - Pin is not active
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Active Debit Card number whose Pin is not active
 	And Enter the Inactive Debit Pin number
-	Then Verify the validation for Card pin fails1
+#	Then Verify the validation for Card pin fails1
+	Then Verify the user is not allowed to proceed further
 
 @res_pin_use_DC7
 Scenario: Reset Pin using Debit Card and Debit card pin - Expiry date is lesser than today
@@ -59,15 +62,17 @@ Scenario: Reset Pin using Debit Card and Debit card pin - Expiry date is lesser 
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
 	Then Enter the Expired Debit Card number
 	And Enter the Active Debit Card PIN number
-	Then Verify the card expire validation message appears
+#	Then Verify the card expire validation message appears
+	Then Verify the user is not allowed to proceed further
 
 @res_pin_use_DC8
 Scenario: Reset Pin using Debit Card and Debit card pin - Invalid Debit Card Number or Debit Card PIN
 	Given Verify the login debit
 	Then Tap on the Forgot login PIN link and navigate to related registration screen
-	Then Enter the Active Debit Card number
+	Then Enter the inactive Debit Card number
 	And Enter the invalid Debit Card PIN number
-	Then Verify the invalid card or PIN number Validation appears
+#	Then Verify the invalid card or PIN number Validation appears
+	Then Verify the user is not allowed to proceed further
 
 #@res_pin_use_DC9
 #Scenario: Reset PIN using Debit Card and Debit card pin - wrong PIN for the respective card 5 times

@@ -16,6 +16,10 @@ public class Reg_Use_CIF_TPIN_Page extends CommonPage {
 		enterText(REG_CUS_TPIN_FD, Act_TPIN_PN);
 	}
 	
+	public void Ent_Valid_CustomerNo_TPIN() {
+		enterText(REG_CUS_NO_FD, Act_Cust_No2);
+	}
+	
 	public void Ent_inactive_TPin() {
 		enterText(REG_CUS_TPIN_FD, Inact_SMS_PN);
 	}

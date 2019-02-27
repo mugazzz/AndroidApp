@@ -1,4 +1,4 @@
-@resend_otp @sprint1_2 @res
+@resend_otp @sprint1_2 @sprint1-3
 Feature: Resend OTP Validation
 
 @reset @resend_otp0

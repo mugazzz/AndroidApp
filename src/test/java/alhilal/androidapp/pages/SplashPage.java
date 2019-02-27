@@ -1,13 +1,18 @@
 package alhilal.androidapp.pages;
 
 import static alhilal.androidapp.utils.Locators.*;
+import static org.junit.Assert.assertThat;
+import static alhilal.androidapp.utils.AppStrings.*;
 
 import java.time.Duration;
+
+import org.hamcrest.CoreMatchers;
 
 public class SplashPage extends CommonPage{
 	
 	public void VerifySplashscreen() {
-		appiumHelpers.assertTrue(elementExists(SPLASH_VIDEO), "Splash screen is displayed");
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.containsString(splash));
 		
 	}
 	
@@ -27,7 +32,8 @@ public class SplashPage extends CommonPage{
 	}
 	
 	public void AbscenceOfSplashScreen() {
-		appiumHelpers.assertFalse(elementExists(SPLASH_VIDEO), "Splash screen is displayed");
+		String xmlFormat = driver.getPageSource();
+		assertThat(xmlFormat, CoreMatchers.not(splash));
 	}
 	
 }

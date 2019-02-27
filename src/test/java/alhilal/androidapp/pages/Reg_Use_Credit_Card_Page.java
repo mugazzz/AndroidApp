@@ -86,6 +86,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 		OTP();
 		if(elemenDoesnotExists(ALL_SET)){
 			if(elemenDoesnotExists(CRE_LOGIN_PIN_LB)){
+				hideKeyboard();
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
@@ -143,6 +144,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	public void Third_PartyApp1() {
 		OTP();
 		if(elemenDoesnotExists(SUCCESS_PAGE)){
+			hideKeyboard();
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}
@@ -152,6 +154,7 @@ public class Reg_Use_Credit_Card_Page extends CommonPage{
 	public void Third_PartyApp2() {
 		OTP();
 		if(elemenDoesnotExists(ACT_OPT)){
+			hideKeyboard();
 			clickOnElement(RESEND_OTP);
 			OTP();	
 		}

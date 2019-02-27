@@ -1,4 +1,4 @@
-@account_section @sprint3 @sprint1-3 @acc
+@account_section @sprint3 @sprint1-3
 Feature: Account section verificatio
 
 @account_section0 @TC_Accounts_24_1 @reset
