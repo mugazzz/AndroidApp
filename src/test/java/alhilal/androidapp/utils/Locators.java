@@ -313,10 +313,14 @@ public class Locators {
 	
 	//Accounts
 	public static final By CARD_USD = By.xpath("//android.widget.TextView[@text='4192 33** **** 0001']");
+	public static final By CARD_USD404 = By.xpath("//android.widget.TextView[@text='4192 34** **** 4521']");
 	public static final By CUR_USD = By.xpath("//android.widget.TextView[@text='AE20 0530 0000 2779 9712 003']");
+	public static final By CUR_USD404 = By.xpath("//android.widget.TextView[@text='AE20 0530 0000 2779 9712 004']");
 	public static final By SAV_USD = By.xpath("//android.widget.TextView[@text='AE63 0530 0000 2779 9712 005']");
-	public static final By FROM_ACC = By.id("lbxFromAccountData");
+	public static final By SAV_USD_404 = By.xpath("//android.widget.TextView[@text='AE95 0530 0000 2404 1984 003']");
+	public static final By FROM_ACC = By.id("lblFromAccountData");
 	public static final By FROM_CUR = By.xpath("//android.widget.CheckedTextView[@text='Current account 7799712002']");
+	public static final By FROM_CUR404 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 4041984004']");
 	public static final By FROM_CUR1 = By.xpath("//android.widget.CheckedTextView[@text='Current account 7799712003']");
 	public static final By AVAI_AMT = By.id("lblAvailableAmount");
 	public static final By TRAN_AMT = By.id("tbxTransferAmount");

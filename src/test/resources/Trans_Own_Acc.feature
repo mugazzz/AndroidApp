@@ -38,7 +38,7 @@ Feature: Transfer to own account
 		And Verify the user redirected to Dashboard screen successfully
 		Then Tap on the transfers icon on tab bar
 		And Select the card in usd
-		Then Tap on from account and select the current account1
+		Then Tap on from account and select the current account
 		Then Verify the available balance amount appears
 		When Enter the amount 
 		And Change the currency and verify the listed currencies1
