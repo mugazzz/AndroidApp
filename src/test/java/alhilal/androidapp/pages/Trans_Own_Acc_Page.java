@@ -24,7 +24,7 @@ public class Trans_Own_Acc_Page extends CommonPage{
 	 
 	 public void Select_From_Current() {
 		 clickOnElement(FROM_ACC);
-		 clickOnElement(FROM_CUR);
+		 clickOnElement(FROM_CUR404);
 	 }
 	 
 	 public void Select_From_Current1() {
@@ -44,17 +44,17 @@ public class Trans_Own_Acc_Page extends CommonPage{
 	 }
 	 
 	 public void Verify_Currency() {
-		 clickOnElement(SEL_CUR);
-		 appiumHelpers.waitForVisibilityOfElement(USD);
-		 appiumHelpers.waitForVisibilityOfElement(AED);
-		 clickOnElement(USD);
+//		 clickOnElement(SEL_CUR);
+//		 appiumHelpers.waitForVisibilityOfElement(USD);
+//		 appiumHelpers.waitForVisibilityOfElement(AED);
+//		 clickOnElement(USD);
 	 }
 	 
 	 public void Verify_Currency1() {
-		 clickOnElement(SEL_CUR);
-		 appiumHelpers.waitForVisibilityOfElement(USD);
-		 appiumHelpers.waitForVisibilityOfElement(AED);
-		 clickOnElement(AED);
+//		 clickOnElement(SEL_CUR);
+//		 appiumHelpers.waitForVisibilityOfElement(USD);
+//		 appiumHelpers.waitForVisibilityOfElement(AED);
+//		 clickOnElement(AED);
 	 }
 	 
 	 public void Enter_Remark() {
@@ -63,7 +63,7 @@ public class Trans_Own_Acc_Page extends CommonPage{
 	 }
 	 
 	 public void Complete_and_Verify() {
-			clickOnElement(CONT_BUT);
+			clickOnElement(CONF_LBL);
 			appiumHelpers.waitForVisibilityOfElement(REF_NUM);
 			String reference_no = driver.findElement(REF_NUM).getText();
 			System.out.println(reference_no);

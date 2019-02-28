@@ -45,13 +45,13 @@ public class Support_Page extends CommonPage{
 	public void  Ent_Nick_Name() {
 		driver.findElement(ENT_NICK).clear();
 		enterText(ENT_NICK, Nick_Na);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 	
 	public void  Ent_Nick_Name1() {
 		driver.findElement(ENT_NICK).clear();
 		enterText(ENT_NICK, Nick_Na1);
-		driver.hideKeyboard();
+		//driver.hideKeyboard();
 	}
 
 	public void  Verify_Saved() {

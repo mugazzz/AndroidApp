@@ -185,7 +185,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+//			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		 }
 	}
 	
@@ -198,7 +199,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+//			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		 }
 	}
 	
@@ -211,7 +213,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+//			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		 }
 	}
 	
@@ -224,7 +227,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+//			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		 }
 	}
 	
@@ -290,7 +294,8 @@ public class Card_Verification_Page extends CommonPage{
 		 }
 		 else {
 			 System.out.println("User already logged in");
-			 enterText(LOGIN_PIN_FD, Enter_Pin);
+//			 enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		 }
 	}
 	
@@ -304,14 +309,15 @@ public class Card_Verification_Page extends CommonPage{
 			}
 			else {
 				System.out.println("User already logged in");
-				enterText(LOGIN_PIN_FD, Enter_Pin);
+//				enterText(LOGIN_PIN_FD, Enter_Pin);
+				 enterText_Runtime(Enter_Pin);
 			}
 		}
 		else
 		{
 			clickOnElement(FINGERPRINTS_POPUP_CANCEL);
-			enterText(LOGIN_PIN_FD, Enter_Pin);
-			
+//			enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		}
 	}
 	
@@ -319,7 +325,8 @@ public class Card_Verification_Page extends CommonPage{
 		if(elementExists(FINGERPRINTS_POPUP_CANCEL))
 		{	
 			clickOnElement(FINGERPRINTS_POPUP_CANCEL);
-			enterText(LOGIN_PIN_FD, Enter_Pin);
+//			enterText(LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 		}
 		else
 		{
@@ -330,7 +337,8 @@ public class Card_Verification_Page extends CommonPage{
 			}
 			else {
 				System.out.println("User already logged in");
-				enterText(LOGIN_PIN_FD, Enter_Pin);
+//				enterText(LOGIN_PIN_FD, Enter_Pin);
+				 enterText_Runtime(Enter_Pin);
 			}
 		}
 	}

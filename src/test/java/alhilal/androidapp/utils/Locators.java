@@ -315,21 +315,22 @@ public class Locators {
 	public static final By CARD_USD = By.xpath("//android.widget.TextView[@text='4192 33** **** 0001']");
 	public static final By CARD_USD404 = By.xpath("//android.widget.TextView[@text='4192 34** **** 4521']");
 	public static final By CUR_USD = By.xpath("//android.widget.TextView[@text='AE20 0530 0000 2779 9712 003']");
-	public static final By CUR_USD404 = By.xpath("//android.widget.TextView[@text='AE20 0530 0000 2779 9712 004']");
+	public static final By CUR_USD404 = By.xpath("//android.widget.TextView[@text='AE29 0530 0000 2404 1984 027']");
 	public static final By SAV_USD = By.xpath("//android.widget.TextView[@text='AE63 0530 0000 2779 9712 005']");
 	public static final By SAV_USD_404 = By.xpath("//android.widget.TextView[@text='AE95 0530 0000 2404 1984 003']");
 	public static final By FROM_ACC = By.id("lblFromAccountData");
-	public static final By FROM_CUR = By.xpath("//android.widget.CheckedTextView[@text='Current account 7799712002']");
-	public static final By FROM_CUR404 = By.xpath("//android.widget.CheckedTextView[@text='Current account - 4041984004']");
-	public static final By FROM_CUR1 = By.xpath("//android.widget.CheckedTextView[@text='Current account 7799712003']");
+	public static final By FROM_CUR = By.xpath("//android.widget.TextView@text='Current account 7799712002']");
+	public static final By FROM_CUR404 = By.xpath("//android.widget.TextView[@text='Current account - 4041984004']");
+	public static final By FROM_CUR1 = By.xpath("//android.widget.TextView[@text='Current account 7799712003']");
 	public static final By AVAI_AMT = By.id("lblAvailableAmount");
 	public static final By TRAN_AMT = By.id("tbxTransferAmount");
-	public static final By SEL_CUR = By.id("lbxCurrency");
-	public static final By USD = By.xpath("//android.widget.CheckedTextView[@text='USD']");
-	public static final By AED = By.xpath("//android.widget.CheckedTextView[@text='AED']");
+	public static final By SEL_CUR = By.id("lblCurrency");
+	public static final By USD = By.xpath("//android.widget.TextView[@text='USD']");
+	public static final By AED = By.xpath("//android.widget.TextView[@text='AED']");
 	public static final By INDICATIVE = By.id("lblIndicativeAmount");
 	public static final By REMARK = By.id("txtAreaRemarks");
 	public static final By CONF_BUT = By.id("btnConfirm");
+	public static final By CONF_LBL = By.id("lblContinue");
 	public static final By FLX_CONF = By.id("flxConfirmationMain");
 	public static final By CONT_BUT = By.id("btnContinue");
 	public static final By REF_NUM = By.id("lblNumberHeader");
@@ -338,7 +339,10 @@ public class Locators {
 	
 	
 	//Support
-	public static final By MORE_OPT = By.id("flxMore");
+	public static final By MORE_OPT = By.id("lblMore");
+	public static final By POP_UP = By.id("flxAlert");
+	public static final By POP_UP_NO = By.id("btnDontCancel");
+	public static final By POP_UP_YES = By.id("btnOK");
 	public static final By SET_OPT = By.id("flxSettings");
 	public static final By ACT_OPT = By.id("flxAciveDevices");
 	public static final By SEG_PAG = By.id("segDeviceList");
@@ -354,4 +358,5 @@ public class Locators {
 	public static final By ENT_NEW_PIN = By.id("flxTextPin");
 	public static final By ENT_RE_PIN = By.id("flxRePinText");
 	public static final By AMT_CNF2 = By.xpath("//android.widget.TextView[@text='Amount: 30,000.00 AED']");
+	public static final By LOGOUT = By.id("btnCancel");
 }

@@ -2,7 +2,7 @@
 Feature: Check support modules
   I should able to edit and view support modules
 
- @Support0 @Support_35
+ @Support0 @Support_35 @reset
   Scenario: I should able to edit the nicknames of my active devices
    Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
@@ -14,7 +14,7 @@ Feature: Check support modules
 	 And Rename the nickname
 	 Then Tap confirm and verify the saved data
 	 
-	 @Support1 @Support_36
+	 @Support1 @Support_36 @reset
   Scenario: I should able to edit the nicknames of my active devices - duplicate nic
 	Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
@@ -26,7 +26,7 @@ Feature: Check support modules
 	 And Rename the nickname
 	 Then Tap confirm and verify the validation for duplicate nickname
 	 
-	 @Support2 @Support_37
+	 @Support2 @Support_37 @reset
   Scenario: I should able to edit the nicknames of my active devices - Click back icon
  Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
@@ -38,7 +38,7 @@ Feature: Check support modules
 	 And Rename the nickname1
 	 Then Tap header back and verify the nick name is not saved
 	 
-	  @Support3 @Support_25
+	  @Support3 @Support_25 @reset
   Scenario: I should able to change my mobile banking PIN using OTP
    Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
@@ -52,7 +52,7 @@ Feature: Check support modules
 	 Then Get the OTP from the third party app and enter the OTP2
 	 Then Verify the successful message appears
 	
-	 	@Support4 @Support_
+	 	@Support4 @Support_ @reset
   Scenario: I should able to change my mobile banking PIN using incorrect current pin
    Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully
@@ -65,7 +65,7 @@ Feature: Check support modules
 	 Then Tap change pin button
 	 Then Verify the incorrect current pin appears
 	 
-	 @Support5 @Support_
+	 @Support5 @Support_ @reset
   Scenario: I should able to change my mobile banking PIN using incorrect new pin
    Given Verify the login check
 	 And Verify the user redirected to Dashboard screen successfully

@@ -72,9 +72,9 @@ public class CommonPage extends ConfigDriver {
     public void enterText_Runtime(String text) {
     	String Comm = "adb shell input text \""+ text +"\"";
 		try {
-			System.out.println("Input value to field -----" + text);
 			Process result = Runtime.getRuntime().exec(Comm);
-		} catch (IOException e) {
+			result.waitFor();
+		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -198,7 +198,8 @@ public class CommonPage extends ConfigDriver {
 		String OTP = OTPMSG.substring(0, 6);
 		System.out.println(OTP);
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		enterText(OPT_FIELD, OTP);
+//		enterText(OPT_FIELD, OTP);
+		enterText_Runtime(OTP);
 	}
     
     public void Register_using_Credit_Card() {
@@ -272,7 +273,8 @@ public class CommonPage extends ConfigDriver {
 		clickOnElement(REG_CARD_BTNID);
 		appiumHelpers.waitForVisibilityOfElement(REG_CARD_HD);
 		enterText(REG_CARD_NO, Act_Credit_Card_No);
-		enterText(REG_CARD_PN, Act_Credit_Card_Pin);
+//		enterText(REG_CARD_PN, Act_Credit_Card_Pin);
+		 enterText_Runtime(Act_Credit_Card_Pin);
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
 		OTP();
@@ -305,7 +307,8 @@ public class CommonPage extends ConfigDriver {
 		clickOnElement(REG_CUS_NO_LINK);
 		appiumHelpers.waitForVisibilityOfElement(REG_CUS_NO_LB);
 		enterText(REG_CUS_NO_FD, Act_Cust_No_Spec);
-		enterText(REG_SMS_PN_FD, Act_SMS_PN_No_Spec);
+		//enterText(REG_SMS_PN_FD, Act_SMS_PN_No_Spec);
+		 enterText_Runtime(Act_SMS_PN_No_Spec);
 		appiumHelpers.waitForVisibilityOfElement(OTP_HD);
 		appiumHelpers.assertTrue(elementExists(OTP_HD), "Screen navigated to OTP screen");
 		OTP();
@@ -317,10 +320,12 @@ public class CommonPage extends ConfigDriver {
 		}
 		}
 			if(elementExists(CRE_LOGIN_PIN_LB)) {
-			 enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+			 //enterText(CRE_LOGIN_PIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 			 appiumHelpers.waitForVisibilityOfElement(CRE_LOGIN_REPIN_FD);
 			 clickOnElement(CRE_LOGIN_REPIN_FD);
-			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+//			 enterText(CRE_LOGIN_REPIN_FD, Enter_Pin);
+			 enterText_Runtime(Enter_Pin);
 			 clickOnElement(CRE_LOGIN_PIN_CF);
 		}
 		appiumHelpers.waitForVisibilityOfElement(ALL_SET);

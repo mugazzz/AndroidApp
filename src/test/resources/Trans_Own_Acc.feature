@@ -27,7 +27,7 @@ Feature: Transfer to own account
 		Then Verify the available balance amount appears
 		When Enter the amount 
 		And Change the currency and verify the listed currencies
-		Then Verify the indicative amount appears
+#		Then Verify the indicative amount appears
 		And Enter the remarks
 		Then Click on next and verify the screen redirect to transfers details screen
 		And Tap confirm button and verify the screen redirected to successfully transfered screen

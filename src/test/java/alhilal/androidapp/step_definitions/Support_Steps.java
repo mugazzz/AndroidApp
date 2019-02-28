@@ -79,33 +79,39 @@ public class Support_Steps extends Support_Page{
 
 	@Then("^Enter the Current Pin$")
 	public void enter_the_Current_Pin() throws Throwable {
-		enterText(ENT_CUR_PIN, Enter_Pin);
+		//enterText(ENT_CUR_PIN, Enter_Pin);
+		enterText_Runtime(Enter_Pin);
 	}
 	
 	@Then("^Enter the incorrect Current Pin$")
 	public void enter_the_incorrect_Current_Pin() throws Throwable {
-		enterText(ENT_CUR_PIN, Renter_Pin);
+		//enterText(ENT_CUR_PIN, Renter_Pin);
+		enterText_Runtime(Renter_Pin);
 	}
 
 	@Then("^Enter the new Pin$")
 	public void enter_the_new_Pin() throws Throwable {
-		enterText(ENT_NEW_PIN, Enter_Pin);
+		//enterText(ENT_NEW_PIN, Enter_Pin);
+		enterText_Runtime(Enter_Pin);
 	}
 	
 	@Then("^Enter the incorrect new Pin$")
 	public void enter_the_incorrect_new_Pin() throws Throwable {
-		enterText(ENT_NEW_PIN, Renter_Pin);
+//		enterText(ENT_NEW_PIN, Renter_Pin);
+		enterText_Runtime(Renter_Pin);
 	}
 
 	@Then("^Enter the confirm new pin$")
 	public void enter_the_confirm_new_pin() throws Throwable {
-		enterText(ENT_RE_PIN, Enter_Pin);
-		//driver.hideKeyboard();
+//		enterText(ENT_RE_PIN, Enter_Pin);
+		enterText_Runtime(Enter_Pin);
+		driver.hideKeyboard();
 	}
 	
 	@Then("^Enter the confirm new pin1$")
 	public void enter_the_confirm_new_pin1() throws Throwable {
-		enterText(ENT_RE_PIN, Enter_Pin);
+//		enterText(ENT_RE_PIN, Enter_Pin);
+		enterText_Runtime(Enter_Pin);
 	}
 
 	@Then("^change pin button$")
