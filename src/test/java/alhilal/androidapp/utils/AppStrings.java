@@ -134,7 +134,7 @@ public class AppStrings {
 	//Web Application for OTP  
 	    public static final String OTPweb = "https://10.10.137.153:8445/SMS/LoginAction.do";
 	    public static final String web_username = "administrator";
-	    public static final String web_password = "password1";
+	    public static final String web_password = "password2";
     
 	//Advanced Search Screen
 	    public static final String Cheque_from = "20";
